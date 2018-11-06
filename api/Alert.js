@@ -49,7 +49,7 @@ export default class Alert extends Component{
     }
 
     /**
-     * 隐藏对话框
+     * 关闭对话框
      */
     static hide(){
         if (showingDialog != null && showingDialog instanceof RootSiblings) {

@@ -19,7 +19,7 @@ import KActivityIndicator from 'react-native-kactivityindicator';
 /**
  发布热更新报错 将node_modules\react-native-update\local-cli\lib\bundle.js
  的439行种的metro-bundler改成metro可成功运行！
- 报错版本0.52+
+ 报错版本0.52+(0.52以上版本报错)
  **/
 import _updateConfig from 'lx_yyt/update';
 import {Tools} from "./Tools";
@@ -30,13 +30,23 @@ import {Alert} from "./Alert";
 
 /**
  * 热更新，提供热更新各种方法
+ * 元信息：{
+updateList:[],//更新app id集合（app id集合）//不传更新全部
+updateNoList:[],//不更新app id集合（app id集合）//传了的账户则不更新
+code:777,//777、立刻更新；888、立刻强制更新；999、立刻静默更新
+reboot:555,//666、强制使用更新；555、用户决定是否使用更新;333、下次启用更新 默认是555
+}
+ 发布时，因react-native-update只接受字符串，所以元信息应是json的字符串，
+ 如：{"updateList":[]}
  * **/
 export class HotUpdate{
+    static appID = null;//当前给app指定（分配）的id
+    static updateFirst = true;//app第一次启动是否强制更新，默认true更新
 
     static update = {
-        code1:777,//777、立刻更新；888、立刻强制更新；999、立刻静默更新
-        code2:888,//777、立刻更新；888、立刻强制更新；999、立刻静默更新
-        code3:999,//777、立刻更新；888、立刻强制更新；999、立刻静默更新
+        code1:777,//777、立刻更新；888、立刻强制更新；999、立刻静默更新 默认是777
+        code2:888,//777、立刻更新；888、立刻强制更新；999、立刻静默更新 默认是777
+        code3:999,//777、立刻更新；888、立刻强制更新；999、立刻静默更新 默认是777
         reboot1:555,//666、强制使用更新；555、用户决定是否使用更新;333、下次启用更新 默认是555
         reboot2:666,//666、强制使用更新；555、用户决定是否使用更新;333、下次启用更新 默认是555
         reboot3:333,//666、强制使用更新；555、用户决定是否使用更新;333、下次启用更新 默认是555
@@ -211,13 +221,12 @@ export class HotUpdate{
 
                     let userInfo = null;
                     let init = false;
-                    if(Tools.userConfig.userInfo == ''
-                        || Tools.userConfig.userInfo == null){
+                    if(!HotUpdate.appID){
                         userInfo = {};
                         init = true;
                     }
                     else{
-                        userInfo = Tools.userConfig.userInfo;
+                        userInfo = {id:HotUpdate.appID};
                     }
 
                     info.metaInfo = info.metaInfo ? JSON.parse(info.metaInfo) : {};
@@ -230,7 +239,7 @@ export class HotUpdate{
 
                     // Tools.toast("init:" + init + "     " + Tools.isCurStruct);
 
-                    if(init || !Tools.isCurStruct){
+                    if(HotUpdate.updateFirst &&(init || !Tools.isCurStruct)){
                         info.metaInfo.code = 888;
                         info.metaInfo.reboot = 666;
 

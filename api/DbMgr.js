@@ -16,6 +16,12 @@ export class DbMgr {
     static database_displayname = "lx_yyt Database";
     static database_size = -1;//-1应该是表示无限制
 
+    /***
+     * 创建表列表
+     * 字段说明
+     * sql:创建表的sql语句
+     * tableName:表名
+     * */
     static DB_TABLE_LIST = [
         {
             sql:"CREATE TABLE IF NOT EXISTS tb_Media " +
@@ -45,6 +51,7 @@ export class DbMgr {
 
     /**
      * 打开或创建数据库
+     * return Promise
      * **/
     static openDatabase(){
         return new Promise((resolve) => {
@@ -82,6 +89,7 @@ export class DbMgr {
      * 执行sql
      * @param sql string,//sql命令
      * @param dataList array,//sql插入或更新的数据
+     * return Promise
      * **/
     static executeSql(sql,dataList=[]) {
         return new Promise((resolve) => {
@@ -357,4 +365,4 @@ export class DbMgr {
 }
 
 // DbMgr.delTable("tb_Role");
-DbMgr.delDataTbMDay31();
+// DbMgr.delDataTbMDay31();

@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/api/CaptureImage.js" afterPath="$PROJECT_DIR$/api/CaptureImage.js" />
-      <change beforePath="$PROJECT_DIR$/api/ProgressPerApi.js" afterPath="$PROJECT_DIR$/api/ProgressPerApi.js" />
-      <change beforePath="$PROJECT_DIR$/api/StyleSheetAdapt.js" afterPath="$PROJECT_DIR$/api/StyleSheetAdapt.js" />
-      <change beforePath="$PROJECT_DIR$/api/TalkingData.js" afterPath="$PROJECT_DIR$/api/TalkingData.js" />
-      <change beforePath="$PROJECT_DIR$/api/Theme.js" afterPath="$PROJECT_DIR$/api/Theme.js" />
-      <change beforePath="$PROJECT_DIR$/api/Tools.js" afterPath="$PROJECT_DIR$/api/Tools.js" />
-      <change beforePath="$PROJECT_DIR$/api/api.js" afterPath="$PROJECT_DIR$/api/api.js" />
-      <change beforePath="$PROJECT_DIR$/example/Test.js" afterPath="$PROJECT_DIR$/example/Test.js" />
-      <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +24,8 @@
               <entry file="file://$PROJECT_DIR$/README.md">
                 <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                   <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="209">
-                      <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+                    <first_editor relative-caret-position="342">
+                      <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
                       <folding />
                     </first_editor>
                     <second_editor>
@@ -54,8 +46,8 @@
             <file leaf-file-name="Test.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/example/Test.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="303">
-                    <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="60" selection-end-column="3" />
+                  <state relative-caret-position="912">
+                    <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
                     <folding>
                       <element signature="e#0#39#0" expanded="true" />
                     </folding>
@@ -70,116 +62,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TalkingData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/TalkingData.js">
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="74" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Theme.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/Theme.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="236">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#50#100#0" expanded="true" />
-                <element signature="e#321#2002#0" expanded="false" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tools.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/Tools.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#93#0" expanded="true" />
-                <element signature="e#523#569#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CaptureImage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CaptureImage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/CaptureImage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            <state relative-caret-position="304">
+              <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
               <folding>
+                <element signature="e#0#77#0" expanded="true" />
                 <element signature="n#!!doc;n#captureViewScreen#0;n#CaptureImage#0" expanded="false" />
-                <element signature="e#767#5978#0" expanded="false" />
-                <element signature="n#!!block;n#clean#0;n#CaptureImage#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbMgr.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/DbMgr.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-                <element signature="n#DbMgr#0" expanded="false" />
-                <element signature="e#547#1521#0" expanded="false" />
-                <element signature="n#!!doc;n#openDatabase#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#openDatabase#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#executeSql#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#executeSql#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#createTable#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#createTable#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#getSelectData#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#getSelectData#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#queryTable#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#queryTable#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#queryTableMedia#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#queryTableMedia#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#queryTableRole#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#queryTableRole#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#insertTableRole#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#insertTableRole#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#insertTableMedia#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#insertTableMedia#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#uptateTable#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#uptateTable#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#uptateTableRole#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#uptateTableRole#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#delDataTb#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#delDataTb#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#delDataTbMDay#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#delDataTbMDay#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#delDataTbRole#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#delDataTbRole#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#delTable#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#delTable#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#deleteFile#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#deleteFile#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#delDataTbMDay31#0;n#DbMgr#0" expanded="false" />
-                <element signature="n#!!block;n#delDataTbMDay31#0;n#DbMgr#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alert.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/Alert.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding>
-                <element signature="e#701#1354#0" expanded="false" />
-                <element signature="e#1402#2152#0" expanded="false" />
-                <element signature="e#2276#2429#0" expanded="false" />
-                <element signature="n#AlertUI#0" expanded="false" />
-                <element signature="e#4974#6398#0" expanded="false" />
+                <element signature="e#1491#2777#0" expanded="false" />
+                <element signature="e#4104#5747#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -237,8 +141,8 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/api/TalkingData.js" />
         <option value="$PROJECT_DIR$/api/Theme.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/api/Tools.js" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/api/CaptureImage.js" />
       </list>
     </option>
@@ -349,12 +253,12 @@
       <updated>1541466458365</updated>
       <workItem from="1541466459623" duration="4611000" />
       <workItem from="1541472625647" duration="537000" />
-      <workItem from="1541473243125" duration="17348000" />
+      <workItem from="1541473243125" duration="20729000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22496000" />
+    <option name="totallyTimeSpent" value="25877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="135" y="181" width="956" height="713" extended-state="0" />
@@ -495,16 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/Test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="60" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -564,14 +458,6 @@
             <element signature="n#!!doc;n#downloadFile#0;n#Http#0" expanded="false" />
             <element signature="n#!!block;n#downloadFile#0;n#Http#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,82 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/TalkingData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Theme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#50#100#0" expanded="true" />
-            <element signature="e#321#2002#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="209">
-            <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#93#0" expanded="true" />
-            <element signature="e#523#569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Alert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#701#1354#0" expanded="false" />
-            <element signature="e#1402#2152#0" expanded="false" />
-            <element signature="e#2276#2429#0" expanded="false" />
-            <element signature="n#AlertUI#0" expanded="false" />
-            <element signature="e#4974#6398#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/CaptureImage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc;n#captureViewScreen#0;n#CaptureImage#0" expanded="false" />
-            <element signature="e#767#5978#0" expanded="false" />
-            <element signature="n#!!block;n#clean#0;n#CaptureImage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/DbMgr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -844,6 +654,104 @@
             <element signature="n#!!block;n#deleteFile#0;n#DbMgr#0" expanded="false" />
             <element signature="n#!!doc;n#delDataTbMDay31#0;n#DbMgr#0" expanded="false" />
             <element signature="n#!!block;n#delDataTbMDay31#0;n#DbMgr#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Tools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#93#0" expanded="true" />
+            <element signature="e#523#569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#50#100#0" expanded="true" />
+            <element signature="e#321#2002#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/TalkingData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="e#42#80#0" expanded="true" />
+            <element signature="e#701#1354#0" expanded="false" />
+            <element signature="e#1402#2152#0" expanded="false" />
+            <element signature="e#2276#2429#0" expanded="false" />
+            <element signature="n#AlertUI#0" expanded="false" />
+            <element signature="e#4974#6398#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/Test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="342">
+            <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/CaptureImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+            <element signature="n#!!doc;n#captureViewScreen#0;n#CaptureImage#0" expanded="false" />
+            <element signature="e#1491#2777#0" expanded="false" />
+            <element signature="e#4104#5747#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -149,6 +149,8 @@ export class CaptureImage {
             }
 
         });
+
+
     }
 
     static clean(uri){

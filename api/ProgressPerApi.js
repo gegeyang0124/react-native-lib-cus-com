@@ -10,15 +10,18 @@ import {
     Platform,
 } from 'react-native';
 import RootSiblings from 'react-native-root-siblings';
-import * as Progress from 'react-native-progress';
+import * as Progress from 'react-native-progress-zy';
 
 import {StyleSheetAdapt} from "./StyleSheetAdapt";
 let showingDialog = null;
 
+/**
+ * 显示进度的进度条
+ * **/
 export class ProgressPerApi extends Component{
 
     /**
-     * 进度条
+     * 显示进度条
      * @param progress number；//进度条进度值
      * @returns {SiblingsManager}
      */

@@ -37,15 +37,23 @@ export default class Test extends BaseComponent<Props> {
 
         return (
             <ViewTitle>
-
+                <View style={styles.testStyle}></View>
+                <View style={StyleSheetAdapt.testStyle2}></View>
+                <View style={StyleSheetAdapt.styleJsonAdaptConvert({
+                    width:100,
+                    height:200,
+                })}></View>
             </ViewTitle>
         );
     }
 }
-
 const styles = StyleSheetAdapt.create({
 
-    vBFrame2_IconRotate:{
+    testStyle2:{
+        width:100,
+        height:200,
+    },
+    testStyle:{
         transform:[
             {rotateX:'180deg'}
         ],

@@ -1,0 +1,78 @@
+{
+  "_from": "react-native-progress",
+  "_id": "react-native-progress@3.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-wALm77LwuC3WiJUQ5mnEktonGKw=",
+  "_location": "/react-native-progress",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-progress",
+    "name": "react-native-progress",
+    "escapedName": "react-native-progress",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-native-progress/download/react-native-progress-3.4.0.tgz",
+  "_shasum": "c002e6efb2f0b82dd6889510e669c492da2718ac",
+  "_spec": "react-native-progress",
+  "_where": "/Users/zy/Desktop/proj/RNProj/lx_yyt",
+  "author": {
+    "name": "Joel Arvidsson",
+    "email": "joel@oblador.se"
+  },
+  "bugs": {
+    "url": "https://github.com/oblador/react-native-progress/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "prop-types": "^15.5.8"
+  },
+  "deprecated": false,
+  "description": "Progress indicators and spinners for React Native using ReactART",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
+  },
+  "homepage": "https://github.com/oblador/react-native-progress",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "mobile",
+    "ios",
+    "ui",
+    "progress",
+    "progressindicator",
+    "circle",
+    "pie",
+    "bar",
+    "progressbar",
+    "indeterminate",
+    "spinner",
+    "animation"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-progress-zy",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oblador/react-native-progress.git"
+  },
+  "scripts": {
+    "test": "eslint *.js Shapes"
+  },
+  "version": "3.4.0"
+}

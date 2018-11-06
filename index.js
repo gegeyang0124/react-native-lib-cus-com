@@ -7,7 +7,6 @@ import {
     Theme,
     PickerCustome,
     HotUpdate,
-    TalkingData,
     DbMgr,
     CaptureImage,
     IamgeWaterMark,
@@ -135,9 +134,6 @@ const compoent = {
     },
     get HotUpdate() {
         return HotUpdate;
-    },
-    get TalkingData() {
-        return TalkingData;
     },
 
     /**

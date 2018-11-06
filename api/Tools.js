@@ -19,7 +19,7 @@ import Toast from 'react-native-root-toast';
  * 支持的文档格式：xls,ppt,doc,xlsx,pptx,docx,png,jpg,pdf,mp4。
  * 支持iOS和Android(有bug,哥正在修复中)。
  * **/
-import OpenFile from "react-native-doc-viewer";
+// import OpenFile from "react-native-doc-viewer";
 import {PickerCustome} from "./PickerCustome";
 import {Theme} from "./Theme";
 import {CaptureImage} from "./CaptureImage";

@@ -33,9 +33,16 @@ const styleConvertArrHeight = [
 ];
 
 /**
- * 样式表创建，适配各种机型
+ * 样式表创建，适配各种机型、各种屏幕 与StyleSheet用法一致
  * **/
 export class StyleSheetAdapt{
+
+    /**
+     * 页面设计大小 {width:768,height:1024};//页面设计大小
+     * **/
+    static designSize = null;//designSize = {width:768,height:1024};//页面设计大小
+
+    static firstExe = true;
 
     /**
      * 返回 StyleSheet 对象
@@ -51,7 +58,8 @@ export class StyleSheetAdapt{
      * **/
     static screen = screen;
 
-    /**屏幕与设计适配比率
+    /**
+     * 屏幕与设计适配比率
      * widthScale 宽度比率
      * heightScale 高度比率
      * **/
@@ -60,7 +68,8 @@ export class StyleSheetAdapt{
         heightScale: screen.height / designSize.height,
     };
 
-    /**屏幕与设计适配比率 随屏幕变化
+    /**
+     * 屏幕与设计适配比率 随屏幕变化
      * widthScale 宽度比率
      * heightScale 高度比率
      * **/
@@ -69,10 +78,32 @@ export class StyleSheetAdapt{
         heightScale: screenGet.height / designSize.height,
     };
 
+    /**
+     * 获取适配比例
+     * **/
+    static getScale(){
+        if(StyleSheetAdapt.designSize && StyleSheetAdapt.firstExe){
+            let designSize2 = StyleSheetAdapt.designSize;
+            StyleSheetAdapt.scale ={
+                widthScale: screen.width / designSize2.width,
+                heightScale: screen.height / designSize2.height,
+            };
+            StyleSheetAdapt.scaleS = {
+                widthScale: screenGet.width / designSize2.width,
+                heightScale: screenGet.height / designSize2.height,
+            };
+
+            StyleSheetAdapt.firstExe = false;
+        }
+    }
+
     /**获取横向的与屏幕的相对长度
      * @prama width ;//横向宽度值,特殊值是'w'取屏幕宽, 不传也取屏幕宽
      * **/
     static getWidth(width){
+
+        StyleSheetAdapt.getScale();
+
         if(width == undefined)
         {
             width = this.screen.width;
@@ -185,6 +216,8 @@ export class StyleSheetAdapt{
      * @prama height ;//纵向高度值, 特殊值是'h'取屏幕高；不传也取屏幕高
      * **/
     static getHeight(height){
+
+        StyleSheetAdapt.getScale();
 
         if(height == undefined)
         {

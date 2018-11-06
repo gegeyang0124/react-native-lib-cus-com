@@ -8,6 +8,8 @@ react-native 自定义辅助组件库，完美适配各种机型和屏幕大小�
 2.各组件的详细调用方法，可进入相应的组件文件查看，里面所有的方法/函数都有注释；<BR/>
 3.以下“使用”的说明只有简单的说明(且都不写参数，直接复制使用，可能会报错)，具体说明，请参照“注意”第2点
 <BR/>
+react-native的高版本中可能移除了"moment",请自行安装"moment"
+//import moment from 'moment';
 ### 安装依赖（别忘了根据相应库进行react-native link ...）:
 npm i --save react-native-root-siblings <BR/>
 npm i --save react-native-view-shot <BR/>
@@ -27,8 +29,76 @@ npm i --save react-native-image-crop-picker <BR/>
 npm i --save react-native-image-picker <BR/>
 npm i --save react-native-picker <BR/>
 npm i --save react-native-spinkit <BR/>
+/**若有报错，不会修改，请安装：npm i --save react-navigation@1.5.11
+ **/ <BR/>
+npm i --save react-navigation <BR/>
 
 ### 使用api：
+##### StyleSheetAdapt 样式表创建，适配各种机型、各种屏幕 与StyleSheet用法一致
+```
+import {StyleSheetAdapt} from "react-native-lib-cus-com";
+import React, {Component} from 'react';
+import {View} from 'react-native';
+
+StyleSheetAdapt.designSize = {width:768,height:1024};//页面设计大小
+const styles = StyleSheetAdapt.create({
+
+    testStyle2:{
+        width:100,
+        height:200,
+    },
+    testStyle:{
+        transform:[
+            {rotateX:'180deg'}
+        ],
+    },
+});//创建样式表单
+//StyleSheetAdapt.styleJsonAdaptConvert();//样式属性json中的值适配
+
+
+export default class Test extends BaseComponent<Props> {
+
+    constructor(props) {
+        super(props);
+
+    }
+
+    alert(){
+        //与react-native 中的Alert用法一致
+        Alert.alert();
+    }
+
+    componentWillMount(){
+
+    }
+
+    componentDidMount() {
+    }
+
+
+
+
+    render() {
+
+        const {resultEstimateData,noticesData,resultFinishProgress,
+            tripListData,customerObj,isNews,pictures,path,dataSize,picture} = this.state;
+
+        return (
+             <ViewTitle>
+                            <View style={styles.testStyle}></View>
+                            <View style={StyleSheetAdapt.testStyle2}></View>
+                            <View style={StyleSheetAdapt.styleJsonAdaptConvert({
+                                width:100,
+                                height:200,
+                            })}></View>
+                        </ViewTitle>
+        );
+    }
+}
+
+
+```
+
 ##### Http 网路请求
 ```
 import {Http} from "react-native-lib-cus-com";
@@ -39,12 +109,14 @@ Http.urlFile = "";//上传文件 接口
 Http.upLoadFileToService();//上传文件 react-native-fs
 Http.downloadFile();//下载文件 react-native-fs
 ```
+
 ##### Alert对话框
 ```
 import {Alert} from "react-native-lib-cus-com";
 Alert.alert();//显示对话框
 Alert.hide();//关闭对话框
 ```
+
 ##### CaptureImage 截屏或截UI图 基于react-native-view-shot
 ```
 import {CaptureImage} from "react-native-lib-cus-com";
@@ -94,13 +166,14 @@ HotUpdate.updateFirst = true;//app第一次启动是否强制更新，默认true
 
 这些设置完后即可，提示会根据元信息的情况提示
 ```
+
 ##### IamgeWaterMark 设置图片水印 基于react-native-image-marker
 ```
 import {IamgeWaterMark} from "react-native-lib-cus-com";
 IamgeWaterMark.markText();//设置水印文本
 ```
 
-##### JPush 极光推送类，提供极光推送的各种方法
+##### JPush 极光推送类，提供极光推送的各种方法 可看JPush文件源码注释
 ```
 本库未直接导出，若想使用，使用自行导出；
 需要安装:
@@ -132,15 +205,36 @@ import {MenuBottomApi} from "react-native-lib-cus-com";
 MenuBottomApi.show();//显示底部菜单
 MenuBottomApi.hide();//隐藏底部菜单
 ```
+
 ##### PickerCustome 自定义滑动选择   基于react-native-picker
 ```
 import {PickerCustome} from "react-native-lib-cus-com";
 PickerCustome.pick();//选择框 底部
 PickerCustome.pickMonth();//选择年月
 ```
+
 ##### ProgressApi 加载指示器（加载条）  基于react-native-spinkit
 ```
-import {PickerCustome} from "react-native-lib-cus-com";
-PickerCustome.pick();//选择框 底部
-PickerCustome.pickMonth();//选择年月
+import {ProgressApi} from "react-native-lib-cus-com";
+ProgressApi.show();//显示加载指示器
+ProgressApi.hide();//隐藏菊花加载指示器
+```
+
+##### ProgressPerApi 显示进度的进度条
+```
+import {ProgressPerApi} from "react-native-lib-cus-com";
+ProgressPerApi.show();//显示进度条
+ProgressPerApi.hide();//隐藏进度条
+```
+
+##### TalkingData 使用talkingdata app统计分析 可看TalkingData源文件注释
+```
+本库未直接导出，若想使用，使用自行导出；
+需要安装:
+npm i --save react-native-talkingdata
+```
+
+##### Theme 主题集合 颜色、宽度，及一些默认配置
+```
+主题配色，宽高，弧度，在这个库中的一些ui使用到这里的默认配置，特别是样式
 ```

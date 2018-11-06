@@ -6,7 +6,6 @@ import {Media} from "./Media";
 import {Theme} from "./Theme";
 import {PickerCustome} from "./PickerCustome";
 import {HotUpdate} from "./HotUpdate";
-import {TalkingData} from "./TalkingData";
 import {DbMgr} from "./DbMgr";
 import {CaptureImage} from "./CaptureImage";
 import {IamgeWaterMark} from "./IamgeWaterMark";
@@ -64,9 +63,6 @@ const api = {
     },
     get HotUpdate() {
         return HotUpdate;
-    },
-    get TalkingData() {
-        return TalkingData;
     },
 
 };

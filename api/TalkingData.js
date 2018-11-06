@@ -1,5 +1,5 @@
 import * as TD from 'react-native-talkingdata';
-import {HttpUrls} from "./HttpUrls";
+// import {HttpUrls} from "./HttpUrls";
 import {Tools} from "./Tools";
 
 /**
@@ -47,6 +47,7 @@ export class TalkingData{
      *  @param url string,//接口地址
      * **/
     static getUrlKey(url){
+        return "";
         let key = null;
 
         Object.keys(HttpUrls.urlSets)

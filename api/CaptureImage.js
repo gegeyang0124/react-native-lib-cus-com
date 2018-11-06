@@ -26,7 +26,6 @@ export class CaptureImage {
      * **/
     static captureViewScreen(ref,w,h,isOpenImg = true,isSave = false){
 
-
         return new Promise((resolve, reject) => {
             // console.info("YYY", "RRR");
             let options = {
@@ -150,8 +149,6 @@ export class CaptureImage {
             }
 
         });
-
-
     }
 
     static clean(uri){

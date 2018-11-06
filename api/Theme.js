@@ -13,7 +13,7 @@ import {
 } from 'react-navigation';
 
 /**
- * 颜色集合
+ * 主题集合 颜色、宽度，及一些默认配置
  * **/
 export class Theme{
 

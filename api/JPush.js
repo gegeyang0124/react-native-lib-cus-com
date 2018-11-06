@@ -4,7 +4,6 @@ import {
 } from 'react-native';
 import JPushModule from 'jpush-react-native';
 import {Tools} from "./Tools";
-import {HotUpdate} from "./HotUpdate";
 
 const listeners = {};
 const receiveCustomMsgEvent = 'receivePushMsg'

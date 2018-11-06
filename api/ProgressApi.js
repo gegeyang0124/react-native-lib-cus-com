@@ -14,6 +14,9 @@ import Spinner from "react-native-spinkit";
 import {StyleSheetAdapt} from "./StyleSheetAdapt";
 let showingDialog = null;
 
+/**
+ * 加载指示器（加载条）
+ * **/
 export class ProgressApi extends Component{
     static loadding = false;
     static countShow = 0;

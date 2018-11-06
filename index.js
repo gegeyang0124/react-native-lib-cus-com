@@ -3,11 +3,9 @@ import {
     StyleSheetAdapt,
     Http,
     LocalStorage,
-    HttpUrls,
     Media,
     Theme,
     PickerCustome,
-    JPush,
     HotUpdate,
     TalkingData,
     DbMgr,
@@ -126,9 +124,6 @@ const compoent = {
     get LocalStorage() {
         return LocalStorage;
     },
-    get HttpUrls() {
-        return HttpUrls;
-    },
     get Media() {
         return Media;
     },
@@ -137,9 +132,6 @@ const compoent = {
     },
     get PickerCustome() {
         return PickerCustome;
-    },
-    get JPush() {
-        return JPush;
     },
     get HotUpdate() {
         return HotUpdate;

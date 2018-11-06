@@ -2,11 +2,9 @@ import {Tools} from "./Tools";
 import {StyleSheetAdapt} from "./StyleSheetAdapt";
 import {Http} from "./Http";
 import {LocalStorage} from "./LocalStorage";
-import {HttpUrls} from "./HttpUrls";
 import {Media} from "./Media";
 import {Theme} from "./Theme";
 import {PickerCustome} from "./PickerCustome";
-import {JPush} from "./JPush";
 import {HotUpdate} from "./HotUpdate";
 import {TalkingData} from "./TalkingData";
 import {DbMgr} from "./DbMgr";
@@ -55,9 +53,6 @@ const api = {
     get LocalStorage() {
         return LocalStorage;
     },
-    get HttpUrls() {
-        return HttpUrls;
-    },
     get Media() {
         return Media;
     },
@@ -66,9 +61,6 @@ const api = {
     },
     get PickerCustome() {
         return PickerCustome;
-    },
-    get JPush() {
-        return JPush;
     },
     get HotUpdate() {
         return HotUpdate;

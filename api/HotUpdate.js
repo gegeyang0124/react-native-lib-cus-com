@@ -14,17 +14,17 @@ import {
     markSuccess,
 } from 'react-native-update';
 
-import KActivityIndicator from 'react-native-kactivityindicator';
+import KActivityIndicator from 'react-native-kactivityindicator-zy';
 
 /**
  发布热更新报错 将node_modules\react-native-update\local-cli\lib\bundle.js
  的439行种的metro-bundler改成metro可成功运行！
  报错版本0.52+(0.52以上版本报错)
  **/
-import _updateConfig from 'lx_yyt/update';
+// import _updateConfig from 'lx_yyt/update';
 import {Tools} from "./Tools";
 import {LocalStorage} from "./LocalStorage";
-const {appKey} = _updateConfig[Platform.OS];
+// const {appKey} = _updateConfig[Platform.OS];
 import DeviceInfo from "react-native-device-info";
 import {Alert} from "./Alert";
 
@@ -40,6 +40,7 @@ reboot:555,//666、强制使用更新；555、用户决定是否使用更新;333
  如：{"updateList":[]}
  * **/
 export class HotUpdate{
+    static appKey = null;//react-native-update的key
     static appID = null;//当前给app指定（分配）的id
     static updateFirst = true;//app第一次启动是否强制更新，默认true更新
 
@@ -198,6 +199,10 @@ export class HotUpdate{
      * @Param cdUpdate func,//更新回调函数
      * **/
     static checkUpdate = (cd,cdUpdate) => {
+
+        if(!HotUpdate.appKey){
+            return;
+        }
 
         /**
          * 返回的info有三种情况：

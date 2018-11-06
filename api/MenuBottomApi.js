@@ -8,13 +8,16 @@ import RootSiblings from 'react-native-root-siblings';
 /**
  * 需要修改底层
  * **/
-import CustomActionSheet from 'react-native-custom-action-sheet';
+import CustomActionSheet from 'react-native-custom-action-sheet-zy';
 import {Tools} from "./Tools";
 import {StyleSheetAdapt} from "./StyleSheetAdapt";
 import {Theme} from "./Theme";
 import {ButtonChange} from "./../ui/ButtonChange";
 let showingDialog = null;
 
+/**
+ * 底部弹出菜单API
+ * **/
 export class MenuBottomApi extends Component{
 
     /**

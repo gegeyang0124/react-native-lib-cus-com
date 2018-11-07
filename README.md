@@ -42,7 +42,7 @@ npm i --save react-navigation</b> <BR/><BR/>
 npm i --save react-native-smart-barcode</b> <BR/>
 
 
-### 选择安装依赖的初始化 (看下列例子)
+### “可选依赖”的初始化 (看下列例子)
 ```
 import {ComponentConstructor} from "react-native-lib-cus-com";
 ComponentConstructor({

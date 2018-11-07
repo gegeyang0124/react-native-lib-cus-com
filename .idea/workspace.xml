@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-smart-timer-enhance/.npmignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-smart-timer-enhance/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-smart-timer-enhance/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-smart-timer-enhance/TimerEnhance.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-smart-timer-enhance/package.json" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/StackComponent.js" afterPath="$PROJECT_DIR$/StackComponent.js" />
-      <change beforePath="$PROJECT_DIR$/example/Test.js" afterPath="$PROJECT_DIR$/example/Test.js" />
-      <change beforePath="$PROJECT_DIR$/ui/BarcodeView.js" afterPath="$PROJECT_DIR$/ui/BarcodeView.js" />
-      <change beforePath="$PROJECT_DIR$/ui/BaseComponent.js" afterPath="$PROJECT_DIR$/ui/BaseComponent.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,8 +43,8 @@
               <entry file="file://$PROJECT_DIR$/README.md">
                 <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                   <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="256">
-                      <caret line="331" column="33" lean-forward="true" selection-start-line="331" selection-start-column="33" selection-end-line="331" selection-end-column="33" />
+                    <first_editor relative-caret-position="323">
+                      <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
                       <folding />
                     </first_editor>
                     <second_editor>
@@ -397,12 +387,12 @@
       <updated>1541466458365</updated>
       <workItem from="1541466459623" duration="4611000" />
       <workItem from="1541472625647" duration="537000" />
-      <workItem from="1541473243125" duration="44653000" />
+      <workItem from="1541473243125" duration="44781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49801000" />
+    <option name="totallyTimeSpent" value="49929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="54" width="1268" height="801" extended-state="0" />
@@ -989,8 +979,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="256">
-            <caret line="331" column="33" lean-forward="true" selection-start-line="331" selection-start-column="33" selection-end-line="331" selection-end-column="33" />
+          <first_editor relative-caret-position="323">
+            <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
             <folding />
           </first_editor>
           <second_editor>

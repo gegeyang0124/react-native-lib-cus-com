@@ -327,7 +327,7 @@ export class Tools {
     }
 
     /**
-     * 消息提示
+     * toast消息提示
      * @param msg string,//显示消息
      * **/
     static toast(msg) {
@@ -363,7 +363,7 @@ export class Tools {
     }
 
     /**
-     * 打开文档
+     * 打开文档(文件)
      * @prama url string,//本地路径或远程地址
      * 支持的文档格式：xls,ppt,doc,xlsx,pptx,docx,png,jpg,pdf,mp4。
      * **/
@@ -425,7 +425,7 @@ export class Tools {
     }
 
     /**
-     * 选择年月
+     * 选择年月（弹出年月ui选择框）
      * @param callback function;//回调函数
      * **/
     static pickMonth(callback){
@@ -1671,18 +1671,18 @@ export class Tools {
             。。。。。
         }
      * **/
-    static toSpecifiedPageInPush(result){
+    static toSpecifiedPageInPush = (result)=>{
 
-        switch (result.code){
+        console.info("jPush result",result);
+        /*switch (result.code){
 
             default:{
                 Tools.baseComponent.goPage("PageHome");
                 break;
             }
 
-        }
+        }*/
     }
-
 }
 
 // Tools.init();

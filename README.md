@@ -118,6 +118,23 @@ Http.upLoadFileToService();//上传文件 react-native-fs
 Http.downloadFile();//下载文件 react-native-fs
 ```
 
+##### Tools 工具类，提供各种功能
+```
+import {Tools} from "react-native-lib-cus-com";
+Tools.getStyle();//得到样式属性的json对象
+Tools.replaceStr();//替换指定位置的字符串 字符串替换处理操作
+Tools.getLocation();//获取地理位置
+Tools.toast();//toast消息提示
+Tools.openDoc();//打开文档(文件)
+Tools.pickMonth();//选择年月（弹出年月ui选择框）
+Tools.timeFormatConvert();//时间格式转化
+Tools.isNumber();//判断是否是数字
+Tools.getTimeByRank();//获取本周周一和周日的时间戳 对象；获取本月的月初的时间戳和月底的时间戳 对象
+Tools.getDistanceByGps();//计算两点经纬度的距离
+Tools.captureViewScreen();//截屏 截取UI的图片
+Tools.toSpecifiedPageInPush = (result)=>{};//打开推送回调函数（如：跳转入指定页面）;直接赋值方法
+```
+
 ##### Alert对话框
 ```
 import {Alert} from "react-native-lib-cus-com";

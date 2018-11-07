@@ -2,237 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/index.d.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/History.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/Readme.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/index.d.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/build/build.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/component.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/react-lifecycles-compat.cjs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/react-lifecycles-compat.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/react-lifecycles-compat.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-dismiss-keyboard/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-dismiss-keyboard/dist/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-dismiss-keyboard/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout-polyfill/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout-polyfill/dist/index.android.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout-polyfill/dist/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout-polyfill/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout/dist/DrawerLayout.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/.eslintrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/.npmignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/angle-left.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/angle-left@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/angle-left@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-left@2x copy.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-left@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-left@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-right@2x copy.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-right@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-right@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/grid-button@2x copy.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/grid-button@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/grid-button@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/hourglass.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/hourglass@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/hourglass@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/image-error.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/image-error@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/image-error@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-off.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-off@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-off@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-on.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-on@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-on@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/share-button@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/share-button@3x copy.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/share-button@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-off.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-off@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-off@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-on.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-on@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-on@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/LICENCE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/FullScreenContainer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/GridContainer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/bar/BarContainer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/bar/BottomBar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/bar/TopBar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/bar/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/constants.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/media/Photo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/media/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/CHANGELOG.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/PATENTS" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/checkPropTypes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/factory.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/factoryWithThrowingShims.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/factoryWithTypeCheckers.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/lib/ReactPropTypesSecret.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/prop-types.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/prop-types.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/SceneMap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabBar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewAnimated.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerAndroid.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerAndroid.web.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerExperimental.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerPan.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerScroll.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPropTypes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewTypeDefinitions.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TouchableItem.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/types.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/NavigationActions.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/PlatformHelpers.native.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/PlatformHelpers.web.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/StateUtils.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/.eslintrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationActions-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationContainer-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationStateUtils-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/addNavigationHelpers-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/getChildEventSubscriber-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/addNavigationHelpers.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/createNavigationContainer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/getChildEventSubscriber.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/DrawerNavigator.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/StackNavigator.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/SwitchNavigator.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/TabNavigator.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/.eslintrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/DrawerNavigator-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/StackNavigator-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/SwitchNavigator-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/TabNavigator-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/DrawerNavigator-test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/StackNavigator-test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/SwitchNavigator-test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/TabNavigator-test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/createNavigator.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/react-navigation.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/react-navigation.web.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/KeyGenerator.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/StackPages.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/StackRouter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/SwitchRouter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/TabRouter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/.eslintrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/Routers-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/StackRouter-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/SwitchRouter-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/TabRouter-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/__snapshots__/validateRouteConfigMap-test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/createConfigGetter-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/validateRouteConfigMap-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/createConfigGetter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/getScreenConfigDeprecated.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/getScreenForRouteName.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/validateRouteConfigMap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/validateScreenOptions.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/utils/ReactNativeFeatures.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/utils/getSceneIndicesForInterpolationInputRange.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/utils/invariant.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/utils/shallowEqual.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/AnimatedValueSubscription.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/Card.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/CardStack.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/CardStackStyleInterpolator.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/CardStackTransitioner.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/PointerEventsContainer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/TransitionConfigs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerNavigatorItems.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerScreen.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerSidebar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerView.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/Header.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/HeaderBackButton.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/HeaderStyleInterpolator.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/HeaderTitle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/ModularHeaderBackButton.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/ResourceSavingSceneView.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/SceneView.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/ScenesReducer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/SwitchView/SwitchView.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabBarBottom.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabBarIcon.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabBarTop.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabView.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TouchableItem.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Transitioner.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/.eslintrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/NavigationScenesReducer-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/TabView-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/__snapshots__/TabView-test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/__snapshots__/withOrientation-test.js.snap" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/withOrientation-test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon-mask.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@1.5x.android.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@1.5x.ios.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@1x.android.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@1x.ios.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@2x.android.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@2x.ios.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@3x.android.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@3x.ios.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@4x.android.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@4x.ios.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/withNavigation.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/withNavigationFocus.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/withOrientation.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/withCachedChildNavigation.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/StackComponent.js" afterPath="$PROJECT_DIR$/StackComponent.js" />
-      <change beforePath="$PROJECT_DIR$/api/CaptureImage.js" afterPath="$PROJECT_DIR$/api/CaptureImage.js" />
-      <change beforePath="$PROJECT_DIR$/api/DbMgr.js" afterPath="$PROJECT_DIR$/api/DbMgr.js" />
-      <change beforePath="$PROJECT_DIR$/api/HotUpdate.js" afterPath="$PROJECT_DIR$/api/HotUpdate.js" />
-      <change beforePath="$PROJECT_DIR$/api/Http.js" afterPath="$PROJECT_DIR$/api/Http.js" />
-      <change beforePath="$PROJECT_DIR$/api/HttpUrls.js" afterPath="$PROJECT_DIR$/api/HttpUrls.js" />
-      <change beforePath="$PROJECT_DIR$/api/IamgeWaterMark.js" afterPath="$PROJECT_DIR$/api/IamgeWaterMark.js" />
-      <change beforePath="$PROJECT_DIR$/api/JPush.js" afterPath="$PROJECT_DIR$/api/JPush.js" />
-      <change beforePath="$PROJECT_DIR$/api/LocalStorage.js" afterPath="$PROJECT_DIR$/api/LocalStorage.js" />
-      <change beforePath="$PROJECT_DIR$/api/Media.js" afterPath="$PROJECT_DIR$/api/Media.js" />
-      <change beforePath="$PROJECT_DIR$/api/PickerCustome.js" afterPath="$PROJECT_DIR$/api/PickerCustome.js" />
-      <change beforePath="$PROJECT_DIR$/api/ProgressApi.js" afterPath="$PROJECT_DIR$/api/ProgressApi.js" />
-      <change beforePath="$PROJECT_DIR$/api/TalkingData.js" afterPath="$PROJECT_DIR$/api/TalkingData.js" />
-      <change beforePath="$PROJECT_DIR$/api/Theme.js" afterPath="$PROJECT_DIR$/api/Theme.js" />
       <change beforePath="$PROJECT_DIR$/api/Tools.js" afterPath="$PROJECT_DIR$/api/Tools.js" />
-      <change beforePath="$PROJECT_DIR$/api/api.js" afterPath="$PROJECT_DIR$/api/api.js" />
-      <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change beforePath="$PROJECT_DIR$/ui/ImageBrower.js" afterPath="$PROJECT_DIR$/ui/ImageBrower.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -252,8 +23,8 @@
             <file leaf-file-name="StackComponent.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/StackComponent.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="38">
-                    <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="47" />
+                  <state relative-caret-position="418">
+                    <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
                     <folding />
                   </state>
                 </provider>
@@ -271,8 +42,8 @@
               <entry file="file://$PROJECT_DIR$/README.md">
                 <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                   <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="190">
-                      <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+                    <first_editor relative-caret-position="324">
+                      <caret line="134" column="71" lean-forward="false" selection-start-line="134" selection-start-column="71" selection-end-line="134" selection-end-column="71" />
                       <folding />
                     </first_editor>
                     <second_editor>
@@ -325,13 +96,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tools.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tools.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/Tools.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="3191">
+              <caret line="1673" column="46" lean-forward="true" selection-start-line="1673" selection-start-column="46" selection-end-line="1673" selection-end-column="46" />
               <folding>
                 <element signature="e#0#93#0" expanded="true" />
+                <element signature="e#95#194#0" expanded="false" />
+                <element signature="e#385#416#0" expanded="true" />
+                <element signature="e#2519#2790#0" expanded="false" />
                 <element signature="n#!!block;n#init#0;n#Tools#0" expanded="false" />
                 <element signature="e#2858#5027#0" expanded="false" />
                 <element signature="n#!!doc;n#getStyle#0;n#Tools#0" expanded="false" />
@@ -340,15 +114,12 @@
                 <element signature="n#!!block;n#isDoorInvest#0;n#Tools#0" expanded="false" />
                 <element signature="e#5947#6160#0" expanded="false" />
                 <element signature="e#6212#7029#0" expanded="false" />
+                <element signature="n#!!doc;n#getLocation#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#getLocation#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#toast#0;n#Tools#0" expanded="false" />
-                <element signature="n#!!doc;n#openDoc#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#openDoc#0;n#Tools#0" expanded="false" />
-                <element signature="n#!!doc;n#pickMonth#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#pickMonth#0;n#Tools#0" expanded="false" />
-                <element signature="n#!!doc;n#timeFormatConvert#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#timeFormatConvert#0;n#Tools#0" expanded="false" />
-                <element signature="n#!!doc;n#isNumber#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#isNumber#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!doc;n#statusConvertProj1111#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#statusConvertProj1111#0;n#Tools#0" expanded="false" />
@@ -363,22 +134,19 @@
                 <element signature="n#!!doc;n#stepInPage#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#stepInPage#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#taskStatusConvert#0;n#Tools#0" expanded="false" />
-                <element signature="n#!!doc;n#getDistanceByGps#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#getDistanceByGps#0;n#Tools#0" expanded="false" />
-                <element signature="n#!!doc;n#captureViewScreen#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#captureViewScreen#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!doc;n#earningCalculateClass#0;n#Tools#0" expanded="false" />
                 <element signature="n#!!block;n#earningCalculateClass#0;n#Tools#0" expanded="false" />
-                <element signature="n#!!doc;n#toSpecifiedPageInPush#0;n#Tools#0" expanded="false" />
-                <element signature="n#!!block;n#toSpecifiedPageInPush#0;n#Tools#0" expanded="false" />
-                <marker date="1541576293089" expanded="false" signature="2939:3665" ph="{...}" />
-                <marker date="1541576293089" expanded="false" signature="3713:4660" ph="{...}" />
+                <element signature="e#57481#57633#0" expanded="false" />
+                <marker date="1541577729670" expanded="false" signature="2939:3665" ph="{...}" />
+                <marker date="1541577729670" expanded="false" signature="3713:4660" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
@@ -487,8 +255,8 @@
         <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/TabNavigator-test.js" />
         <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationContainer-test.js" />
         <option value="$PROJECT_DIR$/api/Theme.js" />
-        <option value="$PROJECT_DIR$/api/Tools.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/api/Tools.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -512,8 +280,8 @@
     <handled-path value="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="105" />
-    <option name="y" value="71" />
+    <option name="x" value="-169" />
+    <option name="y" value="69" />
     <option name="width" value="1268" />
     <option name="height" value="801" />
   </component>
@@ -545,11 +313,6 @@
               <item name="react-native-lib-cus-com" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-native-lib-cus-com" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-native-lib-cus-com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-native-lib-cus-com" type="462c0819:PsiDirectoryNode" />
-              <item name="component-moudule" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -599,15 +362,15 @@
       <updated>1541466458365</updated>
       <workItem from="1541466459623" duration="4611000" />
       <workItem from="1541472625647" duration="537000" />
-      <workItem from="1541473243125" duration="38650000" />
+      <workItem from="1541473243125" duration="39487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43798000" />
+    <option name="totallyTimeSpent" value="44635000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="105" y="71" width="1268" height="801" extended-state="0" />
+    <frame x="-169" y="69" width="1268" height="801" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1065,12 +828,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/StackComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="93" column="35" lean-forward="false" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="324">
+            <caret line="134" column="71" lean-forward="false" selection-start-line="134" selection-start-column="71" selection-end-line="134" selection-end-column="71" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/Tools.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="3191">
+          <caret line="1673" column="46" lean-forward="true" selection-start-line="1673" selection-start-column="46" selection-end-line="1673" selection-end-column="46" />
           <folding>
             <element signature="e#0#93#0" expanded="true" />
+            <element signature="e#95#194#0" expanded="false" />
+            <element signature="e#385#416#0" expanded="true" />
+            <element signature="e#2519#2790#0" expanded="false" />
             <element signature="n#!!block;n#init#0;n#Tools#0" expanded="false" />
             <element signature="e#2858#5027#0" expanded="false" />
             <element signature="n#!!doc;n#getStyle#0;n#Tools#0" expanded="false" />
@@ -1079,15 +876,12 @@
             <element signature="n#!!block;n#isDoorInvest#0;n#Tools#0" expanded="false" />
             <element signature="e#5947#6160#0" expanded="false" />
             <element signature="e#6212#7029#0" expanded="false" />
+            <element signature="n#!!doc;n#getLocation#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#getLocation#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#toast#0;n#Tools#0" expanded="false" />
-            <element signature="n#!!doc;n#openDoc#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#openDoc#0;n#Tools#0" expanded="false" />
-            <element signature="n#!!doc;n#pickMonth#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#pickMonth#0;n#Tools#0" expanded="false" />
-            <element signature="n#!!doc;n#timeFormatConvert#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#timeFormatConvert#0;n#Tools#0" expanded="false" />
-            <element signature="n#!!doc;n#isNumber#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#isNumber#0;n#Tools#0" expanded="false" />
             <element signature="n#!!doc;n#statusConvertProj1111#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#statusConvertProj1111#0;n#Tools#0" expanded="false" />
@@ -1102,48 +896,14 @@
             <element signature="n#!!doc;n#stepInPage#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#stepInPage#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#taskStatusConvert#0;n#Tools#0" expanded="false" />
-            <element signature="n#!!doc;n#getDistanceByGps#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#getDistanceByGps#0;n#Tools#0" expanded="false" />
-            <element signature="n#!!doc;n#captureViewScreen#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#captureViewScreen#0;n#Tools#0" expanded="false" />
             <element signature="n#!!doc;n#earningCalculateClass#0;n#Tools#0" expanded="false" />
             <element signature="n#!!block;n#earningCalculateClass#0;n#Tools#0" expanded="false" />
-            <element signature="n#!!doc;n#toSpecifiedPageInPush#0;n#Tools#0" expanded="false" />
-            <element signature="n#!!block;n#toSpecifiedPageInPush#0;n#Tools#0" expanded="false" />
-            <marker date="1541576293089" expanded="false" signature="2939:3665" ph="{...}" />
-            <marker date="1541576293089" expanded="false" signature="3713:4660" ph="{...}" />
+            <element signature="e#57481#57633#0" expanded="false" />
+            <marker date="1541577729670" expanded="false" signature="2939:3665" ph="{...}" />
+            <marker date="1541577729670" expanded="false" signature="3713:4660" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="93" column="35" lean-forward="false" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StackComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="190">
-            <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
         </state>
       </provider>
     </entry>

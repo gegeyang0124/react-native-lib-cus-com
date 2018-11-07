@@ -7,31 +7,39 @@ react-native 自定义辅助组件库，完美适配各种机型和屏幕大小�
 1.所有源码中的方法有注释，可自行查看；<BR/>
 2.各组件的详细调用方法，可进入相应的组件文件查看，里面所有的方法/函数都有注释；<BR/>
 3.以下“使用”的说明只有简单的说明(且都不写参数，直接复制使用，可能会报错)，具体说明，请参照“注意”第2点
-<BR/>
-react-native的高版本中可能移除了"moment",请自行安装"moment"
-//import moment from 'moment';
-### 安装依赖（别忘了根据相应库进行react-native link ...）:
+
+### 安装依赖,必须安装（别忘了根据相应库进行react-native link ...）:
 npm i --save react-native-root-siblings <BR/>
+### 安装依赖,选择安装（别忘了根据相应库进行react-native link ...）
+<b>npm i --save react-native-root-toast //若不安装，请求接口等报错没有提示</b> <BR/>
 npm i --save react-native-view-shot <BR/>
 npm i --save react-native-sqlite-storage <BR/>
 npm i --save react-native-fs <BR/>
-npm i --save react-native-sqlite-storage <BR/>
 npm i --save react-native-device-info <BR/>
-/** react-native-update <BR/>
- 发布热更新报错 将node_modules\react-native-update\local-cli\lib\bundle.js <BR/>
+<b>/** react-native-update 发布热更新报错 将node_modules\react-native-update\local-cli\lib\bundle.js <BR/>
  的439行种的metro-bundler改成metro可成功运行！ <BR/>
  报错版本0.52+(0.52以上版本报错) <BR/>
  **/ <BR/>
-npm i --save react-native-update <BR/>
+npm i --save react-native-update</b> <BR/>
 npm i --save react-native-image-marker <BR/>
 npm i --save react-native-storage <BR/>
 npm i --save react-native-image-crop-picker <BR/>
 npm i --save react-native-image-picker <BR/>
 npm i --save react-native-picker <BR/>
 npm i --save react-native-spinkit <BR/>
-/**若有报错，不会修改，请安装：npm i --save react-navigation@1.5.11
+<b>/**本库自带react-navigation@1.5.11，若想使用最新版则按“选择安装依赖的初始化”初始化
  **/ <BR/>
-npm i --save react-navigation <BR/>
+npm i --save react-navigation</b> <BR/>
+
+### 选择安装依赖的初始化 (看下列例子)
+```
+import {ComponentConstructor} from "react-native-lib-cus-com";
+ComponentConstructor({
+react_native_root_toast:require("react-native-root-toast"),
+react_native_fs:require("react-native-fs")
+});
+//就是将组件名中的"-"换成"_",传入ComponentConstructor（组件构造器）即可。
+```
 
 ### 使用api：
 ##### StyleSheetAdapt 样式表创建，适配各种机型、各种屏幕 与StyleSheet用法一致

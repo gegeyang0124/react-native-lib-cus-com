@@ -2,7 +2,7 @@ import {
     Platform,
     Linking,
 } from 'react-native';
-import {
+/*import {
     isFirstTime,
     isRolledBack,
     packageVersion,
@@ -13,6 +13,21 @@ import {
     switchVersionLater,
     markSuccess,
 } from 'react-native-update';
+import DeviceInfo from "react-native-device-info";*/
+
+import {Components} from "./../StackComponent";
+const  {
+    isFirstTime,
+    isRolledBack,
+    packageVersion,
+    currentVersion,
+    checkUpdate,
+    downloadUpdate,
+    switchVersion,
+    switchVersionLater,
+    markSuccess,
+} = Components.react_native_update;
+const DeviceInfo = Components.react_native_device_info;
 
 import KActivityIndicator from 'react-native-kactivityindicator-zy';
 
@@ -25,7 +40,6 @@ import KActivityIndicator from 'react-native-kactivityindicator-zy';
 import {Tools} from "./Tools";
 import {LocalStorage} from "./LocalStorage";
 // const {appKey} = _updateConfig[Platform.OS];
-import DeviceInfo from "react-native-device-info";
 import {Alert} from "./Alert";
 
 /**
@@ -55,6 +69,32 @@ export class HotUpdate{
         versionHash:null,//版本key
     }
     static timer = null;
+
+    static verfyComponent(type = 1){
+        let b = true;
+        switch (type){
+            case 1:{
+                if(!checkUpdate){
+                    console.info("请安装热更新组件","react-native-update");
+                    Tools.toast("请安装组件 react-native-update");
+                    b = false;
+                }
+
+                break;
+            }
+            case 2:{
+                if(!DeviceInfo.getVersion){
+                    console.info("请安装设备信息获取组件","react-native-device-info");
+                    Tools.toast("请安装组件 react-native-device-info");
+                    b = false;
+                }
+
+                break;
+            }
+        }
+
+        return b;
+    }
 
     static updateDelay(toast=true){
         if(!HotUpdate.timer){
@@ -87,110 +127,112 @@ export class HotUpdate{
      * **/
     static doUpdate = (info,cd,reboot) =>{
 
-        downloadUpdate(info).then(hash => {
-            KActivityIndicator.hide();
-            // alert("hash:" + JSON.stringify(hash) + "\ncurrentVersion:" + JSON.stringify(currentVersion) );
+        if(HotUpdate.verfyComponent(2)){
+            downloadUpdate(info).then(hash => {
+                KActivityIndicator.hide();
+                // alert("hash:" + JSON.stringify(hash) + "\ncurrentVersion:" + JSON.stringify(currentVersion) );
 
-            LocalStorage.save(Tools.app_config.versionkey,
-                info.name).then((dataSave)=>{
+                LocalStorage.save(Tools.app_config.versionkey,
+                    info.name).then((dataSave)=>{
 
-                switch (reboot)
-                {
-                    case HotUpdate.update.reboot1:{
-                        Alert.alert('提示', '下载完毕,是否重启应用?', [
-                            {text: '是', onPress: ()=>{
-                                    Tools.cutLogin = true;
-                                    if(!Tools.isCurStruct){
-                                        LocalStorage.save(DeviceInfo.getVersion(),
-                                            DeviceInfo.getVersion())
-                                            .then((dataSave)=>{
-                                                switchVersion(hash);
-                                            });
-                                    }
-                                    else
-                                    {
-                                        switchVersion(hash);
-                                    }
-                                }},
-                            {text: '否', onPress:()=>{
-                                    HotUpdate.update.versionHash = info.hash;
-                                    // HotUpdate.update.execute = true;
-                                    LocalStorage.save(Tools.app_config.versionkey,
-                                        Tools.app_config.version);
-                                    HotUpdate.updateDelay();
-                                    cd&&cd();
-
-                                }
-                            },
-                            {text: '下次启动时更新', onPress: ()=>{
-
-                                    HotUpdate.update.versionHash = info.hash;
-                                    HotUpdate.update.execute = true;
-                                    if(!Tools.isCurStruct){
-                                        LocalStorage.save(DeviceInfo.getVersion(),
-                                            DeviceInfo.getVersion())
-                                            .then((dataSave)=>{
-                                                switchVersionLater(hash);
-                                                cd&&cd();
-                                            });
-                                    }
-                                    else
-                                    {
-                                        switchVersionLater(hash);
+                    switch (reboot)
+                    {
+                        case HotUpdate.update.reboot1:{
+                            Alert.alert('提示', '下载完毕,是否重启应用?', [
+                                {text: '是', onPress: ()=>{
+                                        Tools.cutLogin = true;
+                                        if(!Tools.isCurStruct){
+                                            LocalStorage.save(DeviceInfo.getVersion(),
+                                                DeviceInfo.getVersion())
+                                                .then((dataSave)=>{
+                                                    switchVersion(hash);
+                                                });
+                                        }
+                                        else
+                                        {
+                                            switchVersion(hash);
+                                        }
+                                    }},
+                                {text: '否', onPress:()=>{
+                                        HotUpdate.update.versionHash = info.hash;
+                                        // HotUpdate.update.execute = true;
+                                        LocalStorage.save(Tools.app_config.versionkey,
+                                            Tools.app_config.version);
+                                        HotUpdate.updateDelay();
                                         cd&&cd();
+
                                     }
-                                }
-                            },
-                        ]);
-                        break;
-                    }
-                    case HotUpdate.update.reboot2:{
-                        Tools.cutLogin = true;
-                        if(!Tools.isCurStruct){
-                            LocalStorage.save(DeviceInfo.getVersion(),
-                                DeviceInfo.getVersion())
-                                .then((dataSave)=>{
-                                    switchVersion(hash);
-                                });
-                        }
-                        else
-                        {
-                            switchVersion(hash);
-                        }
+                                },
+                                {text: '下次启动时更新', onPress: ()=>{
 
-                        break;
-                    }
-                    case HotUpdate.update.reboot3:{
-                        if(info.metaInfo.finishInfo){
-                            Alert.alert("更新完成",info.metaInfo.finishInfo+"");
+                                        HotUpdate.update.versionHash = info.hash;
+                                        HotUpdate.update.execute = true;
+                                        if(!Tools.isCurStruct){
+                                            LocalStorage.save(DeviceInfo.getVersion(),
+                                                DeviceInfo.getVersion())
+                                                .then((dataSave)=>{
+                                                    switchVersionLater(hash);
+                                                    cd&&cd();
+                                                });
+                                        }
+                                        else
+                                        {
+                                            switchVersionLater(hash);
+                                            cd&&cd();
+                                        }
+                                    }
+                                },
+                            ]);
+                            break;
                         }
-                        HotUpdate.update.versionHash = info.hash;
-                        HotUpdate.update.execute = true;
-                        if(!Tools.isCurStruct){
-                            LocalStorage.save(DeviceInfo.getVersion(),
-                                DeviceInfo.getVersion())
-                                .then((dataSave)=>{
-                                    cd&&cd();
-                                    switchVersionLater(hash);
-                                });
-                        }
-                        else
-                        {
-                            cd&&cd();
-                            switchVersionLater(hash);
-                        }
+                        case HotUpdate.update.reboot2:{
+                            Tools.cutLogin = true;
+                            if(!Tools.isCurStruct){
+                                LocalStorage.save(DeviceInfo.getVersion(),
+                                    DeviceInfo.getVersion())
+                                    .then((dataSave)=>{
+                                        switchVersion(hash);
+                                    });
+                            }
+                            else
+                            {
+                                switchVersion(hash);
+                            }
 
-                        break;
+                            break;
+                        }
+                        case HotUpdate.update.reboot3:{
+                            if(info.metaInfo.finishInfo){
+                                Alert.alert("更新完成",info.metaInfo.finishInfo+"");
+                            }
+                            HotUpdate.update.versionHash = info.hash;
+                            HotUpdate.update.execute = true;
+                            if(!Tools.isCurStruct){
+                                LocalStorage.save(DeviceInfo.getVersion(),
+                                    DeviceInfo.getVersion())
+                                    .then((dataSave)=>{
+                                        cd&&cd();
+                                        switchVersionLater(hash);
+                                    });
+                            }
+                            else
+                            {
+                                cd&&cd();
+                                switchVersionLater(hash);
+                            }
+
+                            break;
+                        }
                     }
-                }
+                });
+
+
+
+            }).catch(err => {
+                // Tools.toast('更新失败!');
+                cd&&cd();
             });
-
-
-
-        }).catch(err => {
-            // Tools.toast('更新失败!');
-            cd&&cd();
-        });
+        }
     }
 
     /**
@@ -199,199 +241,213 @@ export class HotUpdate{
      * @Param cdUpdate func,//更新回调函数
      * **/
     static checkUpdate = (cd,cdUpdate) => {
+        if(HotUpdate.verfyComponent(1)){
+            if(!HotUpdate.appKey){
+                return;
+            }
 
-        if(!HotUpdate.appKey){
-            return;
-        }
+            /**
+             * 返回的info有三种情况：
 
-        /**
-         * 返回的info有三种情况：
+             {expired: true}：该应用包(原生部分)已过期，需要前往应用市场下载新的版本。
 
-         {expired: true}：该应用包(原生部分)已过期，需要前往应用市场下载新的版本。
+             {upToDate: true}：当前已经更新到最新，无需进行更新。
 
-         {upToDate: true}：当前已经更新到最新，无需进行更新。
+             {update: true}：当前有新版本可以更新。info的name、description字段可 以用于提示用户，
+             而metaInfo字段则可以根据你的需求自定义其它属性(如是否静默更新、 是否强制更新等等)。
+             另外还有几个字段，包含了完整更新包或补丁包的下载地址，
+             react-native-update会首先尝试耗费流量更少的更新方式。
+             将info对象传递给downloadUpdate作为参数即可。
+             * **/
+            checkUpdate(appKey)
+                .then(info => {
+                    // console.info("checkUpdate",info);
 
-         {update: true}：当前有新版本可以更新。info的name、description字段可 以用于提示用户，
-         而metaInfo字段则可以根据你的需求自定义其它属性(如是否静默更新、 是否强制更新等等)。
-         另外还有几个字段，包含了完整更新包或补丁包的下载地址，
-         react-native-update会首先尝试耗费流量更少的更新方式。
-         将info对象传递给downloadUpdate作为参数即可。
-         * **/
-        checkUpdate(appKey)
-            .then(info => {
-                // console.info("checkUpdate",info);
+                    // if(true){
+                    if(!__DEV__){
 
-                // if(true){
-                if(!__DEV__){
-
-                    let userInfo = null;
-                    let init = false;
-                    if(!HotUpdate.appID){
-                        userInfo = {};
-                        init = true;
-                    }
-                    else{
-                        userInfo = {id:HotUpdate.appID};
-                    }
-
-                    info.metaInfo = info.metaInfo ? JSON.parse(info.metaInfo) : {};
-                    info.metaInfo.code = typeof info.metaInfo.code == 'number'
-                        ? info.metaInfo.code
-                        : HotUpdate.update.code1;
-                    info.metaInfo.reboot = typeof info.metaInfo.reboot == 'number'
-                        ? info.metaInfo.reboot
-                        : HotUpdate.update.reboot1;
-
-                    // Tools.toast("init:" + init + "     " + Tools.isCurStruct);
-
-                    if(HotUpdate.updateFirst &&(init || !Tools.isCurStruct)){
-                        info.metaInfo.code = 888;
-                        info.metaInfo.reboot = 666;
-
-                        /*info.metaInfo = {
-                            code:888,
-                            reboot:666
-                        };*/
-                    }
-
-                    if (info.expired) {
-                        cdUpdate&&cdUpdate();
-                        HotUpdate.update.execute = false;
-                        switch (info.metaInfo.code)
-                        {
-                            case HotUpdate.update.code1:{
-                                Alert.alert('提示', '应用版本已更新,请前往应用商店下载新的版本', [
-                                    {text: '确定', onPress: ()=>{
-                                            HotUpdate.update.versionHash = info.hash;
-                                            // HotUpdate.update.execute = true;
-                                            HotUpdate.updateDelay(false);
-                                            info.downloadUrl && Linking.openURL(info.downloadUrl);
-                                        }
-                                    },
-                                    {text: '取消', onPress: ()=>{
-                                            HotUpdate.update.versionHash = info.hash;
-                                            // HotUpdate.update.execute = true;
-                                            cd&&cd();
-                                            HotUpdate.updateDelay();
-                                        }
-                                    },
-                                ]);
-
-                                break;
-                            }
-                            /*case HotUpdate.update.code2:{
-                                HotUpdate.update.versionHash = info.hash;
-                                // HotUpdate.update.execute = true
-                                HotUpdate.updateDelay(false);
-                                info.downloadUrl && Linking.openURL(info.downloadUrl);
-                                break;
-                            }
-                            case HotUpdate.update.code3:{
-                                HotUpdate.update.versionHash = info.hash;
-                                // HotUpdate.update.execute = true;
-                                HotUpdate.updateDelay(false);
-                                info.downloadUrl && Linking.openURL(info.downloadUrl);
-                                break;
-                            }*/
+                        let userInfo = null;
+                        let init = false;
+                        if(!HotUpdate.appID){
+                            userInfo = {};
+                            init = true;
+                        }
+                        else{
+                            userInfo = {id:HotUpdate.appID};
                         }
 
-                    }
-                    else if (info.upToDate) {
-                        // Alert.alert('提示', '应用版本已是最新.');
-                        // HotUpdate.RolledBack();
-                        markSuccess();
-                        cd&&cd();
-                    }
-                    else if(info.update){
+                        info.metaInfo = info.metaInfo ? JSON.parse(info.metaInfo) : {};
+                        info.metaInfo.code = typeof info.metaInfo.code == 'number'
+                            ? info.metaInfo.code
+                            : HotUpdate.update.code1;
+                        info.metaInfo.reboot = typeof info.metaInfo.reboot == 'number'
+                            ? info.metaInfo.reboot
+                            : HotUpdate.update.reboot1;
 
-                        let update = false;
-                        if(info.metaInfo.updateList){
-                            info.metaInfo.updateList.forEach((v)=>{
-                                if((userInfo.userid + '') == (v + '')){
-                                    update = true;
-                                }
-                            });
-                        }
-                        else {
-                            //更新全部
-                            update = true;
+                        // Tools.toast("init:" + init + "     " + Tools.isCurStruct);
+
+                        if(HotUpdate.updateFirst &&(init || !Tools.isCurStruct)){
+                            info.metaInfo.code = 888;
+                            info.metaInfo.reboot = 666;
+
+                            /*info.metaInfo = {
+                                code:888,
+                                reboot:666
+                            };*/
                         }
 
-                        if(info.metaInfo.updateNoList){
-                            info.metaInfo.updateNoList.forEach((v)=>{
-                                if((userInfo.userid + '') == (v + '')){
-                                    update = false;
-                                }
-                            });
-                        }
-
-                        if(update){
-
-                            // Tools.isIndicate = false;
+                        if (info.expired) {
+                            cdUpdate&&cdUpdate();
                             HotUpdate.update.execute = false;
-
-
                             switch (info.metaInfo.code)
                             {
-
                                 case HotUpdate.update.code1:{
-                                    cdUpdate&&cdUpdate();
-                                    if(HotUpdate.update.versionHash !== info.hash){
-                                        // Tools.toast("是否下载")
-                                        Alert.alert('检查到新的版本'+info.name+'\n是否下载?',
-                                            info.description, [
-                                                {text: '是', onPress: ()=>{
-                                                        KActivityIndicator.show(true,"更新中...");
-                                                        HotUpdate.doUpdate(info,cd,info.metaInfo.reboot);
-                                                    }},
-                                                {text: '否', onPress:()=>{
-                                                        HotUpdate.update.versionHash = info.hash;
-                                                        HotUpdate.updateDelay();
-                                                        cd&&cd();
-                                                    }
-                                                },
-                                            ]);
-                                    }
+                                    Alert.alert('提示', '应用版本已更新,请前往应用商店下载新的版本', [
+                                        {text: '确定', onPress: ()=>{
+                                                HotUpdate.update.versionHash = info.hash;
+                                                // HotUpdate.update.execute = true;
+                                                HotUpdate.updateDelay(false);
+                                                info.downloadUrl && Linking.openURL(info.downloadUrl);
+                                            }
+                                        },
+                                        {text: '取消', onPress: ()=>{
+                                                HotUpdate.update.versionHash = info.hash;
+                                                // HotUpdate.update.execute = true;
+                                                cd&&cd();
+                                                HotUpdate.updateDelay();
+                                            }
+                                        },
+                                    ]);
 
                                     break;
                                 }
-                                case HotUpdate.update.code2:{
-                                    cdUpdate&&cdUpdate();
-                                    KActivityIndicator.show(true,"更新中...");
-                                    HotUpdate.doUpdate(info,cd,info.metaInfo.reboot);
+                                /*case HotUpdate.update.code2:{
+                                    HotUpdate.update.versionHash = info.hash;
+                                    // HotUpdate.update.execute = true
+                                    HotUpdate.updateDelay(false);
+                                    info.downloadUrl && Linking.openURL(info.downloadUrl);
                                     break;
                                 }
                                 case HotUpdate.update.code3:{
-                                    if(info.metaInfo.reboot !== HotUpdate.update.reboot3){
-                                        cdUpdate&&cdUpdate();
-                                    }
-                                    HotUpdate.doUpdate(info,cd,info.metaInfo.reboot);
+                                    HotUpdate.update.versionHash = info.hash;
+                                    // HotUpdate.update.execute = true;
+                                    HotUpdate.updateDelay(false);
+                                    info.downloadUrl && Linking.openURL(info.downloadUrl);
                                     break;
-                                }
+                                }*/
                             }
+
                         }
-                        else {
+                        else if (info.upToDate) {
+                            // Alert.alert('提示', '应用版本已是最新.');
+                            // HotUpdate.RolledBack();
+                            markSuccess();
                             cd&&cd();
                         }
+                        else if(info.update){
+
+                            let update = false;
+                            if(info.metaInfo.updateList){
+                                info.metaInfo.updateList.forEach((v)=>{
+                                    if((userInfo.userid + '') == (v + '')){
+                                        update = true;
+                                    }
+                                });
+                            }
+                            else {
+                                //更新全部
+                                update = true;
+                            }
+
+                            if(info.metaInfo.updateNoList){
+                                info.metaInfo.updateNoList.forEach((v)=>{
+                                    if((userInfo.userid + '') == (v + '')){
+                                        update = false;
+                                    }
+                                });
+                            }
+
+                            if(update){
+
+                                // Tools.isIndicate = false;
+                                HotUpdate.update.execute = false;
+
+
+                                switch (info.metaInfo.code)
+                                {
+
+                                    case HotUpdate.update.code1:{
+                                        cdUpdate&&cdUpdate();
+                                        if(HotUpdate.update.versionHash !== info.hash){
+                                            // Tools.toast("是否下载")
+                                            Alert.alert('检查到新的版本'+info.name+'\n是否下载?',
+                                                info.description, [
+                                                    {text: '是', onPress: ()=>{
+                                                            KActivityIndicator.show(true,"更新中...");
+                                                            HotUpdate.doUpdate(info,cd,info.metaInfo.reboot);
+                                                        }},
+                                                    {text: '否', onPress:()=>{
+                                                            HotUpdate.update.versionHash = info.hash;
+                                                            HotUpdate.updateDelay();
+                                                            cd&&cd();
+                                                        }
+                                                    },
+                                                ]);
+                                        }
+
+                                        break;
+                                    }
+                                    case HotUpdate.update.code2:{
+                                        cdUpdate&&cdUpdate();
+                                        KActivityIndicator.show(true,"更新中...");
+                                        HotUpdate.doUpdate(info,cd,info.metaInfo.reboot);
+                                        break;
+                                    }
+                                    case HotUpdate.update.code3:{
+                                        if(info.metaInfo.reboot !== HotUpdate.update.reboot3){
+                                            cdUpdate&&cdUpdate();
+                                        }
+                                        HotUpdate.doUpdate(info,cd,info.metaInfo.reboot);
+                                        break;
+                                    }
+                                }
+                            }
+                            else {
+                                cd&&cd();
+                            }
+                        }
                     }
-                }
-                else {
+                    else {
+                        cd&&cd();
+                    }
+
+
+                })
+                .catch(err => {
+                    // Alert.alert('提示', '更新失败.');
                     cd&&cd();
-                }
-
-
-            })
-            .catch(err => {
-                // Alert.alert('提示', '更新失败.');
-                cd&&cd();
-            });
+                });
+        }
     };
 
+    static updateLoop(){
+        if(this.verfyComponent(1)){
+            setInterval(()=>{
+                if(HotUpdate.update.execute){
+                    // console.info("HotUpdate","HotUpdate");
+                    HotUpdate.checkUpdate();
+                }
+            },10000);
+        }
+    }
 }
 
+HotUpdate.updateLoop();
+
+/*
 const updateLoop = setInterval(()=>{
     if(HotUpdate.update.execute){
         // console.info("HotUpdate","HotUpdate");
         HotUpdate.checkUpdate();
     }
-},10000);
+},10000);*/

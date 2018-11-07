@@ -1,0 +1,55 @@
+{
+  "_from": "react-native-safe-area-view@^0.7.0",
+  "_id": "react-native-safe-area-view@0.7.0",
+  "_inBundle": false,
+  "_integrity": "sha1-OPWrk2jW755dGKtkISk4rz7DlCE=",
+  "_location": "/react-native-safe-area-view",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-native-safe-area-view@^0.7.0",
+    "name": "react-native-safe-area-view",
+    "escapedName": "react-native-safe-area-view",
+    "rawSpec": "^0.7.0",
+    "saveSpec": null,
+    "fetchSpec": "^0.7.0"
+  },
+  "_requiredBy": [
+    "/react-navigation"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-native-safe-area-view/download/react-native-safe-area-view-0.7.0.tgz",
+  "_shasum": "38f5ab9368d6ef9e5d18ab64212938af3ec39421",
+  "_spec": "react-native-safe-area-view@^0.7.0",
+  "_where": "/Users/zy/Desktop/proj/RNProj/lx_yyt/node_modules/react-navigation",
+  "author": {
+    "name": "Dave Pack",
+    "url": "dpack3.0@gmail.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "hoist-non-react-statics": "^2.3.1"
+  },
+  "deprecated": false,
+  "description": "JS only version of SafeAreaView for supporting iPhone X safe area insets.",
+  "devDependencies": {
+    "react": "16.2.0",
+    "react-native": "^0.52.0"
+  },
+  "keywords": [
+    "react-native",
+    "iPhoneX",
+    "SafeAreaView"
+  ],
+  "license": "MIT",
+  "main": "index",
+  "name": "react-native-safe-area-view-zy",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "version": "0.7.0"
+}

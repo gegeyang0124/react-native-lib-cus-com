@@ -1,4 +1,6 @@
-import * as TD from 'react-native-talkingdata';
+// import * as TD from 'react-native-talkingdata';
+import {Components} from "./../StackComponent";
+const TD = Components.react_native_talkingdata;
 // import {HttpUrls} from "./HttpUrls";
 import {Tools} from "./Tools";
 

@@ -1,4 +1,7 @@
-import Picker from 'react-native-picker';
+// import Picker from 'react-native-picker';
+import {Tools} from "./Tools";
+import {Components} from "./../StackComponent";
+const Picker = Components.react_native_picker;
 
 /**
  * 自定义滑动选择
@@ -19,51 +22,59 @@ export class PickerCustome{
      * }
      * **/
     static pick(dataJson,callback){
-        Picker.init({
-            pickerConfirmBtnText:dataJson.pickerConfirmBtnText == undefined
-                ? '确认'
-                : dataJson.pickerConfirmBtnText,
-            pickerCancelBtnText:dataJson.pickerCancelBtnText == undefined
-                ? '取消'
-                : dataJson.pickerCancelBtnText,
-            pickerTitleText: dataJson.pickerTitleText == undefined
-                ? '选择'
-                : dataJson.pickerTitleText,
-            pickerData: dataJson.pickerData,
-            selectedValue: this.selectedValue == null ?
-                dataJson.selectedValue == undefined ?
-                    [] :
-                    dataJson.selectedValue :
-                this.selectedValue,//默认选中的值
-            onPickerConfirm: data => {
-                // console.log(data);//确定
-                // Tools.toast("resolve: " + JSON.stringify(data));
-                // alert(JSON.stringify(data))
-                this.selectedValue = data;
-                callback({
-                    type:2,
-                    data:data
-                });
-            },
-            onPickerCancel: data => {
-                // console.log(data); //取消
-                // Tools.toast("onPickerCancel: " + JSON.stringify(data));
-                callback({
-                    type:0,
-                    data:data
-                });
-            },
-            onPickerSelect: data => {
-                // console.log(data); //选择变化
-                // Tools.toast("onPickerSelect: " + JSON.stringify(data));
-                this.selectedValue = data;
-                callback({
-                    type:1,
-                    data:data
-                })
-            },
-        });
-        Picker.show();
+        if(Picker.init){
+            Picker.init({
+                pickerConfirmBtnText:dataJson.pickerConfirmBtnText == undefined
+                    ? '确认'
+                    : dataJson.pickerConfirmBtnText,
+                pickerCancelBtnText:dataJson.pickerCancelBtnText == undefined
+                    ? '取消'
+                    : dataJson.pickerCancelBtnText,
+                pickerTitleText: dataJson.pickerTitleText == undefined
+                    ? '选择'
+                    : dataJson.pickerTitleText,
+                pickerData: dataJson.pickerData,
+                selectedValue: this.selectedValue == null ?
+                    dataJson.selectedValue == undefined ?
+                        [] :
+                        dataJson.selectedValue :
+                    this.selectedValue,//默认选中的值
+                onPickerConfirm: data => {
+                    // console.log(data);//确定
+                    // Tools.toast("resolve: " + JSON.stringify(data));
+                    // alert(JSON.stringify(data))
+                    this.selectedValue = data;
+                    callback({
+                        type:2,
+                        data:data
+                    });
+                },
+                onPickerCancel: data => {
+                    // console.log(data); //取消
+                    // Tools.toast("onPickerCancel: " + JSON.stringify(data));
+                    callback({
+                        type:0,
+                        data:data
+                    });
+                },
+                onPickerSelect: data => {
+                    // console.log(data); //选择变化
+                    // Tools.toast("onPickerSelect: " + JSON.stringify(data));
+                    this.selectedValue = data;
+                    callback({
+                        type:1,
+                        data:data
+                    })
+                },
+            });
+            Picker.show();
+        }
+        else
+        {
+            console.info("请安装自定义滑动选择组件","react-native-picker");
+            Tools.toast("请安装组件 react-native-picker");
+        }
+
     }
 
     /**

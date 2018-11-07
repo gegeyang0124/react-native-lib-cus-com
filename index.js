@@ -14,6 +14,8 @@ import {
     ProgressApi,
     MenuBottomApi,
     Alert,
+    JPush,
+    TalkingData,
 } from "com-api";
 import {
     ButtonChange,
@@ -81,11 +83,16 @@ import {
     ImageViewWatermark,
     ModalTextInputS,
 } from "./ui/ui";
+import {ComponentConstructor} from "./StackComponent";
 
 /**
  *组件类 引入集合
  **/
 const compoent = {
+
+    get ComponentConstructor(){
+        return ComponentConstructor;
+    },
 
     /**
      * API
@@ -134,6 +141,12 @@ const compoent = {
     },
     get HotUpdate() {
         return HotUpdate;
+    },
+    get JPush() {
+        return JPush;
+    },
+    get TalkingData() {
+        return TalkingData;
     },
 
     /**

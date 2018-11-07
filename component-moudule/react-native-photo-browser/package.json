@@ -1,0 +1,63 @@
+{
+  "_from": "react-native-photo-browser",
+  "_id": "react-native-photo-browser@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-SMOJoNyOt7WEpmMBiSdsTG2IPMY=",
+  "_location": "/react-native-photo-browser",
+  "_phantomChildren": {
+    "fbjs": "0.8.16",
+    "loose-envify": "1.3.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-photo-browser",
+    "name": "react-native-photo-browser",
+    "escapedName": "react-native-photo-browser",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-native-photo-browser/download/react-native-photo-browser-0.4.0.tgz",
+  "_shasum": "48c389a0dc8eb7b584a6630189276c4c6d883cc6",
+  "_spec": "react-native-photo-browser",
+  "_where": "/Users/zy/Desktop/proj/RNProj/lx_yyt",
+  "author": {
+    "name": "Halil Bilir",
+    "email": "hbilir@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/halilb/react-native-photo-browser/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "prop-types": "15.5.10",
+    "react-native-progress": "^3.2.0"
+  },
+  "deprecated": false,
+  "description": "Local and remote photo browser with captions, selections and grid view support for react native.",
+  "homepage": "https://github.com/halilb/react-native-photo-browser#readme",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native",
+    "photo browser",
+    "image gallery",
+    "media gallery",
+    "ios",
+    "android"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "react-native-photo-browser-zy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halilb/react-native-photo-browser.git"
+  },
+  "scripts": {},
+  "version": "0.4.0"
+}

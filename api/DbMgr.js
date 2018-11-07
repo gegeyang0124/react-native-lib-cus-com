@@ -1,10 +1,12 @@
-import SQLiteStorage from 'react-native-sqlite-storage';
 import {Tools} from "./Tools";
+/*import SQLiteStorage from 'react-native-sqlite-storage';
+import RNFS from "react-native-fs";*/
+import {Components} from "./../StackComponent";
+const RNFS = Components.react_native_fs;
+const SQLiteStorage = Components.react_native_sqlite_storage;
+SQLiteStorage.DEBUG&&SQLiteStorage.DEBUG(__DEV__);
+SQLiteStorage.enablePromise&&SQLiteStorage.enablePromise(true);
 
-SQLiteStorage.DEBUG(__DEV__);
-SQLiteStorage.enablePromise(true);
-
-import RNFS from "react-native-fs";
 
 /**
  *  数据库操作
@@ -49,6 +51,32 @@ export class DbMgr {
         }
     ];
 
+    static verfyComponent(type = 1){
+        let b = true;
+        switch (type){
+            case 1:{
+                if(!RNFS.DocumentDirectoryPath){
+                    console.info("请安装文件操作组件","react-native-fs");
+                    Tools.toast("请安装组件 react-native-fs");
+                    b = false;
+                }
+
+                break;
+            }
+            case 2:{
+                if(!SQLiteStorage.openDatabase){
+                    console.info("请安装数据库操作组件","react-native-sqlite-storage");
+                    Tools.toast("请安装组件 react-native-sqlite-storage");
+                    b = false;
+                }
+
+                break;
+            }
+        }
+
+        return b;
+    }
+
     /**
      * 打开或创建数据库
      * return Promise
@@ -59,25 +87,26 @@ export class DbMgr {
                 resolve(this.db);
             }
             else {
+                if(this.verfyComponent(2)){
+                    SQLiteStorage.openDatabase(
+                        this.database_name,
+                        this.database_version,
+                        this.database_displayname,
+                        this.database_size)
+                        .then((db)=>{
+                            this.db = db;
+                            // console.info("database","results");
+                            this.createTable()
+                                .then((results)=>{
+                                    resolve(this.db);
+                                });
 
-                SQLiteStorage.openDatabase(
-                    this.database_name,
-                    this.database_version,
-                    this.database_displayname,
-                    this.database_size)
-                    .then((db)=>{
-                        this.db = db;
-                        // console.info("database","results");
-                        this.createTable()
-                            .then((results)=>{
-                                resolve(this.db);
-                            });
-
-                    })
-                    .catch((err)=>{
-                        Tools.toast("数据库打开失败");
-                        // reject(err);
-                    });
+                        })
+                        .catch((err)=>{
+                            Tools.toast("数据库打开失败");
+                            // reject(err);
+                        });
+                }
             }
 
         });
@@ -186,11 +215,11 @@ export class DbMgr {
     static queryTableMedia(){
         return this.queryTable("tb_Media")
             .then(rows=>{
-                rows.forEach((row,i,a)=>{
+                /*rows.forEach((row,i,a)=>{
                     row.path_local = row.path_local.replace(
                         row.path_local.substring(0,row.path_local.indexOf("Documents") + 9),
                         RNFS.DocumentDirectoryPath);
-                });
+                });*/
 
                 return rows;
             });
@@ -331,27 +360,30 @@ export class DbMgr {
      * @param dataList array,//据库查询到的数据
      * **/
     static deleteFile(dataList,i=0){
-        if(dataList.length > 0){
-            RNFS.unlink(dataList[i].path_local)
-                .then(()=>{
-                    if(dataList.length > i)
-                    {
-                        this.delDataTbMDay(dataList[i].id)
-                            .then(()=>{
-                                this.deleteFile(dataList,++i);
-                            });
-                    }
-                })
-                .catch(()=>{
-                    if(dataList.length > i)
-                    {
-                        this.delDataTbMDay(dataList[i].id)
-                            .then(()=>{
-                                this.deleteFile(dataList,++i);
-                            });
-                    }
-                });
+        if(this.verfyComponent(1)){
+            if(dataList.length > 0){
+                RNFS.unlink(dataList[i].path_local)
+                    .then(()=>{
+                        if(dataList.length > i)
+                        {
+                            this.delDataTbMDay(dataList[i].id)
+                                .then(()=>{
+                                    this.deleteFile(dataList,++i);
+                                });
+                        }
+                    })
+                    .catch(()=>{
+                        if(dataList.length > i)
+                        {
+                            this.delDataTbMDay(dataList[i].id)
+                                .then(()=>{
+                                    this.deleteFile(dataList,++i);
+                                });
+                        }
+                    });
+            }
         }
+
     }
 
     /**

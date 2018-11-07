@@ -2,7 +2,9 @@ import {
     DeviceEventEmitter,
     NativeModules,
 } from 'react-native';
-import JPushModule from 'jpush-react-native';
+// import JPushModule from 'jpush-react-native';
+import {Components} from "./../StackComponent";
+const JPushModule = Components.jpush_react_native;
 import {Tools} from "./Tools";
 
 const listeners = {};
@@ -22,6 +24,17 @@ const receiveExtrasEvent = 'receiveExtras' // Android Only
 export class JPush {
     static isFirst = true;
 
+    static verfyComponent(){
+        let b = true;
+        if(!JPushModule.initPush){
+            console.info("请安装极光推送组件","jpush-react-native");
+            Tools.toast("请安装组件 jpush-react-native");
+            b = false;
+        }
+
+        return b;
+    }
+
     /**
      * 启动极光推送
      * @param alias	string,	//string 设置的别名
@@ -32,18 +45,20 @@ export class JPush {
             }；
      * **/
     static startJPush(alias,tags){
-        JPushModule.initPush();
         // console.info("tags",tags)
         return new Promise((resolve, reject) => {
-            this.addConnectionChangeListener()
-                .then(()=>{
-                    this.setAliasAndTags(alias,tags)
-                        .then((retJson)=>{
-                            resolve(retJson);
-                        }).catch(retJson=>{
-                        reject(retJson);
+            if(this.verfyComponent()){
+                JPushModule.initPush();
+                this.addConnectionChangeListener()
+                    .then(()=>{
+                        this.setAliasAndTags(alias,tags)
+                            .then((retJson)=>{
+                                resolve(retJson);
+                            }).catch(retJson=>{
+                            reject(retJson);
+                        });
                     });
-                });
+            }
         });
     }
 
@@ -51,7 +66,9 @@ export class JPush {
      * 停止推送，调用该方法后将不再受到推送
      */
     static stopJPush(){
-        JPushModule.stopPush();
+        if(this.verfyComponent()){
+            JPushModule.stopPush();
+        }
     }
 
     /**同时设置别名与标签, 执行完成后回调callbackFunction

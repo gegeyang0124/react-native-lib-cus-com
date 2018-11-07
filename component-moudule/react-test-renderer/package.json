@@ -1,0 +1,62 @@
+{
+  "_from": "react-test-renderer@^16.3.0-alpha.1",
+  "_id": "react-test-renderer@16.3.2",
+  "_inBundle": false,
+  "_integrity": "sha1-PR7XT9qNtCUh/fAzKOkzMSIUdJo=",
+  "_location": "/react-test-renderer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-test-renderer@^16.3.0-alpha.1",
+    "name": "react-test-renderer",
+    "escapedName": "react-test-renderer",
+    "rawSpec": "^16.3.0-alpha.1",
+    "saveSpec": null,
+    "fetchSpec": "^16.3.0-alpha.1"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-test-renderer/download/react-test-renderer-16.3.2.tgz",
+  "_shasum": "3d1ed74fda8db42521fdf03328e933312214749a",
+  "_spec": "react-test-renderer@^16.3.0-alpha.1",
+  "_where": "/Users/zy/Desktop/proj/RNProj/lx_yyt",
+  "bugs": {
+    "url": "https://github.com/facebook/react/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "fbjs": "^0.8.16",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.6.0",
+    "react-is": "^16.3.2"
+  },
+  "deprecated": false,
+  "description": "React package for snapshot testing.",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "shallow.js",
+    "cjs/",
+    "umd/"
+  ],
+  "homepage": "https://reactjs.org/",
+  "keywords": [
+    "react",
+    "react-native",
+    "react-testing"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-test-renderer-zy",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facebook/react.git"
+  },
+  "version": "16.3.2"
+}

@@ -9,9 +9,12 @@ import {
     TouchableOpacity,
 } from 'react-native';
 import RootSiblings from 'react-native-root-siblings';
-import Spinner from "react-native-spinkit";
+// import Spinner from "react-native-spinkit";
+import {Components} from "./../StackComponent";
+const Spinner = Components.react_native_spinkit;
 
 import {StyleSheetAdapt} from "./StyleSheetAdapt";
+import {Tools} from "./Tools";
 let showingDialog = null;
 
 /**
@@ -27,6 +30,11 @@ export class ProgressApi extends Component{
      * @returns {SiblingsManager}
      */
     static show(){
+        if(Spinner.isNull){
+            console.info("请安装加载指示器（加载条）组件"," react-native-spinkit");
+            Tools.toast("请安装组件  react-native-spinkit");
+            return;
+        }
         this.countShow++;
         if(this.loadding && showingDialog != null){
             return showingDialog;
@@ -86,7 +94,6 @@ export class ProgressApi extends Component{
              message={message}
          />)*/
     }
-
 };
 
 class Progress extends Component {

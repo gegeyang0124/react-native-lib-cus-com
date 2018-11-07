@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 
 
-import PhotoBrowser from 'react-native-photo-browser';
+import PhotoBrowser from 'react-native-photo-browser-zy';
 import {
     Tools,
     DbMgr,

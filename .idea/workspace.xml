@@ -1,7 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="" />
+    <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/History.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/build/build.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/component.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/path-to-regexp/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/react-lifecycles-compat.cjs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/react-lifecycles-compat.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/react-lifecycles-compat.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-dismiss-keyboard/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-dismiss-keyboard/dist/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-dismiss-keyboard/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout-polyfill/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout-polyfill/dist/index.android.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout-polyfill/dist/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout-polyfill/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout/dist/DrawerLayout.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-drawer-layout/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/.eslintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/angle-left.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/angle-left@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/angle-left@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-left@2x copy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-left@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-left@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-right@2x copy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-right@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/arrow-right@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/grid-button@2x copy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/grid-button@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/grid-button@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/hourglass.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/hourglass@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/hourglass@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/image-error.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/image-error@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/image-error@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-off.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-off@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-off@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-on.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-on@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/selected-on@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/share-button@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/share-button@3x copy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/share-button@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-off.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-off@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-off@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-on.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-on@2x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/Assets/small-selected-on@3x.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/LICENCE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/FullScreenContainer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/GridContainer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/bar/BarContainer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/bar/BottomBar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/bar/TopBar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/bar/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/constants.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/media/Photo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/lib/media/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/CHANGELOG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/PATENTS" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/checkPropTypes.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/factory.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/factoryWithThrowingShims.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/factoryWithTypeCheckers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/lib/ReactPropTypesSecret.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/prop-types.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules/prop-types/prop-types.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-photo-browser/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/SceneMap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabBar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewAnimated.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerAndroid.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerAndroid.web.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerExperimental.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerPan.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerScroll.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPropTypes.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewTypeDefinitions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TouchableItem.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-native-tab-view/types.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/NavigationActions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/PlatformHelpers.native.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/PlatformHelpers.web.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/StateUtils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/.eslintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationActions-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationContainer-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationStateUtils-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/addNavigationHelpers-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/getChildEventSubscriber-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/addNavigationHelpers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/createNavigationContainer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/getChildEventSubscriber.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/DrawerNavigator.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/StackNavigator.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/SwitchNavigator.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/TabNavigator.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/.eslintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/DrawerNavigator-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/StackNavigator-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/SwitchNavigator-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/TabNavigator-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/DrawerNavigator-test.js.snap" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/StackNavigator-test.js.snap" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/SwitchNavigator-test.js.snap" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/TabNavigator-test.js.snap" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/createNavigator.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/react-navigation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/react-navigation.web.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/KeyGenerator.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/StackPages.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/StackRouter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/SwitchRouter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/TabRouter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/.eslintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/Routers-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/StackRouter-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/SwitchRouter-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/TabRouter-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/__snapshots__/validateRouteConfigMap-test.js.snap" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/createConfigGetter-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/validateRouteConfigMap-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/createConfigGetter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/getScreenConfigDeprecated.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/getScreenForRouteName.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/validateRouteConfigMap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/validateScreenOptions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/utils/ReactNativeFeatures.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/utils/getSceneIndicesForInterpolationInputRange.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/utils/invariant.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/utils/shallowEqual.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/AnimatedValueSubscription.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/Card.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/CardStack.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/CardStackStyleInterpolator.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/CardStackTransitioner.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/PointerEventsContainer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/CardStack/TransitionConfigs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerNavigatorItems.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerScreen.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerSidebar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerView.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/Header.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/HeaderBackButton.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/HeaderStyleInterpolator.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/HeaderTitle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/ModularHeaderBackButton.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/ResourceSavingSceneView.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/SceneView.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/ScenesReducer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/SwitchView/SwitchView.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabBarBottom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabBarIcon.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabBarTop.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabView.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TouchableItem.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Transitioner.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/.eslintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/NavigationScenesReducer-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/TabView-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/__snapshots__/TabView-test.js.snap" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/__snapshots__/withOrientation-test.js.snap" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/withOrientation-test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon-mask.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@1.5x.android.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@1.5x.ios.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@1x.android.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@1x.ios.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@2x.android.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@2x.ios.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@3x.android.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@3x.ios.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@4x.android.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/assets/back-icon@4x.ios.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/withNavigation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/withNavigationFocus.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/views/withOrientation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/component-moudule/react-navigation/src/withCachedChildNavigation.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/StackComponent.js" afterPath="$PROJECT_DIR$/StackComponent.js" />
+      <change beforePath="$PROJECT_DIR$/api/CaptureImage.js" afterPath="$PROJECT_DIR$/api/CaptureImage.js" />
+      <change beforePath="$PROJECT_DIR$/api/DbMgr.js" afterPath="$PROJECT_DIR$/api/DbMgr.js" />
+      <change beforePath="$PROJECT_DIR$/api/HotUpdate.js" afterPath="$PROJECT_DIR$/api/HotUpdate.js" />
+      <change beforePath="$PROJECT_DIR$/api/Http.js" afterPath="$PROJECT_DIR$/api/Http.js" />
+      <change beforePath="$PROJECT_DIR$/api/HttpUrls.js" afterPath="$PROJECT_DIR$/api/HttpUrls.js" />
+      <change beforePath="$PROJECT_DIR$/api/IamgeWaterMark.js" afterPath="$PROJECT_DIR$/api/IamgeWaterMark.js" />
+      <change beforePath="$PROJECT_DIR$/api/JPush.js" afterPath="$PROJECT_DIR$/api/JPush.js" />
+      <change beforePath="$PROJECT_DIR$/api/LocalStorage.js" afterPath="$PROJECT_DIR$/api/LocalStorage.js" />
+      <change beforePath="$PROJECT_DIR$/api/Media.js" afterPath="$PROJECT_DIR$/api/Media.js" />
+      <change beforePath="$PROJECT_DIR$/api/PickerCustome.js" afterPath="$PROJECT_DIR$/api/PickerCustome.js" />
+      <change beforePath="$PROJECT_DIR$/api/ProgressApi.js" afterPath="$PROJECT_DIR$/api/ProgressApi.js" />
+      <change beforePath="$PROJECT_DIR$/api/TalkingData.js" afterPath="$PROJECT_DIR$/api/TalkingData.js" />
+      <change beforePath="$PROJECT_DIR$/api/Theme.js" afterPath="$PROJECT_DIR$/api/Theme.js" />
+      <change beforePath="$PROJECT_DIR$/api/Tools.js" afterPath="$PROJECT_DIR$/api/Tools.js" />
+      <change beforePath="$PROJECT_DIR$/api/api.js" afterPath="$PROJECT_DIR$/api/api.js" />
+      <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change beforePath="$PROJECT_DIR$/ui/ImageBrower.js" afterPath="$PROJECT_DIR$/ui/ImageBrower.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,6 +245,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DockManager">
+    <window id="3">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="StackComponent.js" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/StackComponent.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="38">
+                    <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="47" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
     <window id="1">
       <content type="file-editors">
         <state>
@@ -21,8 +271,8 @@
               <entry file="file://$PROJECT_DIR$/README.md">
                 <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                   <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="209">
-                      <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+                    <first_editor relative-caret-position="190">
+                      <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
                       <folding />
                     </first_editor>
                     <second_editor>
@@ -44,7 +294,7 @@
               <entry file="file://$PROJECT_DIR$/example/Test.js">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="912">
-                    <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+                    <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
                     <folding>
                       <element signature="e#0#39#0" expanded="true" />
                     </folding>
@@ -59,28 +309,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/api.js">
+      <file leaf-file-name="Theme.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Theme.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="-266">
+              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="26" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CaptureImage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/CaptureImage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-361">
-              <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#77#0" expanded="true" />
-                <element signature="n#!!doc;n#captureViewScreen#0;n#CaptureImage#0" expanded="false" />
-                <element signature="e#1491#2777#0" expanded="false" />
-                <element signature="e#4104#5747#0" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#333#2014#0" expanded="false" />
+                <element signature="e#2035#2347#0" expanded="false" />
+                <element signature="e#2807#3072#0" expanded="false" />
+                <element signature="e#3079#5688#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -89,21 +328,64 @@
       <file leaf-file-name="Tools.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/Tools.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state relative-caret-position="190">
+              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
-                <element signature="e#523#569#0" expanded="true" />
+                <element signature="e#0#93#0" expanded="true" />
+                <element signature="n#!!block;n#init#0;n#Tools#0" expanded="false" />
+                <element signature="e#2858#5027#0" expanded="false" />
+                <element signature="n#!!doc;n#getStyle#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#getStyle#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#isDoorInvest#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#isDoorInvest#0;n#Tools#0" expanded="false" />
+                <element signature="e#5947#6160#0" expanded="false" />
+                <element signature="e#6212#7029#0" expanded="false" />
+                <element signature="n#!!block;n#getLocation#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#toast#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#openDoc#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#openDoc#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#pickMonth#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#pickMonth#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#timeFormatConvert#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#timeFormatConvert#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#isNumber#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#isNumber#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#statusConvertProj1111#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#statusConvertProj1111#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#statusConvertAddressAudit#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#statusConvertAddressAudit#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#statusConvert#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#statusConvert#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#statusConvertWorkReport#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#statusConvertWorkReport#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#getTimeByRank#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#getTimeByRank#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#stepInPage#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#stepInPage#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#taskStatusConvert#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#getDistanceByGps#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#getDistanceByGps#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#captureViewScreen#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#captureViewScreen#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#earningCalculateClass#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#earningCalculateClass#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!doc;n#toSpecifiedPageInPush#0;n#Tools#0" expanded="false" />
+                <element signature="n#!!block;n#toSpecifiedPageInPush#0;n#Tools#0" expanded="false" />
+                <marker date="1541576293089" expanded="false" signature="2939:3665" ph="{...}" />
+                <marker date="1541576293089" expanded="false" signature="3713:4660" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StackComponent.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StackComponent.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="456">
+              <caret line="93" column="35" lean-forward="false" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#286#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,24 +401,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>entry point</find>
-      <find>keywords</find>
-      <find>&quot;react-native reactnative react native lib-cus-com lib com react-native-lib-cus-com&quot;</find>
-      <find>RNFS</find>
-      <find>react-native-device-info</find>
-      <find>DeviceInfo</find>
-      <find>appKey</find>
-      <find>TextInput</find>
-      <find>isRetLogin</find>
-      <find>Alert</find>
-      <find>HotUpdate</find>
-      <find>Tools</find>
-      <find>JPush</find>
-      <find>ImagePicker</find>
       <find>scaleS</find>
-      <find>TalkingData</find>
-      <find>HttpUrls</find>
       <find>getUrlKey</find>
+      <find>Toast</find>
+      <find>Tools</find>
+      <find>OpenFile</find>
+      <find>react-native-sqlite-storage</find>
+      <find>-</find>
+      <find>SQLiteStorage</find>
+      <find>CaptureImage</find>
+      <find>DbMgr</find>
+      <find>verfyComponent</find>
+      <find>HotUpdate</find>
+      <find>HttpUrls</find>
+      <find>IamgeWaterMark</find>
+      <find>JPush</find>
+      <find>react-native-device-info</find>
+      <find>destVideos</find>
+      <find>RNFS</find>
+      <find>tr</find>
+      <find>Media</find>
+      <find>LocalStorage</find>
+      <find>PickerCustome</find>
+      <find>TalkingData</find>
+      <find>name</find>
+      <find>react-native-safe-area-view-zy</find>
+      <find>SafeAreaView</find>
+      <find>require</find>
+      <find>TD</find>
+      <find>main</find>
+      <find>DeviceInfo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,32 +439,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/component/api/Alert.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/api/Alert.js" />
-        <option value="$PROJECT_DIR$/api/DbMgr.js" />
-        <option value="$PROJECT_DIR$/component-moudule/react-native-kactivityindicator/package.json" />
-        <option value="$PROJECT_DIR$/api/HotUpdate.js" />
-        <option value="$PROJECT_DIR$/api/Http.js" />
-        <option value="$PROJECT_DIR$/api/HttpUrls.js" />
-        <option value="$PROJECT_DIR$/api/JPush.js" />
-        <option value="$PROJECT_DIR$/component-moudule/react-native-custom-action-sheet/package.json" />
-        <option value="$PROJECT_DIR$/api/MenuBottomApi.js" />
-        <option value="$PROJECT_DIR$/component-moudule/react-native-picker/package.json" />
+        <option value="$PROJECT_DIR$/ui/ImageBrower.js" />
+        <option value="$PROJECT_DIR$/api/Media.js" />
         <option value="$PROJECT_DIR$/api/PickerCustome.js" />
         <option value="$PROJECT_DIR$/api/ProgressApi.js" />
-        <option value="$PROJECT_DIR$/component-moudule/react-native-progress/package.json" />
-        <option value="$PROJECT_DIR$/api/ProgressPerApi.js" />
-        <option value="$PROJECT_DIR$/example/Test.js" />
-        <option value="$PROJECT_DIR$/api/StyleSheetAdapt.js" />
-        <option value="$PROJECT_DIR$/api/api.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/api/TalkingData.js" />
+        <option value="$PROJECT_DIR$/api/api.js" />
+        <option value="$PROJECT_DIR$/StackComponent.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/addNavigationHelpers.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/ResourceSavingSceneView.js" />
+        <option value="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/withNavigation.js" />
+        <option value="$PROJECT_DIR$/component-moudule/hoist-non-react-statics/index.d.ts" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/withNavigationFocus.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/withOrientation.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-native-safe-area-view/withOrientation.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabBarBottom.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-native-safe-area-view/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerPan.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerScroll.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-native-tab-view/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabBarTop.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/TabView/TabView.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Header/Header.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerNavigatorItems.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerSidebar.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-native-drawer-layout-polyfill/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/react-native-drawer-layout/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/react-native-drawer-layout-polyfill/dist/index.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-native-drawer-layout/dist/DrawerLayout.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-native-dismiss-keyboard/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/Drawer/DrawerView.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/TabView-test.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-test-renderer/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/withOrientation-test.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/StackPages.js" />
+        <option value="$PROJECT_DIR$/component-moudule/path-to-regexp/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/routers/StackRouter.js" />
+        <option value="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/package.json" />
+        <option value="$PROJECT_DIR$/component-moudule/path-to-regexp/index.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/DrawerNavigator.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/DrawerNavigator-test.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/StackNavigator-test.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/SwitchNavigator-test.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/TabNavigator-test.js" />
+        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationContainer-test.js" />
         <option value="$PROJECT_DIR$/api/Theme.js" />
         <option value="$PROJECT_DIR$/api/Tools.js" />
+        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/api/CaptureImage.js" />
-        <option value="$PROJECT_DIR$/StackComponent.js" />
       </list>
     </option>
   </component>
@@ -188,11 +507,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules" />
+    <handled-path value="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="135" />
-    <option name="y" value="181" />
-    <option name="width" value="956" />
-    <option name="height" value="713" />
+    <option name="x" value="105" />
+    <option name="y" value="71" />
+    <option name="width" value="1268" />
+    <option name="height" value="801" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -218,6 +541,16 @@
               <item name="react-native-lib-cus-com" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-native-lib-cus-com" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="react-native-lib-cus-com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-native-lib-cus-com" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-native-lib-cus-com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-native-lib-cus-com" type="462c0819:PsiDirectoryNode" />
+              <item name="component-moudule" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -234,6 +567,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Proj\RNProj\react-native-lib-cus-com\component-moudule" />
       <recent name="E:\Proj\RNProj\react-native-lib-cus-com\example" />
       <recent name="E:\Proj\RNProj\react-native-lib-cus-com" />
     </key>
@@ -265,18 +599,19 @@
       <updated>1541466458365</updated>
       <workItem from="1541466459623" duration="4611000" />
       <workItem from="1541472625647" duration="537000" />
-      <workItem from="1541473243125" duration="22264000" />
+      <workItem from="1541473243125" duration="38650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27412000" />
+    <option name="totallyTimeSpent" value="43798000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="135" y="181" width="956" height="713" extended-state="0" />
+    <frame x="105" y="71" width="1268" height="801" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30319148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22763579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -304,20 +639,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/component-moudule/path-to-regexp/History.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
@@ -330,7 +657,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/component-moudule/path-to-regexp/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="174" lean-forward="true" selection-start-line="1" selection-start-column="110" selection-end-line="1" selection-end-column="174" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/StackPages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/KeyGenerator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -338,46 +681,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../RNTest/node_modules/react-native-lib-cus-com/package.json">
+    <entry file="file://$PROJECT_DIR$/component-moudule/path-to-regexp/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/component/ui/ui.js" />
-    <entry file="file://$PROJECT_DIR$/component/api/Alert.js" />
-    <entry file="file://$PROJECT_DIR$/../RNTest/node_modules/react-native-lib-cus-com/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.git/config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/component-moudule/react-native-kactivityindicator/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="46" column="45" lean-forward="false" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="45" />
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="304">
+          <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component-moudule/react-native-custom-action-sheet/index.js">
+    <entry file="file://$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -385,393 +705,445 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component-moudule/react-native-custom-action-sheet/package.json">
+    <entry file="file://$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/component.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="46" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component-moudule/react-native-picker/package.json">
+    <entry file="file://$PROJECT_DIR$/component-moudule/path-to-regexp/node_modules/isarray/build/build.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="33" />
+        <state relative-caret-position="-3249">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component-moudule/react-native-progress/package.json">
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/StackRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="68" column="11" lean-forward="false" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="true" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/SwitchRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1467#1741#0" expanded="false" />
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/TabRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1226#1669#0" expanded="false" />
-            <element signature="n#!!block;n#updateDelay#0;n#HotUpdate#0" expanded="false" />
-            <element signature="n#!!doc;n#RolledBack#0;n#HotUpdate#0" expanded="false" />
-            <element signature="n#!!block;n#RolledBack#0;n#HotUpdate#0" expanded="false" />
-            <element signature="e#2446#2501#0" expanded="false" />
-            <element signature="e#2543#7102#0" expanded="false" />
-            <element signature="e#7108#7200#0" expanded="false" />
-            <element signature="e#7316#7711#0" expanded="false" />
-            <element signature="e#7766#15140#0" expanded="false" />
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/Http.js">
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/validateRouteConfigMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#Http#0" expanded="false" />
-            <element signature="e#932#938#0" expanded="false" />
-            <element signature="n#!!block;n#getConnectionInfo#0;n#Http#0" expanded="false" />
-            <element signature="n#!!doc;n#requestAjax#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#requestAjax#0;n#Http#0" expanded="false" />
-            <element signature="n#!!doc;n#getAjax#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#getAjax#0;n#Http#0" expanded="false" />
-            <element signature="n#!!doc;n#postAjax#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#postAjax#0;n#Http#0" expanded="false" />
-            <element signature="n#!!doc;n#getAddress#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#getAddress#0;n#Http#0" expanded="false" />
-            <element signature="n#!!doc;n#putErrInfo#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#putErrInfo#0;n#Http#0" expanded="false" />
-            <element signature="n#!!doc;n#request#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#request#0;n#Http#0" expanded="false" />
-            <element signature="e#11198#11229#0" expanded="false" />
-            <element signature="e#11767#12122#0" expanded="false" />
-            <element signature="n#!!doc;n#get#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#get#0;n#Http#0" expanded="false" />
-            <element signature="n#!!doc;n#post#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#post#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#upLoadFile#0;n#Http#0" expanded="false" />
-            <element signature="e#20377#32862#0" expanded="false" />
-            <element signature="e#20679#27197#0" expanded="false" />
-            <element signature="e#22894#22927#0" expanded="false" />
-            <element signature="e#23744#25411#0" expanded="false" />
-            <element signature="e#25572#25924#0" expanded="false" />
-            <element signature="e#30112#31660#0" expanded="false" />
-            <element signature="n#!!doc;n#upLoadFileToService#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#upLoadFileToService#0;n#Http#0" expanded="false" />
-            <element signature="e#34301#35646#0" expanded="false" />
-            <element signature="n#!!block;n#upLoadFileToServicePutIn#0;n#Http#0" expanded="false" />
-            <element signature="e#36292#36390#0" expanded="false" />
-            <element signature="n#!!doc;n#downloadFile#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#downloadFile#0;n#Http#0" expanded="false" />
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/validateScreenOptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/__snapshots__/validateRouteConfigMap-test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/createConfigGetter-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/Routers-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#36#62#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/StackRouter-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#71#97#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/SwitchRouter-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#35#61#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/TabRouter-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#35#61#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/validateRouteConfigMap-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/TabNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/SwitchNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/StackNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/DrawerNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/createNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/DrawerNavigator-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/StackNavigator-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/SwitchNavigator-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/TabNavigator-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/DrawerNavigator-test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/StackNavigator-test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/SwitchNavigator-test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/navigators/__tests__/__snapshots__/TabNavigator-test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationStateUtils-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/TabView-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/__snapshots__/TabView-test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/__snapshots__/withOrientation-test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="101" column="7" lean-forward="false" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/withOrientation-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/views/__tests__/NavigationScenesReducer-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/addNavigationHelpers-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#53#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationActions-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/getChildEventSubscriber-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/__tests__/NavigationContainer-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#333#2014#0" expanded="false" />
+            <element signature="e#2035#2347#0" expanded="false" />
+            <element signature="e#2807#3072#0" expanded="false" />
+            <element signature="e#3079#5688#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Tools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#93#0" expanded="true" />
+            <element signature="n#!!block;n#init#0;n#Tools#0" expanded="false" />
+            <element signature="e#2858#5027#0" expanded="false" />
+            <element signature="n#!!doc;n#getStyle#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#getStyle#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#isDoorInvest#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#isDoorInvest#0;n#Tools#0" expanded="false" />
+            <element signature="e#5947#6160#0" expanded="false" />
+            <element signature="e#6212#7029#0" expanded="false" />
+            <element signature="n#!!block;n#getLocation#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#toast#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#openDoc#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#openDoc#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#pickMonth#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#pickMonth#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#timeFormatConvert#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#timeFormatConvert#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#isNumber#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#isNumber#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#statusConvertProj1111#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#statusConvertProj1111#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#statusConvertAddressAudit#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#statusConvertAddressAudit#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#statusConvert#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#statusConvert#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#statusConvertWorkReport#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#statusConvertWorkReport#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#getTimeByRank#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#getTimeByRank#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#stepInPage#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#stepInPage#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#taskStatusConvert#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#getDistanceByGps#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#getDistanceByGps#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#captureViewScreen#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#captureViewScreen#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#earningCalculateClass#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#earningCalculateClass#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!doc;n#toSpecifiedPageInPush#0;n#Tools#0" expanded="false" />
+            <element signature="n#!!block;n#toSpecifiedPageInPush#0;n#Tools#0" expanded="false" />
+            <marker date="1541576293089" expanded="false" signature="2939:3665" ph="{...}" />
+            <marker date="1541576293089" expanded="false" signature="3713:4660" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/HttpUrls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/MenuBottomApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="456">
+          <caret line="93" column="35" lean-forward="false" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="35" />
           <folding>
-            <element signature="e#216#284#0" expanded="true" />
-            <element signature="n#!!block;n#show#0;n#MenuBottomApi#0" expanded="false" />
-            <element signature="n#!!block;n#hide#0;n#MenuBottomApi#0" expanded="false" />
-            <element signature="n#!!doc;n#updateMessage#0;n#MenuBottomApi#0" expanded="false" />
-            <element signature="n#!!block;n#updateMessage#0;n#MenuBottomApi#0" expanded="false" />
-            <element signature="n#MenuBottom#0" expanded="false" />
-            <element signature="e#3486#4067#0" expanded="false" />
-            <element signature="e#5614#6486#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/PickerCustome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!block;n#pick#0;n#PickerCustome#0" expanded="false" />
-            <element signature="n#!!block;n#pickMonth#0;n#PickerCustome#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/ProgressApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#show#0;n#ProgressApi#0" expanded="false" />
-            <element signature="n#!!block;n#hide#0;n#ProgressApi#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/ProgressPerApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding>
-            <element signature="e#42#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/LocalStorage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-            <element signature="e#172#798#0" expanded="false" />
-            <element signature="e#850#858#0" expanded="false" />
-            <element signature="e#897#914#0" expanded="false" />
-            <element signature="e#1092#1140#0" expanded="false" />
-            <element signature="n#!!doc;n#save#0;n#LocalStorage#0" expanded="false" />
-            <element signature="n#!!block;n#save#0;n#LocalStorage#0" expanded="false" />
-            <element signature="n#!!doc;n#get#0;n#LocalStorage#0" expanded="false" />
-            <element signature="n#!!block;n#get#0;n#LocalStorage#0" expanded="false" />
-            <element signature="n#!!doc;n#saves#0;n#LocalStorage#0" expanded="false" />
-            <element signature="n#!!block;n#saves#0;n#LocalStorage#0" expanded="false" />
-            <element signature="e#4245#4281#0" expanded="false" />
-            <element signature="n#!!doc;n#gets#0;n#LocalStorage#0" expanded="false" />
-            <element signature="n#!!block;n#gets#0;n#LocalStorage#0" expanded="false" />
-            <element signature="e#5216#5832#0" expanded="false" />
-            <element signature="e#5838#5961#0" expanded="false" />
-            <element signature="e#5966#7250#0" expanded="false" />
-            <element signature="e#7256#7284#0" expanded="false" />
-            <element signature="e#7289#7864#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/JPush.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="n#JPush#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Media.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-            <element signature="e#3267#5298#0" expanded="false" />
-            <element signature="e#5304#5395#0" expanded="false" />
-            <element signature="e#5423#5713#0" expanded="false" />
-            <element signature="e#5775#6081#0" expanded="false" />
-            <element signature="e#6142#7143#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/IamgeWaterMark.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/StyleSheetAdapt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-            <element signature="e#524#756#0" expanded="false" />
-            <element signature="e#758#785#0" expanded="false" />
-            <element signature="e#816#1010#0" expanded="false" />
-            <element signature="n#StyleSheetAdapt#0" expanded="false" />
-            <element signature="e#1476#1554#0" expanded="false" />
-            <element signature="e#1697#1781#0" expanded="false" />
-            <element signature="n#!!block;n#getScale#0;n#StyleSheetAdapt#0" expanded="false" />
-            <element signature="n#!!doc;n#getWidth#0;n#StyleSheetAdapt#0" expanded="false" />
-            <element signature="n#!!block;n#getWidth#0;n#StyleSheetAdapt#0" expanded="false" />
-            <element signature="n#!!doc;n#getAdaptVal#0;n#StyleSheetAdapt#0" expanded="false" />
-            <element signature="n#!!block;n#getAdaptVal#0;n#StyleSheetAdapt#0" expanded="false" />
-            <element signature="n#!!block;n#styleJsonAdaptConvert#0;n#StyleSheetAdapt#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/DbMgr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-            <element signature="n#DbMgr#0" expanded="false" />
-            <element signature="e#547#1521#0" expanded="false" />
-            <element signature="n#!!doc;n#openDatabase#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#openDatabase#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#executeSql#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#executeSql#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#createTable#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#createTable#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#getSelectData#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#getSelectData#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#queryTable#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#queryTable#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#queryTableMedia#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#queryTableMedia#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#queryTableRole#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#queryTableRole#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#insertTableRole#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#insertTableRole#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#insertTableMedia#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#insertTableMedia#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#uptateTable#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#uptateTable#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#uptateTableRole#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#uptateTableRole#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#delDataTb#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#delDataTb#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#delDataTbMDay#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#delDataTbMDay#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#delDataTbRole#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#delDataTbRole#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#delTable#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#delTable#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#deleteFile#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#deleteFile#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#delDataTbMDay31#0;n#DbMgr#0" expanded="false" />
-            <element signature="n#!!block;n#delDataTbMDay31#0;n#DbMgr#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Theme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#50#100#0" expanded="true" />
-            <element signature="e#321#2002#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/TalkingData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Alert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="e#42#80#0" expanded="true" />
-            <element signature="e#701#1354#0" expanded="false" />
-            <element signature="e#1402#2152#0" expanded="false" />
-            <element signature="e#2276#2429#0" expanded="false" />
-            <element signature="n#AlertUI#0" expanded="false" />
-            <element signature="e#4974#6398#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/Test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/CaptureImage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-            <element signature="n#!!doc;n#captureViewScreen#0;n#CaptureImage#0" expanded="false" />
-            <element signature="e#1491#2777#0" expanded="false" />
-            <element signature="e#4104#5747#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="209">
-            <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="e#523#569#0" expanded="true" />
+            <element signature="e#0#286#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StackComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="38">
+          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="190">
+            <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>

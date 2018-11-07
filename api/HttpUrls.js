@@ -12,10 +12,8 @@ export class HttpUrls{
     static urlSets = null;//接口地址集合
     static IPConfig = {
         namekey:"ipUrl",//存储服务器地址的key
-        //IPTest:"http://yyt.lexin580.com:8081",//正式服务器
-        //IP:"http://VoIP.lexinvip.com:8081",//测试服务器,
-         IP:"http://yyt.lexin580.com:8081",//正式服务器
-         IPTest:"http://VoIP.lexinvip.com:8081",//测试服务器,
+         IP:"",//正式服务器
+         IPTest:"",//测试服务器,
         parameters:1,// 0、测试服务器；1、正式服务器
     };
 
@@ -31,7 +29,7 @@ export class HttpUrls{
 
         var IPCenterCRM = "http://dc-crm.lexin580.com";
         // var IPCenterCRM = "http://192.168.2.61:9053";
-        this.urlIPHome = IP + (!this.IPConfig.serviceType ? "/yyt2.0" : "/yyt2.0")
+        this.urlIPHome = IP + (!this.IPConfig.serviceType ? "/yyt2.0" : "/yyt2.0");
         this.urlSets ={};
     }
 
@@ -51,4 +49,4 @@ export class HttpUrls{
 
 }
 
-HttpUrls.getIP();
+// HttpUrls.getIP();

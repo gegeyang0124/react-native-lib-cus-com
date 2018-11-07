@@ -3,11 +3,14 @@ import {
     Platform,
 } from 'react-native';
 
-import ImagePicker from 'react-native-image-crop-picker';
-import  VideoMgr from 'react-native-image-picker';
+// import ImagePicker from 'react-native-image-crop-picker';
+// import  VideoMgr from 'react-native-image-picker';
+// import RNFS from "react-native-fs";
 import {Tools} from "./Tools";
-import RNFS from "react-native-fs";
-import {IamgeWaterMark} from "./IamgeWaterMark";
+import {Components} from "./../StackComponent";
+const ImagePicker = Components.react_native_image_crop_picker;
+const VideoMgr = Components.react_native_image_picker;
+// const RNFS = Components.react_native_fs;
 
 //第三方相机和录像
 
@@ -18,9 +21,46 @@ import {IamgeWaterMark} from "./IamgeWaterMark";
  * **/
 export class Media {
 
-    static destVideos = Platform.OS == "ios"
-        ? `${RNFS.DocumentDirectoryPath}/video`
-        : `${RNFS.ExternalStorageDirectoryPath}/video`;//下载目录
+   /* static destVideos = RNFS.DocumentDirectoryPath
+        ? Platform.OS == "ios"
+            ? `${RNFS.DocumentDirectoryPath}/video`
+            : `${RNFS.ExternalStorageDirectoryPath}/video`
+        : null;//下载目录*/
+
+    static verfyComponent(type = 1){
+        let b = true;
+        switch (type){
+            case 1:{
+               /* if(!RNFS.DocumentDirectoryPath){
+                    console.info("请安装文件操作组件","react-native-fs");
+                    Tools.toast("请安装组件 react-native-fs");
+                    b = false;
+                }*/
+
+                break;
+            }
+            case 2:{
+                if(!ImagePicker.openPicker){
+                    console.info("请安装图片剪辑及拍摄选择等操作组件","react-native-image-crop-picker");
+                    Tools.toast("请安装组件 react-native-image-crop-picker");
+                    b = false;
+                }
+
+                break;
+            }
+            case 3:{
+                if(!VideoMgr.launchCamera){
+                    console.info("请安装图片视频剪辑及拍摄选择等操作组件","react-native-image-picker");
+                    Tools.toast("请安装组件 react-native-image-picker");
+                    b = false;
+                }
+
+                break;
+            }
+        }
+
+        return b;
+    }
 
     /**
      * 选择图片
@@ -30,7 +70,13 @@ export class Media {
      * @param cd func,//拍照完成回调函数 打水印有效
      * **/
     static pickImage= (multiple,taskName,isWater=true,cd) => {
-        if(!isWater){
+
+        // if(!isWater)
+        if(true)
+        {
+            if(!Media.verfyComponent(2)){
+                return new Promise(resolve => {});
+            }
             multiple = multiple == undefined ? false :multiple;
             return ImagePicker.openPicker({
                 // writeTempFile:false,
@@ -114,7 +160,12 @@ export class Media {
             cropperChooseText:'使用'
         };
 
-        if(!isWater){
+        // if(!isWater)
+        if(true)
+        {
+            if(!Media.verfyComponent(2)){
+                return new Promise(resolve => {});
+            }
             return  ImagePicker.openCamera(opts)
                 .then(image => {
                     // CameraRoll.saveImageWithTag(image.path);
@@ -169,6 +220,9 @@ export class Media {
      * **/
     static clean = (path)=>{
         //console.log('removed all tmp images from tmp directory');
+        if(!Media.verfyComponent(2)){
+            return new Promise(resolve => {});
+        }
         if(path == undefined)
         {
             return ImagePicker.clean().then().catch(e => e);
@@ -183,6 +237,9 @@ export class Media {
      * 选择视频
      * **/
     static pickVideo = () => {
+        if(!Media.verfyComponent(2)){
+            return new Promise(resolve => {});
+        }
         return ImagePicker.openPicker({
             compressImageMaxHeight:640,
             compressImageMaxWidth:640,
@@ -200,28 +257,30 @@ export class Media {
     static takeVideo = () =>{
 
         return new Promise(function (resolve, reject){
-            VideoMgr.launchCamera({
-                mediaType:'video',
-                videoQuality:'high',
-                durationLimit:30,
-                compressImageMaxHeight:640,
-                compressImageMaxWidth:640,
-            }, (response)  => {
-                // Same code as in above section!
-                // alert(JSON.stringify(response));
-                //return response;
-                if(response.uri == undefined)
-                {
-                    reject(response);
-                }
-                else
-                {
-                    response.uri = response.uri.substring(7);
-                    CameraRoll.saveToCameraRoll(response.uri,'video');
-                    response.path = response.uri;
-                    resolve(response);
-                }
-            });
+            if(Media.verfyComponent(3)){
+                VideoMgr.launchCamera({
+                    mediaType:'video',
+                    videoQuality:'high',
+                    durationLimit:30,
+                    compressImageMaxHeight:640,
+                    compressImageMaxWidth:640,
+                }, (response)  => {
+                    // Same code as in above section!
+                    // alert(JSON.stringify(response));
+                    //return response;
+                    if(response.uri == undefined)
+                    {
+                        reject(response);
+                    }
+                    else
+                    {
+                        response.uri = response.uri.substring(7);
+                        CameraRoll.saveToCameraRoll(response.uri,'video');
+                        response.path = response.uri;
+                        resolve(response);
+                    }
+                });
+            }
         });
 
         /*return Record.startRecord(path + 'sound.mp4', (err) => {
@@ -231,4 +290,4 @@ export class Media {
 
 }
 
-RNFS.mkdir(Media.destVideos);
+// RNFS.mkdir&&RNFS.mkdir(Media.destVideos);

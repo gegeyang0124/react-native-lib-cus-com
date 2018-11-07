@@ -1,20 +1,54 @@
-import {
+/*import {
     captureRef,
     releaseCapture,
 } from "react-native-view-shot";
+import RNFS from "react-native-fs";*/
 import {Tools} from './Tools';
 import {StyleSheetAdapt} from './StyleSheetAdapt';
-import RNFS from "react-native-fs";
 import {Platform} from "react-native";
+import {Components} from "./../StackComponent";
+const {
+    captureRef,
+    releaseCapture,
+} = Components.react_native_view_shot;
+const RNFS = Components.react_native_fs;
 
 /**
  * 截屏或截UI图
  * **/
 export class CaptureImage {
 
-    static destPhotos = Platform.OS == "ios"
-        ? `${RNFS.DocumentDirectoryPath}/photo/`
-        : `${RNFS.ExternalStorageDirectoryPath}/photo/`;//下载目录
+    static destPhotos = RNFS.DocumentDirectoryPath
+        ? Platform.OS == "ios"
+            ? `${RNFS.DocumentDirectoryPath}/photo/`
+            : `${RNFS.ExternalStorageDirectoryPath}/photo/`
+        :null;//下载目录
+
+    static verfyComponent(type = 1){
+        let b = true;
+        switch (type){
+            case 1:{
+                if(!RNFS.DocumentDirectoryPath){
+                    console.info("请安装文件操作组件","react-native-fs");
+                    Tools.toast("请安装组件 react-native-fs");
+                    b = false;
+                }
+
+                break;
+            }
+            case 2:{
+                if(!captureRef){
+                    console.info("请安装截屏或截UI图组件组件","react-native-view-shot");
+                    Tools.toast("请安装组件 react-native-view-shot");
+                    b = false;
+                }
+
+                break;
+            }
+        }
+
+        return b;
+    }
 
     /**
      * 截屏 截取UI的图片
@@ -25,7 +59,6 @@ export class CaptureImage {
      * @param isSave bool,//是否保存图片
      * **/
     static captureViewScreen(ref,w,h,isOpenImg = true,isSave = false){
-
         return new Promise((resolve, reject) => {
             // console.info("YYY", "RRR");
             let options = {
@@ -44,42 +77,45 @@ export class CaptureImage {
                     captureRef(ref, options)
                         .then(
                             uri => {
-                               if(isSave){
-                                   let filePath = this.destPhotos
-                                       + `${uri.substring(uri.lastIndexOf('/') + 1)}`;
+                                if(isSave){
+                                    if(this.verfyComponent(1)){
+                                        let filePath = this.destPhotos
+                                            + `${uri.substring(uri.lastIndexOf('/') + 1)}`;
 
-                                 /*  setTimeout(()=>{
-                                       Tools.toast("Y1 " + isSave + "  " + filePath);
-                                   },3000);*/
-                                   // console.info("filePath",filePath)
-                                   RNFS.copyFile(uri,filePath)
-                                       .then(()=>{
-                                           if(isOpenImg)
-                                           {
-                                               resolve(filePath);
-                                               Tools.openDoc(filePath);
-                                           }
-                                           else {
-                                               // console.info("uri",uri)
-                                               resolve(filePath);
-                                           }
-                                       })
-                                       .catch((err)=>{
-                                           Tools.toast("文件保存失败");
-                                       });
-                               }
-                               else
-                               {
-                                   if(isOpenImg)
-                                   {
-                                       resolve(uri);
-                                       Tools.openDoc(uri);
-                                   }
-                                   else {
-                                       // console.info("uri",uri)
-                                       resolve(uri);
-                                   }
-                               }
+                                        /*  setTimeout(()=>{
+                                              Tools.toast("Y1 " + isSave + "  " + filePath);
+                                          },3000);*/
+                                        // console.info("filePath",filePath)
+                                        RNFS.copyFile(uri,filePath)
+                                            .then(()=>{
+                                                if(isOpenImg)
+                                                {
+                                                    resolve(filePath);
+                                                    Tools.openDoc(filePath);
+                                                }
+                                                else {
+                                                    // console.info("uri",uri)
+                                                    resolve(filePath);
+                                                }
+                                            })
+                                            .catch((err)=>{
+                                                Tools.toast("文件保存失败");
+                                            });
+                                    }
+
+                                }
+                                else
+                                {
+                                    if(isOpenImg)
+                                    {
+                                        resolve(uri);
+                                        Tools.openDoc(uri);
+                                    }
+                                    else {
+                                        // console.info("uri",uri)
+                                        resolve(uri);
+                                    }
+                                }
 
                             },
                             error => {
@@ -109,9 +145,9 @@ export class CaptureImage {
                             if(isSave){
                                 let filePath = this.destPhotos
                                     + `${uri.substring(uri.lastIndexOf('/') + 1)}`;
-                               /* setTimeout(()=>{
-                                    alert("Y2 " + isSave + "  " + filePath)
-                                },0);*/
+                                /* setTimeout(()=>{
+                                     alert("Y2 " + isSave + "  " + filePath)
+                                 },0);*/
                                 RNFS.copyFile(uri,filePath)
                                     .then(()=>{
                                         if(isOpenImg)
@@ -149,20 +185,19 @@ export class CaptureImage {
             }
 
         });
-
-
     }
 
     static clean(uri){
-        if(uri == null){
+        if(this.verfyComponent(2)){
+            if(uri == null){
 
+            }
+            else
+            {
+                releaseCapture(uri);
+            }
         }
-        else
-        {
-            releaseCapture(uri);
-        }
-
     }
 }
 
-RNFS.mkdir(CaptureImage.destPhotos);
+RNFS.mkdir&&RNFS.mkdir(CaptureImage.destPhotos);

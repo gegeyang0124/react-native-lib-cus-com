@@ -13,7 +13,10 @@ import {Tools} from "./Tools";
 // import {TalkingData} from "./TalkingData";
 // import {Alert} from "./Alert";
 
-import RNFS from 'react-native-fs';
+// import RNFS from 'react-native-fs';
+import {Components} from "./../StackComponent";
+const RNFS = Components.react_native_fs;
+
 /*import FileTransfer from '@remobile/react-native-file-transfer';
  // var FileTransfer = require('@remobile/react-native-file-transfer');
  var RNUploader = NativeModules.RNUploader;*/
@@ -29,10 +32,29 @@ export class Http {
     static urlFile = null;//文件上传接口
 
     // static destDownload = `${RNFS.DocumentDirectoryPath}/`;//下载目录 此目录会在app升级后被覆盖
-    static destDownload = Platform.OS == "ios"
-        ? `${RNFS.DocumentDirectoryPath}/download`
-        : `${RNFS.ExternalStorageDirectoryPath}/download`;//下载目录
+    static destDownload = RNFS.DocumentDirectoryPath
+        ? Platform.OS == "ios"
+            ? `${RNFS.DocumentDirectoryPath}/download`
+            : `${RNFS.ExternalStorageDirectoryPath}/download`
+        : null ;//下载目录
     // static isIndicate = true;
+
+    static verfyComponent(type = 1){
+        let b = true;
+        switch (type){
+            case 1:{
+                if(!RNFS.DocumentDirectoryPath){
+                    console.info("请安装文件操作组件","react-native-fs");
+                    Tools.toast("请安装组件 react-native-fs");
+                    b = false;
+                }
+
+                break;
+            }
+        }
+
+        return b;
+    }
 
     static getConnectionInfo(){
         return new Promise((resolve,reject) => {
@@ -305,17 +327,17 @@ export class Http {
             };
 
         params = params == undefined ? {} : params;
-       /* if(!params.isNotUser)
-        {
-            params.userId = Tools.userConfig.userInfo == null
-                ? ''
-                : Tools.userConfig.userInfo.id;
-            params.user_id = params.userId;
-            params.phone = Tools.userConfig.userInfo == null
-                ? ''
-                : Tools.userConfig.userInfo.phone;
+        /* if(!params.isNotUser)
+         {
+             params.userId = Tools.userConfig.userInfo == null
+                 ? ''
+                 : Tools.userConfig.userInfo.id;
+             params.user_id = params.userId;
+             params.phone = Tools.userConfig.userInfo == null
+                 ? ''
+                 : Tools.userConfig.userInfo.phone;
 
-        }*/
+         }*/
 
         //删除params数据中的isNotUser属性
         // delete params["isNotUser"];
@@ -522,241 +544,244 @@ export class Http {
                 .then((connectionInfo) => {
                     // Tools.progressPer.show();
                     // ProgressPerApi.show(0);
-                    if(Tools.platformType)
-                    {
-                        // create an array of objects of the files you want to upload
-                        var files = [
-                            {
-                                name: 'Filedata',
-                                filename: filePath.substring(filePath.lastIndexOf("/") + 1),
-                                filepath: filePath,
-                                // filetype: 'multipart/form-data'
-                            },
-                        ];
-
-                        // upload files
-                        RNFS.uploadFiles({
-                            toUrl: Http.urlFile,
-                            files: files,
-                            method: 'POST',
-                            headers: {
-                                // 'ContentType':'multipart/form-data',
-                                // Accept: 'application/json',
-                                // token:retJson.retData.token,
-                                // token:"cec2567515c751f96118833e4d050709",
-                            },
-                            fields: {
-                                // token:retJson.retData.token,
-                                // token:"cec2567515c751f96118833e4d050709",
-                            },
-                            begin: (response) => {
-                                // var jobId = response.jobId;
-                                // console.log('UPLOAD HAS BEGUN! JobId: ' + jobId);
-                                // Tools.toast(jobId);
-                            },
-                            progress: (response) => {
-                                var percentage = Math.floor(
-                                    (response.totalBytesSent/response.totalBytesExpectedToSend)
-                                );
-                                // Tools.toast(percentage);
-                                // console.log('UPLOAD IS ' + percentage + '% DONE!');
-                                // Tools.progressPer.setPogress(percentage);
-                                ProgressPerApi.show(percentage);
-                            }
-                        })
-                            .promise.then((response) => {
-
-                            // Tools.progressPer.show(false);
-                            // Tools.progressPer.hide();
-                            ProgressPerApi.hide();
-
-                            console.log("-----------------------------------------httpRequest " + Http.urlFile + " success start-------------------------------------");
-                            console.info("requestData:",files);
-                            console.info("response:",response);
-                            console.log("-----------------------------------------httpRequest " + Http.urlFile + " success end-------------------------------------");
-
-                            if (response.statusCode == 200)
-                            {
-                                response = JSON.parse(response.body);
-
-                                resolve(response);
-
-                             /*   if(response.errcode == 0){
-                                    // if(true){
-
-                                    resolve(response.data);
-                                    // Tools.toast('FILES UPLOADED!');
-                                    // console.log('FILES UPLOADED!'); // response.statusCode, response.headers, response.body
-                                }
-                                else
+                    if(this.verfyComponent(1)){
+                        if(Tools.platformType)
+                        {
+                            // create an array of objects of the files you want to upload
+                            var files = [
                                 {
-                                    /!* TalkingData.trackEventHttp("exce-Filed",
-                                         Http.urlFile,
-                                         "POST",
-                                         {
-                                             errName:"fileErr",
-                                             errcode:response ? response.errcode + "" : "null"
-                                         });
-                                     Tools.toast("上传失败，请联系管理员");*!/
+                                    name: 'Filedata',
+                                    filename: filePath.substring(filePath.lastIndexOf("/") + 1),
+                                    filepath: filePath,
+                                    // filetype: 'multipart/form-data'
+                                },
+                            ];
 
+                            // upload files
+                            RNFS.uploadFiles({
+                                toUrl: Http.urlFile,
+                                files: files,
+                                method: 'POST',
+                                headers: {
+                                    // 'ContentType':'multipart/form-data',
+                                    // Accept: 'application/json',
+                                    // token:retJson.retData.token,
+                                    // token:"cec2567515c751f96118833e4d050709",
+                                },
+                                fields: {
+                                    // token:retJson.retData.token,
+                                    // token:"cec2567515c751f96118833e4d050709",
+                                },
+                                begin: (response) => {
+                                    // var jobId = response.jobId;
+                                    // console.log('UPLOAD HAS BEGUN! JobId: ' + jobId);
+                                    // Tools.toast(jobId);
+                                },
+                                progress: (response) => {
+                                    var percentage = Math.floor(
+                                        (response.totalBytesSent/response.totalBytesExpectedToSend)
+                                    );
+                                    // Tools.toast(percentage);
+                                    // console.log('UPLOAD IS ' + percentage + '% DONE!');
+                                    // Tools.progressPer.setPogress(percentage);
+                                    ProgressPerApi.show(percentage);
+                                }
+                            })
+                                .promise.then((response) => {
 
-                                    let obj = typeof response == "object" ? response : {
-                                        errName:"fileErr_Filed",
-                                        errcode:response + ""
-                                    };
-
-                                    this.putErrInfo("excep-Filed",Http.urlFile
-                                        ,"POST",obj,files);
-                                    /!*TalkingData.trackEventHttp("excep-Filed",
-                                        Http.urlFile,
-                                        "POST",
-                                        obj);*!/
-
-                                    reject({status:-1});
-                                }*/
-
-                            }
-                            else {
-                                Tools.toast("上传失败，请重试....");
-
-                                /* TalkingData.trackEventHttp("exception",
-                                     Http.urlFile,
-                                     "POST",
-                                     {
-                                         errName:"fileErr",
-                                         statusCode:response.statusCode
-                                     });*/
-
-                                this.putErrInfo("exception",Http.urlFile
-                                    ,"POST", {
-                                        errName:"fileErr",
-                                        statusCode:response.statusCode
-                                    },files);
-                                reject({status:-1});
-                                // Tools.toast('SERVER ERROR');
-                                // alert("err: " + JSON.stringify(response))
-                            }
-                        })
-                            .catch((err) => {
                                 // Tools.progressPer.show(false);
-                                Tools.toast("请检查网络....");
+                                // Tools.progressPer.hide();
                                 ProgressPerApi.hide();
-
-                                // TalkingData.trackEventHttp("exception",HtHttp.urlFile,null,"文本失败");
-
-                                if(err.description === "cancelled") {
-                                    // cancelled by user
-                                }
-                                // console.log(err);
-                                // alert("err: " + JSON.stringify(err));
-
-                                reject({status:-1});
-                            });
-                    }
-                    else
-                    {
-
-                        let formData = new FormData();//如果需要上传多张图片,需要遍历数组,把图片的路径数组放入formData中
-                        let file = {uri: filePath, type: 'multipart/form-data', name: filePath.substring(filePath.lastIndexOf("/") + 1)};   //这里的key(uri和type和name)不能改变,
-                        formData.append("Filedata",file);   //这里的files就是后台需要的key
-
-
-                        /*let formData = new FormData();
-                         for(var i = 0;i<imgAry.length;i++){
-                         let file = {uri: imgAry[i], type: 'multipart/form-data', name: 'image.png'};
-                         formData.append("files",file);
-                         }*/
-
-                        fetch(Http.urlFile,{
-                            method:'POST',
-                            headers:{
-                                'ContentType':'multipart/form-data',
-                                // 'token':retJson.retData.token,
-                            },
-                            body:formData,
-                        })
-                            .then((response) => {
-                                // Tools.progressPer.show(false);
-                                ProgressPerApi.hide();
-                                if (response.ok) {
-
-                                    return response.json();
-
-                                }
-                                else {
-                                    //alert("ddll :" + JSON.stringify({status: response.status}))
-                                    //reject({status: response.status});
-                                    this.putErrInfo("excep-service",
-                                        Http.urlFile,
-                                        "POST",{
-                                            statusCode:response.status,
-                                        },file);
-                                    Tools.toast("后台报错,请联系管理员");
-                                    return {retCode:-40440};
-                                }
-                                // return response.json();
-                            } )
-                            .then((responseData)=>{
-
-                                if(response.retCode == -40440){
-                                    reject({status: -1});
-                                }
 
                                 console.log("-----------------------------------------httpRequest " + Http.urlFile + " success start-------------------------------------");
                                 console.info("requestData:",files);
-                                console.info("response:",responseData);
+                                console.info("response:",response);
                                 console.log("-----------------------------------------httpRequest " + Http.urlFile + " success end-------------------------------------");
 
-                                resolve(responseData);
-                               /* if(responseData.errcode == 0){
-
-                                    // alert("responseData:  " + JSON.stringify(responseData.data));
-                                    resolve(responseData.data);
-                                }
-                                else
+                                if (response.statusCode == 200)
                                 {
-                                    Tools.toast("上传失败，请联系管理员");
-                                    /!* TalkingData.trackEventHttp("exce-Filed",
-                                        Http.urlFile,
+                                    response = JSON.parse(response.body);
+
+                                    resolve(response);
+
+                                    /*   if(response.errcode == 0){
+                                           // if(true){
+
+                                           resolve(response.data);
+                                           // Tools.toast('FILES UPLOADED!');
+                                           // console.log('FILES UPLOADED!'); // response.statusCode, response.headers, response.body
+                                       }
+                                       else
+                                       {
+                                           /!* TalkingData.trackEventHttp("exce-Filed",
+                                                Http.urlFile,
+                                                "POST",
+                                                {
+                                                    errName:"fileErr",
+                                                    errcode:response ? response.errcode + "" : "null"
+                                                });
+                                            Tools.toast("上传失败，请联系管理员");*!/
+
+
+                                           let obj = typeof response == "object" ? response : {
+                                               errName:"fileErr_Filed",
+                                               errcode:response + ""
+                                           };
+
+                                           this.putErrInfo("excep-Filed",Http.urlFile
+                                               ,"POST",obj,files);
+                                           /!*TalkingData.trackEventHttp("excep-Filed",
+                                               Http.urlFile,
+                                               "POST",
+                                               obj);*!/
+
+                                           reject({status:-1});
+                                       }*/
+
+                                }
+                                else {
+                                    Tools.toast("上传失败，请重试....");
+
+                                    /* TalkingData.trackEventHttp("exception",
+                                         Http.urlFile,
                                          "POST",
                                          {
                                              errName:"fileErr",
-                                             statusCode:responseData ? responseData.errcode + "" : "null"
-                                         });*!/
+                                             statusCode:response.statusCode
+                                         });*/
 
-                                    let obj = typeof responseData == "object" ? responseData : {
-                                        errName:"fileErr_Filed",
-                                        errcode:responseData + ""
-                                    };
-                                    /!* TalkingData.trackEventHttp("exce-Filed",
-                                         Http.urlFile,
-                                         "POST",
-                                         obj);*!/
-                                    this.putErrInfo("excep-Filed",Http.urlFile
-                                        ,"POST", obj,file);
+                                    this.putErrInfo("exception",Http.urlFile
+                                        ,"POST", {
+                                            errName:"fileErr",
+                                            statusCode:response.statusCode
+                                        },files);
                                     reject({status:-1});
-                                }*/
-
-                                // console.log('responseData',responseData);
+                                    // Tools.toast('SERVER ERROR');
+                                    // alert("err: " + JSON.stringify(response))
+                                }
                             })
-                            .catch((error)=>{
-                                // Tools.progressPer.show(false);
-                                ProgressPerApi.hide();
-                                // console.error('error',error)
-                                Tools.toast("上传失败，请重试....");
-                                /*TalkingData.trackEventHttp("exception",
-                                    Http.urlFile,
-                                    "POST",
-                                    {
-                                        errName:"fileErr",
-                                        statusCode:error
-                                    });*/
-                                this.putErrInfo("exception",Http.urlFile
-                                    ,"POST", error,file);
-                                reject({status:-1});
-                                // alert("error: " + JSON.stringify(error));
-                            });
+                                .catch((err) => {
+                                    // Tools.progressPer.show(false);
+                                    Tools.toast("请检查网络....");
+                                    ProgressPerApi.hide();
+
+                                    // TalkingData.trackEventHttp("exception",HtHttp.urlFile,null,"文本失败");
+
+                                    if(err.description === "cancelled") {
+                                        // cancelled by user
+                                    }
+                                    // console.log(err);
+                                    // alert("err: " + JSON.stringify(err));
+
+                                    reject({status:-1});
+                                });
+                        }
+                        else
+                        {
+
+                            let formData = new FormData();//如果需要上传多张图片,需要遍历数组,把图片的路径数组放入formData中
+                            let file = {uri: filePath, type: 'multipart/form-data', name: filePath.substring(filePath.lastIndexOf("/") + 1)};   //这里的key(uri和type和name)不能改变,
+                            formData.append("Filedata",file);   //这里的files就是后台需要的key
+
+
+                            /*let formData = new FormData();
+                             for(var i = 0;i<imgAry.length;i++){
+                             let file = {uri: imgAry[i], type: 'multipart/form-data', name: 'image.png'};
+                             formData.append("files",file);
+                             }*/
+
+                            fetch(Http.urlFile,{
+                                method:'POST',
+                                headers:{
+                                    'ContentType':'multipart/form-data',
+                                    // 'token':retJson.retData.token,
+                                },
+                                body:formData,
+                            })
+                                .then((response) => {
+                                    // Tools.progressPer.show(false);
+                                    ProgressPerApi.hide();
+                                    if (response.ok) {
+
+                                        return response.json();
+
+                                    }
+                                    else {
+                                        //alert("ddll :" + JSON.stringify({status: response.status}))
+                                        //reject({status: response.status});
+                                        this.putErrInfo("excep-service",
+                                            Http.urlFile,
+                                            "POST",{
+                                                statusCode:response.status,
+                                            },file);
+                                        Tools.toast("后台报错,请联系管理员");
+                                        return {retCode:-40440};
+                                    }
+                                    // return response.json();
+                                } )
+                                .then((responseData)=>{
+
+                                    if(response.retCode == -40440){
+                                        reject({status: -1});
+                                    }
+
+                                    console.log("-----------------------------------------httpRequest " + Http.urlFile + " success start-------------------------------------");
+                                    console.info("requestData:",files);
+                                    console.info("response:",responseData);
+                                    console.log("-----------------------------------------httpRequest " + Http.urlFile + " success end-------------------------------------");
+
+                                    resolve(responseData);
+                                    /* if(responseData.errcode == 0){
+
+                                         // alert("responseData:  " + JSON.stringify(responseData.data));
+                                         resolve(responseData.data);
+                                     }
+                                     else
+                                     {
+                                         Tools.toast("上传失败，请联系管理员");
+                                         /!* TalkingData.trackEventHttp("exce-Filed",
+                                             Http.urlFile,
+                                              "POST",
+                                              {
+                                                  errName:"fileErr",
+                                                  statusCode:responseData ? responseData.errcode + "" : "null"
+                                              });*!/
+
+                                         let obj = typeof responseData == "object" ? responseData : {
+                                             errName:"fileErr_Filed",
+                                             errcode:responseData + ""
+                                         };
+                                         /!* TalkingData.trackEventHttp("exce-Filed",
+                                              Http.urlFile,
+                                              "POST",
+                                              obj);*!/
+                                         this.putErrInfo("excep-Filed",Http.urlFile
+                                             ,"POST", obj,file);
+                                         reject({status:-1});
+                                     }*/
+
+                                    // console.log('responseData',responseData);
+                                })
+                                .catch((error)=>{
+                                    // Tools.progressPer.show(false);
+                                    ProgressPerApi.hide();
+                                    // console.error('error',error)
+                                    Tools.toast("上传失败，请重试....");
+                                    /*TalkingData.trackEventHttp("exception",
+                                        Http.urlFile,
+                                        "POST",
+                                        {
+                                            errName:"fileErr",
+                                            statusCode:error
+                                        });*/
+                                    this.putErrInfo("exception",Http.urlFile
+                                        ,"POST", error,file);
+                                    reject({status:-1});
+                                    // alert("error: " + JSON.stringify(error));
+                                });
+                        }
                     }
+
                 })
                 .catch(retJson=>{
                     reject(retJson);
@@ -899,110 +924,111 @@ export class Http {
 
         return  new Promise((resolve,reject)=>{
 
-            if(fileAddress.indexOf("http") == 0){
+            if(this.verfyComponent(1)){
+                if(fileAddress.indexOf("http") == 0){
 
-                let downloadDest = this.destDownload + `${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
-                RNFS.exists(downloadDest)
-                    .then((exist) =>{
-                        if(!exist){
-                            this.getConnectionInfo()
-                                .then((connectionInfo) => {
+                    let downloadDest = this.destDownload + `${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
+                    RNFS.exists(downloadDest)
+                        .then((exist) =>{
+                            if(!exist){
+                                this.getConnectionInfo()
+                                    .then((connectionInfo) => {
 
-                                    if(fileAddress == undefined)
-                                    {
-                                        Tools.toast("请传入文件地址")
-                                        reject({status:-1});
-                                    }
-                                    /*else if(Tools.progressPer == null)
-                                    {
-                                        Tools.toast(`请在页面放入进程条\<ProgressPer \/ \>`);
-                                        return;
-                                    }*/
-
-                                    // 音频
-                                    //const downloadDest = `${RNFS.MainBundlePath}/${((Math.random() * 1000) | 0)}.mp3`;
-                                    // let downloadDest = `${RNFS.MainBundlePath}/${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
-                                    // let downloadDest = `${RNFS.DocumentDirectoryPath}/${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
-                                    // http://wvoice.spriteapp.cn/voice/2015/0902/55e6fc6e4f7b9.mp3
-                                    //const formUrl = 'http://wvoice.spriteapp.cn/voice/2015/0818/55d2248309b09.mp3';VideoView_android.js
-
-                                    /*alert(JSON.stringify(downloadDest));
-                                     return;*/
-
-                                    let options = {
-                                        fromUrl: fileAddress,
-                                        toFile: downloadDest,
-                                        background: true,
-                                        headers: {
-                                            // 'Cookie': cookie //需要添加验证到接口要设置cookie
-                                        },
-                                        begin: (res) => {
-                                            /*console.log('begin', res);
-                                             console.log('contentLength:', res.contentLength / 1024 / 1024, 'M');*/
-                                            // alert(JSON.stringify(res));
-                                        },
-                                        progress: (res) => {
-
-                                            //let per = (res.bytesWritten / res.contentLength).toFixed(3);
-                                            let per = (res.bytesWritten / res.contentLength);
-                                            // per = per * 1000;
-                                            // per = parseInt(per);
-                                            // per = per / 1000;
-
-                                            // Tools.progressPer.setPogress(per);
-                                            ProgressPerApi.show(per);
+                                        if(fileAddress == undefined)
+                                        {
+                                            Tools.toast("请传入文件地址")
+                                            reject({status:-1});
                                         }
-                                    };
+                                        /*else if(Tools.progressPer == null)
+                                        {
+                                            Tools.toast(`请在页面放入进程条\<ProgressPer \/ \>`);
+                                            return;
+                                        }*/
 
-                                    try {
-                                        let ret = RNFS.downloadFile(options);
-                                        ret.promise.then(retJson => {
-                                            /* console.log('success', res);
-                                             console.log('file://' + downloadDest)*/
+                                        // 音频
+                                        //const downloadDest = `${RNFS.MainBundlePath}/${((Math.random() * 1000) | 0)}.mp3`;
+                                        // let downloadDest = `${RNFS.MainBundlePath}/${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
+                                        // let downloadDest = `${RNFS.DocumentDirectoryPath}/${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
+                                        // http://wvoice.spriteapp.cn/voice/2015/0902/55e6fc6e4f7b9.mp3
+                                        //const formUrl = 'http://wvoice.spriteapp.cn/voice/2015/0818/55d2248309b09.mp3';VideoView_android.js
 
-                                            retJson["filePath"] = downloadDest;
+                                        /*alert(JSON.stringify(downloadDest));
+                                         return;*/
+
+                                        let options = {
+                                            fromUrl: fileAddress,
+                                            toFile: downloadDest,
+                                            background: true,
+                                            headers: {
+                                                // 'Cookie': cookie //需要添加验证到接口要设置cookie
+                                            },
+                                            begin: (res) => {
+                                                /*console.log('begin', res);
+                                                 console.log('contentLength:', res.contentLength / 1024 / 1024, 'M');*/
+                                                // alert(JSON.stringify(res));
+                                            },
+                                            progress: (res) => {
+
+                                                //let per = (res.bytesWritten / res.contentLength).toFixed(3);
+                                                let per = (res.bytesWritten / res.contentLength);
+                                                // per = per * 1000;
+                                                // per = parseInt(per);
+                                                // per = per / 1000;
+
+                                                // Tools.progressPer.setPogress(per);
+                                                ProgressPerApi.show(per);
+                                            }
+                                        };
+
+                                        try {
+                                            let ret = RNFS.downloadFile(options);
+                                            ret.promise.then(retJson => {
+                                                /* console.log('success', res);
+                                                 console.log('file://' + downloadDest)*/
+
+                                                retJson["filePath"] = downloadDest;
+                                                // Tools.progressPer.show(false);
+                                                ProgressPerApi.hide();
+                                                resolve(retJson);
+
+                                            }).catch(err => {
+                                                //console.log('err', err);
+                                                // Tools.progressPer.show(false);
+                                                ProgressPerApi.hide();
+                                                reject(err);
+                                            });
+                                        }
+                                        catch (e) {
+                                            //console.log(error);
                                             // Tools.progressPer.show(false);
-                                            ProgressPerApi.hide();
-                                            resolve(retJson);
+                                            ProgressPerApi.hide()
+                                            reject(e);
+                                        }
 
-                                        }).catch(err => {
-                                            //console.log('err', err);
-                                            // Tools.progressPer.show(false);
-                                            ProgressPerApi.hide();
-                                            reject(err);
-                                        });
-                                    }
-                                    catch (e) {
-                                        //console.log(error);
-                                        // Tools.progressPer.show(false);
-                                        ProgressPerApi.hide()
-                                        reject(e);
-                                    }
-
-                                })
-                                .catch(retJson=>{
-                                    reject(retJson);
+                                    })
+                                    .catch(retJson=>{
+                                        reject(retJson);
+                                    });
+                            }
+                            else
+                            {
+                                // Tools.toast("文件已存在");
+                                resolve({
+                                    filePath:downloadDest
                                 });
-                        }
-                        else
-                        {
-                            // Tools.toast("文件已存在");
-                            resolve({
-                                filePath:downloadDest
-                            });
-                        }
+                            }
+                        });
+
+
+
+                }
+                else
+                {
+                    resolve({
+                        filePath:fileAddress
                     });
-
-
-
+                }
             }
-            else
-            {
-                resolve({
-                    filePath:fileAddress
-                });
-            }
-
 
             /* // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
 
@@ -1042,4 +1068,4 @@ export class Http {
 
 }
 
-RNFS.mkdir(Http.destDownload);
+RNFS.mkdir&&RNFS.mkdir(Http.destDownload);

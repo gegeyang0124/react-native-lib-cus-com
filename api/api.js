@@ -13,6 +13,8 @@ import {ProgressPerApi} from "./ProgressPerApi";
 import {ProgressApi} from "./ProgressApi";
 import {MenuBottomApi} from "./MenuBottomApi";
 import {Alert} from "./Alert";
+import {JPush} from "./JPush";
+import {TalkingData} from "./TalkingData";
 
 /**
  *工具类API引入集合
@@ -63,6 +65,12 @@ const api = {
     },
     get HotUpdate() {
         return HotUpdate;
+    },
+    get JPush() {
+        return JPush;
+    },
+    get TalkingData() {
+        return TalkingData;
     },
 
 };

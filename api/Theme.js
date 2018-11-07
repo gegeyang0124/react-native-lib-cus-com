@@ -2,7 +2,8 @@
  * Created by Administrator on 2018/5/1.
  */
 
-import {StyleSheetAdapt} from "./StyleSheetAdapt";
+// import {StyleSheetAdapt} from "./StyleSheetAdapt";
+/*
 import {
     StackNavigator,
     DrawerNavigator,
@@ -10,7 +11,8 @@ import {
     TabBarBottom,
     TabBarTop,
     DrawerItems,
-} from 'react-navigation';
+} from 'react-navigation-zy';
+*/
 
 /**
  * 主题集合 颜色、宽度，及一些默认配置
@@ -103,7 +105,7 @@ export class Theme{
     };
 
 
-    static TabNavigatorConfigs = {
+   /* static TabNavigatorConfigs = {
         // initialRouteName: 'PageTaskDrawer',
         tabBarComponent: TabBarBottom,
         tabBarPosition: 'top',
@@ -117,8 +119,8 @@ export class Theme{
                 alignItems: "center",
                 justifyContent: "center",
                 backgroundColor:"#f8f1f3",
-                /* borderBottomWidth:StyleSheetAdapt.getHeight(1),
-                 borderBottomColor:'rgba(00, 00, 00, 0.8)',*/
+                /!* borderBottomWidth:StyleSheetAdapt.getHeight(1),
+                 borderBottomColor:'rgba(00, 00, 00, 0.8)',*!/
             },
             labelStyle:{
                 flex:1,
@@ -127,7 +129,7 @@ export class Theme{
                 marginLeft:0,
 
             },
-            /* tabStyle:{
+            /!* tabStyle:{
                  flexDirection: 'column',
                  // backgroundColor:"yellow",
                  // display:'none',
@@ -137,7 +139,7 @@ export class Theme{
              },
              indicatorStyle:{
                  // height:StyleSheetAdapt.getHeight(1)
-             },*/
+             },*!/
         }
     };
 
@@ -172,8 +174,8 @@ export class Theme{
                 // flexDirection: 'column',
                 // backgroundColor:"yellow",
                 // display:'none',
-                /*alignItems: "center",
-                justifyContent: "center",*/
+                /!*alignItems: "center",
+                justifyContent: "center",*!/
                 // height:0,
             },
             indicatorStyle:{
@@ -181,7 +183,7 @@ export class Theme{
                 backgroundColor:Theme.Colors.themeColor,
             },
         }
-    };
+    };*/
 
 }
 

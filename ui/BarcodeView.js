@@ -12,11 +12,17 @@ import {
  * PropTypes已经从react中单独提取出来
  * android 需要修改 RCTCapturePackage中的List的继承去掉
  * **/
-import Barcode from 'react-native-smart-barcode'
-import TimerEnhance from 'react-native-smart-timer-enhance'
+// import Barcode from 'react-native-smart-barcode'
+import {Components} from "./../StackComponent";
+const Barcode = Components.react_native_smart_barcode;
+import TimerEnhance from 'react-native-smart-timer-enhance-zy'
 
 import {ViewTitle} from "./ViewTitle";
+import {Tools} from "../api/Tools";
 
+/**
+ * 二维码及条形码扫描组件
+ * **/
 class BarcodeView extends Component{
 
     static base:BarcodeView;
@@ -26,6 +32,11 @@ class BarcodeView extends Component{
     // 构造
     constructor(props) {
         super(props);
+
+        if(!Barcode){
+            console.info("请安装二维码及条形码扫描组件","react-native-smart-barcode");
+            Tools.toast("请安装组件 react-native-smart-barcode");
+        }
 
         BarcodeView.base = this;
         // 初始状态
@@ -89,6 +100,29 @@ class BarcodeView extends Component{
         });
     }
 
+    /**
+     * 开始扫描1D/2D码
+     * **/
+    startScan(){
+        // BarcodeView.base.barCode.startScan();
+        return new Promise(function (resolve,reject) {
+            setTimeout(()=>{
+
+               this.barCode.startScan();
+                // BarcodeView.base.forceUpdate();
+
+            },500);
+
+            this.resolvePromise = resolve;
+            this.setState({
+                visible: true,
+            });
+
+
+
+        });
+    }
+
     /*stopScan = (e) => {
      this.barCode.stopScan();
      }*/
@@ -98,47 +132,49 @@ class BarcodeView extends Component{
     }
 
     render() {
+        BarcodeView.base = this;
+        if(Barcode){
+            return (
+                <Modal animationType={"slide"}
+                       transparent = {true}
+                       visible={this.state.visible}
+                       onRequestClose={()=> this.onRequestClose()}>
+                    <ViewTitle isDefaultOnPressLeft={false}
+                               isNavigator={true}
+                               isScroll={false}
+                               text={"扫描二维码/条形码"}
+                               style={{flex: 1, backgroundColor: '#000000',}}
+                               onPressLeft={()=>{
+                                   ///alert("sadf");
+                                   this.barCode.stopScan();
 
+                                   this.setState({
+                                       visible: false,
+                                   });
+                               }}>
+                        {
+                            this.state.visible
+                                ? <View style={{flex: 1, backgroundColor: 'black',}}>
+                                    <Barcode {...this.props}
+                                             style={{flex: 1, }}
+                                             ref={ component => {
 
-        return (
-            <Modal animationType={"slide"}
-                   transparent = {true}
-                   visible={this.state.visible}
-                   onRequestClose={()=> this.onRequestClose()}>
-                <ViewTitle isDefaultOnPressLeft={false}
-                           isNavigator={true}
-                           isScroll={false}
-                           text={"扫描二维码/条形码"}
-                           style={{flex: 1, backgroundColor: '#000000',}}
-                           onPressLeft={()=>{
-                               ///alert("sadf");
-                               this.barCode.stopScan();
+                                                 this.barCode = component;
+                                                 // this.barCode.startScan();
 
-                               this.setState({
-                                   visible: false,
-                               });
-                           }}>
-                    {
-                        this.state.visible
-                            ? <View style={{flex: 1, backgroundColor: 'black',}}>
-                            <Barcode {...this.props}
-                                     style={{flex: 1, }}
-                                     ref={ component => {
+                                                 return component;
+                                             } }
+                                             onBarCodeRead={this.onBarCodeRead}/>
 
-                                         this.barCode = component;
-                                         // this.barCode.startScan();
+                                </View>
+                                : null
+                        }
 
-                                         return component;
-                                     } }
-                                     onBarCodeRead={this.onBarCodeRead}/>
-
-                        </View>
-                            : null
-                    }
-
-                </ViewTitle>
-            </Modal>
-        );
+                    </ViewTitle>
+                </Modal>
+            );
+        }
+        return (null);
 
 
     }

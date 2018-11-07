@@ -7,18 +7,24 @@ import {
     TalkingData,
 } from "./../api/api";
 import {ImageChange} from "./ImageChange";
-import LeftWhite from './../../res/images/leftWhite.png';
-import add from './../../res/images/add.png';
+import LeftWhite from 'lib-images-zy/leftWhite.png';
+import add from 'lib-images-zy/add.png';
 
 /**
  * 修改react-navigation底层
  * 在 this.props.navigation 中添加setEvt方法
  * **/
-import {
+/*import {
     NavigationActions,
     StackPages,
-} from 'react-navigation';
-import Orientation from 'react-native-orientation';
+} from 'react-navigation-zy';
+import Orientation from 'react-native-orientation';*/
+import {Components} from "./../StackComponent";
+const {
+    NavigationActions,
+    StackPages,
+} = Components.react_navigation;
+const Orientation = Components.react_native_orientation;;
 
 // import PageMine from "../../pages/pageMain/pageMine/PageMine";
 
@@ -161,10 +167,20 @@ export default class BaseComponent extends PureComponent {
         BaseComponent.navigationer = this.props.navigation;
     }
 
-
     /// 返回当前页面的navigation
     nav() {
         return this.props.navigation;
+    }
+
+    static verfyComponent(){
+        let b = true;
+        if(!Orientation.lockToPortrait){
+            console.info("请安装监听屏幕方向变化及屏幕方向设置组件","react-native-orientation");
+            Tools.toast("请安装组件 react-native-orientation");
+            b = false;
+        }
+
+        return b;
     }
 
     /**
@@ -172,65 +188,69 @@ export default class BaseComponent extends PureComponent {
      * @param action int,//0、屏幕随着系统切换；1、竖屏锁定；2、横屏锁定；3、左边横屏锁定；4、右边横屏锁定
      * **/
     setScreenOrientations(action){
-        action&&(BaseComponent.isLockScreen = true);
-        // Tools.toast("" + BaseComponent.isLockScreen);
-        switch (action){
-            case 0:{
-                BaseComponent.isLockScreen&&Orientation.unlockAllOrientations();
-                BaseComponent.isLockScreen = false;
-                break;
-            }
-            case 1:{
+        if(BaseComponent.verfyComponent()){
+            action&&(BaseComponent.isLockScreen = true);
+            // Tools.toast("" + BaseComponent.isLockScreen);
+            switch (action){
+                case 0:{
+                    BaseComponent.isLockScreen&&Orientation.unlockAllOrientations();
+                    BaseComponent.isLockScreen = false;
+                    break;
+                }
+                case 1:{
 
-                // 只允许竖屏
-                Orientation.lockToPortrait();
-                break;
-            }
-            case 2:{
-                //只允许横屏
-                Orientation.lockToLandscape();
-                break;
-            }
-            case 3:{
+                    // 只允许竖屏
+                    Orientation.lockToPortrait();
+                    break;
+                }
+                case 2:{
+                    //只允许横屏
+                    Orientation.lockToLandscape();
+                    break;
+                }
+                case 3:{
 
-                Orientation.lockToLandscapeLeft();
-                break;
-            }
-            case 4:{
-                Orientation.lockToLandscapeRight();
-                break;
+                    Orientation.lockToLandscapeLeft();
+                    break;
+                }
+                case 4:{
+                    Orientation.lockToLandscapeRight();
+                    break;
+                }
             }
         }
     }
     static setScreenOrientations(action){
-        action&&(BaseComponent.isLockScreen = true);
-        // Tools.toast("action: " + action + BaseComponent.isLockScreen);
-        switch (action){
-            case 0:{
+        if(this.verfyComponent()){
+            action&&(BaseComponent.isLockScreen = true);
+            // Tools.toast("action: " + action + BaseComponent.isLockScreen);
+            switch (action){
+                case 0:{
 
-                BaseComponent.isLockScreen&&Orientation.unlockAllOrientations();
-                BaseComponent.isLockScreen = false;
-                break;
-            }
-            case 1:{
+                    BaseComponent.isLockScreen&&Orientation.unlockAllOrientations();
+                    BaseComponent.isLockScreen = false;
+                    break;
+                }
+                case 1:{
 
-                // 只允许竖屏
-                Orientation.lockToPortrait();
-                break;
-            }
-            case 2:{
-                //只允许横屏
-                Orientation.lockToLandscape();
-                break;
-            }
-            case 3:{
+                    // 只允许竖屏
+                    Orientation.lockToPortrait();
+                    break;
+                }
+                case 2:{
+                    //只允许横屏
+                    Orientation.lockToLandscape();
+                    break;
+                }
+                case 3:{
 
-                Orientation.lockToLandscapeLeft();
-                break;
-            }
-            case 4:{
-                Orientation.lockToLandscapeRight();
-                break;
+                    Orientation.lockToLandscapeLeft();
+                    break;
+                }
+                case 4:{
+                    Orientation.lockToLandscapeRight();
+                    break;
+                }
             }
         }
     }
@@ -240,40 +260,44 @@ export default class BaseComponent extends PureComponent {
      * return 0/1 ;//int 0、竖屏,1、横屏
      * **/
     getOrientation(){
-        var initial = Orientation.getInitialOrientation();
-        if (initial === 'PORTRAIT') {
-            //do stuff
-            return 0;
-        } else {
-            //do other stuff
-            return 1;
-        }
+        if(BaseComponent.verfyComponent()){
+            var initial = Orientation.getInitialOrientation();
+            if (initial === 'PORTRAIT') {
+                //do stuff
+                return 0;
+            } else {
+                //do other stuff
+                return 1;
+            }
 
-        /**
-         * Orientation.getOrientation((err, orientation) => {
+            /**
+             * Orientation.getOrientation((err, orientation) => {
       console.log(`Current Device Orientation: ${orientation}`);
     });
-         Orientation.removeOrientationListener(this._orientationDidChange);
-         Orientation.addOrientationListener(this._orientationDidChange);
-         * **/
+             Orientation.removeOrientationListener(this._orientationDidChange);
+             Orientation.addOrientationListener(this._orientationDidChange);
+             * **/
+        }
     }
     static getOrientation(){
-        var initial = Orientation.getInitialOrientation();
-        if (initial === 'PORTRAIT') {
-            //do stuff
-            return 0;
-        } else {
-            //do other stuff
-            return 1;
-        }
+        if(this.verfyComponent()){
+            var initial = Orientation.getInitialOrientation();
+            if (initial === 'PORTRAIT') {
+                //do stuff
+                return 0;
+            } else {
+                //do other stuff
+                return 1;
+            }
 
-        /**
-         * Orientation.getOrientation((err, orientation) => {
+            /**
+             * Orientation.getOrientation((err, orientation) => {
       console.log(`Current Device Orientation: ${orientation}`);
     });
-         Orientation.removeOrientationListener(this._orientationDidChange);
-         Orientation.addOrientationListener(this._orientationDidChange);
-         * **/
+             Orientation.removeOrientationListener(this._orientationDidChange);
+             Orientation.addOrientationListener(this._orientationDidChange);
+             * **/
+        }
     }
 
     /**
@@ -328,14 +352,21 @@ export default class BaseComponent extends PureComponent {
         }
         else if(isStack){
             // this.pageStack.push(this.navigationer.state);
-            BaseComponent.pageStack.push(StackPages.curPageState);
+            if(StackPages){
+                BaseComponent.pageStack.push(StackPages.curPageState);
+            }
+            else
+            {
+                BaseComponent.pageStack.push(this.navigationer.state);
+            }
+
         }
 
         /**
          * 修改react-navigation底层
          * 在 this.props.navigation 中添加setEvt方法
          * **/
-        this.navigationer.setEvt(this.immediately);
+        this.navigationer.setEvt&&this.navigationer.setEvt(this.immediately);
 
         if(params == undefined){
             this.navigationer.navigate(pageName);
@@ -373,8 +404,13 @@ export default class BaseComponent extends PureComponent {
         }
         else if(isStack){
             // BaseComponent.backPage = backPage;
-            // BaseComponent.pageStack.push(this.props.navigation.state);
-            BaseComponent.pageStack.push(StackPages.curPageState);
+            if(StackPages){
+                BaseComponent.pageStack.push(StackPages.curPageState);
+            }
+            else
+            {
+                BaseComponent.pageStack.push(this.props.navigation.state);
+            }
         }
         // console.info("BaseComponent.pageStack",BaseComponent.pageStack);
         // console.info("StackPages.stackPagesHistory",StackPages.stackPagesHistory);
@@ -502,19 +538,22 @@ export default class BaseComponent extends PureComponent {
         }
     }
 
-    /*
-    * 添加屏幕方向监听
-    * **/
-    addOrientationListener(){
-        return new Promise(resolve => {
-            Orientation.addOrientationListener((orientation)=>{
-                if (orientation === 'LANDSCAPE') {
-                    // do something with landscape layout
-                } else {
-                    // do something with portrait layout 'PORTRAIT'
-                }
-            });
+    /**
+     * 添加屏幕方向监听
+     * @param cd func;//回调函数
+     * **/
+    static addOrientationListener(cd){
+        Orientation.addOrientationListener((orientation)=>{
+            cd&&cd(orientation);
+            if (orientation === 'LANDSCAPE') {
+                // do something with landscape layout
+            } else {
+                // do something with portrait layout 'PORTRAIT'
+            }
         });
+    }
+     addOrientationListener(cd){
+       BaseComponent.addOrientationListener(cd);
     }
 
     /**

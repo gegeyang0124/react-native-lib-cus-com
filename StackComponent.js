@@ -1,4 +1,7 @@
 export let Components = {
+    /**
+     * api
+     * **/
     react_native_view_shot:{},//截屏或截UI图组件 react-native-view-shot
     react_native_fs:{},//文件操作组件 react-native-fs
     react_native_root_toast:{},//toast提示 react-native-root-toast
@@ -14,7 +17,13 @@ export let Components = {
     react_native_picker:{},//自定义滑动选择组件 react-native-picker
     react_native_spinkit:{isNull:true},//加载指示器（加载条）组件 react-native-spinkit
     react_native_talkingdata:{},//talkingdata app统计分析组件 react-native-talkingdata
-    react_navigation:{},//页面导航组件 react-navigation
+    react_navigation:require('react-navigation-zy'),//页面导航组件 react-navigation
+    react_native_orientation:{},//监听屏幕方向变化及屏幕方向设置组件 react-native-orientation
+
+    /**
+     * ui
+     * **/
+    react_native_smart_barcode:null,//二维码及条形码扫描组件 react-native-smart-barcode
 };
 /**
  * 组件构造方法，构造所需的组件

@@ -11,7 +11,7 @@ npm i --save react-native-lib-cus-com
 2.各组件的详细调用方法，可进入相应的组件文件查看，里面所有的方法/函数都有注释；<BR/>
 3.以下“使用”的说明只有简单的说明(且都不写参数，直接复制使用，可能会报错)，具体说明，请参照“注意”第2点
 
-### 安装依赖,必须安装（别忘了根据相应库进行react-native link ...）:
+### 安装依赖,必须安装
 npm i --save react-native-root-siblings <BR/>
 ### 安装依赖,选择安装（别忘了根据相应库进行react-native link ...）
 <b>npm i --save react-native-root-toast //若不安装，请求接口等报错没有提示</b> <BR/>
@@ -30,9 +30,17 @@ npm i --save react-native-image-crop-picker <BR/>
 npm i --save react-native-image-picker <BR/>
 npm i --save react-native-picker <BR/>
 npm i --save react-native-spinkit <BR/>
-<b>/**本库自带react-navigation@1.5.11，若想使用最新版则按“选择安装依赖的初始化”初始化
+<b>/** 本库自带react-navigation@1.5.11，若想使用最新版则按“选择安装依赖的初始化”初始化
  **/ <BR/>
-npm i --save react-navigation</b> <BR/>
+npm i --save react-navigation</b> <BR/><BR/>
+<b>/**
+    * act-native-smart-barcode 二维码库中将react的PropTypes换成
+    * import PropTypes  from 'prop-types';
+    * PropTypes已经从react中单独提取出来
+    * android 需要修改 RCTCapturePackage中的List的继承去掉
+    * **/<BR/>
+npm i --save react-native-smart-barcode</b> <BR/>
+
 
 ### 选择安装依赖的初始化 (看下列例子)
 ```
@@ -44,7 +52,7 @@ react_native_fs:require("react-native-fs")
 //就是将组件名中的"-"换成"_",传入ComponentConstructor（组件构造器）即可。
 ```
 
-### 使用api：
+### 使用api (方法参数，进入源文件查看，里面详细注解)：
 ##### StyleSheetAdapt 样式表创建，适配各种机型、各种屏幕 与StyleSheet用法一致
 ```
 import {StyleSheetAdapt} from "react-native-lib-cus-com";
@@ -264,5 +272,69 @@ npm i --save react-native-talkingdata
 
 ##### Theme 主题集合 颜色、宽度，及一些默认配置
 ```
+import {Theme} from "react-native-lib-cus-com";
 主题配色，宽高，弧度，在这个库中的一些ui使用到这里的默认配置，特别是样式
+```
+
+### 使用UI (ui属性，可调用方法参数，进入源文件自行查看，里面详细注解)：
+##### BarcodeView 二维码及条形码扫描组件
+```
+import React, {Component} from 'react';
+import {
+   Text,
+} from 'react-native'
+import {
+    StyleSheetAdapt,
+    ViewTitle,
+    BaseComponent,
+    BarcodeView,
+} from "react-native-lib-cus-com";
+
+type Props = {};
+export default class Test extends BaseComponent<Props> {
+
+    constructor(props) {
+        super(props);
+
+    }
+    render() {
+        return (
+            <ViewTitle>
+                <BarcodeView ref={c=>this.barcodeView}
+                    style={styles.testStyle}/>
+                <Text onPress={()=>this.barcodeView.startScan()}>
+                    开始扫码
+                </Text>
+            </ViewTitle>
+        );
+    }
+}
+const styles = StyleSheetAdapt.create({
+
+    testStyle2:{
+        width:100,
+        height:200,
+    },
+    testStyle:{
+        transform:[
+            {rotateX:'180deg'}
+        ],
+    },
+});
+```
+
+##### BaseComponent 用于继承导航属性;这个组件中的方法都是"静态和动态"两种调用方式
+```
+import {BaseComponent} from "react-native-lib-cus-com";
+BaseComponent.setScreenOrientations();//设置屏幕 静态
+this.setScreenOrientations();//设置屏幕 动态
+BaseComponent.getOrientation();//获取屏幕方向 静态
+this.getOrientation();//获取屏幕方向 动态
+BaseComponent.addOrientationListener();//监听屏幕方向变化
+```
+
+##### BarHorizontalTitleSection 条形进度块，上部有对比条提示，左边有对比的title，主体是对比条若干
+```
+import {BarHorizontalTitleSection} from "react-native-lib-cus-com";
+
 ```

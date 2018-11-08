@@ -15,15 +15,15 @@ import {
     Theme,
 } from "./../api/api";
 
-import LinearGradient from 'react-native-linear-gradient';
+// import LinearGradient from 'react-native-linear-gradient';
 /**
  * 修改底层
  * android 在滚动，需要设置scalesPageToFit={true}
- * echarts的底层的要换成echarts内库要换成echarts 4.x
+ * echarts的底层的要换成echarts内库要换成echarts 4.x ；或更高版本
  * **/
-import Echarts from 'native-echarts';
+// import Echarts from 'native-echarts';
 
-import Svg,{
+/*import Svg,{
     Circle,
     Ellipse,
     G,
@@ -39,7 +39,7 @@ import Svg,{
     Stop,
     TSpan,
 } from 'react-native-svg';//cx、cy和r道具定义了最外层的圆，fx和fy定义了最里面的圆。
-/**
+/!**
  * <Path>的d
  属性内定义了一系列的路径坐标以及绘制规则命令，上面的所有图形都可以通过Path绘制而成
  M = 把绘制点移动到某个位置
@@ -52,18 +52,48 @@ import Svg,{
  T = 从当前绘制点画一条平滑的贝赛尔曲线到某个坐标
  A = 从当前绘制点画一条椭圆曲线到某个点
  Z = 闭合当前路径
- **/
+ **!/
 const SvgArt = require('react-native-svg');
 const LinearGradientSvg = SvgArt.LinearGradient;
-const TextSvg = SvgArt.Text;
+const TextSvg = SvgArt.Text;*/
 
-import {
+/*import {
     VictoryGroup,
     VictoryBar,
     VictoryChart,
     VictoryTheme,
     VictoryPie,
-} from "victory-native";
+} from "victory-native";*/
+
+import Echarts from 'native-echarts-zy';
+import {Components} from "./../StackComponent";
+const LinearGradient = Components.react_native_linear_gradient;
+const {
+    Svg,
+    Circle,
+    Ellipse,
+    G,
+    RadialGradient,
+    Line,
+    Path,
+    Polygon,
+    Polyline,
+    Rect,
+    Symbol,
+    Use,
+    Defs,
+    Stop,
+    TSpan,
+}  = Components.react_native_svg;
+const LinearGradientSvg = Components.react_native_svg.LinearGradient;
+const TextSvg =  Components.react_native_svg.Text;
+const {
+    VictoryGroup,
+    VictoryBar,
+    VictoryChart,
+    VictoryTheme,
+    VictoryPie,
+} =  Components.victory_native;
 
 /**
  * 水平渐变柱状图 双层颜色变化
@@ -119,6 +149,15 @@ class BarHorizontal extends Component{
         // colors:this.colorsDefault,
     }
 
+    constructor(props) {
+        super(props);
+
+        if(!LinearGradient){
+            console.info("请安装流线型颜色渐变组件","react-native-linear-gradient");
+            Tools.toast("请安装组件 react-native-linear-gradient");
+        }
+    }
+
     getColors(colors) {
 
         if(colors == undefined){
@@ -170,6 +209,10 @@ class BarHorizontal extends Component{
 
     render() {
 
+        if(!LinearGradient){
+            return (null);
+        }
+
         let {colors,style,forecolors,forecolorWidth, textStart,textPosion,
             textEnd,forecolorStyle,textStartStyle,textEndStyle} = this.props;
         forecolorWidth = forecolorWidth > 1 ? 1 :forecolorWidth;
@@ -178,7 +221,6 @@ class BarHorizontal extends Component{
         // alert(textStart)
 
         return(
-
             <View>
                 {
                     textPosion == 'up'
@@ -234,7 +276,6 @@ class BarHorizontal extends Component{
 
                 </View>
             </View>
-
         );
 
     }
@@ -335,6 +376,15 @@ class BarHorizontal2 extends Component{
         isShowTextRight:true,
     }
 
+    constructor(props) {
+        super(props);
+
+        if(!LinearGradient){
+            console.info("请安装流线型颜色渐变组件","react-native-linear-gradient");
+            Tools.toast("请安装组件 react-native-linear-gradient");
+        }
+    }
+
     getColors(colors) {
         // console.info("colors:",colors);
         if(typeof (colors) == 'string')
@@ -410,6 +460,10 @@ class BarHorizontal2 extends Component{
     /*start: { x: 0.3, y: 0.4 } 渐变是从 左侧30%， 上部 40% 开始
     end: { x: 0.7, y: 0.8 } 渐变是从 左侧70%， 上部 80% 结束*/
     render() {
+
+        if(!LinearGradient){
+            return (null);
+        }
 
         const {frameStyle,textLeftStyle,textRightStyle,textLeft,textRight,
             colors1,colors2,isShowTextRight,isShowTextLeft,progress} = this.props;
@@ -783,6 +837,15 @@ class BarCircleGradient extends Component{
         height:100,
     }
 
+    constructor(props) {
+        super(props);
+
+        if(!Svg){
+            console.info("请安装Svg画图组件","react-native-svg");
+            Tools.toast("请安装组件 react-native-svg");
+        }
+    }
+
     getColors(colors) {
 
         if(colors == undefined){
@@ -830,6 +893,10 @@ class BarCircleGradient extends Component{
     }
 
     render() {
+
+        if(!Svg){
+            return null;
+        }
 
         let {colors,width,height} = this.props;
 
@@ -947,6 +1014,19 @@ class BarCircleChart extends Component{
         width:Tools.screen.width,
     }
 
+    constructor(props) {
+        super(props);
+
+        if(!Svg){
+            console.info("请安装Svg画图组件","react-native-svg");
+            Tools.toast("请安装组件 react-native-svg");
+        }
+
+        if(!VictoryPie){
+            console.info("请安装victory图表组件","victory-native");
+            Tools.toast("请安装组件 victory-native");
+        }
+    }
 
     /**
      * 获取图表配置项
@@ -988,6 +1068,10 @@ class BarCircleChart extends Component{
     }
 
     render() {
+
+        if(!Svg || !VictoryPie){
+            return null;
+        }
 
         this.getOptions();
 
@@ -1746,7 +1830,13 @@ class BarCharts extends Component{
 
     constructor(props) {
         super(props);
+
+        if(!VictoryChart){
+            console.info("请安装victory图表组件","victory-native");
+            Tools.toast("请安装组件 victory-native");
+        }
     }
+
     getRandomColor(){
         return "#" + ( "00000"
             + ( (Math.random() * 16777215 + 0.5 ) >> 0)
@@ -1818,6 +1908,9 @@ class BarCharts extends Component{
     }
 
     render() {
+        if(!VictoryChart){
+            return null;
+        }
 
         this.getColorList();
 

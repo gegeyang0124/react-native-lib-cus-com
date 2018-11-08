@@ -15,20 +15,20 @@ import {
     Theme,
     Tools,
 } from "./../api/api";
-import {Image} from './Image';
+import {ImageBg} from './ImageBg';
 
-import ImageIconTaskGuide from "images/iconTaskGuide.png";
-import ImageIconTaskGuidePast from "images/iconTaskGuidePast.png";
-import ImageIconTaskGuideActive from "images/iconTaskGuideActive.png";
-import ImageIconTaskGuideFinish from "images/iconTaskGuideFinish.png";
-import ImageIconTaskGuideFinishActive from "images/iconTaskGuideFinishActive.png";
+import ImageIconTaskGuide from "lib-images-zy/iconTaskGuide.png";
+import ImageIconTaskGuidePast from "lib-images-zy/iconTaskGuidePast.png";
+import ImageIconTaskGuideActive from "lib-images-zy/iconTaskGuideActive.png";
+import ImageIconTaskGuideFinish from "lib-images-zy/iconTaskGuideFinish.png";
+import ImageIconTaskGuideFinishActive from "lib-images-zy/iconTaskGuideFinishActive.png";
 
-import ImageIconTaskGuideSquare from "images/iconTaskGuideSquare.png";
-import ImageIconTaskGuideSquarePast from "images/iconTaskGuideSquarePast.png";
-import ImageIconTaskGuideSquareActive from "images/iconTaskGuideSquareActive.png";
+import ImageIconTaskGuideSquare from "lib-images-zy/iconTaskGuideSquare.png";
+import ImageIconTaskGuideSquarePast from "lib-images-zy/iconTaskGuideSquarePast.png";
+import ImageIconTaskGuideSquareActive from "lib-images-zy/iconTaskGuideSquareActive.png";
 
 /**
- * 巡店任务头部提示导航栏
+ * 任务头部水平提示导航栏
  * **/
 export class GuideImageHint extends Component {
 
@@ -156,7 +156,7 @@ export class GuideImageHint extends Component {
             icon = item.icon;
         }
 
-        const IMG = <Image key={i}
+        const IMG = <ImageBg key={i}
                            source={icon}
                            style={[styles.iconStyle,style,iconStyle]} >
             <Text style={[
@@ -169,7 +169,7 @@ export class GuideImageHint extends Component {
             ]}>
                 {item.text}
             </Text>
-        </Image>;
+        </ImageBg>;
 
         return(
             onPress&&<TouchableOpacity key={"t" + i}

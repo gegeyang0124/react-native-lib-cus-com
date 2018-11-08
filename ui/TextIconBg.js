@@ -10,7 +10,7 @@ import {
     Theme,
     Tools,
 } from './../api/api'
-import {Image} from "./Image";
+import {ImageBg} from "./ImageBg";
 
 import {
     Circle,//修改了Circle的formatText 使其可以传入自定义UI
@@ -149,7 +149,7 @@ export class TextIconBg extends Component {
                 }}>
 
                     {
-                        isInner&&<Image style={[iconStyle,styles.imageStyle]}
+                        isInner&&<ImageBg style={[iconStyle,styles.imageStyle]}
                                         imageStyle={iconStyle}
                                         source={icon}>
                             {
@@ -162,7 +162,7 @@ export class TextIconBg extends Component {
                                         thickness={this.getThickness()} // 内圆厚度
                                         showsText={false}/>
                             }
-                        </Image>
+                        </ImageBg>
                         || (children||
                             <Circle size={this.getProgressSize()} // 圆的直径
                                     style={styles.circleStyle}

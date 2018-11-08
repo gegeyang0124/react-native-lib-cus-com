@@ -21,7 +21,9 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 
-
+/**
+ * 选择框
+ * **/
 export default class CheckBox extends Component {
     constructor(props) {
         super(props);

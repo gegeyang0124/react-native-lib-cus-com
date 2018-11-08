@@ -12,7 +12,7 @@ import {
     Tools,
     Theme,
 } from "./../api/api";
-import {ImageChange} from "./ImageChange";
+import {ButtonImage} from "./ButtonImage";
 import {ButtonChange} from "./ButtonChange";
 
 /**
@@ -40,7 +40,7 @@ export class ItemRowGoodsPromotion extends Component{
         return (
             <View style={styles.itemRowFrame}>
                 <View style={styles.itemRowFrame1}>
-                    <ImageChange onPress={this.props.onPressImage}
+                    <ButtonImage onPress={this.props.onPressImage}
                                  icon={this.props.icon}
                                  style={styles.itemRowIcon}
                                  iconStyle={styles.itemRowIcon}/>

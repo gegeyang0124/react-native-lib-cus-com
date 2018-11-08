@@ -16,7 +16,7 @@ import {
 } from "./../api/api";
 
 /**
- * 可上下拉、分页、懒加载UI
+ * 列表加载，可上下拉、分页、懒加载UI,有加载提示动画和提示信息 （加载更多）
  * **/
 export class FlatListView extends Component {
 

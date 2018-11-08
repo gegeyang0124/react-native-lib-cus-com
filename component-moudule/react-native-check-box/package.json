@@ -1,0 +1,64 @@
+{
+  "_from": "react-native-check-box",
+  "_id": "react-native-check-box@2.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-pOX6LBhgz8P1dYrjSTtuwux8KHg=",
+  "_location": "/react-native-check-box",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-check-box",
+    "name": "react-native-check-box",
+    "escapedName": "react-native-check-box",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-native-check-box/download/react-native-check-box-2.1.0.tgz",
+  "_shasum": "a4e5fa2c1860cfc3f5758ae3493b6ec2ec7c2878",
+  "_spec": "react-native-check-box",
+  "_where": "/Users/zy/Desktop/proj/RNProj/lx_yyt",
+  "author": {
+    "name": "crazycodeboy"
+  },
+  "bugs": {
+    "url": "https://github.com/crazycodeboy/react-native-check-box/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "prop-types": "^15.5.7"
+  },
+  "deprecated": false,
+  "description": "Checkbox component for react native, it works on iOS and Android.",
+  "homepage": "https://github.com/crazycodeboy/react-native-check-box#readme",
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "react-native-checkbox",
+    "check-box",
+    "check",
+    "box",
+    "react-component",
+    "ios",
+    "android"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-check-box-zy",
+  "peerDependencies": {
+    "react-native": ">=0.20.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazycodeboy/react-native-check-box.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.1.0"
+}

@@ -9,7 +9,7 @@ import {
     Theme,
     Tools,
 } from "./../api/api";
-import {ImageChange} from "./ImageChange";
+import {ButtonImage} from "./ButtonImage";
 import TriangleDown from './../../res/images/triangleDown.png';
 
 /**
@@ -157,7 +157,7 @@ export class PickDropdown extends Component {
                                  this.props.dropdownStyle
                              ]}
                              dropdownTextStyle={styles.searchText}/>
-                <ImageChange icon={TriangleDown}
+                <ButtonImage icon={TriangleDown}
                              disabled={disabled}
                              style={[styles.searchIcon,{
                                  width:this.getStyle().height == undefined

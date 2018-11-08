@@ -19,6 +19,11 @@ npm i --save react-native-view-shot <BR/>
 npm i --save react-native-sqlite-storage <BR/>
 npm i --save react-native-fs <BR/>
 npm i --save react-native-device-info <BR/>
+npm i --save react-native-doc-viewer <BR/><BR/>
+<b>
+这是一套：npm i --save jcore-react-native  <BR/>
+npm i --save jpush-react-native <BR/><BR/>
+</b>
 <b>/** react-native-update 发布热更新报错 将node_modules\react-native-update\local-cli\lib\bundle.js <BR/>
  的439行种的metro-bundler改成metro可成功运行！ <BR/>
  报错版本0.52+(0.52以上版本报错) <BR/>
@@ -30,16 +35,21 @@ npm i --save react-native-image-crop-picker <BR/>
 npm i --save react-native-image-picker <BR/>
 npm i --save react-native-picker <BR/>
 npm i --save react-native-spinkit <BR/>
+npm i --save react-native-talkingdata <BR/>
 <b>/** 本库自带react-navigation@1.5.11，若想使用最新版则按“选择安装依赖的初始化”初始化
  **/ <BR/>
-npm i --save react-navigation</b> <BR/><BR/>
+npm i --save react-navigation</b> <BR/>
+npm i --save react-native-orientation <BR/><BR/>
 <b>/**
-    * act-native-smart-barcode 二维码库中将react的PropTypes换成
+    * react-native-smart-barcode 二维码库中将react的PropTypes换成
     * import PropTypes  from 'prop-types';
     * PropTypes已经从react中单独提取出来
     * android 需要修改 RCTCapturePackage中的List的继承去掉
     * **/<BR/>
 npm i --save react-native-smart-barcode</b> <BR/>
+npm i --save react_native_linear_gradient</b> <BR/>
+npm i --save react_native_svg</b> <BR/>
+npm i --save victory_native</b> <BR/>
 
 
 ### “可选依赖”的初始化 (看下列例子)
@@ -277,52 +287,6 @@ import {Theme} from "react-native-lib-cus-com";
 ```
 
 ### 使用UI (ui属性，可调用方法参数，进入源文件自行查看，里面详细注解)：
-##### BarcodeView 二维码及条形码扫描组件
-```
-import React, {Component} from 'react';
-import {
-   Text,
-} from 'react-native'
-import {
-    StyleSheetAdapt,
-    ViewTitle,
-    BaseComponent,
-    BarcodeView,
-} from "react-native-lib-cus-com";
-
-type Props = {};
-export default class Test extends BaseComponent<Props> {
-
-    constructor(props) {
-        super(props);
-
-    }
-    render() {
-        return (
-            <ViewTitle>
-                <BarcodeView ref={c=>this.barcodeView}
-                    style={styles.testStyle}/>
-                <Text onPress={()=>this.barcodeView.startScan()}>
-                    开始扫码
-                </Text>
-            </ViewTitle>
-        );
-    }
-}
-const styles = StyleSheetAdapt.create({
-
-    testStyle2:{
-        width:100,
-        height:200,
-    },
-    testStyle:{
-        transform:[
-            {rotateX:'180deg'}
-        ],
-    },
-});
-```
-
 ##### BaseComponent 用于继承导航属性;这个组件中的方法都是"静态和动态"两种调用方式
 ```
 import React, {Component} from 'react';
@@ -388,9 +352,24 @@ this.setParams();//设置参数改变导航栏
 this.getPageParams();//获取页面跳转传递的参数
 ```
 
-##### BarHorizontalTitleSection 条形进度块，上部有对比条提示，左边有对比的title，主体是对比条若干
+##### DatePicker 日期选择组件
 ```
-import {BarHorizontalTitleSection} from "react-native-lib-cus-com";
+import {DatePicker} from "react-native-lib-cus-com";
+```
+
+##### DropdownBox 下拉框 支持单选和多选
+```
+import {DropdownBox} from "react-native-lib-cus-com";
+```
+
+##### FlatListView 列表加载，可上下拉、分页、懒加载UI,有加载提示动画和提示信息 （加载更多）
+```
+import {FlatListView} from "react-native-lib-cus-com";
+```
+
+##### ImageBg 背景图组件
+```
+import {ImageBg} from "react-native-lib-cus-com";
 ```
 
 ##### ButtonChange 点击按钮
@@ -401,4 +380,101 @@ import {ButtonChange} from "react-native-lib-cus-com";
 ##### ButtonTime 时间选择按钮控件 可选择时间显示 并回传时间
 ```
 import {ButtonTime} from "react-native-lib-cus-com";
+```
+
+##### ImageView 查看大图
+```
+import {ImageView} from "react-native-lib-cus-com";
+```
+
+##### ImageList 图片列表（水平或竖直）可以查看图片，成行排列 每张图片下部可以有提示文字 默认可滚动 （基于ImageView）
+```
+import {ImageList} from "react-native-lib-cus-com";
+```
+
+##### BarcodeView 二维码及条形码扫描组件
+```
+import React, {Component} from 'react';
+import {
+   Text,
+} from 'react-native'
+import {
+    StyleSheetAdapt,
+    ViewTitle,
+    BaseComponent,
+    BarcodeView,
+} from "react-native-lib-cus-com";
+
+type Props = {};
+export default class Test extends BaseComponent<Props> {
+
+    constructor(props) {
+        super(props);
+
+    }
+    render() {
+        return (
+            <ViewTitle>
+                <BarcodeView ref={c=>this.barcodeView}
+                    style={styles.testStyle}/>
+                <Text onPress={()=>this.barcodeView.startScan()}>
+                    开始扫码
+                </Text>
+            </ViewTitle>
+        );
+    }
+}
+const styles = StyleSheetAdapt.create({
+
+    testStyle2:{
+        width:100,
+        height:200,
+    },
+    testStyle:{
+        transform:[
+            {rotateX:'180deg'}
+        ],
+    },
+});
+```
+
+##### ImageBrower 图片浏览UI，可以多个图片 缩略图和大图皆支持
+```
+import {ImageBrower} from "react-native-lib-cus-com";
+```
+
+##### CheckBox 选择框 此库里只有本人写的源码，还未测试导出，有意者可自行修改导出
+```
+```
+
+##### GuideImageHint 任务头部水平提示导航栏
+```
+import {GuideImageHint} from "react-native-lib-cus-com";
+```
+
+##### Charts 图表
+```
+import {Charts} from "react-native-lib-cus-com";
+<Charts.BarHorizontal /> //水平渐变柱状图 双层颜色变化
+<Charts.BarHorizontal2 /> //水平渐变柱状图2 左右有文字提示 中间相对比变化的进度对比条
+<Charts.BarHorizontal3 /> //水平渐变柱状图3 可有多条BarHorizontal2
+<Charts.BarCircleGradient /> //圆形渐变图
+<Charts.BarCircleChart /> //圆形加载图 4圆 中间有显示文本（Native实现）
+<Charts.Chart /> //echarts图表 图形类型：柱状图，饼图，饼图
+<Charts.BarCharts /> //柱状图（Native实现）
+```
+
+##### BarHorizontalTitleSection 条形进度块，上部有对比条提示，左边有对比的title，主体是对比条若干
+```
+import {BarHorizontalTitleSection} from "react-native-lib-cus-com";
+```
+
+##### ChartCircleProgress 4圆进度显示Chart 中间提示进度数据 最外层时间进度，跨度1月最小单位；天 (主页业绩进度例子，左边圆圈进度)
+```
+import {ChartCircleProgress} from "react-native-lib-cus-com";
+```
+
+##### ChartCircleProgressList  是ChartCircleProgress列表 有title （基于 ChartCircleProgress）
+```
+import {ChartCircleProgressList} from "react-native-lib-cus-com";
 ```

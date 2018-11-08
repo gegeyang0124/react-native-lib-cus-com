@@ -3,8 +3,6 @@ import PropTypes  from 'prop-types';
 import {
     Modal,
 } from 'react-native';
-
-
 import PhotoBrowser from 'react-native-photo-browser-zy';
 import {
     Tools,
@@ -12,7 +10,7 @@ import {
 } from "../api/api";
 
 /**
- * 图片浏览UI，可以多个图片
+ * 图片浏览UI，可以多个图片 缩略图和大图皆支持
  * **/
 export class ImageBrower extends Component {
 

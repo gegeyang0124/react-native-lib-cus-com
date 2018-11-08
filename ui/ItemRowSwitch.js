@@ -16,7 +16,7 @@ import {
     Theme,
 } from "./../api/api";
 import {ItemRowTitle} from "./ItemRowTitle";
-import {ImageChange} from "./ImageChange";
+import {ButtonImage} from "./ButtonImage";
 import {ItemRowBuyCar} from "./ItemRowBuyCar";
 import {Tools} from "../api/Tools";
 import {WebViewCus} from "./WebViewCus";
@@ -222,7 +222,7 @@ console.info("item.uri",item.uri);
                                       isShowPillar={isShowPillar}
                                       frameStyle={[styles.titleTextFrame,titleFrameStyle]}
                                       viewRight={
-                                          <ImageChange icon={IamgeBelowIcon}
+                                          <ButtonImage icon={IamgeBelowIcon}
                                                        disabled={true}
                                                        style={styles.imageFrame}
                                                        iconStyle={isVisble?{}:styles.iconStyle}/>

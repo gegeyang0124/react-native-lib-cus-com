@@ -6,7 +6,7 @@ import {
     Tools,
     TalkingData,
 } from "./../api/api";
-import {ImageChange} from "./ImageChange";
+import {ButtonImage} from "./ButtonImage";
 import LeftWhite from 'lib-images-zy/leftWhite.png';
 import add from 'lib-images-zy/add.png';
 
@@ -24,7 +24,7 @@ const {
     NavigationActions,
     StackPages,
 } = Components.react_navigation;
-const Orientation = Components.react_native_orientation;;
+const Orientation = Components.react_native_orientation;
 
 // import PageMine from "../../pages/pageMain/pageMine/PageMine";
 
@@ -80,7 +80,7 @@ export default class BaseComponent extends PureComponent {
             if(params.headerLeft == true || params.headerLeft == false)
             {
 
-                header.headerLeft = <ImageChange icon={
+                header.headerLeft = <ButtonImage icon={
                     params.headerLeft
                         ? LeftWhite
                         : undefined
@@ -101,7 +101,7 @@ export default class BaseComponent extends PureComponent {
             }
             else if(typeof (params.headerLeft) == 'number')
             {
-                header.headerLeft = <ImageChange icon={params.headerLeft}
+                header.headerLeft = <ButtonImage icon={params.headerLeft}
                                                  onPressIn={params.headerLeftHandle}
                                                  style={styles.iconLeft}/>;
 
@@ -118,7 +118,7 @@ export default class BaseComponent extends PureComponent {
         if(params != undefined && params.headerRight != undefined){
             if(params.headerRight == true || params.headerRight == false)
             {
-                header.headerRight = <ImageChange icon={
+                header.headerRight = <ButtonImage icon={
                     params.headerRight
                         ? add
                         : undefined
@@ -132,7 +132,7 @@ export default class BaseComponent extends PureComponent {
             }
             else if(typeof (params.headerRight) == 'number')
             {
-                header.headerRight = <ImageChange icon={params.headerRight}
+                header.headerRight = <ButtonImage icon={params.headerRight}
                                                   onPressIn={params.headerRightHandle}
                     // iconStyle={styles.iconStyle}
                                                   style={styles.iconRight}/>;

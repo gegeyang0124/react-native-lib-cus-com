@@ -9,7 +9,7 @@ import {
     StyleSheetAdapt,
     Theme,
 } from "../api/api";
-import {Image} from "./Image";
+import {ImageBg} from "./ImageBg";
 
 import CheckBox from 'react-native-check-box';
 
@@ -239,12 +239,12 @@ export class Question extends Component {
         return (
             <View style={[styles.frameStyle,frameStyle]}>
                 <View style={styles.frameStyle_1}>
-                    <Image source={ImageIconQuesNum}
+                    <ImageBg source={ImageIconQuesNum}
                            style={styles.imageStyle}>
                         <Text style={[styles.text,styles.textColorWhite]}>
                             {titleNum}
                         </Text>
-                    </Image>
+                    </ImageBg>
                     <Text style={[styles.text,styles.textColorTheme]}>
                         {title}
                     </Text>

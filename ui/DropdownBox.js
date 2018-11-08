@@ -33,7 +33,7 @@ import {TextChange} from "./TextChange";
 /**
  * 将样式leftTextStyle增加数组样式
  * **/
-import CheckBox from 'react-native-check-box';
+import CheckBox from 'react-native-check-box-zy';
 
 const TOUCHABLE_ELEMENTS = [
     'TouchableHighlight',
@@ -43,7 +43,7 @@ const TOUCHABLE_ELEMENTS = [
 ];
 
 /**
- * 下拉框
+ * 下拉框 支持单选和多选
  * **/
 export class DropdownBox extends Component {
     static propTypes = {

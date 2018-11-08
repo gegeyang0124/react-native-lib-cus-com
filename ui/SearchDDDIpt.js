@@ -15,7 +15,7 @@ import {
     Tools,
 } from "./../api/api";
 import {PickDropdown} from './PickDropdown';
-import {ImageChange} from './ImageChange';
+import {ButtonImage} from './ButtonImage';
 import Search from './../../res/images/search.png';
 
 /**
@@ -169,7 +169,7 @@ export class SearchDDDIpt extends Component {
 
                 {
                     isSearch
-                        ?  <ImageChange icon={Search}
+                        ?  <ButtonImage icon={Search}
                                         style={[styles.searchBtn,btnStyle]}
                                         iconStyle={styles.searchIcon}
                                         onPress={onPressSearch}/>

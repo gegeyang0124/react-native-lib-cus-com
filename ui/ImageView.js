@@ -7,12 +7,15 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
-import ImageViewer from 'react-native-image-zoom-viewer';
+import ImageViewer from 'react-native-image-zoom-viewer-zy';
 import {StyleSheetAdapt} from "../api/api";
 
-import img from './../../res/images/logo.png';
-import imageLeft from './../../res/images/leftWhite.png';
+import img from 'lib-images-zy/error.png';
+import imageLeft from 'lib-images-zy/leftWhite.png';
 
+/**
+ * 查看大图
+ * **/
 export class ImageView extends Component {
 
     //imageView = null;

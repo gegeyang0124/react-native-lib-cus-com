@@ -16,7 +16,7 @@ import {
     Theme,
     Tools,
 } from "./../api/api";
-import {ImageChange} from './ImageChange';
+import {ButtonImage} from './ButtonImage';
 
 import ImageAdd from 'images/add.png';
 import ImageSub from 'images/sub.png';
@@ -328,7 +328,7 @@ export class ItemRowBuyCar extends Component {
                         {
                             this.props.isInput
                                 ?  <View style={styles.itemRowFrame1_2_1}>
-                                    <ImageChange icon={ImageSub}
+                                    <ButtonImage icon={ImageSub}
                                                  onPress={()=>this.props.onPressRight1(this)}
                                                  style={styles.itemRowFrame1_2_1_IconFrame}
                                                  iconStyle={styles.itemRowFrame1_2_1_Icon}/>
@@ -350,7 +350,7 @@ export class ItemRowBuyCar extends Component {
                                                        : this.props.onTextChanged(text,this)
                                                }}
                                     ></TextInput>
-                                    <ImageChange icon={ImageAdd}
+                                    <ButtonImage icon={ImageAdd}
                                                  onPress={()=>this.props.onPressRight2(this)}
                                                  style={styles.itemRowFrame1_2_1_IconFrame}
                                                  iconStyle={styles.itemRowFrame1_2_1_Icon}/>
@@ -367,7 +367,7 @@ export class ItemRowBuyCar extends Component {
 
                     </View>
                     ||isShowIconRight&&<View style={styles.imageFrame0}>
-                        <ImageChange disabled={disabledPress}
+                        <ButtonImage disabled={disabledPress}
                                      style={styles.imageFrame}
                                      iconStyle={styles.iconStyle}
                                      icon={IamgeBelowIcon}/>

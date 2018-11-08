@@ -2,12 +2,12 @@ import {ButtonChange} from "./ButtonChange";
 import {ModalTextInputS} from "./ModalTextInputS";
 import {TextInputIcon} from "./TextInputIcon";
 import {ViewTitle} from "./ViewTitle";
-import {ImageChange} from "./ImageChange";
+import {ButtonImage} from "./ButtonImage";
 import {TextIcon} from "./TextIcon";
 import {Progress} from "./Progress";
 import BaseComponent from "./BaseComponent";
 import {TextDoubleIcon} from "./TextDoubleIcon";
-import {Image} from "./Image";
+import {ImageBg} from "./ImageBg";
 import {ImageView} from "./ImageView";
 import {VideoView} from "./VideoView";
 import BarcodeView from "./BarcodeView";
@@ -89,8 +89,8 @@ const ui = {
     get ViewTitle() {
         return ViewTitle;
     },
-    get ImageChange() {
-        return ImageChange;
+    get ButtonImage() {
+        return ButtonImage;
     },
     get TextIcon() {
         return TextIcon;
@@ -104,8 +104,8 @@ const ui = {
     get TextDoubleIcon() {
         return TextDoubleIcon;
     },
-    get Image() {
-        return Image;
+    get ImageBg() {
+        return ImageBg;
     },
     get ImageView() {
         return ImageView;

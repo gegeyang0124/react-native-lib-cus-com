@@ -12,7 +12,7 @@ import {
     StyleSheetAdapt,
     Theme,
 } from "./../api/api";
-import {ImageChange} from './ImageChange';
+import {ButtonImage} from './ButtonImage';
 
 import {
     Circle,
@@ -417,7 +417,7 @@ export class ItemRowTripTask extends Component<Props> {
                         {
                             itemRowIcon == true
                                 ? <View style={styles.itemRowFrame1_2}>
-                                    <ImageChange icon={ImageRightBlack}
+                                    <ButtonImage icon={ImageRightBlack}
                                                  style={styles.itemRowIcon}
                                                  iconStyle={{ tintColor:Theme.Colors.themeColor}}/>
                                 </View>

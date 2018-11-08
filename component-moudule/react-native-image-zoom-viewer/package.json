@@ -1,0 +1,68 @@
+{
+  "_from": "react-native-image-zoom-viewer",
+  "_id": "react-native-image-zoom-viewer@2.1.3",
+  "_inBundle": false,
+  "_integrity": "sha1-amBj4e+ywcRD1RevPJ7cpzCyKGg=",
+  "_location": "/react-native-image-zoom-viewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-image-zoom-viewer",
+    "name": "react-native-image-zoom-viewer",
+    "escapedName": "react-native-image-zoom-viewer",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-native-image-zoom-viewer/download/react-native-image-zoom-viewer-2.1.3.tgz",
+  "_shasum": "6a6063e1efb2c1c443d517af3c9edca730b22868",
+  "_spec": "react-native-image-zoom-viewer",
+  "_where": "/Users/zy/Desktop/proj/RNProj/lx_yyt",
+  "author": {
+    "name": "ascoders"
+  },
+  "bugs": {
+    "url": "https://github.com/ascoders/react-native-image-viewer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "react-native-image-pan-zoom": "^2.1.2"
+  },
+  "deprecated": false,
+  "description": "react native image viewer,大图浏览",
+  "devDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "ascoders-tslint-config": "^1.0.2",
+    "react": "*",
+    "react-native": "*",
+    "tslint": "^5.8.0",
+    "typescript": "^2.4.2"
+  },
+  "homepage": "https://github.com/ascoders/react-native-image-viewer#readme",
+  "keywords": [
+    "image-viewer"
+  ],
+  "license": "MIT",
+  "main": "built/index.js",
+  "name": "react-native-image-zoom-viewer-zy",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ascoders/react-native-image-viewer.git"
+  },
+  "scripts": {
+    "prepare": "rm -rf built && tsc",
+    "start": "tsc -w --outDir demo/built"
+  },
+  "types": "src/index.ts",
+  "version": "2.1.3"
+}

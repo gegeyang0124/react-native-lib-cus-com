@@ -9,7 +9,7 @@ import {
     StyleSheetAdapt,
     Theme,
 } from "../api/api";
-import {Image} from './Image';
+import {ImageBg} from './ImageBg';
 
 const RN = require('react-native');
 const Img = RN.Image;
@@ -50,7 +50,7 @@ export class SwiperNotice extends Component{
                               onPress={()=>item.onPress(item,index)}
                               style={styles.titlesInfo}>
 
-                <Image source={
+                <ImageBg source={
                     typeof(item.icon) == "string"
                         ? {uri:item.icon}
                         : item.icon
@@ -69,7 +69,7 @@ export class SwiperNotice extends Component{
                             {item.time}
                         </Text>
                     </View>
-                </Image>
+                </ImageBg>
 
             </TouchableOpacity>
         );

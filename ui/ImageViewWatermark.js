@@ -17,7 +17,7 @@ import {
     Media,
     IamgeWaterMark,
 } from "../api/api";
-import {Image} from "./Image";
+import {ImageBg} from "./ImageBg";
 import {ButtonChange} from "./ButtonChange";
 
 /**
@@ -225,7 +225,7 @@ export class ImageViewWatermark extends Component {
                        visible={visible}
                        onRequestClose={()=> this.onRequestClose()}>
 
-                    <Image source={imageUrl}
+                    <ImageBg source={imageUrl}
                            refImage={c=>this.refBg=c}
                            style={styles.imageFrame}>
 
@@ -250,7 +250,7 @@ export class ImageViewWatermark extends Component {
                             </Text>
                         </View>
 
-                    </Image>
+                    </ImageBg>
 
                     <ButtonChange text={"完成"}
                                   frameStyle={[styles.btn]}

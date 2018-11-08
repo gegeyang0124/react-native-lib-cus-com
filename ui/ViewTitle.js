@@ -14,7 +14,7 @@ import {
     Tools,
 } from './../api/api';
 
-import {ImageChange} from "./ImageChange";
+import {ButtonImage} from "./ButtonImage";
 import {ButtonChange} from "./ButtonChange";
 import BaseComponent from "./BaseComponent";
 import {Progress} from "./Progress";
@@ -162,7 +162,7 @@ export class ViewTitle extends Component {
                 {
                     isNavigator ?  <View style={styles.title}>
                         <View style={styles.titleLeft}>
-                            <ImageChange onPressIn={() =>this.goBack()}
+                            <ButtonImage onPressIn={() =>this.goBack()}
                                          onPressOut={onPressLeft}
                                          icon={icon == undefined ? leftWhite : icon}
                                          style={styles.iconStyleLeft}/>
@@ -177,7 +177,7 @@ export class ViewTitle extends Component {
 
                             {
                                 typeof (viewRight) == "number"
-                                    ? <ImageChange onPress={onPressRight}
+                                    ? <ButtonImage onPress={onPressRight}
                                                    icon={viewRight}
                                                    style={styles.iconStyleRight}/>
                                     : typeof (viewRight) == "string"

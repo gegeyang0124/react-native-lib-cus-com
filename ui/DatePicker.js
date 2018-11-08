@@ -5,11 +5,9 @@
  */
 
 import React, {Component} from 'react';
-import {
-    View,
-} from 'react-native';
 import PropTypes  from 'prop-types';
 import {
+    View,
     Image,
     TouchableOpacity,
 } from 'react-native';
@@ -20,14 +18,18 @@ import {
 /**
  * 修改DatePicker底层增加属性hideHeader //隐藏头部显示内容，默认是false
  * **/
-import DatePickerRoot from 'react-native-datepicker';
+// import DatePickerRoot from 'react-native-datepicker';
+import DatePickerRoot from 'react-native-datepicker-zy';
 
+/**
+ * 日期选择组件
+ * **/
 export class DatePicker extends Component {
 
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针
     static propTypes = {
-        mode:PropTypes.string,//日期模式
+        mode:PropTypes.string,//日期模式 "date"、"time"、"datetime"
         onDateChange:PropTypes.func,//回传时间戳
     }
 

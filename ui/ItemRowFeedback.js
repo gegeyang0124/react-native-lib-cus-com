@@ -10,8 +10,8 @@ import {
     StyleSheetAdapt,
     Theme,
 } from "./../api/api";
-import {ImageChange} from './ImageChange';
-import {Image} from './Image';
+import {ButtonImage} from './ButtonImage';
+import {ImageBg} from './ImageBg';
 
 import ImageRightBlack from './../../res/images/rightBlack.png';
 import ImageSatusNormal from './../../res/images/statusNormal.png';
@@ -130,7 +130,7 @@ export class ItemRowFeedback extends Component<Props> {
                                         {
                                             text1_2.text_1 == undefined ?
                                                 null :
-                                                <Image source={ImageSatusNormal}
+                                                <ImageBg source={ImageSatusNormal}
                                                        imageStyle={styles.customerItemFrame_statusBtnFrameImageStyle}
                                                        style={styles.customerItemFrame_statusBtnFrameImage}>
                                                     <Text style={styles.customerItemFrame_text}>
@@ -138,13 +138,13 @@ export class ItemRowFeedback extends Component<Props> {
                                                             text1_2.text_1
                                                         }
                                                     </Text>
-                                                </Image>
+                                                </ImageBg>
                                         }
 
                                         {
                                             text1_2.text_2 == undefined ?
                                                 null :
-                                                <Image source={ImageStatusContract}
+                                                <ImageBg source={ImageStatusContract}
                                                        imageStyle={styles.customerItemFrame_statusBtnFrameImageStyle}
                                                        style={styles.customerItemFrame_statusBtnFrameImage}>
                                                     <Text style={styles.customerItemFrame_text}>
@@ -152,13 +152,13 @@ export class ItemRowFeedback extends Component<Props> {
                                                             text1_2.text_2
                                                         }
                                                     </Text>
-                                                </Image>
+                                                </ImageBg>
                                         }
 
                                         {
                                             text1_2.text_3 == undefined ?
                                                 null :
-                                                <Image source={ImageStatusFight}
+                                                <ImageBg source={ImageStatusFight}
                                                        imageStyle={styles.customerItemFrame_statusBtnFrameImageStyle}
                                                        style={styles.customerItemFrame_statusBtnFrameImage}>
                                                     <Text style={styles.customerItemFrame_text}>
@@ -166,13 +166,13 @@ export class ItemRowFeedback extends Component<Props> {
                                                             text1_2.text_3
                                                         }
                                                     </Text>
-                                                </Image>
+                                                </ImageBg>
                                         }
 
                                         {
                                             text1_2.text_4 == undefined ?
                                                 null :
-                                                <Image source={ImageStatusFight}
+                                                <ImageBg source={ImageStatusFight}
                                                        imageStyle={styles.customerItemFrame_statusBtnFrameImageStyle}
                                                        style={styles.customerItemFrame_statusBtnFrameImage}>
                                                     <Text style={styles.customerItemFrame_text}>
@@ -180,13 +180,13 @@ export class ItemRowFeedback extends Component<Props> {
                                                             text1_2.text_4
                                                         }
                                                     </Text>
-                                                </Image>
+                                                </ImageBg>
                                         }
 
                                         {
                                             text1_2.text_5 == undefined ?
                                                 null :
-                                                <Image source={ImageCustomerLevel}
+                                                <ImageBg source={ImageCustomerLevel}
                                                        imageStyle={styles.customerItemFrame_statusBtnFrameImageStyle}
                                                        style={styles.customerItemFrame_statusBtnFrameImage}>
                                                     <Text style={styles.customerItemFrame_text}>
@@ -194,7 +194,7 @@ export class ItemRowFeedback extends Component<Props> {
                                                             text1_2.text_5
                                                         }
                                                     </Text>
-                                                </Image>
+                                                </ImageBg>
                                         }
 
                                     </View> :
@@ -292,7 +292,7 @@ export class ItemRowFeedback extends Component<Props> {
 
                 {
                     isShowIcon ?   <View style={styles.itemRowFrame1_2}>
-                        <ImageChange icon={ImageRightBlack}
+                        <ButtonImage icon={ImageRightBlack}
                                      style={styles.itemRowIcon}
                                      iconStyle={{ tintColor:Theme.Colors.themeColor}}/>
                     </View> : null

@@ -15,7 +15,7 @@ import {
     Tools,
 } from "./../api/api";
 import {PickDropdown} from './PickDropdown';
-import {ImageChange} from './ImageChange';
+import {ButtonImage} from './ButtonImage';
 import Search from './../../res/images/search.png';
 
 /**
@@ -119,7 +119,7 @@ export class SearchDropIpt extends Component {
                                            : this.props.textChange(text)}/>
                 }
 
-                <ImageChange icon={Search}
+                <ButtonImage icon={Search}
                              style={styles.searchBtn}
                              iconStyle={styles.searchIcon}
                              onPress={()=>this.props.onPressSearch()}/>

@@ -8,7 +8,7 @@ import {
 import {
     StyleSheetAdapt,
 } from "../api/api";
-import {ImageChange}from './ImageChange';
+import {ButtonImage}from './ButtonImage';
 import {ImageView} from "./ImageView";
 
 import Swiper from 'react-native-swiper';
@@ -84,7 +84,7 @@ export class SwiperImage extends Component{
         return(
             <View style={styles.slide}
                   key={index}>
-                <ImageChange style={[styles.image,imageStyle]}
+                <ButtonImage style={[styles.image,imageStyle]}
                              onPress={()=>this._onPressItem(item,index)}
                              iconStyle={[styles.image,imageStyle]}
                              icon={typeof(item.icon) == "string"

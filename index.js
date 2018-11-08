@@ -21,12 +21,12 @@ import {
     ButtonChange,
     TextInputIcon,
     ViewTitle,
-    ImageChange,
+    ButtonImage,
     TextIcon,
     BaseComponent,
     Progress,
     TextDoubleIcon,
-    Image,
+    ImageBg,
     ImageView,
     VideoView,
     BarcodeView,
@@ -173,8 +173,8 @@ const compoent = {
     get ViewTitle() {
         return ViewTitle;
     },
-    get ImageChange() {
-        return ImageChange;
+    get ButtonImage() {
+        return ButtonImage;
     },
     get TextIcon() {
         return TextIcon;
@@ -188,8 +188,8 @@ const compoent = {
     get TextDoubleIcon() {
         return TextDoubleIcon;
     },
-    get Image() {
-        return Image;
+    get ImageBg() {
+        return ImageBg;
     },
     get ImageView() {
         return ImageView;

@@ -11,9 +11,11 @@ import {
     Tools,
 } from "../api/api";
 
-import * as Progress from 'react-native-progress';
+import * as Progress from 'react-native-progress-zy';
 
-
+/**
+ * 进度条 显示进度
+ * **/
 export class ProgressPer extends Component {
 
     static base : ProgressPer;

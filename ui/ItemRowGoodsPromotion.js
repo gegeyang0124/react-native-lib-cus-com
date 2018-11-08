@@ -16,7 +16,7 @@ import {ButtonImage} from "./ButtonImage";
 import {ButtonChange} from "./ButtonChange";
 
 /**
- * 促销活动Item
+ * 促销活动Item；一张图片，图片左下角和右下角分别有一个按钮
  * **/
 export class ItemRowGoodsPromotion extends Component{
 

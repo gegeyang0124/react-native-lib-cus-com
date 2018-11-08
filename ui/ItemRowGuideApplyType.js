@@ -12,8 +12,11 @@ import {
     Tools
 } from "./../api/api";
 import {ButtonChange} from "./ButtonChange";
-import CheckBox from 'react-native-check-box';
+import CheckBox from 'react-native-check-box-zy';
 
+/**
+ * 行选择组件，分成两部分，左边支持文本和选择框，右边是文本
+ * **/
 export class ItemRowGuideApplyType extends Component {
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针

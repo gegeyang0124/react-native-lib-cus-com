@@ -25,10 +25,10 @@ import {
  PropTypes.number
  ])
  * **/
-import CheckBox from 'react-native-check-box';
+import CheckBox from 'react-native-check-box-zy';
 
 /**
- * 行选择，默认垂直选择(单选或多选)
+ * 行选择，默认垂直(或水平)显示选项选择,(单选或多选)
  * **/
 export class ScrollSelectOptions extends Component{
 

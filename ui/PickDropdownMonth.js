@@ -14,10 +14,10 @@ import {
 } from "./../api/api";
 import {PickDropdown} from './PickDropdown';
 import {ButtonImage} from './ButtonImage';
-import Search from 'images/search.png';
+import Search from 'lib-images-zy/search.png';
 
 /**
- * 月份下拉框
+ * 月份下拉框 （基于PickDropdown）
  * **/
 export class PickDropdownMonth extends Component {
 

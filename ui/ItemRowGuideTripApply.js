@@ -13,6 +13,9 @@ import {
 } from "./../api/api";
 import {ButtonChange} from "./ButtonChange";
 
+/**
+ * 行单元格，一行内可支持1到7个单元格，可组合成表格。
+ * **/
 export class ItemRowGuideTripApply extends Component {
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针

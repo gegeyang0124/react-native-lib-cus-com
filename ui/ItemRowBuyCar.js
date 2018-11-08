@@ -18,9 +18,9 @@ import {
 } from "./../api/api";
 import {ButtonImage} from './ButtonImage';
 
-import ImageAdd from 'images/add.png';
-import ImageSub from 'images/sub.png';
-import IamgeBelowIcon from 'images/belowIcon.png';
+import ImageAdd from 'lib-images-zy/add.png';
+import ImageSub from 'lib-images-zy/sub.png';
+import IamgeBelowIcon from 'lib-images-zy/belowIcon.png';
 
 /**
  * 需要修改js封装层 leftText rightText 样式中flex去掉 ，
@@ -31,7 +31,7 @@ import IamgeBelowIcon from 'images/belowIcon.png';
  PropTypes.number
  ])
  * **/
-import CheckBox from 'react-native-check-box';
+import CheckBox from 'react-native-check-box-zy';
 import {VideoView} from "./VideoView";
 
 /**

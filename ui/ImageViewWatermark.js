@@ -7,7 +7,9 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
-import DeviceInfo from 'react-native-device-info';
+// import DeviceInfo from 'react-native-device-info';
+import {Components} from "./../StackComponent";
+const DeviceInfo = Components.react_native_device_info;
 
 import {
     StyleSheetAdapt,
@@ -21,7 +23,7 @@ import {ImageBg} from "./ImageBg";
 import {ButtonChange} from "./ButtonChange";
 
 /**
- *  固定图片水印模版UI
+ *  固定图片水印模版UI 水印在左下角
  * **/
 export class ImageViewWatermark extends Component {
 
@@ -40,6 +42,12 @@ export class ImageViewWatermark extends Component {
         ImageViewWatermark.base = this;
         Tools.imageViewWatermark = this;
         this.resolve = null;
+
+       /* if(!DeviceInfo.getVersion){
+            console.info("请安装设备信息获取组件","react-native-device-info");
+            Tools.toast("请安装组件 react-native-device-info");
+            b = false;
+        }*/
 
         // 初始状态
         this.state = {
@@ -99,7 +107,7 @@ export class ImageViewWatermark extends Component {
                         //     ? location.taskName
                         //     : "任务：" + location.taskName,
                         taskName:null,
-                        device:"设备：" + DeviceInfo.getDeviceId() + "(" + DeviceInfo.getUniqueID() + ")"
+                        device:DeviceInfo.getDeviceId ? "设备：" + DeviceInfo.getDeviceId() + "(" + DeviceInfo.getUniqueID() + ")" : null
                     }
                 }
             }
@@ -147,7 +155,7 @@ export class ImageViewWatermark extends Component {
                         //     ? location.taskName
                         //     : "任务：" + location.taskName,
                         taskName:null,
-                        device:"设备：" + DeviceInfo.getDeviceId() + "(" + DeviceInfo.getUniqueID() + ")"
+                        device:DeviceInfo.getDeviceId ? "设备：" + DeviceInfo.getDeviceId() + "(" + DeviceInfo.getUniqueID() + ")" : null
                     }
                 }
             }

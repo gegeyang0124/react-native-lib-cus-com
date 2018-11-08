@@ -11,10 +11,13 @@ import {
 } from "../api/api";
 import {ImageBg} from "./ImageBg";
 
-import CheckBox from 'react-native-check-box';
+import CheckBox from 'react-native-check-box-zy';
 
-import ImageIconQuesNum from 'images/iconQuesNum.png';
+import ImageIconQuesNum from 'lib-images-zy/iconQuesNum.png';
 
+/**
+ * 答题ui，支持单选、多选、问答；主要应用场景是调查问卷累等等
+ * **/
 export class Question extends Component {
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针

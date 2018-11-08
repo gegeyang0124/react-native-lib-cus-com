@@ -43,7 +43,7 @@ const TOUCHABLE_ELEMENTS = [
 ];
 
 /**
- * 下拉框 支持单选和多选
+ * 下拉框 支持单选和多选，基础组件
  * **/
 export class DropdownBox extends Component {
     static propTypes = {

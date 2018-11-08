@@ -15,6 +15,9 @@ import {
     Theme,
 } from "./../api/api";
 
+/**
+ * 商品行组件 水平行，从左到右内容分别是，左边一张图片，中间有可支持5行竖直的文本行，其次是商品价格 最右边一个按钮（如加入购物车）
+ * **/
 export class ItemRowGoods extends Component {
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针

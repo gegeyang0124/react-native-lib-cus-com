@@ -10,9 +10,13 @@ import {
     Tools,
 } from "../api/api";
 
-import Spinner from "react-native-spinkit";
+// import Spinner from "react-native-spinkit";
+import {Components} from "./../StackComponent";
+const Spinner = Components.react_native_spinkit;
 
-
+/**
+ * 进度加载条
+ * **/
 export class Progress extends Component {
 
     static base:Progress;
@@ -21,6 +25,11 @@ export class Progress extends Component {
     // 构造
     constructor(props) {
         super(props);
+
+        if(Spinner.isNull){
+            console.info("请安装加载指示器（加载条）组件","react-native-spinkit");
+            Tools.toast("请安装组件 react-native-spinkit");
+        }
 
         Progress.base = this;
         // Tools.progress = this;
@@ -88,6 +97,11 @@ export class Progress extends Component {
     }
 
     render() {
+
+        if(Spinner.isNull){
+            return null;
+        }
+
         Tools.progress = this;
 
         if(!this.state.visible){

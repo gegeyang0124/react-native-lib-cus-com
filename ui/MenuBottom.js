@@ -15,16 +15,23 @@ import {
     MenuBottomApi,
 } from "./../api/api";
 import {ButtonChange} from "./ButtonChange";
-import {
+/*import {
     StackPages,
-} from 'react-navigation';
+} from 'react-navigation';*/
+import {Components} from "./../StackComponent";
+const {
+    StackPages
+} = Components.react_navigation;
 
 /**
  * 需要修改底层
  * **/
-import CustomActionSheet from 'react-native-custom-action-sheet';
+import CustomActionSheet from 'react-native-custom-action-sheet-zy';
 import {Tools} from "../api/Tools";
 
+/**
+ * 底部菜单ui
+ * **/
 export class MenuBottom extends Component {
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针
@@ -84,28 +91,29 @@ export class MenuBottom extends Component {
         // MenuBottom.self.show(b);
     }*/
     static show(b){
-        if(b == undefined)
-        {
-            b = !this.visible;
-            this.visible = b;
-        }
-        else {
-            this.visible = b;
-        }
+        if(StackPages){
+            if(b == undefined)
+            {
+                b = !this.visible;
+                this.visible = b;
+            }
+            else {
+                this.visible = b;
+            }
 
-        if(b){
-            // console.info("StackPages.curPageState",StackPages.curPageState);
-            // console.info("StackPages.stackPages",StackPages.stackPages);
-            // console.info("StackPages.stackPagesHistory",StackPages.stackPagesHistory);
-            // for()
-            let context = StackPages.stackPages[StackPages.curPageState.routeName].screen.prototype.context;
-            // MenuBottom.self.show(b);
-            MenuBottomApi.show(context.btnList);
+            if(b){
+                // console.info("StackPages.curPageState",StackPages.curPageState);
+                // console.info("StackPages.stackPages",StackPages.stackPages);
+                // console.info("StackPages.stackPagesHistory",StackPages.stackPagesHistory);
+                // for()
+                let context = StackPages.stackPages[StackPages.curPageState.routeName].screen.prototype.context;
+                // MenuBottom.self.show(b);
+                MenuBottomApi.show(context.btnList);
+            }
+            else {
+                MenuBottomApi.hide();
+            }
         }
-        else {
-            MenuBottomApi.hide();
-        }
-
     }
     show(b){
         b = b == undefined ? !this.state.isVisible : b;

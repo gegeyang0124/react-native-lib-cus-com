@@ -12,6 +12,9 @@ import {
 
 import {Question} from "./Question";
 
+/**
+ * 答题集合（列表）ui （基于Question）
+ * **/
 export class QuestionList extends Component {
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针

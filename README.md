@@ -357,9 +357,39 @@ this.getPageParams();//获取页面跳转传递的参数
 import {DatePicker} from "react-native-lib-cus-com";
 ```
 
-##### DropdownBox 下拉框 支持单选和多选
+##### DropdownBox 下拉框 支持单选和多选 基础组件
 ```
 import {DropdownBox} from "react-native-lib-cus-com";
+```
+
+##### PickDropdown 下拉框 有下拉图表等，更加符合应用场景（基于DropdownBox）
+```
+import {PickDropdown} from "react-native-lib-cus-com";
+```
+
+##### PickDropdownMonth 月份下拉框 （基于PickDropdown）
+```
+import {PickDropdownMonth} from "react-native-lib-cus-com";
+```
+
+##### Progress 进度加载条
+```
+import {Progress} from "react-native-lib-cus-com";
+```
+
+##### ProgressPer  进度条 显示进度
+```
+import {ProgressPer} from "react-native-lib-cus-com";
+```
+
+##### Question  答题ui，支持单选、多选、问答；主要应用场景是调查问卷累等等
+```
+import {Question} from "react-native-lib-cus-com";
+```
+
+##### QuestionList  答题集合（列表）ui （基于Question）
+```
+import {QuestionList} from "react-native-lib-cus-com";
 ```
 
 ##### FlatListView 列表加载，可上下拉、分页、懒加载UI,有加载提示动画和提示信息 （加载更多）
@@ -438,6 +468,46 @@ const styles = StyleSheetAdapt.create({
 });
 ```
 
+##### MenuBottom  需要修改底层
+```
+import {MenuBottom} from "react-native-lib-cus-com";
+<MenuBottom ref={c=>this.menuBottom=c}
+btnList={["btn1","btn2"]}
+onPress={item=>{}}
+/>
+this.menuBottom.show(true);
+```
+
+##### ModalTextInput  弹出输入内容框，如反馈评价等；（有一个评分输入，和一个评语输入）
+```
+import {ModalTextInput} from "react-native-lib-cus-com";
+```
+
+##### ModalTextInputS  弹出输入内容框，如反馈评价等；（一个评语输入）
+```
+import {ModalTextInputS} from "react-native-lib-cus-com";
+```
+
+##### ModalTextInputS 行选择，默认垂直(或水平)显示选项选择,(单选或多选)
+```
+import {ModalTextInputS} from "react-native-lib-cus-com";
+```
+
+##### ScrollSelectOptions  左边具有标题的提示的UI 右边具有标识或UI的 UI控件
+```
+import {ScrollSelectOptions} from "react-native-lib-cus-com";
+```
+
+##### ItemRowSwitch 具有ItemRowTitle提示的下拉展示控件框 直接封装有打开文件
+```
+import {ItemRowSwitch} from "react-native-lib-cus-com";
+```
+
+##### ItemRowTableSwitch 具有ItemRowTitle提示的下拉展示控件框
+```
+import {ItemRowTableSwitch} from "react-native-lib-cus-com";
+```
+
 ##### ImageBrower 图片浏览UI，可以多个图片 缩略图和大图皆支持
 ```
 import {ImageBrower} from "react-native-lib-cus-com";
@@ -445,11 +515,6 @@ import {ImageBrower} from "react-native-lib-cus-com";
 
 ##### CheckBox 选择框 此库里只有本人写的源码，还未测试导出，有意者可自行修改导出
 ```
-```
-
-##### GuideImageHint 任务头部水平提示导航栏
-```
-import {GuideImageHint} from "react-native-lib-cus-com";
 ```
 
 ##### Charts 图表
@@ -462,6 +527,65 @@ import {Charts} from "react-native-lib-cus-com";
 <Charts.BarCircleChart /> //圆形加载图 4圆 中间有显示文本（Native实现）
 <Charts.Chart /> //echarts图表 图形类型：柱状图，饼图，饼图
 <Charts.BarCharts /> //柱状图（Native实现）
+```
+
+##### ImageViewWatermark  固定图片水印模版UI 水印在左下角
+```
+import {ImageViewWatermark} from "react-native-lib-cus-com";
+ImageViewWatermark.show();//显示图片，有参数
+或
+<ImageViewWatermark ref={c=>this.waterMark=c} />
+this.waterMark.show();//显示图片，有参数
+```
+
+##### GuideImageHint 任务头部水平提示导航栏
+```
+import {GuideImageHint} from "react-native-lib-cus-com";
+```
+
+##### ItemRowBuyCar 购物车行元素UI,右，有勾选框、图片、文本、数量输入UI；
+```
+import {ItemRowBuyCar} from "react-native-lib-cus-com";
+```
+
+##### ItemRowGoods 商品行组件 水平行，从左到右内容分别是，左边一张图片，中间有可支持5行竖直的文本行，其次是商品价格 最右边一个按钮（如加入购物车）
+```
+import {ItemRowGoods} from "react-native-lib-cus-com";
+```
+
+##### ItemRowGoods 商品行组件 水平行，从左到右内容分别是，左边一张图片，中间有可支持5行竖直的文本行，其次是商品价格 最右边一个按钮（如加入购物车）
+```
+import {ItemRowGoods} from "react-native-lib-cus-com";
+```
+
+##### ItemRowGoodsPromotion 促销活动Item；一张图片，图片左下角和右下角分别有一个按钮
+```
+import {ItemRowGoodsPromotion} from "react-native-lib-cus-com";
+```
+
+##### ItemRowGuideApplyType 行选择组件，分成两部分，左边支持文本和选择框，右边是文本
+```
+import {ItemRowGuideApplyType} from "react-native-lib-cus-com";
+```
+
+##### ItemRowTripApply 出差样式UI，左边文本提示文字，右边可以是：下拉框，输入框，文本
+```
+import {ItemRowTripApply} from "react-native-lib-cus-com";
+```
+
+##### ItemRowGuideTripApply 行单元格，一行内可支持1到7个单元格，可组合成表格。
+```
+import {ItemRowGuideTripApply} from "react-native-lib-cus-com";
+```
+
+##### ItemRowTripTask 行组件，上部是左边是title，右边是状态；像QQ一样单行可以侧滑，侧滑显示按钮
+```
+import {ItemRowTripTask} from "react-native-lib-cus-com";
+```
+
+##### ItemRowReciew 多个ui平分一行 水平
+```
+import {ItemRowReciew} from "react-native-lib-cus-com";
 ```
 
 ##### BarHorizontalTitleSection 条形进度块，上部有对比条提示，左边有对比的title，主体是对比条若干
@@ -477,4 +601,9 @@ import {ChartCircleProgress} from "react-native-lib-cus-com";
 ##### ChartCircleProgressList  是ChartCircleProgress列表 有title （基于 ChartCircleProgress）
 ```
 import {ChartCircleProgressList} from "react-native-lib-cus-com";
+```
+
+##### ResultProgressBlock  业务进度块 类似于进度对比表，有显示的基本内容，还有条状的对比图
+```
+import {ResultProgressBlock} from "react-native-lib-cus-com";
 ```

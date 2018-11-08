@@ -21,13 +21,13 @@ import {TextDoubleIcon} from './TextDoubleIcon';
 import {ChartCircleProgress} from './ChartCircleProgress';
 import {BarHorizontalTitleSection} from './BarHorizontalTitleSection';
 
-import laughImg from 'images/laughImg.png';
-import cryImg from 'images/cryImg.png';
-import striveImg from 'images/striveImg.png';
+import laughImg from 'lib-images-zy/laughImg.png';
+import cryImg from 'lib-images-zy/cryImg.png';
+import striveImg from 'lib-images-zy/striveImg.png';
 
 
 /**
- * 业务进度块
+ * 业务进度块 类似于进度对比表，有显示的基本内容，还有条状的对比图
  * **/
 export class ResultProgressBlock extends Component {
 

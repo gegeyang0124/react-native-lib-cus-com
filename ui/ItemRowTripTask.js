@@ -18,15 +18,18 @@ import {
     Circle,
 } from 'react-native-progress';
 
-import ImageRightBlack from './../../res/images/rightBlack.png';
-import ImageToSwipeRight from './../../res/images/toSwipeRight.png';
+import ImageRightBlack from 'lib-images-zy/rightBlack.png';
+import ImageToSwipeRight from 'lib-images-zy/toSwipeRight.png';
 
 
 /**
  * 侧滑组件
  * **/
-import {SwipeListView, SwipeRow} from 'react-native-swipe-list-view';
+import {SwipeListView, SwipeRow} from 'react-native-swipe-list-view-zy';
 
+/**
+ * 行组件，上部是左边是title，右边是状态；像QQ一样单行可以侧滑，侧滑显示按钮
+ * **/
 type Props = {};
 export class ItemRowTripTask extends Component<Props> {
 

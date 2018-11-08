@@ -18,7 +18,7 @@ import {
 } from "./../api/api";
 
 /**
- * 多个ui平分一行
+ * 多个ui平分一行 水平
  * **/
 export class ItemRowReciew extends Component {
 

@@ -10,10 +10,10 @@ import {
     Tools,
 } from "./../api/api";
 import {ButtonImage} from "./ButtonImage";
-import TriangleDown from './../../res/images/triangleDown.png';
+import TriangleDown from 'lib-images-zy/triangleDown.png';
 
 /**
- * 下拉框
+ * 下拉框 有下拉图表等，更加符合应用场景（基于DropdownBox）
  * **/
 export class PickDropdown extends Component {
 

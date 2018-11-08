@@ -357,7 +357,14 @@ export default class BaseComponent extends PureComponent {
             }
             else
             {
-                BaseComponent.pageStack.push(this.navigationer.state);
+                // BaseComponent.pageStack.push(this.navigationer.state);
+                let navState = this.navigationer.state;
+                let curPageState = navState.params
+                    ? navState.params.params
+                        ? navState.params.params
+                        : {}
+                    : {}
+                BaseComponent.pageStack.push(navState);
             }
 
         }
@@ -409,7 +416,13 @@ export default class BaseComponent extends PureComponent {
             }
             else
             {
-                BaseComponent.pageStack.push(this.props.navigation.state);
+                let navState = this.props.navigation.state;
+                let curPageState = navState.params
+                    ? navState.params.params
+                        ? navState.params.params
+                        : {}
+                    : {}
+                BaseComponent.pageStack.push(navState);
             }
         }
         // console.info("BaseComponent.pageStack",BaseComponent.pageStack);
@@ -552,8 +565,8 @@ export default class BaseComponent extends PureComponent {
             }
         });
     }
-     addOrientationListener(cd){
-       BaseComponent.addOrientationListener(cd);
+    addOrientationListener(cd){
+        BaseComponent.addOrientationListener(cd);
     }
 
     /**

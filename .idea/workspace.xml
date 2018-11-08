@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/ui/BaseComponent.js" afterPath="$PROJECT_DIR$/ui/BaseComponent.js" />
+      <change beforePath="$PROJECT_DIR$/ui/ButtonChange.js" afterPath="$PROJECT_DIR$/ui/ButtonChange.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,8 +45,8 @@
               <entry file="file://$PROJECT_DIR$/README.md">
                 <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                   <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="323">
-                      <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+                    <first_editor relative-caret-position="389">
+                      <caret line="403" column="3" lean-forward="true" selection-start-line="403" selection-start-column="3" selection-end-line="403" selection-end-column="3" />
                       <folding />
                     </first_editor>
                     <second_editor>
@@ -81,87 +83,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BarHorizontalTitleSection.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/BarHorizontalTitleSection.js">
+      <file leaf-file-name="ButtonChange.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/ButtonChange.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            <state relative-caret-position="296">
+              <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#105#144#0" expanded="true" />
-                <element signature="e#844#1377#0" expanded="false" />
-                <element signature="n#!!block;n#getOptios#0;n#BarHorizontalTitleSection#0" expanded="false" />
-                <element signature="e#2598#3058#0" expanded="false" />
-                <element signature="e#3087#3726#0" expanded="false" />
-                <element signature="n#!!block;n#render#0;n#BarHorizontalTitleSection#0" expanded="false" />
-                <element signature="e#4591#6366#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseComponent.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ui/BaseComponent.js">
+      <file leaf-file-name="ButtonTime.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ui/ButtonTime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="476" column="0" lean-forward="true" selection-start-line="476" selection-start-column="0" selection-end-line="476" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-                <element signature="e#895#1172#0" expanded="false" />
-                <element signature="e#1593#5643#0" expanded="false" />
-                <element signature="e#5944#6144#0" expanded="false" />
-                <element signature="e#6182#6227#0" expanded="false" />
-                <element signature="e#6256#6514#0" expanded="false" />
-                <element signature="e#6650#7634#0" expanded="false" />
-                <element signature="e#6826#7618#0" expanded="false" />
-                <element signature="e#7675#8668#0" expanded="false" />
-                <element signature="e#7859#8652#0" expanded="false" />
-                <element signature="e#8758#9403#0" expanded="false" />
-                <element signature="e#8981#9055#0" expanded="false" />
-                <element signature="e#9069#9387#0" expanded="false" />
-                <element signature="e#9431#10067#0" expanded="false" />
-                <element signature="e#9571#9639#0" expanded="false" />
-                <element signature="e#9733#10051#0" expanded="false" />
-                <element signature="e#10073#10103#0" expanded="false" />
-                <element signature="e#10126#10269#0" expanded="false" />
-                <element signature="e#10299#10490#0" expanded="false" />
-                <element signature="e#10496#10792#0" expanded="false" />
-                <element signature="e#10851#12375#0" expanded="false" />
-                <element signature="e#14251#14519#0" expanded="false" />
-                <element signature="e#16096#17540#0" expanded="false" />
-                <element signature="e#18049#18116#0" expanded="false" />
-                <element signature="e#18145#18197#0" expanded="false" />
-                <element signature="e#18219#18275#0" expanded="false" />
-                <element signature="e#18281#18381#0" expanded="false" />
-                <element signature="e#18408#19092#0" expanded="false" />
-                <element signature="e#19098#19179#0" expanded="false" />
-                <element signature="e#19212#19575#0" expanded="false" />
-                <element signature="e#19601#19917#0" expanded="false" />
-                <element signature="e#19960#20387#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CaptureImage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/CaptureImage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="-1414">
+              <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#verfyComponent#0;n#CaptureImage#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/images/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -215,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/addNavigationHelpers.js" />
         <option value="$PROJECT_DIR$/component-moudule/react-lifecycles-compat/package.json" />
         <option value="$PROJECT_DIR$/component-moudule/react-navigation/package.json" />
         <option value="$PROJECT_DIR$/component-moudule/react-navigation/src/views/ResourceSavingSceneView.js" />
@@ -265,6 +206,7 @@
         <option value="$PROJECT_DIR$/res/images/package.json" />
         <option value="$PROJECT_DIR$/StackComponent.js" />
         <option value="$PROJECT_DIR$/ui/BaseComponent.js" />
+        <option value="$PROJECT_DIR$/ui/ButtonChange.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -288,8 +230,8 @@
     <handled-path value="$PROJECT_DIR$/component-moudule/react-native-photo-browser/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="44" />
-    <option name="y" value="54" />
+    <option name="x" value="75" />
+    <option name="y" value="48" />
     <option name="width" value="1268" />
     <option name="height" value="801" />
   </component>
@@ -321,17 +263,6 @@
               <item name="react-native-lib-cus-com" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-native-lib-cus-com" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-native-lib-cus-com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-native-lib-cus-com" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-native-lib-cus-com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-native-lib-cus-com" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-native-lib-cus-com" type="b2602c69:ProjectViewProjectNode" />
@@ -387,15 +318,15 @@
       <updated>1541466458365</updated>
       <workItem from="1541466459623" duration="4611000" />
       <workItem from="1541472625647" duration="537000" />
-      <workItem from="1541473243125" duration="44781000" />
+      <workItem from="1541473243125" duration="46764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49929000" />
+    <option name="totallyTimeSpent" value="51912000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="54" width="1268" height="801" extended-state="0" />
+    <frame x="75" y="48" width="1268" height="801" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -432,50 +363,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/Routers-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#36#62#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/StackRouter-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#71#97#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/SwitchRouter-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#35#61#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/TabRouter-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#35#61#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/component-moudule/react-navigation/src/routers/__tests__/validateRouteConfigMap-test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -844,23 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/BarHorizontalTitleSection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#105#144#0" expanded="true" />
-            <element signature="e#844#1377#0" expanded="false" />
-            <element signature="n#!!block;n#getOptios#0;n#BarHorizontalTitleSection#0" expanded="false" />
-            <element signature="e#2598#3058#0" expanded="false" />
-            <element signature="e#3087#3726#0" expanded="false" />
-            <element signature="n#!!block;n#render#0;n#BarHorizontalTitleSection#0" expanded="false" />
-            <element signature="e#4591#6366#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/images/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -935,10 +805,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewAnimated.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#13#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component-moudule/react-native-tab-view/src/TabViewPagerScroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="122" column="66" lean-forward="false" selection-start-line="122" selection-start-column="66" selection-end-line="126" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ui/BaseComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="476" column="0" lean-forward="true" selection-start-line="476" selection-start-column="0" selection-end-line="476" selection-end-column="0" />
+        <state relative-caret-position="284">
+          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
             <element signature="e#895#1172#0" expanded="false" />
@@ -959,19 +850,56 @@
             <element signature="e#10073#10103#0" expanded="false" />
             <element signature="e#10126#10269#0" expanded="false" />
             <element signature="e#10299#10490#0" expanded="false" />
-            <element signature="e#10496#10792#0" expanded="false" />
-            <element signature="e#10851#12375#0" expanded="false" />
-            <element signature="e#14251#14519#0" expanded="false" />
-            <element signature="e#16096#17540#0" expanded="false" />
-            <element signature="e#18049#18116#0" expanded="false" />
-            <element signature="e#18145#18197#0" expanded="false" />
-            <element signature="e#18219#18275#0" expanded="false" />
-            <element signature="e#18281#18381#0" expanded="false" />
-            <element signature="e#18408#19092#0" expanded="false" />
-            <element signature="e#19098#19179#0" expanded="false" />
-            <element signature="e#19212#19575#0" expanded="false" />
-            <element signature="e#19601#19917#0" expanded="false" />
-            <element signature="e#19960#20387#0" expanded="false" />
+            <element signature="e#10851#12689#0" expanded="false" />
+            <element signature="e#12741#14799#0" expanded="false" />
+            <element signature="e#15111#16619#0" expanded="false" />
+            <element signature="e#16650#18094#0" expanded="false" />
+            <element signature="e#18197#18509#0" expanded="false" />
+            <element signature="e#18540#18597#0" expanded="false" />
+            <element signature="e#18699#18751#0" expanded="false" />
+            <element signature="e#18773#18829#0" expanded="false" />
+            <element signature="e#18835#18935#0" expanded="false" />
+            <element signature="e#18962#19646#0" expanded="false" />
+            <element signature="e#20155#20471#0" expanded="false" />
+            <element signature="e#20514#20941#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/BarHorizontalTitleSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#105#144#0" expanded="false" />
+            <element signature="e#844#1377#0" expanded="false" />
+            <element signature="n#!!block;n#getOptios#0;n#BarHorizontalTitleSection#0" expanded="false" />
+            <element signature="e#2598#3058#0" expanded="false" />
+            <element signature="e#3087#3726#0" expanded="false" />
+            <element signature="n#!!block;n#render#0;n#BarHorizontalTitleSection#0" expanded="false" />
+            <element signature="e#4591#6366#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/ButtonChange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#105#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/ButtonTime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1414">
+          <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -979,8 +907,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="323">
-            <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <first_editor relative-caret-position="389">
+            <caret line="403" column="3" lean-forward="true" selection-start-line="403" selection-start-column="3" selection-end-line="403" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor>

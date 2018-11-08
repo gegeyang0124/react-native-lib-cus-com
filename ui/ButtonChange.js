@@ -15,6 +15,9 @@ import {
 import {StyleSheetAdapt} from "./../api/StyleSheetAdapt";
 import {Theme} from "./../api/Theme";
 
+/**
+ * 点击按钮
+ * **/
 export class ButtonChange extends Component {
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针

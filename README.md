@@ -325,16 +325,80 @@ const styles = StyleSheetAdapt.create({
 
 ##### BaseComponent 用于继承导航属性;这个组件中的方法都是"静态和动态"两种调用方式
 ```
-import {BaseComponent} from "react-native-lib-cus-com";
+import React, {Component} from 'react';
+import {
+   Text,
+} from 'react-native'
+import {
+    StyleSheetAdapt,
+    ViewTitle,
+    BaseComponent,
+    BarcodeView,
+    Tools,
+} from "react-native-lib-cus-com";
+export default class Test extends BaseComponent<Props> {
+
+    constructor(props) {
+        super(props);
+let param = Tools.userConfig.userCutAccount && Tools.userConfig.userCutAccount.length > 0
+            ? {
+                headerLeft:<ImageChange icon={require("images/role.png")}
+                                        onPressIn={()=>PageSearchRole.show(this)}
+                                        style={styles.hLeft}/>
+            }
+            : {
+                headerLeft:false
+            };
+
+        this.setParams(param);
+    }
+    render() {
+        return (
+            <ViewTitle>
+                <BarcodeView ref={c=>this.barcodeView}
+                    style={styles.testStyle}/>
+                <Text onPress={()=>this.barcodeView.startScan()}>
+                    开始扫码
+                </Text>
+            </ViewTitle>
+        );
+    }
+}
+const styles = StyleSheetAdapt.create({
+
+    testStyle2:{
+        width:100,
+        height:200,
+    },
+    testStyle:{
+        transform:[
+            {rotateX:'180deg'}
+        ],
+    },
+});
+
 BaseComponent.setScreenOrientations();//设置屏幕 静态
 this.setScreenOrientations();//设置屏幕 动态
 BaseComponent.getOrientation();//获取屏幕方向 静态
 this.getOrientation();//获取屏幕方向 动态
 BaseComponent.addOrientationListener();//监听屏幕方向变化
+this.goPage();//跳转页面
+this.goBack();//返回已进入的页面
+this.setParams();//设置参数改变导航栏
+this.getPageParams();//获取页面跳转传递的参数
 ```
 
 ##### BarHorizontalTitleSection 条形进度块，上部有对比条提示，左边有对比的title，主体是对比条若干
 ```
 import {BarHorizontalTitleSection} from "react-native-lib-cus-com";
+```
 
+##### ButtonChange 点击按钮
+```
+import {ButtonChange} from "react-native-lib-cus-com";
+```
+
+##### ButtonTime 时间选择按钮控件 可选择时间显示 并回传时间
+```
+import {ButtonTime} from "react-native-lib-cus-com";
 ```

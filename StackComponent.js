@@ -4,7 +4,7 @@ export let Components = {
      * **/
     react_native_view_shot:{},//截屏或截UI图组件 react-native-view-shot
     react_native_fs:{},//文件操作组件 react-native-fs
-    react_native_root_toast:{},//toast提示 react-native-root-toast
+    // react_native_root_toast:{},//toast提示 react-native-root-toast
     react_native_doc_viewer:{},//解析office类文件组件 react-native-doc-viewer
     react_native_sqlite_storage:{},//数据库操作组件 react-native-sqlite-storage
     react_native_device_info:{},//设备信息获取组件 react-native-device-info

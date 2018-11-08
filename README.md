@@ -14,7 +14,6 @@ npm i --save react-native-lib-cus-com
 ### 安装依赖,必须安装
 npm i --save react-native-root-siblings <BR/>
 ### 安装依赖,选择安装（别忘了根据相应库进行react-native link ...）
-<b>npm i --save react-native-root-toast //若不安装，请求接口等报错没有提示</b> <BR/>
 npm i --save react-native-view-shot <BR/>
 npm i --save react-native-sqlite-storage <BR/>
 npm i --save react-native-fs <BR/>

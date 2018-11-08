@@ -19,8 +19,8 @@ import moment from 'moment-zy';
 import Geolocation from 'Geolocation';
 
 import {Http} from "./Http";
-import {HttpUrls} from "./HttpUrls";
-import {LocalStorage} from "./LocalStorage";
+// import {HttpUrls} from "./HttpUrls";
+// import {LocalStorage} from "./LocalStorage";
 
 import {PickerCustome} from "./PickerCustome";
 import {Theme} from "./Theme";

@@ -24,5 +24,8 @@
     "lib",
     "com",
     "react-native-lib-cus-com"
-  ]
+  ],
+  "dependencies": {
+    "moment": "^2.22.1"
+  }
 }

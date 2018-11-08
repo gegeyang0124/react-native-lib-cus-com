@@ -25,7 +25,7 @@ import ImageToSwipeRight from 'lib-images-zy/toSwipeRight.png';
 /**
  * 侧滑组件
  * **/
-import {SwipeListView, SwipeRow} from 'react-native-swipe-list-view-zy';
+import {SwipeListView, SwipeRow} from 'react-native-swipe-list-view';
 
 /**
  * 行组件，上部是左边是title，右边是状态；像QQ一样单行可以侧滑，侧滑显示按钮

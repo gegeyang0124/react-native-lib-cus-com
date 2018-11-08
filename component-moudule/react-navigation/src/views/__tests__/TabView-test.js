@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import renderer from 'react-test-renderer-zy';
+import renderer from 'react-test-renderer';
 import TabRouter from '../../routers/TabRouter';
 
 import TabView from '../TabView/TabView';

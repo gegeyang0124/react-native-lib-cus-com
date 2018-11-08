@@ -14,7 +14,7 @@ import {ImageBg} from "./ImageBg";
 
 import {
     Circle,//修改了Circle的formatText 使其可以传入自定义UI
-} from 'react-native-progress-zy';
+} from 'react-native-progress';
 
 const RN = require('react-native');
 const Img = RN.Image;

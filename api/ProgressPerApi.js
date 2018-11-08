@@ -10,7 +10,7 @@ import {
     Platform,
 } from 'react-native';
 import RootSiblings from 'react-native-root-siblings';
-import * as Progress from 'react-native-progress-zy';
+import * as Progress from 'react-native-progress';
 
 import {StyleSheetAdapt} from "./StyleSheetAdapt";
 let showingDialog = null;

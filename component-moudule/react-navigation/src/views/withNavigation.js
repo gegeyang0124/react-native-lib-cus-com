@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import hoistStatics from 'hoist-non-react-statics-zy';
+import hoistStatics from 'hoist-non-react-statics';
 
 export default function withNavigation(Component) {
   class ComponentWithNavigation extends React.Component {

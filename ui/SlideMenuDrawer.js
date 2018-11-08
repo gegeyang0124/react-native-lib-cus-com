@@ -18,7 +18,7 @@ import {
     StyleSheetAdapt,
     Theme
 } from './../api/api';
-import SideMenu from 'react-native-side-menu-zy';
+import SideMenu from 'react-native-side-menu';
 const screen = Dimensions.get('window');
 
 /**

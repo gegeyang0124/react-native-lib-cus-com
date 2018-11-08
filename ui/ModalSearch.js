@@ -15,7 +15,6 @@ import {
 } from "../api/api";
 import {ButtonChange} from "./ButtonChange";
 import {Theme} from "../api/Theme";
-import {TextInputLabel} from "./TextInputLabel";
 import {FlatListView} from "./FlatListView";
 
 /**

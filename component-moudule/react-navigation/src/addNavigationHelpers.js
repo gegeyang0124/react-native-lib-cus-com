@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import NavigationActions from './NavigationActions';
 import invariant from './utils/invariant';
 import StackPages from './routers/StackPages';
-// import * as TD from 'react-native-talkingdata';
+import * as TD from 'react-native-talkingdata';
 
 var evt = null;
 var isExe = true;

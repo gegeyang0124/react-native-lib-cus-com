@@ -11,7 +11,7 @@ import {
     Tools,
 } from "../api/api";
 
-import * as Progress from 'react-native-progress-zy';
+import * as Progress from 'react-native-progress';
 
 /**
  * 进度条 显示进度

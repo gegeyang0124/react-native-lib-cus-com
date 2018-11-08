@@ -11,8 +11,6 @@ npm i --save react-native-lib-cus-com
 2.各组件的详细调用方法，可进入相应的组件文件查看，里面所有的方法/函数都有注释；<BR/>
 3.以下“使用”的说明只有简单的说明(且都不写参数，直接复制使用，可能会报错)，具体说明，请参照“注意”第2点
 
-### 安装依赖,必须安装
-npm i --save react-native-root-siblings <BR/>
 ### 安装依赖,选择安装（别忘了根据相应库进行react-native link ...）
 npm i --save react-native-view-shot <BR/>
 npm i --save react-native-sqlite-storage <BR/>

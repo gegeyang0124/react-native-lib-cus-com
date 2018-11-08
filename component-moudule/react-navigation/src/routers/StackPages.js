@@ -1,4 +1,4 @@
-// import * as TD from "react-native-talkingdata";
+import * as TD from "react-native-talkingdata";
 
 export default class StackPages {
     /**
@@ -26,7 +26,7 @@ export default class StackPages {
         if(StackPages.stackPagesHistory.length > 0){
             let page = StackPages.stackPagesHistory[StackPages.stackPagesHistory.length - 1];
 
-            // TD.trackPageEnd(page.routeName);
+            TD.trackPageEnd(page.routeName);
 
             let clsPre = StackPages.stackPages[page.routeName].screen.prototype;;
             if(clsPre.context){
@@ -45,7 +45,7 @@ export default class StackPages {
         if(cls.context){
             StackPages.curPageState = params ? params : {};
             StackPages.curPageState.routeName = routeName;
-            // TD.trackPageBegin(routeName);
+            TD.trackPageBegin(routeName);
 
             // cls.context.componentWillEnter&&cls.context.componentWillEnter.bind(cls.context);
             //第二个参数是否返回，true进入，false： 返回

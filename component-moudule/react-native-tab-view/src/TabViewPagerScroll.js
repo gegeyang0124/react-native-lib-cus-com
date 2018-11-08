@@ -4,7 +4,7 @@ import * as React from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 import { PagerRendererPropType } from './TabViewPropTypes';
 import type { PagerRendererProps } from './TabViewTypeDefinitions';
-// import * as TD from "react-native-talkingdata";
+import * as TD from "react-native-talkingdata";
 import {StackPages} from "react-navigation";
 
 type ScrollEvent = {

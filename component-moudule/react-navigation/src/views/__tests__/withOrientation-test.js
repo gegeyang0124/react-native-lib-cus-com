@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import renderer from 'react-test-renderer-zy';
+import renderer from 'react-test-renderer';
 import withOrientation, { isOrientationLandscape } from '../withOrientation';
 
 test('it adds isLandscape to props', () => {

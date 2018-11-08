@@ -1,7 +1,6 @@
 import React from 'react';
 import { Dimensions } from 'react-native';
-// import hoistNonReactStatic from 'hoist-non-react-statics';
-import hoistNonReactStatic from 'hoist-non-react-statics-zy';
+import hoistNonReactStatic from 'hoist-non-react-statics';
 
 export const isOrientationLandscape = ({ width, height }) => width > height;
 

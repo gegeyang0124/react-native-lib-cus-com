@@ -5,8 +5,8 @@ import {
     CameraRoll,
 } from 'react-native';
 
-/*import DeviceInfo from "react-native-device-info";
-import Toast from 'react-native-root-toast';*/
+/*import DeviceInfo from "react-native-device-info";*/
+import Toast from 'react-native-root-toast';
 /**
  * react-native-doc-viewer
  * 可以在手机上直接打开文档，支持远程和本地文档。
@@ -15,7 +15,7 @@ import Toast from 'react-native-root-toast';*/
  * **/
 // import OpenFile from "react-native-doc-viewer";
 
-import moment from 'moment-zy';
+import moment from 'moment';
 import Geolocation from 'Geolocation';
 
 import {Http} from "./Http";
@@ -27,7 +27,6 @@ import {Theme} from "./Theme";
 import {CaptureImage} from "./CaptureImage";
 
 import {Components} from "./../StackComponent";
-const Toast = Components.react_native_root_toast;
 const OpenFile = Components.react_native_doc_viewer;
 
 //import Record from 'react-native-record-sound';

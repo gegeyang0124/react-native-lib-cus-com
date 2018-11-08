@@ -25,6 +25,8 @@ const {
 
 /**
  * 需要修改底层
+ * 将react的PropTypes换成
+ * import PropTypes  from 'prop-types';
  * **/
 import CustomActionSheet from 'react-native-custom-action-sheet-zy';
 import {Tools} from "../api/Tools";

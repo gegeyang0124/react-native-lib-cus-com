@@ -7,7 +7,7 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
-import ImageViewer from 'react-native-image-zoom-viewer-zy';
+import ImageViewer from 'react-native-image-zoom-viewer';
 import {StyleSheetAdapt} from "../api/api";
 
 import img from 'lib-images-zy/error.png';

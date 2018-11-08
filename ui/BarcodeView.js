@@ -15,7 +15,7 @@ import {
 // import Barcode from 'react-native-smart-barcode'
 import {Components} from "./../StackComponent";
 const Barcode = Components.react_native_smart_barcode;
-import TimerEnhance from 'react-native-smart-timer-enhance-zy'
+import TimerEnhance from 'react-native-smart-timer-enhance'
 
 import {ViewTitle} from "./ViewTitle";
 import {Tools} from "../api/Tools";

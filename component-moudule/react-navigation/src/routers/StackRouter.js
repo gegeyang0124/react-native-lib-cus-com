@@ -1,4 +1,4 @@
-import pathToRegexp from 'path-to-regexp-zy';
+import pathToRegexp from 'path-to-regexp';
 
 import NavigationActions from '../NavigationActions';
 import createConfigGetter from './createConfigGetter';

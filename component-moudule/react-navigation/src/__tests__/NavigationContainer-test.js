@@ -1,7 +1,7 @@
 import React from 'react';
 import 'react-native';
 
-import renderer from 'react-test-renderer-zy';
+import renderer from 'react-test-renderer';
 
 import NavigationActions from '../NavigationActions';
 import StackNavigator from '../navigators/StackNavigator';

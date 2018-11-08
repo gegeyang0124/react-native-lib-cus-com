@@ -3,7 +3,7 @@ import PropTypes  from 'prop-types';
 import {
     Modal,
 } from 'react-native';
-import PhotoBrowser from 'react-native-photo-browser-zy';
+import PhotoBrowser from 'react-native-photo-browser';
 import {
     Tools,
     DbMgr,

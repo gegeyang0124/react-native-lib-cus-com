@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import renderer from 'react-test-renderer-zy';
+import renderer from 'react-test-renderer';
 
 import StackNavigator from '../StackNavigator';
 

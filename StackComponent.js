@@ -28,6 +28,7 @@ export let Components = {
     // native_echarts:null,//百度echarts组件 native-echarts
     react_native_svg:{},//Svg画图组件 react-native-svg
     victory_native:{},//victory图表组件 victory-native
+    react_native_video:null,//视频播放组件 react-native-video
 };
 /**
  * 组件构造方法，构造所需的组件

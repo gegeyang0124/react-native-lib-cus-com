@@ -19,7 +19,7 @@ import {
     Tools,
 } from "./../api/api";
 
-import ImageLeftWhite from 'images/leftWhite.png';
+import ImageLeftWhite from 'lib-images-zy/leftWhite.png';
 
 /**
  * 左边具有按钮logo的UI 右边具有按钮 中间具有按钮UI控件

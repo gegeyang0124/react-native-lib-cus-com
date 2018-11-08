@@ -55,10 +55,12 @@ npm i --save victory_native</b> <BR/>
 ### “可选依赖”的初始化 (看下列例子)
 ```
 import {ComponentConstructor} from "react-native-lib-cus-com";
+
 ComponentConstructor({
 react_native_root_toast:require("react-native-root-toast"),
 react_native_fs:require("react-native-fs")
 });
+
 //就是将组件名中的"-"换成"_",传入ComponentConstructor（组件构造器）即可。
 ```
 
@@ -352,9 +354,34 @@ this.setParams();//设置参数改变导航栏
 this.getPageParams();//获取页面跳转传递的参数
 ```
 
+##### ViewTitle 视频播放组件 ui控件  导航框控件 头部有导航栏（可设置有无） 左边带返回按钮（可设置有无） 中间有title文本（可设置有无） 右边带菜单按钮（可设置有无） 底部带按钮（可设置有无） 可设置是否可滚动 一般用于作为页面的基础框View
+   ```
+import {ViewTitle} from "react-native-lib-cus-com";
+```
+
+##### VideoView 视频播放组件 ui控件
+```
+import {VideoView} from "react-native-lib-cus-com";
+```
+
+##### VideoList 视频播放组控件，支持水平或竖直方向排布 ui控件
+```
+import {VideoList} from "react-native-lib-cus-com";
+```
+
+##### WebViewCus 浏览器（可设置成弹框出现，也可与页面合并兼容）的组件 ui控件（WebView） 支持html和uri（网页地址），并自动适配页面大小
+```
+import {WebViewCus} from "react-native-lib-cus-com";
+```
+
 ##### DatePicker 日期选择组件
 ```
 import {DatePicker} from "react-native-lib-cus-com";
+```
+
+##### ViewCtrl View的升级版 增加左右滑动事件
+```
+import {ViewCtrl} from "react-native-lib-cus-com";
 ```
 
 ##### DropdownBox 下拉框 支持单选和多选 基础组件
@@ -468,7 +495,7 @@ const styles = StyleSheetAdapt.create({
 });
 ```
 
-##### MenuBottom  需要修改底层
+##### MenuBottom 底部菜单ui
 ```
 import {MenuBottom} from "react-native-lib-cus-com";
 <MenuBottom ref={c=>this.menuBottom=c}
@@ -476,6 +503,66 @@ btnList={["btn1","btn2"]}
 onPress={item=>{}}
 />
 this.menuBottom.show(true);
+```
+
+##### SlideMenuDrawer   侧滑菜单 控件
+```
+import {SlideMenuDrawer} from "react-native-lib-cus-com";
+```
+
+##### SwiperImage 图片轮播图
+```
+import {SwiperImage} from "react-native-lib-cus-com";
+```
+
+##### SwiperNotice 公告轮播 图片和一些文本信息
+```
+import {SwiperNotice} from "react-native-lib-cus-com";
+```
+
+##### TextChange 按钮 可使用API改变文本
+```
+import {TextChange} from "react-native-lib-cus-com";
+```
+
+##### TextDoubleIcon 双文本并且右边有个图标 控件
+```
+import {TextDoubleIcon} from "react-native-lib-cus-com";
+```
+
+##### TextInputIcon 左边带图标的输入框 控件
+```
+import {TextInputIcon} from "react-native-lib-cus-com";
+```
+
+##### TextInputLabel 带文字label 的输入框的输入框 控件
+```
+import {TextInputLabel} from "react-native-lib-cus-com";
+```
+
+##### TextIcon 左边带图标的文本 控件
+```
+import {TextIcon} from "react-native-lib-cus-com";
+```
+
+##### TextIconBg 圆进程可以放底图 中间可放进度百分比 控件
+```
+import {TextIconBg} from "react-native-lib-cus-com";
+```
+
+##### TitleRow 左边具有按钮logo的UI 右边具有按钮 中间具有按钮UI控件
+```
+import {TitleRow} from "react-native-lib-cus-com";
+```
+
+##### TitleBlock 左边具有竖杠 中间上部具有大文本紧挨着右边具有较小本 大文本下边有小文本
+```
+import {TitleBlock} from "react-native-lib-cus-com";
+```
+
+##### TitleBlockList TitleBlock的列表
+```
+import {TitleBlockList} from "react-native-lib-cus-com";
 ```
 
 ##### ModalTextInput  弹出输入内容框，如反馈评价等；（有一个评分输入，和一个评语输入）
@@ -496,6 +583,11 @@ import {ModalTextInputS} from "react-native-lib-cus-com";
 ##### ScrollSelectOptions  左边具有标题的提示的UI 右边具有标识或UI的 UI控件
 ```
 import {ScrollSelectOptions} from "react-native-lib-cus-com";
+```
+
+##### ScrollViewRowList  分组的带图片的ui 上部有title的文本，下边是主体有图片，图片下边有文本 支持一行多个或竖直多个
+```
+import {ScrollViewRowList} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowSwitch 具有ItemRowTitle提示的下拉展示控件框 直接封装有打开文件
@@ -606,4 +698,29 @@ import {ChartCircleProgressList} from "react-native-lib-cus-com";
 ##### ResultProgressBlock  业务进度块 类似于进度对比表，有显示的基本内容，还有条状的对比图
 ```
 import {ResultProgressBlock} from "react-native-lib-cus-com";
+```
+
+##### SearchDDDIpt  搜索组件 四个下拉框 一个输入框 一个搜索按钮
+```
+import {SearchDDDIpt} from "react-native-lib-cus-com";
+```
+
+##### SearchDropIpt  搜索组件 四个下拉框 一个输入框 一个搜索按钮
+```
+import {SearchDropIpt} from "react-native-lib-cus-com";
+```
+
+##### SearchIpt  具有 输入框(或下拉框)--按钮 的搜索条件的UI
+```
+import {SearchIpt} from "react-native-lib-cus-com";
+```
+
+##### TitleBlockTarget 目标幕模块 上部有header文本 中间有TitleBlockList 下边有TitleBlock文本提示(下左)和BarHorizontalTitleSection（对比进程 下右）
+```
+import {TitleBlockTarget} from "react-native-lib-cus-com";
+```
+
+##### TitleBlockTargetArea 区域模块 上部有header文本 中间有ResultProgressBlock（业绩进度模块） 下边有TitleBlock文本提示(下左)和BarHorizontalTitleSection（对比进程 下右）
+```
+import {TitleBlockTargetArea} from "react-native-lib-cus-com";
 ```

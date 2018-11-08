@@ -10,8 +10,8 @@ import {
 import {
     StyleSheetAdapt,
     Theme,
-} from "../../component/api/api";
-import ImageLeft from './../../res/images/rightBlack.png';
+} from "../api/api";
+import ImageLeft from 'lib-images-zy/rightBlack.png';
 
 /**
  * 双文本并且右边有个图标 控件

@@ -16,7 +16,7 @@ import {
 } from "./../api/api";
 import {PickDropdown} from './PickDropdown';
 import {ButtonImage} from './ButtonImage';
-import Search from './../../res/images/search.png';
+import Search from 'lib-images-zy/search.png';
 
 /**
  * 搜索组件 四个下拉框 一个输入框 一个搜索按钮

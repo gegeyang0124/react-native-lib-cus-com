@@ -16,10 +16,10 @@ import {
 } from "./../api/api";
 import {PickDropdown} from './PickDropdown';
 import {ButtonImage} from './ButtonImage';
-import Search from './../../res/images/search.png';
+import Search from 'lib-images-zy/search.png';
 
 /**
- * 具有 下拉框--输入框(或下拉框)--按钮 的累屎搜索条件的UI
+ * 具有 下拉框--输入框(或下拉框)--按钮 的类似搜索条件的UI
  * **/
 export class SearchDropIpt extends Component {
 

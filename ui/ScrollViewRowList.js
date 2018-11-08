@@ -18,6 +18,10 @@ import {TextIcon} from "./TextIcon";
 import {ItemRowTitle} from "./ItemRowTitle";
 import {TextIconBg} from "./TextIconBg";
 
+/**
+ * 分组的带图片的ui 上部有title的文本，下边是主体有图片，图片下边有文本
+ * 支持一行多个或竖直多个
+ * **/
 export class ScrollViewRowList extends Component{
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针

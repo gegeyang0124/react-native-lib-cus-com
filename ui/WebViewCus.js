@@ -14,7 +14,7 @@ import {
 import {ViewTitle} from "./ViewTitle";
 
 /**
- * WebView
+ * 浏览器（可设置成弹框出现，也可与页面合并兼容）的组件 ui控件（WebView） 支持html和uri（网页地址），并自动适配页面大小
  * **/
 export class WebViewCus extends Component{
 

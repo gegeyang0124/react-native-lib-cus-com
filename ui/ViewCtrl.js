@@ -5,11 +5,8 @@ import {
     View,
 } from 'react-native';
 
-
-import ImageLeftWhite from 'images/leftWhite.png';
-
 /**
- * View的升级版 增加左右事件
+ * View的升级版 增加左右滑动事件
  * **/
 export class ViewCtrl extends Component {
 

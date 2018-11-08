@@ -8,7 +8,7 @@ import {
 import {
     StyleSheetAdapt,
     Theme,
-} from "../api";
+} from "../api/api";
 
 const RN = require('react-native');
 const Img = RN.Image;

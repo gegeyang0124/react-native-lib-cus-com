@@ -7,6 +7,9 @@ import {
 import {StyleSheetAdapt} from "../api/StyleSheetAdapt";
 import {Theme} from "../api/Theme";
 
+/**
+ * 按钮 可使用API改变文本
+ * **/
 export class TextChange extends Component {
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针

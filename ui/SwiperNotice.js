@@ -14,10 +14,11 @@ import {ImageBg} from './ImageBg';
 const RN = require('react-native');
 const Img = RN.Image;
 
-import Swiper from 'react-native-swiper';
+import Swiper from 'react-native-swiper-zy';
 
 /**
  * 主页公告轮播
+ * 图片和一些文本信息
  * **/
 export class SwiperNotice extends Component{
 

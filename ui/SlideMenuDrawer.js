@@ -18,11 +18,11 @@ import {
     StyleSheetAdapt,
     Theme
 } from './../api/api';
-import SideMenu from 'react-native-side-menu';
+import SideMenu from 'react-native-side-menu-zy';
 const screen = Dimensions.get('window');
 
 /**
- * 策划菜单 控件
+ * 侧滑菜单 控件
  * **/
 export class SlideMenuDrawer extends Component {
     static propTypes = {

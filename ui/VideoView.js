@@ -8,16 +8,21 @@ import {
     Slider,
 } from 'react-native';
 
-import Video from 'react-native-video';
+// import Video from 'react-native-video';
+import {Components} from "./../StackComponent";
+const Video = Components.react_native_video;
 
 import {
     StyleSheetAdapt,
     Tools,
 } from "../api/api";
 
-import imagePlay from './../../res/images/play.png';
-import imageScreenFull from './../../res/images/screenFull.png';
+import imagePlay from 'lib-images-zy/play.png';
+import imageScreenFull from 'lib-images-zy/screenFull.png';
 
+/**
+ * 视频播放组件 ui控件
+ * **/
 export class VideoView extends Component {
 
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针
@@ -32,7 +37,7 @@ export class VideoView extends Component {
 
     }
 
-    video:Video;//video，实例
+    video;//video，实例
     slider:Slider;//video，实例
 
 
@@ -48,7 +53,12 @@ export class VideoView extends Component {
     // 构造
     constructor(props) {
         super(props);
-        //ImageView.base = this;
+
+        if(!Video){
+            console.info("请安装视频播放组件","react-native-video");
+            Tools.toast("请安装组件 react-native-video");
+        }
+
         // 初始状态
         this.state = {
             play:false,//是否播放;true:是，false：否
@@ -82,7 +92,9 @@ export class VideoView extends Component {
     }
 
     render() {
-
+        if(!Video){
+            return null;
+        }
         const {onPress} = this.props;
         const {sliderWidth} = this.state;
         // console.info("this.state",this.state);

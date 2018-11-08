@@ -14,7 +14,7 @@ import {TextChange} from "./TextChange";
 import {VideoView} from "./VideoView";
 
 /**
- * 可以查看图片，成行排列 每张图片下部可以有提示文字
+ * 视频播放组控件，支持水平或竖直方向排布 ui控件
  * **/
 export class VideoList extends Component {
 

@@ -11,7 +11,7 @@ export let Components = {
     react_native_update:{},//热更新组件 react-native-update
     react_native_image_marker:{},//设置水印API组件 react-native-image-marker
     jpush_react_native:{},//极光推送组件 jpush-react-native
-    react_native_storage:{isNull:true},//持久化本地存储组件 react-native-storage
+    // react_native_storage:{isNull:true},//持久化本地存储组件 react-native-storage
     react_native_image_crop_picker:{},//图片剪辑及拍摄选择等操作组件 react-native-image-crop-picker
     react_native_image_picker:{},//图片视频剪辑及拍摄选择等操作组件 react-native-image-picker
     react_native_picker:{},//自定义滑动选择组件 react-native-picker

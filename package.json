@@ -26,6 +26,7 @@
     "react-native-lib-cus-com"
   ],
   "dependencies": {
+    "react-native-storage": "^0.2.2",
     "react-navigation": "^1.5.11",
     "moment": "^2.22.1",
     "react-native-root-toast": "^3.0.1",

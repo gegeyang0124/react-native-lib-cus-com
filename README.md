@@ -27,7 +27,6 @@ npm i --save jpush-react-native <BR/><BR/>
  **/ <BR/>
 npm i --save react-native-update</b> <BR/>
 npm i --save react-native-image-marker <BR/>
-npm i --save react-native-storage <BR/>
 npm i --save react-native-image-crop-picker <BR/>
 npm i --save react-native-image-picker <BR/>
 npm i --save react-native-picker <BR/>

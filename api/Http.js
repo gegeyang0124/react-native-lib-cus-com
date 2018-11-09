@@ -30,6 +30,7 @@ import {ProgressPerApi} from "./ProgressPerApi";
 export class Http {
 
     static urlFile = null;//文件上传接口
+    static fileField = null;//文件上传包含文件的字段，可不传
 
     // static destDownload = `${RNFS.DocumentDirectoryPath}/`;//下载目录 此目录会在app升级后被覆盖
     static destDownload = RNFS.DocumentDirectoryPath
@@ -548,13 +549,18 @@ export class Http {
                         if(Tools.platformType)
                         {
                             // create an array of objects of the files you want to upload
+                            var fileObj = {
+                                // name: 'Filedata',
+                                filename: filePath.substring(filePath.lastIndexOf("/") + 1),
+                                filepath: filePath,
+                                // filetype: 'multipart/form-data'
+                            };
+                            if(Http.fileField){
+                                fileObj.name = Http.fileField;
+                            }
+
                             var files = [
-                                {
-                                    name: 'Filedata',
-                                    filename: filePath.substring(filePath.lastIndexOf("/") + 1),
-                                    filepath: filePath,
-                                    // filetype: 'multipart/form-data'
-                                },
+                                fileObj
                             ];
 
                             // upload files

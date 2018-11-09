@@ -134,6 +134,7 @@ Http.post();//基于 fetch 封装的 POST请求
 Http.get();//基于 fetch 封装的 Get请求
 Http.requestAjax();//基于 ajax 封装的 网络请求
 Http.urlFile = "";//上传文件 接口
+Http.fileField = "";//文件上传包含文件的字段，可不传
 Http.upLoadFileToService();//上传文件 react-native-fs
 Http.downloadFile();//下载文件 react-native-fs
 ```

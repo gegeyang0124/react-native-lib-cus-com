@@ -1,7 +1,8 @@
 # react-native-lib-cus-com
 react-native 自定义辅助组件库，完美适配各种机型和屏幕大小；
-完美的网路请求，带加载条，可上传、下载文件;
-等等多种ui,可自定义删除;可节省应用级软件的开发时间
+完美的网路请求，带加载条，可上传、下载文件,支持视频播放，二维码条形码扫描，
+图片选择、剪辑、查看大图，本地存储，数据库操作，页面导航，截屏和截UI图，
+水印图片，打开office类文件;等等多种ui,可自定义删除;可节省应用级软件的开发时间
 
 ###  安装组件：
 npm i --save react-native-lib-cus-com
@@ -12,40 +13,40 @@ npm i --save react-native-lib-cus-com
 3.以下“使用”的说明只有简单的说明(且都不写参数，直接复制使用，可能会报错)，具体说明，请参照“注意”第2点
 
 ### 安装依赖,选择安装（别忘了根据相应库进行react-native link ...）
-npm i --save react-native-view-shot <BR/>
-npm i --save react-native-sqlite-storage <BR/>
-npm i --save react-native-fs <BR/>
-npm i --save react-native-device-info <BR/>
-npm i --save react-native-doc-viewer <BR/><BR/>
+npm i --save react-native-view-shot 截屏和截UI图<BR/>
+npm i --save react-native-sqlite-storage 数据库操作<BR/>
+npm i --save react-native-fs 文件操作<BR/>
+npm i --save react-native-device-info 设备信息获取<BR/>
+npm i --save react-native-doc-viewer 打开文件<BR/><BR/>
 <b>
 这是一套：npm i --save jcore-react-native  <BR/>
-npm i --save jpush-react-native <BR/><BR/>
+npm i --save jpush-react-native 极光推送<BR/><BR/>
 </b>
 <b>/** react-native-update 发布热更新报错 将node_modules\react-native-update\local-cli\lib\bundle.js <BR/>
  的439行种的metro-bundler改成metro可成功运行！ <BR/>
  报错版本0.52+(0.52以上版本报错) <BR/>
  **/ <BR/>
-npm i --save react-native-update</b> <BR/>
-npm i --save react-native-image-marker <BR/>
-npm i --save react-native-image-crop-picker <BR/>
-npm i --save react-native-image-picker <BR/>
-npm i --save react-native-picker <BR/>
-npm i --save react-native-spinkit <BR/>
-npm i --save react-native-talkingdata <BR/>
+npm i --save react-native-update 热更新</b> <BR/>
+npm i --save react-native-image-marker 水印<BR/>
+npm i --save react-native-image-crop-picker 图片操作<BR/>
+npm i --save react-native-image-picker 视频操作<BR/>
+npm i --save react-native-picker 选择框组件<BR/>
+npm i --save react-native-spinkit 加载图<BR/>
+npm i --save react-native-talkingdata talkingdata统计组件<BR/>
 <b>/** 本库自带react-navigation@1.5.11，若想使用最新版则按“选择安装依赖的初始化”初始化
  **/ <BR/>
-npm i --save react-navigation</b> <BR/>
-npm i --save react-native-orientation <BR/><BR/>
+npm i --save react-navigation 页面导航</b> <BR/>
+npm i --save react-native-orientation 屏幕方向操作<BR/><BR/>
 <b>/**
     * react-native-smart-barcode 二维码库中将react的PropTypes换成
     * import PropTypes  from 'prop-types';
     * PropTypes已经从react中单独提取出来
     * android 需要修改 RCTCapturePackage中的List的继承去掉
     * **/<BR/>
-npm i --save react-native-smart-barcode</b> <BR/>
-npm i --save react_native_linear_gradient</b> <BR/>
-npm i --save react_native_svg</b> <BR/>
-npm i --save victory_native</b> <BR/>
+npm i --save react-native-smart-barcode 一/二维码扫描</b> <BR/>
+npm i --save react_native_linear_gradient 渐变</b> <BR/>
+npm i --save react_native_svg svg画图工具</b> <BR/>
+npm i --save victory_native victory图表</b> <BR/>
 
 
 ### “可选依赖”的初始化 (看下列例子)

@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/gegeyang0124/react-native-lib-cus-com.git"
   },
-  "author": "gegeyang0124",
+  "author": {
+    "name": "周阳",
+    "email": "584450903@qq.com",
+    "url": "https://github.com/gegeyang0124",
+    "blog":"http://blog.sina.com.cn/s/articlelist_6078695441_0_1.html"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gegeyang0124/react-native-lib-cus-com/issues"

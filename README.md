@@ -210,6 +210,8 @@ HotUpdate.appKey = null;//react-native-update的key
 HotUpdate.appID = null;//当前给app指定（分配）的id
 HotUpdate.updateFirst = true;//app第一次启动是否强制更新，默认true更新
 
+HotUpdate.updateLoop();//检查是否有更新
+
 这些设置完后即可，提示会根据元信息的情况提示
 ```
 

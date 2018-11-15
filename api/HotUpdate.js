@@ -433,16 +433,13 @@ export class HotUpdate{
     static updateLoop(){
         if(this.verfyComponent(1)){
             setInterval(()=>{
-                if(HotUpdate.update.execute){
-                    // console.info("HotUpdate","HotUpdate");
-                    HotUpdate.checkUpdate();
-                }
+                HotUpdate.checkUpdate();
             },10000);
         }
     }
 }
 
-HotUpdate.updateLoop();
+// HotUpdate.updateLoop();
 
 /*
 const updateLoop = setInterval(()=>{

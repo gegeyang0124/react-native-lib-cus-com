@@ -924,117 +924,123 @@ export class Http {
 
     /**
      * 下载文件
-     * @param fileAddress,//文件地址
+     * @param fileAddress string,//文件地址
+     * @param downloadPath string,//下载存放文件目录路径 默认null,使用默认下载目录
+     * @param isReDownload bool,//是否重新下载，默认false，false:若存在则不再下载，反之下载
      * **/
-    static downloadFile(fileAddress) {
+    static downloadFile(fileAddress,downloadPath=null,isReDownload=false) {
 
         return  new Promise((resolve,reject)=>{
 
-            if(this.verfyComponent(1)){
-                if(fileAddress.indexOf("http") == 0){
+            if(fileAddress.indexOf("http") == 0){
+                downloadPath = downloadPath ? downloadPath : this.destDownload;
+                let downloadDest = downloadPath + `/${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
 
-                    let downloadDest = this.destDownload + `${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
-                    RNFS.exists(downloadDest)
-                        .then((exist) =>{
-                            if(!exist){
-                                this.getConnectionInfo()
-                                    .then((connectionInfo) => {
+                RNFS.mkdir&&RNFS.mkdir(downloadPath)
+                    .then(()=>{
+                        RNFS.exists(downloadDest)
+                            .then((exist) =>{
+                                if(!exist || isReDownload){
+                                    this.getConnectionInfo()
+                                        .then((connectionInfo) => {
 
-                                        if(fileAddress == undefined)
-                                        {
-                                            Tools.toast("请传入文件地址")
-                                            reject({status:-1});
-                                        }
-                                        /*else if(Tools.progressPer == null)
-                                        {
-                                            Tools.toast(`请在页面放入进程条\<ProgressPer \/ \>`);
-                                            return;
-                                        }*/
-
-                                        // 音频
-                                        //const downloadDest = `${RNFS.MainBundlePath}/${((Math.random() * 1000) | 0)}.mp3`;
-                                        // let downloadDest = `${RNFS.MainBundlePath}/${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
-                                        // let downloadDest = `${RNFS.DocumentDirectoryPath}/${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
-                                        // http://wvoice.spriteapp.cn/voice/2015/0902/55e6fc6e4f7b9.mp3
-                                        //const formUrl = 'http://wvoice.spriteapp.cn/voice/2015/0818/55d2248309b09.mp3';VideoView_android.js
-
-                                        /*alert(JSON.stringify(downloadDest));
-                                         return;*/
-
-                                        let options = {
-                                            fromUrl: fileAddress,
-                                            toFile: downloadDest,
-                                            background: true,
-                                            headers: {
-                                                // 'Cookie': cookie //需要添加验证到接口要设置cookie
-                                            },
-                                            begin: (res) => {
-                                                /*console.log('begin', res);
-                                                 console.log('contentLength:', res.contentLength / 1024 / 1024, 'M');*/
-                                                // alert(JSON.stringify(res));
-                                            },
-                                            progress: (res) => {
-
-                                                //let per = (res.bytesWritten / res.contentLength).toFixed(3);
-                                                let per = (res.bytesWritten / res.contentLength);
-                                                // per = per * 1000;
-                                                // per = parseInt(per);
-                                                // per = per / 1000;
-
-                                                // Tools.progressPer.setPogress(per);
-                                                ProgressPerApi.show(per);
+                                            if(fileAddress == undefined)
+                                            {
+                                                Tools.toast("请传入文件地址")
+                                                reject({status:-1});
                                             }
-                                        };
+                                            /*else if(Tools.progressPer == null)
+                                            {
+                                                Tools.toast(`请在页面放入进程条\<ProgressPer \/ \>`);
+                                                return;
+                                            }*/
 
-                                        try {
-                                            let ret = RNFS.downloadFile(options);
-                                            ret.promise.then(retJson => {
-                                                /* console.log('success', res);
-                                                 console.log('file://' + downloadDest)*/
+                                            // 音频
+                                            //const downloadDest = `${RNFS.MainBundlePath}/${((Math.random() * 1000) | 0)}.mp3`;
+                                            // let downloadDest = `${RNFS.MainBundlePath}/${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
+                                            // let downloadDest = `${RNFS.DocumentDirectoryPath}/${fileAddress.substring(fileAddress.lastIndexOf('/') + 1)}`;
+                                            // http://wvoice.spriteapp.cn/voice/2015/0902/55e6fc6e4f7b9.mp3
+                                            //const formUrl = 'http://wvoice.spriteapp.cn/voice/2015/0818/55d2248309b09.mp3';VideoView_android.js
 
-                                                retJson["filePath"] = downloadDest;
+                                            /*alert(JSON.stringify(downloadDest));
+                                             return;*/
+
+                                            let options = {
+                                                fromUrl: fileAddress,
+                                                toFile: downloadDest,
+                                                background: true,
+                                                headers: {
+                                                    // 'Cookie': cookie //需要添加验证到接口要设置cookie
+                                                },
+                                                begin: (res) => {
+                                                    /*console.log('begin', res);
+                                                     console.log('contentLength:', res.contentLength / 1024 / 1024, 'M');*/
+                                                    // alert(JSON.stringify(res));
+                                                },
+                                                progress: (res) => {
+
+                                                    //let per = (res.bytesWritten / res.contentLength).toFixed(3);
+                                                    let per = (res.bytesWritten / res.contentLength);
+                                                    // per = per * 1000;
+                                                    // per = parseInt(per);
+                                                    // per = per / 1000;
+
+                                                    // Tools.progressPer.setPogress(per);
+                                                    ProgressPerApi.show(per);
+                                                }
+                                            };
+
+                                            try {
+                                                let ret = RNFS.downloadFile(options);
+                                                ret.promise.then(retJson => {
+                                                    console.log("-----------------------------------------downloadFile " + fileAddress + " success start-------------------------------------");
+                                                    console.info("response:",retJson);
+                                                    console.log("-----------------------------------------downloadFile " + fileAddress + " success end-------------------------------------");
+
+                                                    /* console.log('file://' + downloadDest)*/
+
+                                                    retJson["filePath"] = downloadDest;
+                                                    // Tools.progressPer.show(false);
+                                                    ProgressPerApi.hide();
+                                                    resolve(retJson);
+
+                                                }).catch(err => {
+                                                    //console.log('err', err);
+                                                    // Tools.progressPer.show(false);
+                                                    ProgressPerApi.hide();
+                                                    reject(err);
+                                                });
+                                            }
+                                            catch (e) {
+                                                //console.log(error);
                                                 // Tools.progressPer.show(false);
-                                                ProgressPerApi.hide();
-                                                resolve(retJson);
+                                                ProgressPerApi.hide()
+                                                reject(e);
+                                            }
 
-                                            }).catch(err => {
-                                                //console.log('err', err);
-                                                // Tools.progressPer.show(false);
-                                                ProgressPerApi.hide();
-                                                reject(err);
-                                            });
-                                        }
-                                        catch (e) {
-                                            //console.log(error);
-                                            // Tools.progressPer.show(false);
-                                            ProgressPerApi.hide()
-                                            reject(e);
-                                        }
-
-                                    })
-                                    .catch(retJson=>{
-                                        reject(retJson);
+                                        })
+                                        .catch(retJson=>{
+                                            reject(retJson);
+                                        });
+                                }
+                                else
+                                {
+                                    // Tools.toast("文件已存在");
+                                    resolve({
+                                        filePath:downloadDest
                                     });
-                            }
-                            else
-                            {
-                                // Tools.toast("文件已存在");
-                                resolve({
-                                    filePath:downloadDest
-                                });
-                            }
-                        });
-
-
-
-                }
-                else
-                {
-                    resolve({
-                        filePath:fileAddress
+                                }
+                            });
                     });
-                }
+
             }
+            else
+            {
+                resolve({
+                    filePath:fileAddress
+                });
+            }
+
 
             /* // On Android, use "RNFS.DocumentDirectoryPath" (MainBundlePath is not defined)
 
@@ -1073,5 +1079,3 @@ export class Http {
     }
 
 }
-
-RNFS.mkdir&&RNFS.mkdir(Http.destDownload);

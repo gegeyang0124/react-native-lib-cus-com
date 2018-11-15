@@ -92,7 +92,7 @@ export class Tools {
      * 初始化
      * **/
     static init() {
-      /*  LocalStorage.get(DeviceInfo.getVersion())
+        /*LocalStorage.get(DeviceInfo.getVersion())
             .then((reponseJson) => {
 
                 if(reponseJson !== undefined && reponseJson !== null){
@@ -112,11 +112,9 @@ export class Tools {
                 }
 
                 // console.info("reponseJson:"+Tools.isCurStruct,reponseJson);
-            });
+            });*/
 
-
-
-
+     /*
         let interval = setInterval(() => {
             if (this.app_config.versionTxt == null
                 && HttpUrls.urlSets != null
@@ -150,6 +148,7 @@ export class Tools {
 
                 });
         }*/
+
     }
 
 

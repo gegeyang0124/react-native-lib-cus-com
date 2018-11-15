@@ -207,7 +207,7 @@ import _updateConfig from '项目名/update';
 const {appKey} = _updateConfig[Platform.OS];
 **/
 HotUpdate.appKey = null;//react-native-update的key
-HotUpdate.appID = null;//当前给app指定（分配）的id
+HotUpdate.appID = null;//当前给app指定（分配）的id,可以是任何数据，必须传入，用于判断是否需要更新
 HotUpdate.updateFirst = true;//app第一次启动是否强制更新，默认true更新
 
 HotUpdate.updateLoop();//检查是否有更新

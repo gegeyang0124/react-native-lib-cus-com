@@ -55,7 +55,7 @@ reboot:555,//666、强制使用更新；555、用户决定是否使用更新;333
  * **/
 export class HotUpdate{
     static appKey = null;//react-native-update的key
-    static appID = null;//当前给app指定（分配）的id
+    static appID = null;//当前给app指定（分配）的id,可以是任何数据，必须传入，用于判断是否需要更新
     static updateFirst = true;//app第一次启动是否强制更新，默认true更新
 
     static update = {
@@ -431,10 +431,20 @@ export class HotUpdate{
     };
 
     static updateLoop(){
+
+
         if(this.verfyComponent(1)){
-            setInterval(()=>{
-                HotUpdate.checkUpdate();
-            },10000);
+            LocalStorage.get(packageVersion)
+                .then((reponseJson) => {
+
+                    if(reponseJson !== undefined && reponseJson !== null){
+                        Tools.isCurStruct = true;
+                    }
+                    setInterval(()=>{
+                        HotUpdate.checkUpdate();
+                    },10000);
+                });
+
         }
     }
 }

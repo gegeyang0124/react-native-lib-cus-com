@@ -4,9 +4,6 @@
     <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/api/HotUpdate.js" afterPath="$PROJECT_DIR$/api/HotUpdate.js" />
-      <change beforePath="$PROJECT_DIR$/api/Http.js" afterPath="$PROJECT_DIR$/api/Http.js" />
-      <change beforePath="$PROJECT_DIR$/api/Tools.js" afterPath="$PROJECT_DIR$/api/Tools.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +20,7 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-247">
+            <state relative-caret-position="342">
               <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding />
             </state>
@@ -43,8 +40,8 @@
       <file leaf-file-name="Http.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/Http.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="923" column="0" lean-forward="true" selection-start-line="923" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
+            <state relative-caret-position="2147">
+              <caret line="923" column="0" lean-forward="false" selection-start-line="923" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#verfyComponent#0;n#Http#0" expanded="false" />
                 <element signature="n#!!block;n#getConnectionInfo#0;n#Http#0" expanded="false" />
@@ -83,8 +80,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="258">
-                <caret line="212" column="32" lean-forward="true" selection-start-line="212" selection-start-column="32" selection-end-line="212" selection-end-column="32" />
+              <first_editor relative-caret-position="132">
+                <caret line="193" column="74" lean-forward="false" selection-start-line="193" selection-start-column="74" selection-end-line="193" selection-end-column="74" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -97,7 +94,7 @@
       <file leaf-file-name="HotUpdate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2709">
+            <state relative-caret-position="2033">
               <caret line="288" column="81" lean-forward="true" selection-start-line="288" selection-start-column="81" selection-end-line="288" selection-end-column="81" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
@@ -119,12 +116,11 @@
       <file leaf-file-name="Tools.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/Tools.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="-1121">
               <caret line="60" column="11" lean-forward="false" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
               <folding>
                 <element signature="e#0#93#0" expanded="true" />
                 <element signature="e#3629#4987#0" expanded="false" />
-                <marker date="1542273499468" expanded="false" signature="3673:4620" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -285,7 +281,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,12 +297,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RN_Test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -351,12 +347,13 @@
       <workItem from="1541638737439" duration="41003000" />
       <workItem from="1541754632056" duration="1091000" />
       <workItem from="1542262551200" duration="326000" />
-      <workItem from="1542264755273" duration="7627000" />
+      <workItem from="1542264755273" duration="8242000" />
+      <workItem from="1542333403051" duration="464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102296000" />
+    <option name="totallyTimeSpent" value="103375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="120" y="41" width="1268" height="809" extended-state="0" />
@@ -569,19 +566,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../AdProjGit/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../AdProjGit/package.json" />
     <entry file="file://$USER_HOME$/Desktop/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,8 +592,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/Http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="923" column="0" lean-forward="true" selection-start-line="923" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
+        <state relative-caret-position="2147">
+          <caret line="923" column="0" lean-forward="false" selection-start-line="923" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#verfyComponent#0;n#Http#0" expanded="false" />
             <element signature="n#!!block;n#getConnectionInfo#0;n#Http#0" expanded="false" />
@@ -630,21 +619,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
+        <state relative-caret-position="342">
           <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="60" column="11" lean-forward="false" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#93#0" expanded="true" />
-            <element signature="e#3629#4987#0" expanded="false" />
-            <marker date="1542273499468" expanded="false" signature="3673:4620" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,7 +637,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2709">
+        <state relative-caret-position="2033">
           <caret line="288" column="81" lean-forward="true" selection-start-line="288" selection-start-column="81" selection-end-line="288" selection-end-column="81" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
@@ -678,11 +655,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/Tools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1121">
+          <caret line="60" column="11" lean-forward="false" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#93#0" expanded="true" />
+            <element signature="e#3629#4987#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="258">
-            <caret line="212" column="32" lean-forward="true" selection-start-line="212" selection-start-column="32" selection-end-line="212" selection-end-column="32" />
+          <first_editor relative-caret-position="132">
+            <caret line="193" column="74" lean-forward="false" selection-start-line="193" selection-start-column="74" selection-end-line="193" selection-end-column="74" />
             <folding />
           </first_editor>
           <second_editor>

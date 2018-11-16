@@ -191,8 +191,8 @@ DbMgr.executeSql();//执行sql
 /**
  * HotUpdate 热更新，提供热更新各种方法
  * 元信息：{
-updateList:[],//更新app id集合（app id集合）//不传更新全部
-updateNoList:[],//不更新app id集合（app id集合）//传了的账户则不更新
+updateList:[],//更新appID集合（appID集合）//不传字段，则所有app将收到更新信息，传了空数组则所有app不会收到更新信息
+updateNoList:[],//不更新appID集合（appID集合）//updateNoList中含的appID的app将不会收到更新信息;不传或传空数组则所有app更新
 code:777,//777、立刻更新；888、立刻强制更新；999、立刻静默更新
 reboot:555,//666、强制使用更新；555、用户决定是否使用更新;333、下次启用更新 默认是555
 }
@@ -207,7 +207,7 @@ import _updateConfig from '项目名/update';
 const {appKey} = _updateConfig[Platform.OS];
 **/
 HotUpdate.appKey = null;//react-native-update的key
-HotUpdate.appID = null;//当前给app指定（分配）的id,可以是任何数据，必须传入，用于判断是否需要更新
+HotUpdate.appID = null;//给每个app的唯一标识,可以是任何数据，必须传入，用于判断是否需要更新，与updateList、updateNoList配套使用
 HotUpdate.updateFirst = true;//app第一次启动是否强制更新，默认true更新
 
 HotUpdate.updateLoop();//检查是否有更新

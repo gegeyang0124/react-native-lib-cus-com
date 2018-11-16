@@ -20,7 +20,7 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="-247">
               <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding />
             </state>
@@ -40,8 +40,8 @@
       <file leaf-file-name="Http.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/Http.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2147">
-              <caret line="923" column="0" lean-forward="false" selection-start-line="923" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
+            <state relative-caret-position="532">
+              <caret line="39" column="22" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="39" selection-end-column="22" />
               <folding>
                 <element signature="n#!!block;n#verfyComponent#0;n#Http#0" expanded="false" />
                 <element signature="n#!!block;n#getConnectionInfo#0;n#Http#0" expanded="false" />
@@ -55,10 +55,8 @@
                 <element signature="n#!!doc;n#upLoadFileToService#0;n#Http#0" expanded="false" />
                 <element signature="n#!!block;n#upLoadFileToService#0;n#Http#0" expanded="false" />
                 <element signature="n#!!block;n#upLoadFileToServicePutIn#0;n#Http#0" expanded="false" />
+                <element signature="n#!!doc;n#downloadFile#0;n#Http#0" expanded="false" />
                 <element signature="n#!!block;n#downloadFile#0;n#Http#0" expanded="false" />
-                <element signature="e#39284#45592#0" expanded="false" />
-                <element signature="e#39563#45575#0" expanded="false" />
-                <element signature="e#45622#45724#0" expanded="false" />
                 <element signature="e#45739#46666#0" expanded="false" />
                 <element signature="e#46680#47651#0" expanded="false" />
               </folding>
@@ -69,7 +67,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
+            <state relative-caret-position="-4161">
               <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding />
             </state>
@@ -80,8 +78,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="132">
-                <caret line="193" column="74" lean-forward="false" selection-start-line="193" selection-start-column="74" selection-end-line="193" selection-end-column="74" />
+              <first_editor relative-caret-position="418">
+                <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -94,8 +92,8 @@
       <file leaf-file-name="HotUpdate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2033">
-              <caret line="288" column="81" lean-forward="true" selection-start-line="288" selection-start-column="81" selection-end-line="288" selection-end-column="81" />
+            <state relative-caret-position="913">
+              <caret line="127" column="41" lean-forward="false" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
                 <element signature="e#1576#2019#0" expanded="false" />
@@ -104,8 +102,8 @@
                 <element signature="n#!!doc;n#RolledBack#0;n#HotUpdate#0" expanded="false" />
                 <element signature="n#!!block;n#RolledBack#0;n#HotUpdate#0" expanded="false" />
                 <element signature="e#3481#3536#0" expanded="false" />
-                <element signature="e#3578#8568#0" expanded="false" />
                 <element signature="e#8574#8666#0" expanded="false" />
+                <element signature="e#8709#17428#0" expanded="false" />
                 <element signature="e#8838#9269#0" expanded="false" />
                 <element signature="e#17310#17410#0" expanded="false" />
               </folding>
@@ -130,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/api/LocalStorage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -259,11 +257,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="120" />
-    <option name="y" value="41" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="143" />
+    <option name="y" value="73" />
     <option name="width" value="1268" />
-    <option name="height" value="809" />
+    <option name="height" value="796" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -303,7 +301,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lx_yyt-ios-201811151434/lx_yyt" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -348,18 +346,18 @@
       <workItem from="1541754632056" duration="1091000" />
       <workItem from="1542262551200" duration="326000" />
       <workItem from="1542264755273" duration="8242000" />
-      <workItem from="1542333403051" duration="464000" />
+      <workItem from="1542333403051" duration="6449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103375000" />
+    <option name="totallyTimeSpent" value="109360000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="120" y="41" width="1268" height="809" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22763579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22760417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -582,75 +580,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Http.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2147">
-          <caret line="923" column="0" lean-forward="false" selection-start-line="923" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#verfyComponent#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#getConnectionInfo#0;n#Http#0" expanded="false" />
-            <element signature="n#!!doc;n#requestAjax#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#requestAjax#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#getAddress#0;n#Http#0" expanded="false" />
-            <element signature="n#!!doc;n#putErrInfo#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#putErrInfo#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#request#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#upLoadFile#0;n#Http#0" expanded="false" />
-            <element signature="n#!!doc;n#upLoadFileToService#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#upLoadFileToService#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#upLoadFileToServicePutIn#0;n#Http#0" expanded="false" />
-            <element signature="n#!!block;n#downloadFile#0;n#Http#0" expanded="false" />
-            <element signature="e#39284#45592#0" expanded="false" />
-            <element signature="e#39563#45575#0" expanded="false" />
-            <element signature="e#45622#45724#0" expanded="false" />
-            <element signature="e#45739#46666#0" expanded="false" />
-            <element signature="e#46680#47651#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/LocalStorage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2033">
-          <caret line="288" column="81" lean-forward="true" selection-start-line="288" selection-start-column="81" selection-end-line="288" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#1576#2019#0" expanded="false" />
-            <element signature="n#!!block;n#verfyComponent#0;n#HotUpdate#0" expanded="false" />
-            <element signature="n#!!block;n#updateDelay#0;n#HotUpdate#0" expanded="false" />
-            <element signature="n#!!doc;n#RolledBack#0;n#HotUpdate#0" expanded="false" />
-            <element signature="n#!!block;n#RolledBack#0;n#HotUpdate#0" expanded="false" />
-            <element signature="e#3481#3536#0" expanded="false" />
-            <element signature="e#3578#8568#0" expanded="false" />
-            <element signature="e#8574#8666#0" expanded="false" />
-            <element signature="e#8838#9269#0" expanded="false" />
-            <element signature="e#17310#17410#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -666,11 +601,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/Http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="39" column="22" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="39" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!block;n#verfyComponent#0;n#Http#0" expanded="false" />
+            <element signature="n#!!block;n#getConnectionInfo#0;n#Http#0" expanded="false" />
+            <element signature="n#!!doc;n#requestAjax#0;n#Http#0" expanded="false" />
+            <element signature="n#!!block;n#requestAjax#0;n#Http#0" expanded="false" />
+            <element signature="n#!!block;n#getAddress#0;n#Http#0" expanded="false" />
+            <element signature="n#!!doc;n#putErrInfo#0;n#Http#0" expanded="false" />
+            <element signature="n#!!block;n#putErrInfo#0;n#Http#0" expanded="false" />
+            <element signature="n#!!block;n#request#0;n#Http#0" expanded="false" />
+            <element signature="n#!!block;n#upLoadFile#0;n#Http#0" expanded="false" />
+            <element signature="n#!!doc;n#upLoadFileToService#0;n#Http#0" expanded="false" />
+            <element signature="n#!!block;n#upLoadFileToService#0;n#Http#0" expanded="false" />
+            <element signature="n#!!block;n#upLoadFileToServicePutIn#0;n#Http#0" expanded="false" />
+            <element signature="n#!!doc;n#downloadFile#0;n#Http#0" expanded="false" />
+            <element signature="n#!!block;n#downloadFile#0;n#Http#0" expanded="false" />
+            <element signature="e#45739#46666#0" expanded="false" />
+            <element signature="e#46680#47651#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4161">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="127" column="41" lean-forward="false" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#1576#2019#0" expanded="false" />
+            <element signature="n#!!block;n#verfyComponent#0;n#HotUpdate#0" expanded="false" />
+            <element signature="n#!!block;n#updateDelay#0;n#HotUpdate#0" expanded="false" />
+            <element signature="n#!!doc;n#RolledBack#0;n#HotUpdate#0" expanded="false" />
+            <element signature="n#!!block;n#RolledBack#0;n#HotUpdate#0" expanded="false" />
+            <element signature="e#3481#3536#0" expanded="false" />
+            <element signature="e#8574#8666#0" expanded="false" />
+            <element signature="e#8709#17428#0" expanded="false" />
+            <element signature="e#8838#9269#0" expanded="false" />
+            <element signature="e#17310#17410#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="132">
-            <caret line="193" column="74" lean-forward="false" selection-start-line="193" selection-start-column="74" selection-end-line="193" selection-end-column="74" />
+          <first_editor relative-caret-position="418">
+            <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor>

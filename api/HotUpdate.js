@@ -49,6 +49,7 @@ updateList:[],//更新app id集合（app id集合）//不传更新全部
 updateNoList:[],//不更新app id集合（app id集合）//传了的账户则不更新
 code:777,//777、立刻更新；888、立刻强制更新；999、立刻静默更新
 reboot:555,//666、强制使用更新；555、用户决定是否使用更新;333、下次启用更新 默认是555
+finishInfo:'',更新完成时的提示信息reboot=333时有效
 }
  发布时，因react-native-update只接受字符串，所以元信息应是json的字符串，
  如：{"updateList":[]}

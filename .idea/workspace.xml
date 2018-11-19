@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/api/HotUpdate.js" afterPath="$PROJECT_DIR$/api/HotUpdate.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -46,8 +44,8 @@
       <file leaf-file-name="HotUpdate.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="37" />
+            <state relative-caret-position="57">
+              <caret line="433" column="29" lean-forward="false" selection-start-line="433" selection-start-column="29" selection-end-line="433" selection-end-column="29" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
                 <element signature="e#1614#2057#0" expanded="false" />
@@ -192,8 +190,8 @@
         <option value="$PROJECT_DIR$/../../AdProjGit/package.json" />
         <option value="$PROJECT_DIR$/api/Http.js" />
         <option value="$PROJECT_DIR$/api/Tools.js" />
-        <option value="$PROJECT_DIR$/api/HotUpdate.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/api/HotUpdate.js" />
       </list>
     </option>
   </component>
@@ -301,12 +299,12 @@
       <workItem from="1542262551200" duration="326000" />
       <workItem from="1542264755273" duration="8242000" />
       <workItem from="1542333403051" duration="7450000" />
-      <workItem from="1542599527589" duration="121000" />
+      <workItem from="1542599527589" duration="732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110482000" />
+    <option name="totallyTimeSpent" value="111093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="69" width="1022" height="809" extended-state="0" />
@@ -554,6 +552,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -590,10 +589,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="147">
+            <caret line="196" column="16" lean-forward="false" selection-start-line="196" selection-start-column="16" selection-end-line="196" selection-end-column="16" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="37" />
+        <state relative-caret-position="57">
+          <caret line="433" column="29" lean-forward="false" selection-start-line="433" selection-start-column="29" selection-end-line="433" selection-end-column="29" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
             <element signature="e#1614#2057#0" expanded="false" />
@@ -607,19 +619,6 @@
             <element signature="e#8876#9307#0" expanded="false" />
             <element signature="e#17348#17448#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="147">
-            <caret line="196" column="16" lean-forward="false" selection-start-line="196" selection-start-column="16" selection-end-line="196" selection-end-column="16" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
         </state>
       </provider>
     </entry>

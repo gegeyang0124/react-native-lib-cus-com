@@ -431,9 +431,7 @@ export class HotUpdate{
         }
     };
 
-    static updateLoop(){
-
-
+    static checkUpdateLoop(){
         if(this.verfyComponent(1)){
             LocalStorage.get(packageVersion)
                 .then((reponseJson) => {

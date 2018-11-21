@@ -19,6 +19,7 @@ export let Components = {
     react_native_talkingdata:{},//talkingdata app统计分析组件 react-native-talkingdata
     react_navigation:require('react-navigation-zy'),//页面导航组件 react-navigation
     react_native_orientation:{},//监听屏幕方向变化及屏幕方向设置组件 react-native-orientation
+    react_native_update_js:{},//热更新组件(自定义配置服务器，只需要一个后台放一个配置文件json) react-native-update-js
 
     /**
      * ui

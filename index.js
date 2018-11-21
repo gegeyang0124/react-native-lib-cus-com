@@ -17,6 +17,7 @@ import {
     JPush,
     TalkingData,
     FileDirMgr,
+    HotUpdateCus,
 } from "com-api";
 import {
     ButtonChange,
@@ -98,6 +99,9 @@ const compoent = {
     /**
      * API
      * **/
+    get HotUpdateCus() {
+        return HotUpdateCus;
+    },
     get FileDirMgr() {
         return FileDirMgr;
     },

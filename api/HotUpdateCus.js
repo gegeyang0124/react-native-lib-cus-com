@@ -4,8 +4,12 @@ import {
 
 import {Tools} from "./Tools";
 import {Alert} from "./Alert";
-import RNFS from "react-native-fs";
+import {LocalStorage} from "./LocalStorage";
+import {ProgressPerApi} from "./ProgressPerApi";
+const HUpdate = require("./HotUpdate").HotUpdate;
 
+import {Components} from "./../StackComponent";
+const RNFS = Components.react_native_fs;
 import {
     packageVersion,
     currentVersion,
@@ -13,9 +17,6 @@ import {
     HotUpdate,
 } from "react-native-update-js";
 import DeviceInfo from "react-native-device-info";
-import {LocalStorage} from "./LocalStorage";
-import {ProgressPerApi} from "./ProgressPerApi";
-const HUpdate = require("./HotUpdate").HotUpdate;
 
 HotUpdate.tag = "lx_yyt";//热更新的标志 与后台配置一致
 

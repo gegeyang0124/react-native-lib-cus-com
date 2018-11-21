@@ -16,12 +16,16 @@ import {Alert} from "./Alert";
 import {JPush} from "./JPush";
 import {TalkingData} from "./TalkingData";
 import {FileDirMgr} from "./FileDirMgr";
+import {HotUpdateCus} from "./HotUpdateCus";
 
 /**
  *工具类API引入集合
  **/
 const api = {
 
+    get HotUpdateCus() {
+        return HotUpdateCus;
+    },
     get FileDirMgr() {
         return FileDirMgr;
     },

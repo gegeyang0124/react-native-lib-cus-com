@@ -15,12 +15,16 @@ import {MenuBottomApi} from "./MenuBottomApi";
 import {Alert} from "./Alert";
 import {JPush} from "./JPush";
 import {TalkingData} from "./TalkingData";
+import {FileDirMgr} from "./FileDirMgr";
 
 /**
  *工具类API引入集合
  **/
 const api = {
 
+    get FileDirMgr() {
+        return FileDirMgr;
+    },
     get Alert() {
         return Alert;
     },

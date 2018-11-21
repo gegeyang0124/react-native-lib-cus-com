@@ -16,6 +16,7 @@ import {
     Alert,
     JPush,
     TalkingData,
+    FileDirMgr,
 } from "com-api";
 import {
     ButtonChange,
@@ -97,6 +98,9 @@ const compoent = {
     /**
      * API
      * **/
+    get FileDirMgr() {
+        return FileDirMgr;
+    },
     get Alert() {
         return Alert;
     },

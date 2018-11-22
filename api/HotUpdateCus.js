@@ -27,8 +27,6 @@ const {
 } = Components.react_native_update_js;
 const DeviceInfo = Components.react_native_device_info;
 
-
-
 /**
  * 热更新，提供热更新各种方法,自己配置服务器
  * **/
@@ -102,7 +100,7 @@ export class HotUpdateCus{
                         ? info.metaInfo.reboot
                         : HotUpdateCus.update.reboot1;
 
-                    if(HotUpdateCus.updateFirst && (!HotUpdateCus.appID || !Tools.isCurStruct){
+                    if(HotUpdateCus.updateFirst && (!HotUpdateCus.appID || !Tools.isCurStruct)){
                         info.metaInfo.code = 888;
                         info.metaInfo.reboot = 666;
                     }

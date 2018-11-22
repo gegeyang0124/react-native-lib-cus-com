@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/StackComponent.js" afterPath="$PROJECT_DIR$/StackComponent.js" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/api/HotUpdate.js" afterPath="$PROJECT_DIR$/api/HotUpdate.js" />
       <change beforePath="$PROJECT_DIR$/api/HotUpdateCus.js" afterPath="$PROJECT_DIR$/api/HotUpdateCus.js" />
-      <change beforePath="$PROJECT_DIR$/api/api.js" afterPath="$PROJECT_DIR$/api/api.js" />
-      <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,6 +16,39 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="HotUpdateCus.js" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/api/HotUpdateCus.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="407">
+                    <caret line="106" column="51" lean-forward="true" selection-start-line="106" selection-start-column="51" selection-end-line="106" selection-end-column="51" />
+                    <folding>
+                      <element signature="e#0#45#0" expanded="true" />
+                      <element signature="n#!!doc;n#checkUpdateLoop#0;n#HotUpdateCus#0" expanded="false" />
+                      <element signature="e#2024#2116#0" expanded="false" />
+                      <element signature="n#!!doc;n#checkHasUpate#0;n#HotUpdateCus#0" expanded="false" />
+                      <element signature="n#!!block;n#checkHasUpate#0;n#HotUpdateCus#0" expanded="false" />
+                      <element signature="n#!!doc;n#isHasUpdate#0;n#HotUpdateCus#0" expanded="false" />
+                      <element signature="n#!!block;n#isHasUpdate#0;n#HotUpdateCus#0" expanded="false" />
+                      <element signature="n#!!doc;n#updateDelay#0;n#HotUpdateCus#0" expanded="false" />
+                      <element signature="n#!!block;n#updateDelay#0;n#HotUpdateCus#0" expanded="false" />
+                      <element signature="e#9144#9199#0" expanded="false" />
+                      <element signature="e#9241#13987#0" expanded="false" />
+                      <element signature="n#!!block;n#verfyComponent#0;n#HotUpdateCus#0" expanded="false" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="503605263">
@@ -40,12 +72,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="418">
+                <caret line="187" column="37" lean-forward="false" selection-start-line="187" selection-start-column="37" selection-end-line="187" selection-end-column="37" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -58,92 +90,27 @@
       <file leaf-file-name="HotUpdate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1672">
-              <caret line="267" column="31" lean-forward="false" selection-start-line="267" selection-start-column="31" selection-end-line="267" selection-end-column="31" />
+            <state relative-caret-position="129">
+              <caret line="276" column="40" lean-forward="true" selection-start-line="276" selection-start-column="40" selection-end-line="276" selection-end-column="40" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
-                <element signature="e#3658#8600#0" expanded="false" />
-                <element signature="e#9672#9771#0" expanded="false" />
-                <element signature="e#9796#9876#0" expanded="false" />
-                <element signature="e#10478#10754#0" expanded="false" />
-                <element signature="e#10794#13024#0" expanded="false" />
-                <element signature="e#13069#13275#0" expanded="false" />
-                <element signature="e#13316#16706#0" expanded="false" />
+                <element signature="n#!!block;n#verfyComponent#0;n#HotUpdate#0" expanded="false" />
+                <element signature="e#3693#8635#0" expanded="false" />
+                <element signature="e#10513#10789#0" expanded="false" />
+                <element signature="e#10829#13059#0" expanded="false" />
+                <element signature="e#13104#13310#0" expanded="false" />
+                <element signature="e#13351#16741#0" expanded="false" />
+                <element signature="n#!!block;n#checkUpdateLoop#0;n#HotUpdate#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tools.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/Tools.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#93#0" expanded="true" />
-                <element signature="e#572#618#0" expanded="true" />
-                <element signature="e#3629#4987#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Http.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/Http.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="42" column="3" lean-forward="false" selection-start-line="42" selection-start-column="3" selection-end-line="57" selection-end-column="5" />
-              <folding>
-                <element signature="e#104#162#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileDirMgr.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/FileDirMgr.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="40" />
-              <folding>
-                <element signature="n#!!doc;n#copyDir#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="e#1199#1735#0" expanded="false" />
-                <element signature="n#!!doc;n#readDir#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!block;n#readDir#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#deleteDirOrFile#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!block;n#deleteDirOrFile#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="e#3143#3310#0" expanded="false" />
-                <element signature="n#!!doc;n#readDirFile#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!block;n#readDirFile#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#copyFiles#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!block;n#copyFiles#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#copyFileList#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!block;n#copyFileList#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!doc;n#copyFile#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!block;n#copyFile#0;n#FileDirMgr#0" expanded="false" />
-                <element signature="n#!!block;n#verfyComponent#0;n#FileDirMgr#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HotUpdateCus.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/HotUpdateCus.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StackComponent.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StackComponent.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StackComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state relative-caret-position="323">
+              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -187,9 +154,9 @@
       <find>HotUpdate</find>
       <find>id</find>
       <find>isCurStruct</find>
-      <find>updateFirst</find>
       <find>```</find>
       <find>HUpdate</find>
+      <find>updateFirst</find>
     </findStrings>
     <replaceStrings>
       <replace>ButtonImage</replace>
@@ -247,13 +214,13 @@
         <option value="$PROJECT_DIR$/../../AdProjGit/package.json" />
         <option value="$PROJECT_DIR$/api/Http.js" />
         <option value="$PROJECT_DIR$/api/Tools.js" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/api/HotUpdate.js" />
         <option value="$PROJECT_DIR$/api/FileDirMgr.js" />
         <option value="$PROJECT_DIR$/api/api.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/api/HotUpdateCus.js" />
         <option value="$PROJECT_DIR$/StackComponent.js" />
+        <option value="$PROJECT_DIR$/api/HotUpdate.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/api/HotUpdateCus.js" />
       </list>
     </option>
   </component>
@@ -308,6 +275,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -325,7 +293,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,12 +347,13 @@
       <workItem from="1542599527589" duration="732000" />
       <workItem from="1542718412611" duration="53000" />
       <workItem from="1542782904679" duration="3281000" />
-      <workItem from="1542790834627" duration="1279000" />
+      <workItem from="1542790834627" duration="1367000" />
+      <workItem from="1542864228190" duration="2742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116234000" />
+    <option name="totallyTimeSpent" value="119064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="69" width="1022" height="809" extended-state="0" />
@@ -593,41 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/Tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#93#0" expanded="true" />
-            <element signature="e#572#618#0" expanded="true" />
-            <element signature="e#3629#4987#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Http.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="42" column="3" lean-forward="false" selection-start-line="42" selection-start-column="3" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="e#104#162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -636,9 +569,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api.js">
+    <entry file="file://$PROJECT_DIR$/StackComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
+          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
           <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
@@ -646,29 +587,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="267" column="31" lean-forward="false" selection-start-line="267" selection-start-column="31" selection-end-line="267" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-            <element signature="e#3658#8600#0" expanded="false" />
-            <element signature="e#9672#9771#0" expanded="false" />
-            <element signature="e#9796#9876#0" expanded="false" />
-            <element signature="e#10478#10754#0" expanded="false" />
-            <element signature="e#10794#13024#0" expanded="false" />
-            <element signature="e#13069#13275#0" expanded="false" />
-            <element signature="e#13316#16706#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/FileDirMgr.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="40" />
+        <state relative-caret-position="195">
+          <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
           <folding>
             <element signature="n#!!doc;n#copyDir#0;n#FileDirMgr#0" expanded="false" />
+            <element signature="n#!!block;n#copyDir#0;n#FileDirMgr#0" expanded="false" />
             <element signature="e#1199#1735#0" expanded="false" />
             <element signature="n#!!doc;n#readDir#0;n#FileDirMgr#0" expanded="false" />
             <element signature="n#!!block;n#readDir#0;n#FileDirMgr#0" expanded="false" />
@@ -688,21 +613,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/HotUpdateCus.js">
+    <entry file="file://$PROJECT_DIR$/api/Http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="418">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#104#162#0" expanded="true" />
+            <element signature="n#Http#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StackComponent.js">
+    <entry file="file://$PROJECT_DIR$/api/Tools.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="304">
+          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#93#0" expanded="true" />
+            <element signature="e#572#618#0" expanded="true" />
+            <element signature="e#3629#4987#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="276" column="40" lean-forward="true" selection-start-line="276" selection-start-column="40" selection-end-line="276" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="n#!!block;n#verfyComponent#0;n#HotUpdate#0" expanded="false" />
+            <element signature="e#3693#8635#0" expanded="false" />
+            <element signature="e#10513#10789#0" expanded="false" />
+            <element signature="e#10829#13059#0" expanded="false" />
+            <element signature="e#13104#13310#0" expanded="false" />
+            <element signature="e#13351#16741#0" expanded="false" />
+            <element signature="n#!!block;n#checkUpdateLoop#0;n#HotUpdate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/HotUpdateCus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="106" column="51" lean-forward="true" selection-start-line="106" selection-start-column="51" selection-end-line="106" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="n#!!doc;n#checkUpdateLoop#0;n#HotUpdateCus#0" expanded="false" />
+            <element signature="e#2024#2116#0" expanded="false" />
+            <element signature="n#!!doc;n#checkHasUpate#0;n#HotUpdateCus#0" expanded="false" />
+            <element signature="n#!!block;n#checkHasUpate#0;n#HotUpdateCus#0" expanded="false" />
+            <element signature="n#!!doc;n#isHasUpdate#0;n#HotUpdateCus#0" expanded="false" />
+            <element signature="n#!!block;n#isHasUpdate#0;n#HotUpdateCus#0" expanded="false" />
+            <element signature="n#!!doc;n#updateDelay#0;n#HotUpdateCus#0" expanded="false" />
+            <element signature="n#!!block;n#updateDelay#0;n#HotUpdateCus#0" expanded="false" />
+            <element signature="e#9144#9199#0" expanded="false" />
+            <element signature="e#9241#13987#0" expanded="false" />
+            <element signature="n#!!block;n#verfyComponent#0;n#HotUpdateCus#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="418">
+            <caret line="187" column="37" lean-forward="false" selection-start-line="187" selection-start-column="37" selection-end-line="187" selection-end-column="37" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>

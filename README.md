@@ -19,6 +19,7 @@ npm i --save react-native-lib-cus-com
 [npm i --save react-native-device-info 设备信息获取](https://github.com/rebeccahughes/react-native-device-info)<BR/>
 [npm i --save react-native-doc-viewer 打开文件](https://github.com/philipphecht/react-native-doc-viewer)<BR/><BR/>
 <b>[npm i --save jpush-react-native 极光推送](https://github.com/jpush/jpush-react-native)<BR/></b>
+<b>[npm i --save react-native-update-js 热更新,自定义服务器](https://github.com/gegeyang0124/react-native-update-js)<BR/></b>
 <b>
 \* react-native-update 发布热更新报错 将node_modules\react-native-update\local-cli\lib\bundle.js <BR/>
 \* 的439行种的metro-bundler改成metro可成功运行！ <BR/>
@@ -176,6 +177,17 @@ DbMgr.executeSql();//执行sql
 还有很多方法，请查看文件里的注释
 ```
 
+##### HotUpdateCus 热更新，提供热更新各种方法,自己配置服务器 基于react-native-update-js
+```javascript
+import {HotUpdateCus} from "react-native-lib-cus-com";
+HotUpdateCus.appID = null;//给每个app的唯一标识,可以是任何数据，必须传入，用于判断是否需要更新，与updateList、updateNoList配套使用
+HotUpdateCus.updateFirst = true;//app第一次启动是否强制更新，默认true更新
+
+HotUpdateCus.update.execute = true;//是否启动检查更新
+HotUpdateCus.checkUpdate();//检查是否有更新（检查一次）
+HotUpdateCus.checkUpdateLoop();//持续检查是否有更新
+```
+
 ##### HotUpdate 热更新，提供热更新各种方法 基于react-native-update
 ```javascript
 安装、配置好react-native-update后
@@ -210,9 +222,19 @@ HotUpdate.appKey = null;//react-native-update的key
 HotUpdate.appID = null;//给每个app的唯一标识,可以是任何数据，必须传入，用于判断是否需要更新，与updateList、updateNoList配套使用
 HotUpdate.updateFirst = true;//app第一次启动是否强制更新，默认true更新
 
-HotUpdate.updateLoop();//检查是否有更新
+HotUpdate.update.execute = true;//是否启动检查更新
+HotUpdate.checkUpdate();//检查是否有更新 （检查一次）
+HotUpdate.checkUpdateLoop();//持续检查是否有更新
 
 这些设置完后即可，提示会根据元信息的情况提示
+```
+
+### FileDirMgr 可复制文件目录到指定目录，读取文件目下所有文件及文件目录，可删除文件和文件目录
+```javascript
+import {FileDirMgr} from "react-native-lib-cus-com";
+FileDirMgr.copyDir();//复制目录到指定目录
+FileDirMgr.readDir();//读取目录下的所有文件
+FileDirMgr.deleteDirOrFile();//删除目录或文件
 ```
 
 ##### IamgeWaterMark 设置图片水印 基于react-native-image-marker

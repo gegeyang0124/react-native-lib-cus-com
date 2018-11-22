@@ -71,6 +71,9 @@ export class HotUpdate{
     }
     static timer = null;
 
+    /**
+     * 验证是否存在组件
+     * **/
     static verfyComponent(type = 1){
         let b = true;
         switch (type){

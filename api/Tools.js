@@ -28,7 +28,12 @@ import {CaptureImage} from "./CaptureImage";
 
 import {Components} from "./../StackComponent";
 const OpenFile = Components.react_native_doc_viewer;
-
+const {
+    packageVersion,
+    currentVersion,
+    mainBundleFilePath,
+    HotUpdate,
+} = Components.react_native_update_js;
 //import Record from 'react-native-record-sound';
 
 const screen = Dimensions.get('window');
@@ -92,27 +97,29 @@ export class Tools {
      * 初始化
      * **/
     static init() {
-        /*LocalStorage.get(DeviceInfo.getVersion())
-            .then((reponseJson) => {
+        if(packageVersion){
+            LocalStorage.get(packageVersion)
+                .then((reponseJson) => {
 
-                if(reponseJson !== undefined && reponseJson !== null){
-                    Tools.isCurStruct = true;
-                }
+                    if(reponseJson !== undefined && reponseJson !== null){
+                        Tools.isCurStruct = true;
+                    }
 
-                if (this.app_config.version == null) {
-                    LocalStorage.get(this.app_config.versionkey).then((reponseJson) => {
-                        if(reponseJson == null || !Tools.isCurStruct){
-                            this.app_config.version = "2.0.4";
-                        }
-                        else
-                        {
-                            this.app_config.version = reponseJson;
-                        }
-                    });
-                }
+                    LocalStorage.get(this.app_config.versionkey)
+                        .then((reponseJson) => {
+                            if(reponseJson == null || !Tools.isCurStruct){
+                                // this.app_config.version = "2.0.4";
+                            }
+                            else
+                            {
+                                this.app_config.version = reponseJson;
+                            }
+                        });
 
-                // console.info("reponseJson:"+Tools.isCurStruct,reponseJson);
-            });*/
+                    // console.info("reponseJson:"+Tools.isCurStruct,reponseJson);
+                });
+        }
+
 
      /*
         let interval = setInterval(() => {
@@ -1683,4 +1690,4 @@ export class Tools {
     }
 }
 
-// Tools.init();
+Tools.init();

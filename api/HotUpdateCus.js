@@ -25,7 +25,7 @@ const {
     mainBundleFilePath,
     HotUpdate,
 } = Components.react_native_update_js;
-const DeviceInfo = Components.react_native_device_info;
+// const DeviceInfo = Components.react_native_device_info;
 
 /**
  * 热更新，提供热更新各种方法,自己配置服务器
@@ -191,7 +191,15 @@ export class HotUpdateCus{
      * @prama index int;info.publishJS的下标 可不传
      * **/
     static checkHasUpate(info,resolve:Function,reject:Function,index=0){
-        if(info.version > HotUpdateCus.update.version || !HotUpdateCus.update.version){
+        let curVer = HotUpdateCus.update.version;
+        if(curVer){
+            curVer = curVer.split(".").join("");
+            curVer = parseInt(curVer);
+        }
+        let nxtVer = info.version;
+        nxtVer = nxtVer.split(".").join("");
+        nxtVer = parseInt(nxtVer);
+        if(!HotUpdateCus.update.version || nxtVer > curVer){
 
             if(this.isHasUpdate(info)){
                 resolve&&resolve(info);
@@ -281,8 +289,8 @@ export class HotUpdateCus{
                                     HotUpdate.setPreferData("rnUpdate","false");
                                     Tools.cutLogin = true;
                                     if(!Tools.isCurStruct){
-                                        LocalStorage.save(DeviceInfo.getVersion(),
-                                            DeviceInfo.getVersion())
+                                        LocalStorage.save(packageVersion,
+                                            packageVersion)
                                             .then((dataSave)=>{
                                                 HotUpdate.doUpdate(info);
                                             });
@@ -305,8 +313,8 @@ export class HotUpdateCus{
                                     HotUpdateCus.update.version = info.version;
                                     HotUpdateCus.update.execute = true;
                                     if(!Tools.isCurStruct){
-                                        LocalStorage.save(DeviceInfo.getVersion(),
-                                            DeviceInfo.getVersion())
+                                        LocalStorage.save(packageVersion,
+                                            packageVersion)
                                             .then((dataSave)=>{
                                                 HotUpdate.doUpdate(info,false);
                                                 cd&&cd();
@@ -326,8 +334,8 @@ export class HotUpdateCus{
                         HotUpdate.setPreferData("rnUpdate","false");
                         Tools.cutLogin = true;
                         if(!Tools.isCurStruct){
-                            LocalStorage.save(DeviceInfo.getVersion(),
-                                DeviceInfo.getVersion())
+                            LocalStorage.save(packageVersion,
+                                packageVersion)
                                 .then((dataSave)=>{
                                     HotUpdate.doUpdate(info);
                                 });
@@ -347,8 +355,8 @@ export class HotUpdateCus{
                         HotUpdateCus.update.version = info.version;
                         HotUpdateCus.update.execute = true;
                         if(!Tools.isCurStruct){
-                            LocalStorage.save(DeviceInfo.getVersion(),
-                                DeviceInfo.getVersion())
+                            LocalStorage.save(packageVersion,
+                                packageVersion)
                                 .then((dataSave)=>{
                                     cd&&cd();
                                     HotUpdate.doUpdate(info,false);
@@ -388,7 +396,7 @@ export class HotUpdateCus{
 
                 break;
             }
-            case 2:{
+           /* case 2:{
                 if(!DeviceInfo.getVersion){
                     console.info("请安装设备信息获取组件","react-native-device-info");
                     Tools.toast("请安装组件 react-native-device-info");
@@ -396,7 +404,7 @@ export class HotUpdateCus{
                 }
 
                 break;
-            }
+            }*/
         }
 
         return b;

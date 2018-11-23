@@ -27,7 +27,7 @@ const  {
     switchVersionLater,
     markSuccess,
 } = Components.react_native_update;
-const DeviceInfo = Components.react_native_device_info;
+// const DeviceInfo = Components.react_native_device_info;
 
 import KActivityIndicator from 'react-native-kactivityindicator-zy';
 
@@ -86,7 +86,7 @@ export class HotUpdate{
 
                 break;
             }
-            case 2:{
+            /*case 2:{
                 if(!DeviceInfo.getVersion){
                     console.info("请安装设备信息获取组件","react-native-device-info");
                     Tools.toast("请安装组件 react-native-device-info");
@@ -94,7 +94,7 @@ export class HotUpdate{
                 }
 
                 break;
-            }
+            }*/
         }
 
         return b;
@@ -146,8 +146,8 @@ export class HotUpdate{
                                 {text: '是', onPress: ()=>{
                                         Tools.cutLogin = true;
                                         if(!Tools.isCurStruct){
-                                            LocalStorage.save(DeviceInfo.getVersion(),
-                                                DeviceInfo.getVersion())
+                                            LocalStorage.save(packageVersion,
+                                                packageVersion)
                                                 .then((dataSave)=>{
                                                     switchVersion(hash);
                                                 });
@@ -172,8 +172,8 @@ export class HotUpdate{
                                         HotUpdate.update.versionHash = info.hash;
                                         HotUpdate.update.execute = true;
                                         if(!Tools.isCurStruct){
-                                            LocalStorage.save(DeviceInfo.getVersion(),
-                                                DeviceInfo.getVersion())
+                                            LocalStorage.save(packageVersion,
+                                                packageVersion)
                                                 .then((dataSave)=>{
                                                     switchVersionLater(hash);
                                                     cd&&cd();
@@ -192,8 +192,8 @@ export class HotUpdate{
                         case HotUpdate.update.reboot2:{
                             Tools.cutLogin = true;
                             if(!Tools.isCurStruct){
-                                LocalStorage.save(DeviceInfo.getVersion(),
-                                    DeviceInfo.getVersion())
+                                LocalStorage.save(packageVersion,
+                                    packageVersion)
                                     .then((dataSave)=>{
                                         switchVersion(hash);
                                     });
@@ -212,8 +212,8 @@ export class HotUpdate{
                             HotUpdate.update.versionHash = info.hash;
                             HotUpdate.update.execute = true;
                             if(!Tools.isCurStruct){
-                                LocalStorage.save(DeviceInfo.getVersion(),
-                                    DeviceInfo.getVersion())
+                                LocalStorage.save(packageVersion,
+                                    packageVersion)
                                     .then((dataSave)=>{
                                         cd&&cd();
                                         switchVersionLater(hash);

@@ -33,11 +33,9 @@ const {
 export class HotUpdateCus{
 
     static appID = null;//当前给app指定（分配）的id,可以是任何数据，必须传入，用于判断是否需要更新
+    static tag = "";//热更新的标志 与后台配置一致
+    static host = null;//热更新配置文件地址或接口，//get请求
     static updateFirst = true;//app第一次启动是否强制更新，默认true更新
-
-    static wwwDownloadDir = Platform.OS == "ios"
-        ? `${RNFS.DocumentDirectoryPath}/wwwRoot`
-        : `${RNFS.ExternalStorageDirectoryPath}/wwwRoot`;//下载目录
 
     static update = {
         code1:777,//777、立刻更新；888、立刻强制更新；999、立刻静默更新
@@ -77,6 +75,8 @@ export class HotUpdateCus{
      * @Param cdUpdate func,//更新回调函数
      * **/
     static checkUpdate = (cd,cdUpdate) => {
+        HotUpdate.tag = HotUpdateCus.tag;
+        HotUpdate.host = HotUpdateCus.host;
         HotUpdate.checkUpdate()
             .then(info=>{
                 let rnUpdate = false;

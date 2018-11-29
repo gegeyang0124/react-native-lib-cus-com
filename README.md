@@ -193,6 +193,8 @@ finishInfo:'',//更新完成时的提示信息reboot=333时有效
  * **/
 
 import {HotUpdateCus} from "react-native-lib-cus-com";
+HotUpdateCus.host = null;//热更新配置文件地址或接口，//get请求
+HotUpdateCus.tag = null;//热更新的标志 与后台配置一致
 HotUpdateCus.appID = null;//给每个app的唯一标识,可以是任何数据，必须传入，用于判断是否需要更新，与updateList、updateNoList配套使用
 HotUpdateCus.updateFirst = true;//app第一次启动是否强制更新，默认true更新
 

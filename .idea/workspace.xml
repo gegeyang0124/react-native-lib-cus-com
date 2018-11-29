@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/api/HotUpdate.js" afterPath="$PROJECT_DIR$/api/HotUpdate.js" />
-      <change beforePath="$PROJECT_DIR$/api/HotUpdateCus.js" afterPath="$PROJECT_DIR$/api/HotUpdateCus.js" />
-      <change beforePath="$PROJECT_DIR$/api/Tools.js" afterPath="$PROJECT_DIR$/api/Tools.js" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/ui/ImageList.js" afterPath="$PROJECT_DIR$/ui/ImageList.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,57 +16,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="HotUpdateCus.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/api/HotUpdateCus.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="110">
-                    <caret line="291" column="72" lean-forward="false" selection-start-line="291" selection-start-column="58" selection-end-line="291" selection-end-column="72" />
-                    <folding>
-                      <element signature="e#0#45#0" expanded="true" />
-                      <element signature="n#!!doc;n#checkUpdateLoop#0;n#HotUpdateCus#0" expanded="false" />
-                      <element signature="n#!!block;n#checkUpdateLoop#0;n#HotUpdateCus#0" expanded="false" />
-                      <element signature="e#2025#2117#0" expanded="false" />
-                      <element signature="e#2160#7159#0" expanded="false" />
-                      <element signature="e#2218#7124#0" expanded="false" />
-                      <element signature="e#3472#4918#0" expanded="false" />
-                      <element signature="n#!!doc;n#checkHasUpate#0;n#HotUpdateCus#0" expanded="false" />
-                      <element signature="n#!!block;n#checkHasUpate#0;n#HotUpdateCus#0" expanded="false" />
-                      <element signature="n#!!doc;n#isHasUpdate#0;n#HotUpdateCus#0" expanded="false" />
-                      <element signature="n#!!block;n#isHasUpdate#0;n#HotUpdateCus#0" expanded="false" />
-                      <element signature="n#!!doc;n#updateDelay#0;n#HotUpdateCus#0" expanded="false" />
-                      <element signature="n#!!block;n#updateDelay#0;n#HotUpdateCus#0" expanded="false" />
-                      <element signature="e#9402#9457#0" expanded="false" />
-                      <element signature="n#!!block;n#verfyComponent#0;n#HotUpdateCus#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Tools.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/api/Tools.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="115">
-                    <caret line="111" column="29" lean-forward="true" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
-                    <folding>
-                      <element signature="e#0#93#0" expanded="true" />
-                      <element signature="e#385#413#0" expanded="true" />
-                      <element signature="e#572#618#0" expanded="true" />
-                      <element signature="e#3795#5153#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="503605263">
@@ -90,12 +39,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="225">
-                <caret line="189" column="9" lean-forward="false" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
+              <first_editor relative-caret-position="286">
+                <caret line="491" column="15" lean-forward="false" selection-start-line="491" selection-start-column="6" selection-end-line="491" selection-end-column="15" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -105,23 +54,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="ImageList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/ImageList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="76">
+              <caret line="16" column="1" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HotUpdate.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HotUpdate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+            <state relative-caret-position="494">
+              <caret line="29" column="58" lean-forward="false" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
               <folding>
-                <element signature="e#0#58#0" expanded="true" />
                 <element signature="n#!!block;n#verfyComponent#0;n#HotUpdate#0" expanded="false" />
                 <element signature="e#10448#10724#0" expanded="false" />
                 <element signature="e#10764#12994#0" expanded="false" />
@@ -198,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ui/Question.js" />
         <option value="$PROJECT_DIR$/ui/QuestionList.js" />
         <option value="$PROJECT_DIR$/ui/ResultProgressBlock.js" />
         <option value="$PROJECT_DIR$/ui/ScrollSelectOptions.js" />
@@ -238,17 +187,18 @@
         <option value="$PROJECT_DIR$/component-moudule/react-navigation/package.json" />
         <option value="$PROJECT_DIR$/component-moudule/react-native-tab-view/package.json" />
         <option value="$PROJECT_DIR$/api/LocalStorage.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/../../AdProjGit/package.json" />
         <option value="$PROJECT_DIR$/api/Http.js" />
         <option value="$PROJECT_DIR$/api/FileDirMgr.js" />
         <option value="$PROJECT_DIR$/api/api.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/StackComponent.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/api/HotUpdateCus.js" />
         <option value="$PROJECT_DIR$/api/Tools.js" />
         <option value="$PROJECT_DIR$/api/HotUpdate.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/ui/ImageList.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -281,11 +231,11 @@
       <path value="$PROJECT_DIR$/res/images/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="24" />
-    <option name="y" value="144" />
-    <option name="width" value="1022" />
-    <option name="height" value="809" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="427" />
+    <option name="y" value="90" />
+    <option name="width" value="1361" />
+    <option name="height" value="796" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -303,8 +253,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,19 +263,21 @@
             <path>
               <item name="react-native-lib-cus-com" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-native-lib-cus-com" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-native-update-js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
@@ -377,18 +327,20 @@
       <workItem from="1542782904679" duration="3281000" />
       <workItem from="1542790834627" duration="1367000" />
       <workItem from="1542864228190" duration="4026000" />
-      <workItem from="1542970084549" duration="1294000" />
+      <workItem from="1542970084549" duration="1450000" />
+      <workItem from="1543201246614" duration="195000" />
+      <workItem from="1543460733725" duration="104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121642000" />
+    <option name="totallyTimeSpent" value="122097000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="144" width="1022" height="809" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24950299" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -419,13 +371,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/component-moudule/react-native-datepicker/__tests__/Datepicker.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/component-moudule/react-native-datepicker/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -577,9 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="91" column="4" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,9 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,25 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc;n#copyDir#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!block;n#copyDir#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="e#1199#1735#0" expanded="false" />
-            <element signature="n#!!doc;n#readDir#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!block;n#readDir#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#deleteDirOrFile#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!block;n#deleteDirOrFile#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="e#3143#3310#0" expanded="false" />
-            <element signature="n#!!doc;n#readDirFile#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!block;n#readDirFile#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#copyFiles#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!block;n#copyFiles#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#copyFileList#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!block;n#copyFileList#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!doc;n#copyFile#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!block;n#copyFile#0;n#FileDirMgr#0" expanded="false" />
-            <element signature="n#!!block;n#verfyComponent#0;n#FileDirMgr#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -631,18 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="e#104#162#0" expanded="true" />
-            <element signature="n#Http#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,36 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="291" column="72" lean-forward="false" selection-start-line="291" selection-start-column="58" selection-end-line="291" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <element signature="n#!!doc;n#checkUpdateLoop#0;n#HotUpdateCus#0" expanded="false" />
-            <element signature="n#!!block;n#checkUpdateLoop#0;n#HotUpdateCus#0" expanded="false" />
-            <element signature="e#2025#2117#0" expanded="false" />
-            <element signature="e#2160#7159#0" expanded="false" />
-            <element signature="e#2218#7124#0" expanded="false" />
-            <element signature="e#3472#4918#0" expanded="false" />
-            <element signature="n#!!doc;n#checkHasUpate#0;n#HotUpdateCus#0" expanded="false" />
-            <element signature="n#!!block;n#checkHasUpate#0;n#HotUpdateCus#0" expanded="false" />
-            <element signature="n#!!doc;n#isHasUpdate#0;n#HotUpdateCus#0" expanded="false" />
-            <element signature="n#!!block;n#isHasUpdate#0;n#HotUpdateCus#0" expanded="false" />
-            <element signature="n#!!doc;n#updateDelay#0;n#HotUpdateCus#0" expanded="false" />
-            <element signature="n#!!block;n#updateDelay#0;n#HotUpdateCus#0" expanded="false" />
-            <element signature="e#9402#9457#0" expanded="false" />
-            <element signature="n#!!block;n#verfyComponent#0;n#HotUpdateCus#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="225">
-            <caret line="189" column="9" lean-forward="false" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
         </state>
       </provider>
     </entry>
@@ -695,21 +572,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="111" column="29" lean-forward="true" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#93#0" expanded="true" />
-            <element signature="e#385#413#0" expanded="true" />
-            <element signature="e#572#618#0" expanded="true" />
-            <element signature="e#3795#5153#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/HotUpdate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+        <state relative-caret-position="494">
+          <caret line="29" column="58" lean-forward="false" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
             <element signature="n#!!block;n#verfyComponent#0;n#HotUpdate#0" expanded="false" />
             <element signature="e#10448#10724#0" expanded="false" />
             <element signature="e#10764#12994#0" expanded="false" />
@@ -717,6 +587,37 @@
             <element signature="e#13286#16676#0" expanded="false" />
             <element signature="n#!!block;n#checkUpdateLoop#0;n#HotUpdate#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/ImageList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="286">
+            <caret line="491" column="15" lean-forward="false" selection-start-line="491" selection-start-column="6" selection-end-line="491" selection-end-column="15" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>

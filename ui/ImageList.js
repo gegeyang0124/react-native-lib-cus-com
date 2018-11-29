@@ -8,12 +8,12 @@ import {
     StyleSheetAdapt,
     Theme,
 } from "./../api/api";
-import {ButtonImage} from "./ButtonImage";
+import {ImageChange} from "./ImageChange";
 import {ImageView} from "./ImageView";
 import {TextChange} from "./TextChange";
 
 /**
- * 图片列表（水平或竖直）可以查看图片，成行排列 每张图片下部可以有提示文字 默认可滚动
+ * 可以查看图片，成行排列，每张图片下部可以有提示文字，可水平滚动，可垂直滚动，可自动换行（rowCount），默认水平滚动
  * **/
 export class ImageList extends Component {
 
@@ -119,7 +119,7 @@ export class ImageList extends Component {
                       imageFrameStyle,
                       item.imageFrameStyle]}>
 
-                <ButtonImage icon={icon}
+                <ImageChange icon={icon}
                              isDel={onPressDel == null ? false : true}
                              onPressDel={()=>{
                                  onPressDel&&onPressDel(item,i);
@@ -207,7 +207,7 @@ export class ImageList extends Component {
         return (
             isScroll
                 ?  <ScrollView style={[styles.frameStyleScroll,frameStyle]}
-                               horizontal={rowCount&&false||true}
+                               horizontal={rowCount?false:true}
                                scrollEnabled={true}>
 
                     {

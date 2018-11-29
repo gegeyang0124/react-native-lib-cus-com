@@ -489,7 +489,7 @@ import {ButtonTime} from "react-native-lib-cus-com";
 import {ImageView} from "react-native-lib-cus-com";
 ```
 
-##### ImageList 图片列表（水平或竖直）可以查看图片，成行排列 每张图片下部可以有提示文字 默认可滚动 （基于ImageView）
+##### ImageList 可以查看图片，成行排列，每张图片下部可以有提示文字，可水平滚动，可垂直滚动，可自动换行（rowCount），默认水平滚动（基于ImageView）
 ```javascript
 import {ImageList} from "react-native-lib-cus-com";
 ```

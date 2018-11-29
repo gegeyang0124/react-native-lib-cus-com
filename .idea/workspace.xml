@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3e155df-65d7-42b5-aaf9-5b352f7a0c2f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/api/HotUpdateCus.js" afterPath="$PROJECT_DIR$/api/HotUpdateCus.js" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,11 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HotUpdateCus.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HotUpdateCus.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/HotUpdateCus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+            <state relative-caret-position="380">
+              <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
               <folding>
                 <element signature="e#1044#1476#0" expanded="false" />
                 <element signature="n#!!doc;n#checkHasUpate#0;n#HotUpdateCus#0" expanded="false" />
@@ -213,10 +222,10 @@
         <option value="$PROJECT_DIR$/StackComponent.js" />
         <option value="$PROJECT_DIR$/api/Tools.js" />
         <option value="$PROJECT_DIR$/api/HotUpdate.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/ui/ImageList.js" />
         <option value="$PROJECT_DIR$/api/HotUpdateCus.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -352,12 +361,12 @@
       <workItem from="1542864228190" duration="4026000" />
       <workItem from="1542970084549" duration="1450000" />
       <workItem from="1543201246614" duration="195000" />
-      <workItem from="1543460733725" duration="2565000" />
+      <workItem from="1543460733725" duration="3312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124558000" />
+    <option name="totallyTimeSpent" value="125305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="353" y="133" width="1022" height="809" extended-state="0" />
@@ -606,14 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/ImageList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -639,8 +640,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/HotUpdateCus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+        <state relative-caret-position="380">
+          <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding>
             <element signature="e#1044#1476#0" expanded="false" />
             <element signature="n#!!doc;n#checkHasUpate#0;n#HotUpdateCus#0" expanded="false" />
@@ -652,6 +653,14 @@
             <element signature="e#9504#14178#0" expanded="false" />
             <element signature="n#!!block;n#verfyComponent#0;n#HotUpdateCus#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

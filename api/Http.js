@@ -486,7 +486,7 @@ export default class Http {
                         clearTimeout(timer);
 
                         // isProgress ? Tools.progress.show(false) : null;
-                        isProgress ? KActivityIndicator.hide() : null;
+                        // isProgress ? KActivityIndicator.hide() : null;
                         reject(retJson);
                     });
             }

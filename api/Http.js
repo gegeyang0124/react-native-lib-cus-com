@@ -27,7 +27,7 @@ import {ProgressPerApi} from "./ProgressPerApi";
 /**
  * 网路请求
  * **/
-export class Http {
+export default class Http {
 
     static urlFile = null;//文件上传接口
     static fileField = null;//文件上传包含文件的字段，可不传

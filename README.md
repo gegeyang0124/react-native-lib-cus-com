@@ -64,6 +64,36 @@ react_native_fs:require("react-native-fs")
 ### 使用api (方法参数，进入源文件查看，里面详细注解)：
 ##### StyleSheetAdapt 样式表创建，适配各种机型、各种屏幕 与StyleSheet用法一致
 ```javascript
+StyleSheetAdapt.create();//创建样式表单
+StyleSheetAdapt.designSize = null;// 设置页面设计大小 可不设置 默认设计大小12寸平板电脑（{width:768,height:1024}）
+
+//数字后面可加以下字符 若加字符，加数字后面
+//'s':随屏幕调整布局 取屏幕高或宽(主要适用于横竖屏切换)
+//'dw' 获取相对当前屏幕的设计宽比的宽
+//'w' 获取相对当前屏幕宽的宽
+//'n' 不进行屏幕比缩放
+//'dh' 获取相对当前屏幕的设计高比的宽
+//'h' 获取相对当前屏幕高比的宽
+//以上字符后面加's'后会随屏幕调整布局
+//如：
+const styles = StyleSheetAdapt.create({
+    testStyle2:{
+        width:'0.1w',//屏幕宽的10分之1
+        height:'0.1h',//屏幕高的10分之1
+    },
+    testStyle3:{
+            width:'100dws',//按设计大小宽比适配 会随屏幕调整布局
+            height:'100dw',//按设计大小宽比适配
+        },
+    testStyle:{
+        transform:[
+            {rotateX:'180deg'}
+        ],
+    },
+});//创建样式表单
+```
+
+```javascript
 import {StyleSheetAdapt} from "react-native-lib-cus-com";
 import React, {Component} from 'react';
 import {View} from 'react-native';
@@ -123,8 +153,6 @@ export default class Test extends BaseComponent<Props> {
         );
     }
 }
-
-
 ```
 
 ##### Http 网路请求

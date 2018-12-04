@@ -21,7 +21,7 @@ const RNFS = Components.react_native_fs;
  // var FileTransfer = require('@remobile/react-native-file-transfer');
  var RNUploader = NativeModules.RNUploader;*/
 
-import KActivityIndicator from 'react-native-kactivityindicator-zy';
+import KActivityIndicator from 'react-native-toast-loadding';
 import {ProgressPerApi} from "./ProgressPerApi";
 
 /**

@@ -29,7 +29,7 @@ const  {
 } = Components.react_native_update;
 // const DeviceInfo = Components.react_native_device_info;
 
-import KActivityIndicator from 'react-native-kactivityindicator-zy';
+import KActivityIndicator from 'react-native-toast-loadding';
 
 /**
  发布热更新报错 将node_modules\react-native-update\local-cli\lib\bundle.js

@@ -10,7 +10,7 @@ import RootSiblings from 'react-native-root-siblings';
  * 将react的PropTypes换成
  * import PropTypes  from 'prop-types';
  * **/
-import CustomActionSheet from 'react-native-custom-action-sheet-zy';
+import CustomActionSheet from 'react-native-menu-action-cus';
 import {Tools} from "./Tools";
 import {StyleSheetAdapt} from "./StyleSheetAdapt";
 import {Theme} from "./Theme";

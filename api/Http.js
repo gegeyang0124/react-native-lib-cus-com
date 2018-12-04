@@ -545,9 +545,10 @@ export default class Http {
                 .then((connectionInfo) => {
                     // Tools.progressPer.show();
                     // ProgressPerApi.show(0);
-                    if(this.verfyComponent(1)){
-                        if(Tools.platformType)
-                        {
+
+                    if(Tools.platformType)
+                    {
+                        if(this.verfyComponent(1)){
                             // create an array of objects of the files you want to upload
                             var fileObj = {
                                 // name: 'Filedata',
@@ -682,112 +683,112 @@ export default class Http {
                                     reject({status:-1});
                                 });
                         }
-                        else
-                        {
-
-                            let formData = new FormData();//如果需要上传多张图片,需要遍历数组,把图片的路径数组放入formData中
-                            let file = {uri: filePath, type: 'multipart/form-data', name: filePath.substring(filePath.lastIndexOf("/") + 1)};   //这里的key(uri和type和name)不能改变,
-                            formData.append("Filedata",file);   //这里的files就是后台需要的key
-
-
-                            /*let formData = new FormData();
-                             for(var i = 0;i<imgAry.length;i++){
-                             let file = {uri: imgAry[i], type: 'multipart/form-data', name: 'image.png'};
-                             formData.append("files",file);
-                             }*/
-
-                            fetch(Http.urlFile,{
-                                method:'POST',
-                                headers:{
-                                    'ContentType':'multipart/form-data',
-                                    // 'token':retJson.retData.token,
-                                },
-                                body:formData,
-                            })
-                                .then((response) => {
-                                    // Tools.progressPer.show(false);
-                                    ProgressPerApi.hide();
-                                    if (response.ok) {
-
-                                        return response.json();
-
-                                    }
-                                    else {
-                                        //alert("ddll :" + JSON.stringify({status: response.status}))
-                                        //reject({status: response.status});
-                                        this.putErrInfo("excep-service",
-                                            Http.urlFile,
-                                            "POST",{
-                                                statusCode:response.status,
-                                            },file);
-                                        Tools.toast("后台报错,请联系管理员");
-                                        return {retCode:-40440};
-                                    }
-                                    // return response.json();
-                                } )
-                                .then((responseData)=>{
-
-                                    if(response.retCode == -40440){
-                                        reject({status: -1});
-                                    }
-
-                                    console.log("-----------------------------------------httpRequest " + Http.urlFile + " success start-------------------------------------");
-                                    console.info("requestData:",files);
-                                    console.info("response:",responseData);
-                                    console.log("-----------------------------------------httpRequest " + Http.urlFile + " success end-------------------------------------");
-
-                                    resolve(responseData);
-                                    /* if(responseData.errcode == 0){
-
-                                         // alert("responseData:  " + JSON.stringify(responseData.data));
-                                         resolve(responseData.data);
-                                     }
-                                     else
-                                     {
-                                         Tools.toast("上传失败，请联系管理员");
-                                         /!* TalkingData.trackEventHttp("exce-Filed",
-                                             Http.urlFile,
-                                              "POST",
-                                              {
-                                                  errName:"fileErr",
-                                                  statusCode:responseData ? responseData.errcode + "" : "null"
-                                              });*!/
-
-                                         let obj = typeof responseData == "object" ? responseData : {
-                                             errName:"fileErr_Filed",
-                                             errcode:responseData + ""
-                                         };
-                                         /!* TalkingData.trackEventHttp("exce-Filed",
-                                              Http.urlFile,
-                                              "POST",
-                                              obj);*!/
-                                         this.putErrInfo("excep-Filed",Http.urlFile
-                                             ,"POST", obj,file);
-                                         reject({status:-1});
-                                     }*/
-
-                                    // console.log('responseData',responseData);
-                                })
-                                .catch((error)=>{
-                                    // Tools.progressPer.show(false);
-                                    ProgressPerApi.hide();
-                                    // console.error('error',error)
-                                    Tools.toast("上传失败，请重试....");
-                                    /*TalkingData.trackEventHttp("exception",
-                                        Http.urlFile,
-                                        "POST",
-                                        {
-                                            errName:"fileErr",
-                                            statusCode:error
-                                        });*/
-                                    this.putErrInfo("exception",Http.urlFile
-                                        ,"POST", error,file);
-                                    reject({status:-1});
-                                    // alert("error: " + JSON.stringify(error));
-                                });
-                        }
                     }
+                    else
+                    {
 
+                        let formData = new FormData();//如果需要上传多张图片,需要遍历数组,把图片的路径数组放入formData中
+                        let file = {uri: filePath, type: 'multipart/form-data', name: filePath.substring(filePath.lastIndexOf("/") + 1)};   //这里的key(uri和type和name)不能改变,
+                        formData.append("Filedata",file);   //这里的files就是后台需要的key
+
+
+                        /*let formData = new FormData();
+                         for(var i = 0;i<imgAry.length;i++){
+                         let file = {uri: imgAry[i], type: 'multipart/form-data', name: 'image.png'};
+                         formData.append("files",file);
+                         }*/
+
+                        ProgressPerApi.show(0);
+                        fetch(Http.urlFile,{
+                            method:'POST',
+                            headers:{
+                                'ContentType':'multipart/form-data',
+                                // 'token':retJson.retData.token,
+                            },
+                            body:formData,
+                        })
+                            .then((response) => {
+                                // Tools.progressPer.show(false);
+                                ProgressPerApi.hide();
+                                if (response.ok) {
+
+                                    return response.json();
+
+                                }
+                                else {
+                                    //alert("ddll :" + JSON.stringify({status: response.status}))
+                                    //reject({status: response.status});
+                                    this.putErrInfo("excep-service",
+                                        Http.urlFile,
+                                        "POST",{
+                                            statusCode:response.status,
+                                        },file);
+                                    Tools.toast("后台报错,请联系管理员");
+                                    return {retCode:-40440};
+                                }
+                                // return response.json();
+                            } )
+                            .then((responseData)=>{
+
+                                if(response.retCode == -40440){
+                                    reject({status: -1});
+                                }
+
+                                console.log("-----------------------------------------httpRequest " + Http.urlFile + " success start-------------------------------------");
+                                console.info("requestData:",files);
+                                console.info("response:",responseData);
+                                console.log("-----------------------------------------httpRequest " + Http.urlFile + " success end-------------------------------------");
+
+                                resolve(responseData);
+                                /* if(responseData.errcode == 0){
+
+                                     // alert("responseData:  " + JSON.stringify(responseData.data));
+                                     resolve(responseData.data);
+                                 }
+                                 else
+                                 {
+                                     Tools.toast("上传失败，请联系管理员");
+                                     /!* TalkingData.trackEventHttp("exce-Filed",
+                                         Http.urlFile,
+                                          "POST",
+                                          {
+                                              errName:"fileErr",
+                                              statusCode:responseData ? responseData.errcode + "" : "null"
+                                          });*!/
+
+                                     let obj = typeof responseData == "object" ? responseData : {
+                                         errName:"fileErr_Filed",
+                                         errcode:responseData + ""
+                                     };
+                                     /!* TalkingData.trackEventHttp("exce-Filed",
+                                          Http.urlFile,
+                                          "POST",
+                                          obj);*!/
+                                     this.putErrInfo("excep-Filed",Http.urlFile
+                                         ,"POST", obj,file);
+                                     reject({status:-1});
+                                 }*/
+
+                                // console.log('responseData',responseData);
+                            })
+                            .catch((error)=>{
+                                // Tools.progressPer.show(false);
+                                ProgressPerApi.hide();
+                                // console.error('error',error)
+                                Tools.toast("上传失败，请重试....");
+                                /*TalkingData.trackEventHttp("exception",
+                                    Http.urlFile,
+                                    "POST",
+                                    {
+                                        errName:"fileErr",
+                                        statusCode:error
+                                    });*/
+                                this.putErrInfo("exception",Http.urlFile
+                                    ,"POST", error,file);
+                                reject({status:-1});
+                                // alert("error: " + JSON.stringify(error));
+                            });
+                    }
                 })
                 .catch(retJson=>{
                     reject(retJson);

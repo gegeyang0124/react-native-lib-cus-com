@@ -103,7 +103,6 @@ export class ButtonTime extends Component {
     }
 
     onPress = ()=>{
-        Tools.toast("onPress");
         const {onPress} = this.props;
         this.datePicker.show();
         onPress&&onPress();

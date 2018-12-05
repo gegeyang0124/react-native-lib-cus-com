@@ -18,8 +18,7 @@ import {
 /**
  * 修改DatePicker底层增加属性hideHeader //隐藏头部显示内容，默认是false
  * **/
-// import DatePickerRoot from 'react-native-datepicker';
-import DatePickerRoot from 'react-native-datepicker-zy';
+import DatePickerRoot from 'react-native-datepicker';
 
 /**
  * 日期选择组件
@@ -58,7 +57,7 @@ export class DatePicker extends Component {
                 <DatePickerRoot ref={(compoent)=>{
                     this.datePicker = compoent;
                 }}
-                                hideHeader={true}
+                                showIcon={false}
                     // style={{width: 200,height:200}}
 
                                 date={Tools.timeFormatConvert((new Date()).getTime(),"YYYY-MM-DD HH:mm:ss")}

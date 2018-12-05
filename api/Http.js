@@ -998,12 +998,17 @@ export default class Http {
                                                     console.info("response:",retJson);
                                                     console.log("-----------------------------------------downloadFile " + fileAddress + " success end-------------------------------------");
 
-                                                    /* console.log('file://' + downloadDest)*/
-
-                                                    retJson["filePath"] = downloadDest;
-                                                    // Tools.progressPer.show(false);
+                                                    RNFS.stopDownload(retJson.jobId);
                                                     ProgressPerApi.hide();
-                                                    resolve(retJson);
+
+                                                    if(retJson.statusCode == 200){
+                                                        retJson["filePath"] = downloadDest;
+                                                        resolve&&resolve(retJson);
+                                                    }
+                                                    else
+                                                    {
+                                                        Tools.toast("文件不存在");
+                                                    }
 
                                                 }).catch(err => {
                                                     //console.log('err', err);

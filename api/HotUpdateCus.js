@@ -111,7 +111,7 @@ export class HotUpdateCus{
                             HotUpdateCus.update.execute = false;
                             switch (info.metaInfo.code)
                             {
-                                case HotUpdateCus.update.reboot1:{
+                                case HotUpdateCus.update.code1:{
 
                                     Alert.alert('检查到新的静态版本'+info.packageVersion+'\n是否下载?',
                                         info.description, [
@@ -141,6 +141,19 @@ export class HotUpdateCus{
                     else if(info.update){
                         HotUpdateCus.checkHasUpate(info,(info)=>{
                             HotUpdateCus.update.execute = false;
+
+                            info.metaInfo = info.metaInfo ? info.metaInfo : {};
+                            info.metaInfo.code = typeof info.metaInfo.code == 'number'
+                                ? info.metaInfo.code
+                                : HotUpdateCus.update.code1;
+                            info.metaInfo.reboot = typeof info.metaInfo.reboot == 'number'
+                                ? info.metaInfo.reboot
+                                : HotUpdateCus.update.reboot1;
+
+                            if(HotUpdateCus.updateFirst && (!HotUpdateCus.appID || !Tools.isCurStruct)){
+                                info.metaInfo.code = 888;
+                                info.metaInfo.reboot = 666;
+                            }
 
                             switch (info.metaInfo.code)
                             {

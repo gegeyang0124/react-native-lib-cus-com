@@ -43,7 +43,7 @@ export class MenuBottomApi extends Component{
                                                                  resolve(item);
                                                              }}/>);
             }
-            
+
         });
 
 

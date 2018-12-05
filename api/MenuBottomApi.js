@@ -24,7 +24,7 @@ export class MenuBottomApi extends Component{
 
     /**
      * 显示底部菜单
-     * @param btnList;//按钮
+     * @param btnList array;//按钮
      * @returns Promise
      * 回传数据resolve={
       index:'',菜单下标
@@ -34,13 +34,16 @@ export class MenuBottomApi extends Component{
     static show(btnList=[]){
         return new Promise(resolve => {
             if(showingDialog != null){
-                return showingDialog;
+                this.update(btnList,resolve);
             }
-
-            showingDialog = new RootSiblings(<MenuBottom btnList={btnList}
-                                                         onPress={(item)=>{
-                                                             resolve(item);
-                                                         }}/>);
+            else
+            {
+                showingDialog = new RootSiblings(<MenuBottom btnList={btnList}
+                                                             onPress={(item)=>{
+                                                                 resolve(item);
+                                                             }}/>);
+            }
+            
         });
 
 
@@ -75,15 +78,19 @@ export class MenuBottomApi extends Component{
     }
 
     /**
-     * 更新菊花文字
-     * @param AIV 需要更新文字的菊花
-     * @param message 文字内容
+     * 显示底部菜单
+     * @param btnList array;//按钮
+     * @param resolve func;//回调函数
+     * 回传数据resolve={
+      index:'',菜单下标
+      .....
+     }
      */
-    static  updateMessage(AIV,message){
-        /* AIV.update(<ActivityIndicatorContent
-             animated={KActivityIndicator.animated}
-             message={message}
-         />)*/
+    static  update(btnList=[],resolve){
+        showingDialog&&showingDialog.update(<MenuBottom btnList={btnList}
+                                         onPress={(item)=>{
+                                             resolve&&resolve(item);
+                                         }}/>);
     }
 
 };

@@ -407,4 +407,29 @@ export class StyleSheetAdapt{
         return StyleSheet.create(this.stylesJson );
     }
 
+    /**
+     * 得到样式属性的json对象
+     * @param styleID；//style样式表的句柄（ID）
+     * **/
+    static getStyle(styleID) {
+
+        var style = {};
+        if(typeof(styleID) == 'object')
+        {
+            style = styleID;
+        }
+        else
+        {
+            var s = JSON.stringify(styleID) + '';
+
+            if (s != 'undefined') {
+                style = StyleSheet.flatten(styleID);
+            }
+
+            style = JSON.parse(JSON.stringify(style));
+        }
+
+        return style;
+
+    }
 }

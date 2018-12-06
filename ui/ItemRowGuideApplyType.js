@@ -9,10 +9,8 @@ import {
 import {
     StyleSheetAdapt,
     Theme,
-    Tools
 } from "./../api/api";
-import {ButtonChange} from "./ButtonChange";
-import CheckBox from 'react-native-check-box-zy';
+import CheckBox from 'react-native-checkbox-cus';
 
 /**
  * 行选择组件，分成两部分，左边支持文本和选择框，右边是文本

@@ -14,9 +14,7 @@ import {
 import {
     StyleSheetAdapt,
     Theme,
-    Tools,
 } from "./../api/api";
-import {BarHorizontal3} from './Charts';
 import {TextDoubleIcon} from './TextDoubleIcon';
 import {ChartCircleProgress} from './ChartCircleProgress';
 import {BarHorizontalTitleSection} from './BarHorizontalTitleSection';

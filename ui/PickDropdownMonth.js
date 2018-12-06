@@ -13,8 +13,6 @@ import {
     Tools,
 } from "./../api/api";
 import {PickDropdown} from './PickDropdown';
-import {ButtonImage} from './ButtonImage';
-import Search from 'lib-images-zy/search.png';
 
 /**
  * 月份下拉框 （基于PickDropdown）

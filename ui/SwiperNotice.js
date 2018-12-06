@@ -14,7 +14,7 @@ import {ImageBg} from './ImageBg';
 const RN = require('react-native');
 const Img = RN.Image;
 
-import Swiper from 'react-native-swiper-zy';
+import Swiper from 'react-native-swipe-cus';
 
 /**
  * 主页公告轮播

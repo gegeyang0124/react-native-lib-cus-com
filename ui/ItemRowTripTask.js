@@ -16,7 +16,7 @@ import {ButtonImage} from './ButtonImage';
 
 import {
     Circle,
-} from 'react-native-progress';
+} from 'react-native-progress-cus';
 
 import ImageRightBlack from 'lib-images-zy/rightBlack.png';
 import ImageToSwipeRight from 'lib-images-zy/toSwipeRight.png';

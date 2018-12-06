@@ -31,7 +31,7 @@ import IamgeBelowIcon from 'lib-images-zy/belowIcon.png';
  PropTypes.number
  ])
  * **/
-import CheckBox from 'react-native-check-box-zy';
+import CheckBox from 'react-native-checkbox-cus';
 import {VideoView} from "./VideoView";
 
 /**

@@ -11,7 +11,7 @@ import {
 import {ButtonImage}from './ButtonImage';
 import {ImageView} from "./ImageView";
 
-import Swiper from 'react-native-swiper-zy';
+import Swiper from 'react-native-swipe-cus';
 
 /**
  * 图片轮播图

@@ -15,13 +15,6 @@ import {
     MenuBottomApi,
 } from "./../api/api";
 import {ButtonChange} from "./ButtonChange";
-/*import {
-    StackPages,
-} from 'react-navigation';*/
-import {Components} from "./../StackComponent";
-const {
-    StackPages
-} = Components.react_navigation;
 
 /**
  * 需要修改底层
@@ -84,39 +77,10 @@ export class MenuBottom extends Component {
         btnList:[],
     }
 
-   /* static show(btnList=["拍摄","选择"]){
-        if(btnList==true||btnList==false){
-            btnList=["拍摄","选择"];
-        }
-        return MenuBottomApi.show(btnList);
-
-        // MenuBottom.self.show(b);
-    }*/
-    static show(b){
-        if(StackPages){
-            if(b == undefined)
-            {
-                b = !this.visible;
-                this.visible = b;
-            }
-            else {
-                this.visible = b;
-            }
-
-            if(b){
-                // console.info("StackPages.curPageState",StackPages.curPageState);
-                // console.info("StackPages.stackPages",StackPages.stackPages);
-                // console.info("StackPages.stackPagesHistory",StackPages.stackPagesHistory);
-                // for()
-                let context = StackPages.stackPages[StackPages.curPageState.routeName].screen.prototype.context;
-                // MenuBottom.self.show(b);
-                MenuBottomApi.show(context.btnList);
-            }
-            else {
-                MenuBottomApi.hide();
-            }
-        }
-    }
+   /**
+    * 是否显示底部菜单
+    * @param b bool;//true显示，false隐藏；不传采用内部默认
+    * **/
     show(b){
         b = b == undefined ? !this.state.isVisible : b;
         this.setState({

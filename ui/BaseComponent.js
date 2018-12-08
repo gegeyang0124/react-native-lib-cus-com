@@ -4,29 +4,23 @@ import {Image} from "react-native";
 import {
     StyleSheetAdapt,
     Tools,
-    TalkingData,
 } from "./../api/api";
 import {ButtonImage} from "./ButtonImage";
 import LeftWhite from 'lib-images-zy/leftWhite.png';
 import add from 'lib-images-zy/add.png';
 
 /**
- * 修改react-navigation底层
+ * 修改react-navigation@1.5.11底层
  * 在 this.props.navigation 中添加setEvt方法
  * **/
-/*import {
+import {
     NavigationActions,
     StackPages,
-} from 'react-navigation-zy';
-import Orientation from 'react-native-orientation';*/
+} from 'react-native-navigation-cus';
+// import Orientation from 'react-native-orientation';
 import {Components} from "./../StackComponent";
-const {
-    NavigationActions,
-    StackPages,
-} = Components.react_navigation;
 const Orientation = Components.react_native_orientation;
 
-// import PageMine from "../../pages/pageMain/pageMine/PageMine";
 
 /**
  * 用于继承导航属性

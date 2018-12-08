@@ -11,7 +11,7 @@ import {
     TabBarBottom,
     TabBarTop,
     DrawerItems,
-} from 'react-navigation-zy';
+} from 'react-navigation';
 */
 
 /**

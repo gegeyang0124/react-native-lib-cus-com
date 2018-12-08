@@ -378,7 +378,32 @@ import {Theme} from "react-native-lib-cus-com";
 ```
 
 ### 使用UI (ui属性，可调用方法参数，进入源文件自行查看，里面详细注解)：
-##### BaseComponent 用于继承导航属性;这个组件中的方法都是"静态和动态"两种调用方式
+##### BaseComponent(来自react-native-navigation-cus) 用于继承导航属性;这个组件中的方法都是"静态和动态"两种调用方式
+```javascript
+this.goPage();//跳转页面
+BaseComponent.goPage();//跳转页面
+this.goBack();//返回已进入的页面
+BaseComponent.goBack();//返回已进入的页面
+this.setParams();//设置参数改变导航栏
+BaseComponent.setParams();//设置参数改变导航栏
+this.getPageParams();//获取页面跳转传递的参数
+BaseComponent.getPageParams();//获取页面跳转传递的参数
+
+ /**
+     * 导航栏按钮设置
+     * headerLeft：//导航栏左边按钮可传 bool（false:隐藏左边默认UI;true:显示左边默认UI）、图片(url)、UI
+     * headerRight：//导航栏右边按钮可传 bool（false:隐藏左边默认UI;true:显示左边默认UI）、图片(url)、UI
+     * headerLeftHandle://函数方法 可在左边按钮点击返回之前执行
+     * headerRightHandle://函数方法 右边按钮点击执行
+     * **/ 
+ //还有很多react-navigation支持的参数都可通过此方法传递
+this.setParams({
+  headerLeft:function() {},//导航栏左边按钮可传 bool（false:隐藏左边默认UI;true:显示左边默认UI）、图片(url)、UI
+  headerRight:function (){},//导航栏右边按钮可传 bool（false:隐藏左边默认UI;true:显示左边默认UI）、图片(url)、UI
+  headerLeftHandle:function(){},//函数方法 可在左边按钮点击返回之前执行
+  headerRightHandle:function() {}//函数方法 右边按钮点击执行
+});//设置参数改变导航栏
+```
 ```javascript
 import React, {Component} from 'react';
 import {

@@ -356,6 +356,8 @@ PickerCustome.pickMonth();//选择年月
 ```
 
 ##### ProgressApi 加载指示器（加载条）  基于react-native-spinkit
+![](./showImg/loadButiful.png)
+
 ```javascript
 import {ProgressApi} from "react-native-lib-cus-com";
 ProgressApi.show();//显示加载指示器
@@ -363,6 +365,8 @@ ProgressApi.hide();//隐藏菊花加载指示器
 ```
 
 ##### ProgressPerApi 显示进度的进度条
+<img src="./showImg/progressPer.png"  height="auto" width="400" />
+
 ```javascript
 import {ProgressPerApi} from "react-native-lib-cus-com";
 ProgressPerApi.show();//显示进度条
@@ -499,11 +503,15 @@ this.getPageParams();//获取页面跳转传递的参数
 ```
 
 ##### ViewTitle 视频播放组件 ui控件  导航框控件 头部有导航栏（可设置有无） 左边带返回按钮（可设置有无） 中间有title文本（可设置有无） 右边带菜单按钮（可设置有无） 底部带按钮（可设置有无） 可设置是否可滚动 一般用于作为页面的基础框View
+<img src="./showImg/viewTitle.png"  height="auto" width="400" />
+
 ```javascript
 import {ViewTitle} from "react-native-lib-cus-com";
 ```
 
 ##### VideoView 视频播放组件 ui控件
+<img src="./showImg/video.png"  height="auto" width="400" />
+
 ```javascript
 import {VideoView} from "react-native-lib-cus-com";
 ```

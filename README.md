@@ -522,11 +522,18 @@ import {VideoList} from "react-native-lib-cus-com";
 ```
 
 ##### WebViewCus 浏览器（可设置成弹框出现，也可与页面合并兼容）的组件 ui控件（WebView） 支持html和uri（网页地址），并自动适配页面大小
+<img src="./showImg/web.jpg"  height="auto" width="400" />
+
 ```javascript
 import {WebViewCus} from "react-native-lib-cus-com";
 ```
 
 ##### DatePicker 日期选择组件
+<p>
+<img src="./showImg/datePickAndroid.gif"  height="auto" width="400" />
+<img src="./showImg/datePickIos.gif"  height="auto" width="400" />
+</p>
+
 ```javascript
 import {DatePicker} from "react-native-lib-cus-com";
 ```
@@ -542,11 +549,18 @@ import {DropdownBox} from "react-native-lib-cus-com";
 ```
 
 ##### PickDropdown 下拉框 有下拉图表等，更加符合应用场景（基于DropdownBox）
+<p>
+<img src="./showImg/selMul.png"  height="auto" width="400" />
+<img src="./showImg/selSig.png"  height="auto" width="400" />
+</p>
+
 ```javascript
 import {PickDropdown} from "react-native-lib-cus-com";
 ```
 
 ##### PickDropdownMonth 月份下拉框 （基于PickDropdown）
+<img src="./showImg/pickDpMon.png"  height="auto" width="400" />
+
 ```javascript
 import {PickDropdownMonth} from "react-native-lib-cus-com";
 ```

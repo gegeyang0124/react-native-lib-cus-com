@@ -537,6 +537,10 @@ import {WebViewCus} from "react-native-lib-cus-com";
 ```javascript
 import {DatePicker} from "react-native-lib-cus-com";
 ```
+##### ButtonTime 时间选择按钮控件 可选择时间显示 并回传时间 （基于DatePicker封装）
+```javascript
+import {ButtonTime} from "react-native-lib-cus-com";
+```
 
 ##### ViewCtrl View的升级版 增加左右滑动事件
 ```javascript
@@ -601,6 +605,7 @@ import {FlatListView} from "react-native-lib-cus-com";
 ##### ImageBg 背景图组件
 <img src="./showImg/quesList.jpg"  height="auto" width="400" />
 底图就是这个组件
+
 ```javascript
 import {ImageBg} from "react-native-lib-cus-com";
 ```
@@ -608,11 +613,6 @@ import {ImageBg} from "react-native-lib-cus-com";
 ##### ButtonChange 点击按钮
 ```javascript
 import {ButtonChange} from "react-native-lib-cus-com";
-```
-
-##### ButtonTime 时间选择按钮控件 可选择时间显示 并回传时间
-```javascript
-import {ButtonTime} from "react-native-lib-cus-com";
 ```
 
 ##### ImageView 查看大图

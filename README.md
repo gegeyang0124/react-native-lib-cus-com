@@ -356,7 +356,7 @@ PickerCustome.pickMonth();//选择年月
 ```
 
 ##### ProgressApi 加载指示器（加载条）  基于react-native-spinkit
-![](./showImg/loadButiful.png)
+![](./showImg/progressLoad.png)
 
 ```javascript
 import {ProgressApi} from "react-native-lib-cus-com";
@@ -566,11 +566,15 @@ import {PickDropdownMonth} from "react-native-lib-cus-com";
 ```
 
 ##### Progress 进度加载条
+<img src="./showImg/progressLoad.png"  height="auto" width="400" />
+
 ```javascript
 import {Progress} from "react-native-lib-cus-com";
 ```
 
 ##### ProgressPer  进度条 显示进度
+<img src="./showImg/progressPer.png"  height="auto" width="400" />
+
 ```javascript
 import {ProgressPer} from "react-native-lib-cus-com";
 ```

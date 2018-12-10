@@ -339,6 +339,7 @@ Media.takeVideo();//拍摄视频 react-native-image-picker
 
 ##### MenuBottomApi 底部弹出菜单API
 <img src="./showImg/menuBottom.png"  height="auto" width="400" />
+
 ```javascript
 import {MenuBottomApi} from "react-native-lib-cus-com";
 MenuBottomApi.show();//显示底部菜单
@@ -347,6 +348,7 @@ MenuBottomApi.hide();//隐藏底部菜单
 
 ##### PickerCustome 自定义滑动选择   基于react-native-picker
 <img src="./showImg/pickCus.png"  height="auto" width="400" />
+
 ```javascript
 import {PickerCustome} from "react-native-lib-cus-com";
 PickerCustome.pick();//选择框 底部

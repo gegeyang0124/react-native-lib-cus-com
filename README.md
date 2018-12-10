@@ -585,16 +585,22 @@ import {Question} from "react-native-lib-cus-com";
 ```
 
 ##### QuestionList  答题集合（列表）ui （基于Question）
+<img src="./showImg/quesList.jpg"  height="auto" width="400" />
+
 ```javascript
 import {QuestionList} from "react-native-lib-cus-com";
 ```
 
 ##### FlatListView 列表加载，可上下拉、分页、懒加载UI,有加载提示动画和提示信息 （加载更多）
-```javascript
+<img src="./showImg/quesSurvey.jpg"  height="auto" width="400" />
+
+```javascript 
 import {FlatListView} from "react-native-lib-cus-com";
 ```
 
 ##### ImageBg 背景图组件
+<img src="./showImg/quesList.jpg"  height="auto" width="400" />
+底图就是这个组件
 ```javascript
 import {ImageBg} from "react-native-lib-cus-com";
 ```

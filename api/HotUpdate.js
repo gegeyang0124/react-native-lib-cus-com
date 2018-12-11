@@ -28,6 +28,7 @@ const  {
     markSuccess,
 } = Components.react_native_update;
 // const DeviceInfo = Components.react_native_device_info;
+const HotUpdateJs = Components.react_native_update_js;
 
 import KActivityIndicator from 'react-native-toast-loadding';
 
@@ -137,13 +138,19 @@ export class HotUpdate{
                 // alert("hash:" + JSON.stringify(hash) + "\ncurrentVersion:" + JSON.stringify(currentVersion) );
 
                 LocalStorage.save(Tools.app_config.versionkey,
-                    info.name).then((dataSave)=>{
+                    {
+                        version:info.name,
+                        rnUpdate:true
+                    }).then((dataSave)=>{
 
                     switch (reboot)
                     {
                         case HotUpdate.update.reboot1:{
                             Alert.alert('提示', '下载完毕,是否重启应用?', [
                                 {text: '是', onPress: ()=>{
+                                        HotUpdateJs.HotUpdate
+                                            ? HotUpdateJs.HotUpdate.setPreferData("rnUpdate","true")
+                                            : null;
                                         Tools.cutLogin = true;
                                         if(!Tools.isCurStruct){
                                             LocalStorage.save(packageVersion,
@@ -161,14 +168,19 @@ export class HotUpdate{
                                         HotUpdate.update.versionHash = info.hash;
                                         // HotUpdate.update.execute = true;
                                         LocalStorage.save(Tools.app_config.versionkey,
-                                            Tools.app_config.version);
+                                            {
+                                                version:Tools.app_config.version,
+                                                rnUpdate:true
+                                            });
                                         HotUpdate.updateDelay();
                                         cd&&cd();
 
                                     }
                                 },
                                 {text: '下次启动时更新', onPress: ()=>{
-
+                                        HotUpdateJs.HotUpdate
+                                            ? HotUpdateJs.HotUpdate.setPreferData("rnUpdate","true")
+                                            : null;
                                         HotUpdate.update.versionHash = info.hash;
                                         HotUpdate.update.execute = true;
                                         if(!Tools.isCurStruct){
@@ -190,6 +202,9 @@ export class HotUpdate{
                             break;
                         }
                         case HotUpdate.update.reboot2:{
+                            HotUpdateJs.HotUpdate
+                                ? HotUpdateJs.HotUpdate.setPreferData("rnUpdate","true")
+                                : null;
                             Tools.cutLogin = true;
                             if(!Tools.isCurStruct){
                                 LocalStorage.save(packageVersion,
@@ -206,6 +221,9 @@ export class HotUpdate{
                             break;
                         }
                         case HotUpdate.update.reboot3:{
+                            HotUpdateJs.HotUpdate
+                                ? HotUpdateJs.HotUpdate.setPreferData("rnUpdate","true")
+                                : null;
                             if(info.metaInfo.finishInfo){
                                 Alert.alert("更新完成",info.metaInfo.finishInfo+"");
                             }

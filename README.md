@@ -245,9 +245,10 @@ HotUpdateCus.checkUpdateLoop();//持续检查是否有更新
                 "publishJS":[//发布的js所有版本,默认第一个是最新发布的的js版本,可任选一个更新
                     {
                         "description": "asdfsa",//js描述
-                        "version": "2.0.140",//js的版本号，只能增大
+                        "version": "2.0.140",//js的版本号
                         "metaInfo":{//元信息可在里面自定义一些数据，js的版本，更新时回传
                         },
+                        "build": 12,// 构建值（数字），只可增大，不可重复，用于比对版本是否升级
                         "updateUrl": "http://yyt.yyy.com:8081/app_config/lx_yyt_app.zip" //js包
                     }
                 ]

@@ -24,6 +24,7 @@ const {
     currentVersion,
     mainBundleFilePath,
     HotUpdate,
+    build,
 } = Components.react_native_update_js;
 // const DeviceInfo = Components.react_native_device_info;
 
@@ -100,7 +101,7 @@ export class HotUpdateCus{
                         ? info.metaInfo.reboot
                         : HotUpdateCus.update.reboot1;
 
-                    if(HotUpdateCus.updateFirst && (!HotUpdateCus.appID || !Tools.isCurStruct)){
+                    if(HotUpdateCus.updateFirst && build == null){
                         info.metaInfo.code = 888;
                         info.metaInfo.reboot = 666;
                     }
@@ -150,7 +151,7 @@ export class HotUpdateCus{
                                 ? info.metaInfo.reboot
                                 : HotUpdateCus.update.reboot1;
 
-                            if(HotUpdateCus.updateFirst && (!HotUpdateCus.appID || !Tools.isCurStruct)){
+                            if(HotUpdateCus.updateFirst && build == null){
                                 info.metaInfo.code = 888;
                                 info.metaInfo.reboot = 666;
                             }
@@ -159,7 +160,8 @@ export class HotUpdateCus{
                             {
                                 case HotUpdateCus.update.code1: {
                                     cdUpdate&&cdUpdate();
-                                    if(HotUpdateCus.update.version !== info.version){
+                                    // if(HotUpdateCus.update.version !== info.version){
+                                    if(build == null || info.build > build){
                                         Alert.alert('检查到新的版本'+info.version+'\n是否下载?',
                                             info.description, [
                                                 {text: '是', onPress: ()=>{
@@ -204,7 +206,7 @@ export class HotUpdateCus{
      * @prama index int;info.publishJS的下标 可不传
      * **/
     static checkHasUpate(info,resolve:Function,reject:Function,index=0){
-        let curVer = HotUpdateCus.update.version;
+        /*let curVer = HotUpdateCus.update.version;
         if(curVer){
             curVer = curVer.split(".").join("");
             curVer = parseInt(curVer);
@@ -212,8 +214,11 @@ export class HotUpdateCus{
         let nxtVer = info.version;
         nxtVer = nxtVer.split(".").join("");
         nxtVer = parseInt(nxtVer);
-        if(!HotUpdateCus.update.version || nxtVer > curVer){
+        if(!HotUpdateCus.update.version || nxtVer > curVer){*/
+        let curVer = build;
+        let nxtVer = info.build;
 
+        if(curVer == null || nxtVer > curVer){
             if(this.isHasUpdate(info)){
                 resolve&&resolve(info);
             }
@@ -291,8 +296,12 @@ export class HotUpdateCus{
         })
             .then(info => {
                 ProgressPerApi.hide();
-            LocalStorage.save(Tools.app_config.versionkey,
-                info.version).then((dataSave)=>{
+                LocalStorage.save(Tools.app_config.versionkey,
+                    {
+                        version:info.version,
+                        rnUpdate:false
+                    })
+                    .then((dataSave)=>{
 
                 switch (reboot)
                 {
@@ -315,7 +324,10 @@ export class HotUpdateCus{
                                 }},
                             {text: '否', onPress:()=>{
                                     LocalStorage.save(Tools.app_config.versionkey,
-                                        Tools.app_config.version);
+                                        {
+                                            version:Tools.app_config.version,
+                                            rnUpdate:false
+                                        });
                                     HotUpdateCus.updateDelay();
                                     cd&&cd();
 

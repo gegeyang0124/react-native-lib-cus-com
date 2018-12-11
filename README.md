@@ -62,7 +62,7 @@ react_native_fs:require("react-native-fs")
 ```
 
 ### 使用api (方法参数，进入源文件查看，里面详细注解)：
-##### StyleSheetAdapt 样式表创建，适配各种机型、各种屏幕 与StyleSheet用法一致
+##### StyleSheetAdapt 样式表创建，适配各种机型、各种屏幕 与StyleSheet用法一致 [react-native-stylesheet-adapt](https://github.com/gegeyang0124/react-native-stylesheet-adapt)
 ```javascript
 StyleSheetAdapt.create();//创建样式表单
 StyleSheetAdapt.getStyle();//得到样式属性的json对象
@@ -156,7 +156,7 @@ export default class Test extends BaseComponent<Props> {
 }
 ```
 
-##### Http 网路请求
+##### Http([react-native-http-cus](https://github.com/gegeyang0124/react-native-http-cus)) 网路请求(文件上传下载，基于[react-native-fs](https://github.com/itinance/react-native-fs))
 ```javascript
 import {Http} from "react-native-lib-cus-com";
 Http.post();//基于 fetch 封装的 POST请求
@@ -193,13 +193,13 @@ Alert.alert();//显示对话框
 Alert.hide();//关闭对话框
 ```
 
-##### CaptureImage 截屏或截UI图 基于react-native-view-shot
+##### CaptureImage 截屏或截UI图 基于[react-native-view-shot](https://github.com/gre/react-native-view-shot)
 ```javascript
 import {CaptureImage} from "react-native-lib-cus-com";
 CaptureImage.captureViewScreen();//截屏 截取UI的图片
 ```
 
-##### DbMgr 数据库操作 基于react-native-sqlite-storage
+##### DbMgr 数据库操作 基于数据库操作[react-native-sqlite-storage](https://github.com/andpor/react-native-sqlite-storage)
 ```javascript
 import {DbMgr} from "react-native-lib-cus-com";
 DbMgr.DB_TABLE_LIST = [];//创建表列表 此必须先调用
@@ -207,7 +207,7 @@ DbMgr.executeSql();//执行sql
 还有很多方法，请查看文件里的注释
 ```
 
-##### HotUpdateCus 热更新，提供热更新各种方法,自己配置服务器 基于react-native-update-js
+##### HotUpdateCus 热更新，提供热更新各种方法,自己配置服务器 基于[react-native-update-js](https://github.com/gegeyang0124/react-native-update-js)
 ```javascript
 
 /**
@@ -257,7 +257,7 @@ HotUpdateCus.checkUpdateLoop();//持续检查是否有更新
 }
 ```
 
-##### HotUpdate 热更新，提供热更新各种方法 基于react-native-update
+##### HotUpdate 热更新，提供热更新各种方法 基于[react-native-update](https://github.com/reactnativecn/react-native-pushy)
 ```javascript
 安装、配置好react-native-update后
 
@@ -298,7 +298,7 @@ HotUpdate.checkUpdateLoop();//持续检查是否有更新
 这些设置完后即可，提示会根据元信息的情况提示
 ```
 
-### FileDirMgr 可复制文件目录到指定目录，读取文件目下所有文件及文件目录，可删除文件和文件目录
+### FileDirMgr 可复制文件目录到指定目录，读取文件目下所有文件及文件目录，可删除文件和文件目录 基于[react-native-fs](https://github.com/itinance/react-native-fs)
 ```javascript
 import {FileDirMgr} from "react-native-lib-cus-com";
 FileDirMgr.copyDir();//复制目录到指定目录
@@ -306,13 +306,13 @@ FileDirMgr.readDir();//读取目录下的所有文件
 FileDirMgr.deleteDirOrFile();//删除目录或文件
 ```
 
-##### IamgeWaterMark 设置图片水印 基于react-native-image-marker
+##### IamgeWaterMark 设置图片水印 基于[react-native-image-marker](https://github.com/JimmyDaddy/react-native-image-marker)
 ```javascript
 import {IamgeWaterMark} from "react-native-lib-cus-com";
 IamgeWaterMark.markText();//设置水印文本
 ```
 
-##### JPush 极光推送类，提供极光推送的各种方法 可看JPush文件源码注释
+##### JPush 极光推送类，提供极光推送的各种方法 可看JPush文件源码注释 [jpush-react-native](https://github.com/jpush/jpush-react-native)
 ```javascript
 本库未直接导出，若想使用，使用自行导出；
 需要安装:
@@ -320,7 +320,7 @@ npm i --save jcore-react-native
 npm i --save jpush-react-native
 ```
 
-##### LocalStorage 持久化本地存储 基于react-native-storage
+##### LocalStorage 持久化本地存储 基于[react-native-storage](https://github.com/sunnylqm/react-native-storage)
 ```javascript
 import {LocalStorage} from "react-native-lib-cus-com";
 LocalStorage.save();//使用key来保存单个数据（key-only）。这些数据一般是全局独有的，需要谨慎单独处理的数据
@@ -329,7 +329,8 @@ LocalStorage.saves();//使用key来保存批量数据（key-only）。这些数�
 LocalStorage.gets();//读取批量数据
 ```
 
-##### Media 媒体类，处理摄像头使用和相册的使用 相册文件操作 基于react-native-image-crop-picker和react-native-image-picker
+##### Media 媒体类，处理摄像头使用和相册的使用 相册文件操作 基于[react-native-image-crop-picker](https://github.com/ivpusic/react-native-image-crop-picker)和[react-native-image-picker](https://github.com/marcshilling/react-native-image-picker)
+
 ```javascript
 import {Media} from "react-native-lib-cus-com";
 Media.pickImage();//选择图片 react-native-image-crop-picker
@@ -338,7 +339,7 @@ Media.pickVideo();//选择视频 react-native-image-crop-picker
 Media.takeVideo();//拍摄视频 react-native-image-picker
 ```
 
-##### MenuBottomApi 底部弹出菜单API
+#####  MenuBottomApi底部弹出菜单API [react-native-menu-action-cus](https://github.com/gegeyang0124/react-native-menu-action-cus)
 <img src="./showImg/menuBottom.png"  height="auto" width="400" />
 
 ```javascript
@@ -347,7 +348,7 @@ MenuBottomApi.show();//显示底部菜单
 MenuBottomApi.hide();//隐藏底部菜单
 ```
 
-##### PickerCustome 自定义滑动选择   基于react-native-picker
+##### PickerCustome 自定义滑动选择   基于[react-native-picker](https://github.com/beefe/react-native-picker)
 <img src="./showImg/pickCus.png"  height="auto" width="400" />
 
 ```javascript
@@ -356,7 +357,7 @@ PickerCustome.pick();//选择框 底部
 PickerCustome.pickMonth();//选择年月
 ```
 
-##### ProgressApi 加载指示器（加载条）  基于react-native-spinkit
+##### ProgressApi 加载指示器（加载条）  基于[react-native-spinkit](https://github.com/maxs15/react-native-spinkit)
 ![](./showImg/progressLoad.png)
 
 ```javascript
@@ -365,7 +366,7 @@ ProgressApi.show();//显示加载指示器
 ProgressApi.hide();//隐藏菊花加载指示器
 ```
 
-##### ProgressPerApi 显示进度的进度条
+##### ProgressPerApi 显示进度的进度条 [react-native-progress](https://github.com/oblador/react-native-progress)
 <img src="./showImg/progressPer.png"  height="auto" width="400" />
 
 ```javascript
@@ -374,7 +375,7 @@ ProgressPerApi.show();//显示进度条
 ProgressPerApi.hide();//隐藏进度条
 ```
 
-##### TalkingData 使用talkingdata app统计分析 可看TalkingData源文件注释
+##### TalkingData 使用talkingdata app统计分析 可看TalkingData源文件注释 [react-native-talkingdata](https://github.com/reactnativecn/react-native-talkingdata)
 ```javascript
 本库未直接导出，若想使用，使用自行导出；
 需要安装:
@@ -388,7 +389,7 @@ import {Theme} from "react-native-lib-cus-com";
 ```
 
 ### 使用UI (ui属性，可调用方法参数，进入源文件自行查看，里面详细注解)：
-##### BaseComponent(来自react-native-navigation-cus) 用于继承导航属性;这个组件中的方法都是"静态和动态"两种调用方式
+##### BaseComponent(来自[react-native-navigation-cus](https://github.com/gegeyang0124/react-native-navigation-cus)) 用于继承导航属性;这个组件中的方法都是"静态和动态"两种调用方式
 ```javascript
 this.goPage();//跳转页面
 BaseComponent.goPage();//跳转页面
@@ -510,14 +511,14 @@ this.getPageParams();//获取页面跳转传递的参数
 import {ViewTitle} from "react-native-lib-cus-com";
 ```
 
-##### VideoView 视频播放组件 ui控件
+##### VideoView 视频播放组件 ui控件 [react-native-video](https://github.com/brentvatne/react-native-video)
 <img src="./showImg/video.png"  height="auto" width="400" />
 
 ```javascript
 import {VideoView} from "react-native-lib-cus-com";
 ```
 
-##### VideoList 视频播放组控件，支持水平或竖直方向排布 ui控件
+##### VideoList 视频播放组控件（基于VideoView），支持水平或竖直方向排布 ui控件
 ```javascript
 import {VideoList} from "react-native-lib-cus-com";
 ```
@@ -529,7 +530,7 @@ import {VideoList} from "react-native-lib-cus-com";
 import {WebViewCus} from "react-native-lib-cus-com";
 ```
 
-##### DatePicker 日期选择组件
+##### DatePicker 日期选择组件 [react-native-datepicker](https://github.com/xgfe/react-native-datepicker)
 <p>
 <img src="./showImg/datePickAndroid.gif"  height="auto" width="400" />
 <img src="./showImg/datePickIos.gif"  height="auto" width="400" />
@@ -548,7 +549,7 @@ import {ButtonTime} from "react-native-lib-cus-com";
 import {ViewCtrl} from "react-native-lib-cus-com";
 ```
 
-##### DropdownBox 下拉框 支持单选和多选 基础组件
+##### DropdownBox 下拉框 支持单选和多选 基础组件 [react-native-dropdown-select](https://github.com/gegeyang0124/react-native-dropdown-select)
 ```javascript
 import {DropdownBox} from "react-native-lib-cus-com";
 ```
@@ -570,14 +571,14 @@ import {PickDropdown} from "react-native-lib-cus-com";
 import {PickDropdownMonth} from "react-native-lib-cus-com";
 ```
 
-##### Progress 进度加载条
+##### Progress 进度加载条 [react-native-spinkit](https://github.com/maxs15/react-native-spinkit)
 <img src="./showImg/progressLoad.png"  height="auto" width="400" />
 
 ```javascript
 import {Progress} from "react-native-lib-cus-com";
 ```
 
-##### ProgressPer  进度条 显示进度
+##### ProgressPer  进度条 显示进度 [react-native-progress](https://github.com/oblador/react-native-progress)
 <img src="./showImg/progressPer.png"  height="auto" width="400" />
 
 ```javascript
@@ -617,6 +618,8 @@ import {ButtonChange} from "react-native-lib-cus-com";
 ```
 
 ##### ImageView 查看大图
+<img src="./showImg/imgView.png"  height="auto" width="400" />
+
 ```javascript
 import {ImageView} from "react-native-lib-cus-com";
 ```
@@ -627,6 +630,8 @@ import {ImageList} from "react-native-lib-cus-com";
 ```
 
 ##### BarcodeView 二维码及条形码扫描组件
+![](./showImg/barcode.gif)
+
 ```javascript
 import React, {Component} from 'react';
 import {
@@ -672,7 +677,7 @@ const styles = StyleSheetAdapt.create({
 });
 ```
 
-##### MenuBottom 底部菜单ui
+##### MenuBottom 底部菜单ui (ui效果，与组件MenuBottomApi一样)
 ```javascript
 import {MenuBottom} from "react-native-lib-cus-com";
 <MenuBottom ref={c=>this.menuBottom=c}
@@ -683,6 +688,8 @@ this.menuBottom.show(true);
 ```
 
 ##### SlideMenuDrawer   侧滑菜单 控件
+![](./showImg/slideMenuDrawer.gif)
+
 ```javascript
 import {SlideMenuDrawer} from "react-native-lib-cus-com";
 ```

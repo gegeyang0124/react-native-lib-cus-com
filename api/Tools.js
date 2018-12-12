@@ -34,6 +34,7 @@ const {
     mainBundleFilePath,
     HotUpdate,
 } = Components.react_native_update_js;
+const HotUpdate = Components.react_native_update;
 //import Record from 'react-native-record-sound';
 
 const screen = Dimensions.get('window');
@@ -107,13 +108,45 @@ export class Tools {
 
                     LocalStorage.get(this.app_config.versionkey)
                         .then((reponseJson) => {
+
+                            let v = this.app_config.version;
                             if(reponseJson == null || !Tools.isCurStruct){
+                                this.app_config.version = v;
+                            }
+                            else {
+                                if (typeof reponseJson == 'object') {
+                                    if (reponseJson.rnUpdate) {
+                                        if (HotUpdate.currentVersion) {
+                                            if (reponseJson.hash == HotUpdate.currentVersion) {
+                                                v = reponseJson.version;
+                                                reponseJson.versionLast = v;
+                                            }
+                                            else {
+                                                v = reponseJson.versionLast;
+                                                reponseJson.version = v;
+                                            }
+
+                                            LocalStorage.save(this.app_config.versionkey, reponseJson);
+                                        }
+                                    }
+                                    else {
+                                        v = currentVersion ? currentVersion : v;
+                                    }
+                                }
+                                else {
+                                    v = reponseJson;
+                                }
+
+                                this.app_config.version = v;
+                            }
+
+                           /* if(reponseJson == null || !Tools.isCurStruct){
                                 // this.app_config.version = "2.0.4";
                             }
                             else
                             {
                                 this.app_config.version = reponseJson;
-                            }
+                            }*/
                         });
 
                     // console.info("reponseJson:"+Tools.isCurStruct,reponseJson);

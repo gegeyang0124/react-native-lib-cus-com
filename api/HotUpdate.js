@@ -140,7 +140,9 @@ export class HotUpdate{
                 LocalStorage.save(Tools.app_config.versionkey,
                     {
                         version:info.name,
-                        rnUpdate:true
+                        rnUpdate:true,
+                        versionLast:Tools.app_config.version,
+                        hash:hash
                     }).then((dataSave)=>{
 
                     switch (reboot)
@@ -170,7 +172,9 @@ export class HotUpdate{
                                         LocalStorage.save(Tools.app_config.versionkey,
                                             {
                                                 version:Tools.app_config.version,
-                                                rnUpdate:true
+                                                rnUpdate:true,
+                                                versionLast:Tools.app_config.version,
+                                                hash:hash
                                             });
                                         HotUpdate.updateDelay();
                                         cd&&cd();

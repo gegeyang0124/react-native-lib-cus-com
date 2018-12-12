@@ -3,7 +3,10 @@ import PropTypes  from 'prop-types';
 import {
     Modal,
 } from 'react-native';
-import PhotoBrowser from 'react-native-photo-browser';
+/**
+ * react-native-photo-browser已修改底层，将FullScreenContainer文件中的ListView组件替换成FlatList组件
+ * **/
+import PhotoBrowser from 'react-native-img-browser';
 import {
     Tools,
     DbMgr,

@@ -617,7 +617,7 @@ import {ImageBg} from "react-native-lib-cus-com";
 import {ButtonChange} from "react-native-lib-cus-com";
 ```
 
-##### ImageView 查看大图
+##### ImageView 查看大图 基于[react-native-image-zoom-viewer](https://github.com/ascoders/react-native-image-viewer)
 <img src="./showImg/imgView.png"  height="auto" width="400" />
 
 ```javascript
@@ -629,7 +629,7 @@ import {ImageView} from "react-native-lib-cus-com";
 import {ImageList} from "react-native-lib-cus-com";
 ```
 
-##### BarcodeView 二维码及条形码扫描组件
+##### BarcodeView 二维码及条形码扫描组件 基于[react-native-smart-barcode](https://github.com/react-native-component/react-native-smart-barcode)
 ![](./showImg/barcode.gif)
 
 ```javascript
@@ -687,19 +687,23 @@ onPress={item=>{}}
 this.menuBottom.show(true);
 ```
 
-##### SlideMenuDrawer   侧滑菜单 控件
+##### SlideMenuDrawer   侧滑菜单 控件 基于[react-native-side-menu](https://github.com/react-native-community/react-native-side-menu)
 ![](./showImg/slideMenuDrawer.gif)
 
 ```javascript
 import {SlideMenuDrawer} from "react-native-lib-cus-com";
 ```
 
-##### SwiperImage 图片轮播图
+##### SwiperImage 图片轮播图 基于[react-native-swipe-cus](https://github.com/gegeyang0124/react-native-swipe-cus)
+<img src="./showImg/swiperImage.jpg"  height="auto" width="400" />
+
 ```javascript
 import {SwiperImage} from "react-native-lib-cus-com";
 ```
 
-##### SwiperNotice 公告轮播 图片和一些文本信息
+##### SwiperNotice 公告轮播 图片和一些文本信息 [react-native-swipe-cus](https://github.com/gegeyang0124/react-native-swipe-cus)
+<img src="./showImg/swiperNotice.png"  height="auto" width="400" />
+
 ```javascript
 import {SwiperNotice} from "react-native-lib-cus-com";
 ```
@@ -710,31 +714,44 @@ import {TextChange} from "react-native-lib-cus-com";
 ```
 
 ##### TextDoubleIcon 双文本并且右边有个图标 控件
+<img src="./showImg/textDoubleIcon.jpg"  height="auto" width="400" />
+
 ```javascript
 import {TextDoubleIcon} from "react-native-lib-cus-com";
 ```
 
 ##### TextInputIcon 左边带图标的输入框 控件
+<img src="./showImg/textInputIcon.jpg"  height="auto" width="400" />
+
 ```javascript
 import {TextInputIcon} from "react-native-lib-cus-com";
 ```
 
 ##### TextInputLabel 带文字label 的输入框的输入框 控件
+<img src="./showImg/TextInputLabel1.jpg"  height="auto" width="400" /> <BR/>
+<img src="./showImg/TextInputLabel2.jpg" />
+
 ```javascript
 import {TextInputLabel} from "react-native-lib-cus-com";
 ```
 
 ##### TextIcon 左边带图标的文本 控件
+<img src="./showImg/TextIcon.jpg" />
+
 ```javascript
 import {TextIcon} from "react-native-lib-cus-com";
 ```
 
-##### TextIconBg 圆进程可以放底图 中间可放进度百分比 控件
+##### TextIconBg 圆进程,可以放底图 中间可放进度百分比、其他文本、 控件
+<img src="./showImg/TextIconBg.jpg" />
+
 ```javascript
 import {TextIconBg} from "react-native-lib-cus-com";
 ```
 
 ##### TitleRow 左边具有按钮logo的UI 右边具有按钮 中间具有按钮UI控件
+<img src="./showImg/TitleRow.jpg" />
+
 ```javascript
 import {TitleRow} from "react-native-lib-cus-com";
 ```
@@ -745,46 +762,62 @@ import {TitleBlock} from "react-native-lib-cus-com";
 ```
 
 ##### TitleBlockList TitleBlock的列表
+<img src="./showImg/TitleBlockList.jpg" />
+
 ```javascript
 import {TitleBlockList} from "react-native-lib-cus-com";
 ```
 
 ##### ModalTextInput  弹出输入内容框，如反馈评价等；（有一个评分输入，和一个评语输入）
+<img src="./showImg/ModalTextInput.jpg" />
+
 ```javascript
 import {ModalTextInput} from "react-native-lib-cus-com";
 ```
 
-##### ModalTextInputS  弹出输入内容框，如反馈评价等；（一个评语输入）
+##### ModalTextInputS  弹出输入内容框，如反馈评价等；（一个评语输入） （ui效果与ModalTextInput一样）
 ```javascript
 import {ModalTextInputS} from "react-native-lib-cus-com";
 ```
 
-##### ModalTextInputS 行选择，默认垂直(或水平)显示选项选择,(单选或多选)
-```javascript
-import {ModalTextInputS} from "react-native-lib-cus-com";
-```
+##### ScrollSelectOptions 行选择，默认垂直(或水平)显示选项选择,(单选或多选)
+<img src="./showImg/ScrollSelectOptions.jpg" />
 
-##### ScrollSelectOptions  左边具有标题的提示的UI 右边具有标识或UI的 UI控件
 ```javascript
 import {ScrollSelectOptions} from "react-native-lib-cus-com";
 ```
 
+##### ItemRowTitle  左边具有标题的提示的UI 右边具有标识或UI的 UI控件
+<img src="./showImg/ItemRowTitle.jpg" />
+
+```javascript
+import {ItemRowTitle} from "react-native-lib-cus-com";
+```
+
 ##### ScrollViewRowList  分组的带图片的ui 上部有title的文本，下边是主体有图片，图片下边有文本 支持一行多个或竖直多个
+<img src="./showImg/ScrollViewRowList.jpg" />
+
 ```javascript
 import {ScrollViewRowList} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowSwitch 具有ItemRowTitle提示的下拉展示控件框 直接封装有打开文件
+<img src="./showImg/ItemRowSwitch.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ItemRowSwitch} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowTableSwitch 具有ItemRowTitle提示的下拉展示控件框
+<img src="./showImg/ItemRowTableSwitch.jpg" />
+
 ```javascript
 import {ItemRowTableSwitch} from "react-native-lib-cus-com";
 ```
 
 ##### ImageBrower 图片浏览UI，可以多个图片 缩略图和大图皆支持
+<img src="./showImg/ImageBrower.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ImageBrower} from "react-native-lib-cus-com";
 ```

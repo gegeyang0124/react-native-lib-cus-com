@@ -20,7 +20,7 @@ const RN = require('react-native');
 const Img = RN.Image;
 
 /**
- * 圆进程可以放底图 中间可放进度百分比 控件
+ *  圆进程,可以放底图 中间可放进度百分比、其他文本、 控件
  */
 export class TextIconBg extends Component {
 

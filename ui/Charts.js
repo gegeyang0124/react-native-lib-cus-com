@@ -65,7 +65,7 @@ const TextSvg = SvgArt.Text;*/
     VictoryPie,
 } from "victory-native";*/
 
-import Echarts from 'native-echarts-zy';
+import Echarts from 'react-native-echarts-cus';
 import {Components} from "./../StackComponent";
 const LinearGradient = Components.react_native_linear_gradient;
 const {

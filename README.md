@@ -815,7 +815,7 @@ import {ItemRowSwitch} from "react-native-lib-cus-com";
 import {ItemRowTableSwitch} from "react-native-lib-cus-com";
 ```
 
-##### ImageBrower 图片浏览UI，可以多个图片 缩略图和大图皆支持
+##### ImageBrower 图片浏览UI，可以多个图片 缩略图和大图皆支持 基于[react-native-img-browser](https://github.com/gegeyang0124/react-native-img-browser)
 <img src="./showImg/ImageBrower.jpg"  height="auto" width="400" />
 
 ```javascript
@@ -827,15 +827,24 @@ import {ImageBrower} from "react-native-lib-cus-com";
 ```
 
 ##### Charts 图表
+<Charts.BarHorizontal /><BR/>
+<img src="./showImg/BarHorizontal.png"  height="auto" width="400" /><BR/>
+<Charts.BarHorizontal2 />  <Charts.BarHorizontal3 /> <Charts.BarCircleChart /><BR/>
+<img src="./showImg/ResultProgressBlock.jpg"  height="auto" width="400" /><BR/>
+<Charts.BarCharts /> <BR/>
+<img src="./showImg/BarCharts.jpg"  height="auto" width="400" /> <BR/>
+<Charts.Chart /> 基于[react-native-echarts-cus](https://github.com/gegeyang0124/react-native-echarts-cus)
+
 ```javascript
 import {Charts} from "react-native-lib-cus-com";
-<Charts.BarHorizontal /> //水平渐变柱状图 双层颜色变化
+<Charts.BarHorizontal /> //水平渐变柱状图 双层颜色变化 无文字
 <Charts.BarHorizontal2 /> //水平渐变柱状图2 左右有文字提示 中间相对比变化的进度对比条
 <Charts.BarHorizontal3 /> //水平渐变柱状图3 可有多条BarHorizontal2
 <Charts.BarCircleGradient /> //圆形渐变图
 <Charts.BarCircleChart /> //圆形加载图 4圆 中间有显示文本（Native实现）
-<Charts.Chart /> //echarts图表 图形类型：柱状图，饼图，饼图
 <Charts.BarCharts /> //柱状图（Native实现）
+
+<Charts.Chart /> //echarts图表 图形类型：柱状图，饼图，饼图；
 ```
 
 ##### ImageViewWatermark  固定图片水印模版UI 水印在左下角
@@ -913,6 +922,8 @@ import {ChartCircleProgressList} from "react-native-lib-cus-com";
 ```
 
 ##### ResultProgressBlock  业务进度块 类似于进度对比表，有显示的基本内容，还有条状的对比图
+<img src="./showImg/ResultProgressBlock.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ResultProgressBlock} from "react-native-lib-cus-com";
 ```

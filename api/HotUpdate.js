@@ -102,6 +102,8 @@ export class HotUpdate{
     }
 
     static updateDelay(toast=true){
+        HotUpdate.update.execute = true;
+        return;
         if(!HotUpdate.timer){
             toast?Tools.toast("更新询问延迟1分钟！"):null;
             HotUpdate.timer = setTimeout(()=>{
@@ -148,61 +150,66 @@ export class HotUpdate{
                     switch (reboot)
                     {
                         case HotUpdate.update.reboot1:{
-                            Alert.alert('提示', '下载完毕,是否重启应用?', [
-                                {text: '是', onPress: ()=>{
-                                        HotUpdateJs.HotUpdate
-                                            ? HotUpdateJs.HotUpdate.setPreferData("rnUpdate","true")
-                                            : null;
-                                        Tools.cutLogin = true;
-                                        if(!Tools.isCurStruct){
-                                            LocalStorage.save(packageVersion,
-                                                packageVersion)
-                                                .then((dataSave)=>{
-                                                    switchVersion(hash);
-                                                });
-                                        }
-                                        else
-                                        {
-                                            switchVersion(hash);
-                                        }
-                                    }},
-                                {text: '否', onPress:()=>{
-                                        HotUpdate.update.versionHash = info.hash;
-                                        // HotUpdate.update.execute = true;
-                                        LocalStorage.save(Tools.app_config.versionkey,
+                            if(HotUpdate.update.versionHash !== hash){
+                                Alert.alert('提示', '下载完毕,是否重启应用?', [
+                                    {text: '是', onPress: ()=>{
+                                            HotUpdateJs.HotUpdate
+                                                ? HotUpdateJs.HotUpdate.setPreferData("rnUpdate","true")
+                                                : null;
+                                            Tools.cutLogin = true;
+                                            if(!Tools.isCurStruct){
+                                                LocalStorage.save(packageVersion,
+                                                    packageVersion)
+                                                    .then((dataSave)=>{
+                                                        switchVersion(hash);
+                                                    });
+                                            }
+                                            else
                                             {
-                                                version:Tools.app_config.version,
-                                                rnUpdate:true,
-                                                versionLast:Tools.app_config.version,
-                                                hash:hash
-                                            });
-                                        HotUpdate.updateDelay();
-                                        cd&&cd();
-
-                                    }
-                                },
-                                {text: '下次启动时更新', onPress: ()=>{
-                                        HotUpdateJs.HotUpdate
-                                            ? HotUpdateJs.HotUpdate.setPreferData("rnUpdate","true")
-                                            : null;
-                                        HotUpdate.update.versionHash = info.hash;
-                                        HotUpdate.update.execute = true;
-                                        if(!Tools.isCurStruct){
-                                            LocalStorage.save(packageVersion,
-                                                packageVersion)
-                                                .then((dataSave)=>{
-                                                    switchVersionLater(hash);
-                                                    cd&&cd();
+                                                switchVersion(hash);
+                                            }
+                                        }},
+                                    {text: '否', onPress:()=>{
+                                            // HotUpdate.update.versionHash = info.hash;
+                                            HotUpdate.update.versionHash = hash;
+                                            // HotUpdate.update.execute = true;
+                                            LocalStorage.save(Tools.app_config.versionkey,
+                                                {
+                                                    version:Tools.app_config.version,
+                                                    rnUpdate:true,
+                                                    versionLast:Tools.app_config.version,
+                                                    hash:hash
                                                 });
-                                        }
-                                        else
-                                        {
-                                            switchVersionLater(hash);
+                                            HotUpdate.updateDelay();
                                             cd&&cd();
+
                                         }
-                                    }
-                                },
-                            ]);
+                                    },
+                                    {text: '下次启动时更新', onPress: ()=>{
+                                            HotUpdateJs.HotUpdate
+                                                ? HotUpdateJs.HotUpdate.setPreferData("rnUpdate","true")
+                                                : null;
+                                            HotUpdate.update.versionHash = hash;
+                                            // HotUpdate.update.versionHash = info.hash;
+                                            HotUpdate.update.execute = true;
+                                            if(!Tools.isCurStruct){
+                                                LocalStorage.save(packageVersion,
+                                                    packageVersion)
+                                                    .then((dataSave)=>{
+                                                        switchVersionLater(hash);
+                                                        cd&&cd();
+                                                    });
+                                            }
+                                            else
+                                            {
+                                                switchVersionLater(hash);
+                                                cd&&cd();
+                                            }
+                                        }
+                                    },
+                                ]);
+                            }
+
                             break;
                         }
                         case HotUpdate.update.reboot2:{
@@ -231,7 +238,8 @@ export class HotUpdate{
                             if(info.metaInfo.finishInfo){
                                 Alert.alert("更新完成",info.metaInfo.finishInfo+"");
                             }
-                            HotUpdate.update.versionHash = info.hash;
+                            // HotUpdate.update.versionHash = info.hash;
+                            HotUpdate.update.versionHash = hash;
                             HotUpdate.update.execute = true;
                             if(!Tools.isCurStruct){
                                 LocalStorage.save(packageVersion,
@@ -330,22 +338,25 @@ export class HotUpdate{
                         switch (info.metaInfo.code)
                         {
                             case HotUpdate.update.code1:{
-                                Alert.alert('提示', '应用版本已更新,请前往应用商店下载新的版本', [
-                                    {text: '确定', onPress: ()=>{
-                                            HotUpdate.update.versionHash = info.hash;
-                                            // HotUpdate.update.execute = true;
-                                            HotUpdate.updateDelay(false);
-                                            info.downloadUrl && Linking.openURL(info.downloadUrl);
-                                        }
-                                    },
-                                    {text: '取消', onPress: ()=>{
-                                            HotUpdate.update.versionHash = info.hash;
-                                            // HotUpdate.update.execute = true;
-                                            cd&&cd();
-                                            HotUpdate.updateDelay();
-                                        }
-                                    },
-                                ]);
+                                if(HotUpdate.update.versionHash != info.downloadUrl)
+                                {
+                                    Alert.alert('提示', '应用版本已更新,请前往应用商店下载新的版本', [
+                                        {text: '确定', onPress: ()=>{
+
+                                                // HotUpdate.update.execute = true;
+                                                HotUpdate.updateDelay(false);
+                                                info.downloadUrl && Linking.openURL(info.downloadUrl);
+                                            }
+                                        },
+                                        {text: '取消', onPress: ()=>{
+                                                HotUpdate.update.versionHash = info.downloadUrl;
+                                                // HotUpdate.update.execute = true;
+                                                cd&&cd();
+                                                HotUpdate.updateDelay();
+                                            }
+                                        },
+                                    ]);
+                                }
 
                                 break;
                             }
@@ -377,7 +388,7 @@ export class HotUpdate{
                         let update = false;
                         if(info.metaInfo.updateList){
                             info.metaInfo.updateList.forEach((v)=>{
-                                if((userInfo.userid + '') == (v + '')){
+                                if((userInfo.id + '') == (v + '')){
                                     update = true;
                                 }
                             });
@@ -389,7 +400,7 @@ export class HotUpdate{
 
                         if(info.metaInfo.updateNoList){
                             info.metaInfo.updateNoList.forEach((v)=>{
-                                if((userInfo.userid + '') == (v + '')){
+                                if((userInfo.id + '') == (v + '')){
                                     update = false;
                                 }
                             });

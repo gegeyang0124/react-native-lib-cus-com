@@ -214,7 +214,9 @@ DbMgr.executeSql();//执行sql
  * HotUpdateCus 热更新，提供热更新各种方法
  * metaInfo(元信息)：{
 updateList:[],//更新appID集合（appID集合）//不传字段，则所有app将收到更新信息，传了空数组则所有app不会收到更新信息
+              //如：updateList：[12,123,"vb"];
 updateNoList:[],//不更新appID集合（appID集合）//updateNoList中含的appID的app将不会收到更新信息;不传或传空数组则所有app更新
+                 //如：updateNoList：[12,123,"vb"];
 code:777,//777、立刻更新；888、立刻强制更新；999、立刻静默更新
 reboot:555,//666、强制使用更新；555、用户决定是否使用更新;333、下次启用更新 默认是555
 finishInfo:'',//更新完成时的提示信息reboot=333时有效
@@ -226,6 +228,7 @@ import {HotUpdateCus} from "react-native-lib-cus-com";
 HotUpdateCus.host = null;//热更新配置文件地址或接口，//get请求
 HotUpdateCus.tag = null;//热更新的标志 与后台配置一致
 HotUpdateCus.appID = null;//给每个app的唯一标识,可以是任何数据，必须传入，用于判断是否需要更新，与updateList、updateNoList配套使用
+                          //如：HotUpdateCus.appID = 12
 HotUpdateCus.updateFirst = true;//app第一次启动是否强制更新，默认true更新
 
 HotUpdateCus.update.execute = true;//是否启动检查更新

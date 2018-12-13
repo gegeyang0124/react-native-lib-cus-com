@@ -47,6 +47,8 @@ export class HotUpdateCus{
         reboot3:333,//666、强制使用更新；555、用户决定是否使用更新;333、下次启用更新 默认是555
         execute:false,//是否监听更新
         version:currentVersion,//当前已更新的版本号
+
+        hasVersion:null,//已经更新或拒绝的更新版本的
     }
     static timer = null;
 
@@ -110,23 +112,27 @@ export class HotUpdateCus{
                         cdUpdate&&cdUpdate();
                         if(HotUpdateCus.isHasUpdate(info)){
                             HotUpdateCus.update.execute = false;
+
                             switch (info.metaInfo.code)
                             {
                                 case HotUpdateCus.update.code1:{
+                                    if(HotUpdateCus.update.hasVersion != info.packageVersion){
+                                        Alert.alert('检查到新的静态版本'+info.packageVersion+'\n是否下载?',
+                                            info.description, [
+                                                {text: '确定', onPress: ()=>{
+                                                        HotUpdateCus.updateDelay(false);
+                                                        HotUpdate.downloadUpdate();
+                                                    }
+                                                },
+                                                {text: '取消', onPress: ()=>{
+                                                        HotUpdateCus.update.hasVersion = info.packageVersion;
+                                                        HotUpdateCus.updateDelay();
+                                                        cd&&cd();
 
-                                    Alert.alert('检查到新的静态版本'+info.packageVersion+'\n是否下载?',
-                                        info.description, [
-                                            {text: '确定', onPress: ()=>{
-                                                    HotUpdateCus.updateDelay(false);
-                                                    HotUpdate.downloadUpdate();
-                                                }
-                                            },
-                                            {text: '取消', onPress: ()=>{
-                                                    cd&&cd();
-                                                    HotUpdateCus.updateDelay();
-                                                }
-                                            },
-                                        ]);
+                                                    }
+                                                },
+                                            ]);
+                                    }
 
                                     break;
                                 }
@@ -136,6 +142,7 @@ export class HotUpdateCus{
                                     break;
                                 }
                             }
+
                         }
 
                     }
@@ -160,20 +167,23 @@ export class HotUpdateCus{
                             {
                                 case HotUpdateCus.update.code1: {
                                     cdUpdate&&cdUpdate();
-                                    // if(HotUpdateCus.update.version !== info.version){
-                                    if(build == null || info.build > build){
-                                        Alert.alert('检查到新的版本'+info.version+'\n是否下载?',
-                                            info.description, [
-                                                {text: '是', onPress: ()=>{
+                                    if(HotUpdateCus.update.hasVersion != info.build){
+                                        // if(HotUpdateCus.update.version !== info.version){
+                                        if(build == null || info.build > build){
+                                            Alert.alert('检查到新的版本'+info.version+'\n是否下载?',
+                                                info.description, [
+                                                    {text: '是', onPress: ()=>{
 
-                                                        HotUpdateCus.doUpdate(info,cd,info.metaInfo.reboot);
-                                                    }},
-                                                {text: '否', onPress:()=>{
-                                                        HotUpdateCus.updateDelay();
-                                                        cd&&cd();
-                                                    }
-                                                },
-                                            ]);
+                                                            HotUpdateCus.doUpdate(info,cd,info.metaInfo.reboot);
+                                                        }},
+                                                    {text: '否', onPress:()=>{
+                                                            HotUpdateCus.updateDelay();
+                                                            HotUpdateCus.update.hasVersion = info.build;
+                                                            cd&&cd();
+                                                        }
+                                                    },
+                                                ]);
+                                        }
                                     }
 
                                     break;
@@ -191,6 +201,7 @@ export class HotUpdateCus{
                                     break;
                                 }
                             }
+
                         },cd);
                     }
                 }
@@ -276,6 +287,9 @@ export class HotUpdateCus{
      * @parma toast bool,//是否提示信息
      * **/
     static updateDelay(toast=true){
+        HotUpdateCus.update.execute = true;
+        return;
+
         if(!HotUpdateCus.timer){
             toast?Tools.toast("更新询问延迟1分钟！"):null;
             HotUpdateCus.timer = setTimeout(()=>{
@@ -306,53 +320,58 @@ export class HotUpdateCus{
                 switch (reboot)
                 {
                     case HotUpdateCus.update.reboot1:{
-                        Alert.alert('提示', '下载完毕,是否重启应用?', [
-                            {text: '是', onPress: ()=>{
-                                    HotUpdate.setPreferData("rnUpdate","false");
-                                    Tools.cutLogin = true;
-                                    if(!Tools.isCurStruct){
-                                        LocalStorage.save(packageVersion,
-                                            packageVersion)
-                                            .then((dataSave)=>{
-                                                HotUpdate.doUpdate(info);
-                                            });
-                                    }
-                                    else
-                                    {
-                                        HotUpdate.doUpdate(info);
-                                    }
-                                }},
-                            {text: '否', onPress:()=>{
-                                    LocalStorage.save(Tools.app_config.versionkey,
+                        if(HotUpdateCus.update.hasVersion != info.build){
+                            Alert.alert('提示', '下载完毕,是否重启应用?', [
+                                {text: '是', onPress: ()=>{
+                                        HotUpdate.setPreferData("rnUpdate","false");
+                                        Tools.cutLogin = true;
+                                        if(!Tools.isCurStruct){
+                                            LocalStorage.save(packageVersion,
+                                                packageVersion)
+                                                .then((dataSave)=>{
+                                                    HotUpdate.doUpdate(info);
+                                                });
+                                        }
+                                        else
                                         {
-                                            version:Tools.app_config.version,
-                                            rnUpdate:false
-                                        });
-                                    HotUpdateCus.updateDelay();
-                                    cd&&cd();
-
-                                }
-                            },
-                            {text: '下次启动时更新', onPress: ()=>{
-                                    HotUpdate.setPreferData("rnUpdate","false");
-                                    HotUpdateCus.update.version = info.version;
-                                    HotUpdateCus.update.execute = true;
-                                    if(!Tools.isCurStruct){
-                                        LocalStorage.save(packageVersion,
-                                            packageVersion)
-                                            .then((dataSave)=>{
-                                                HotUpdate.doUpdate(info,false);
-                                                cd&&cd();
+                                            HotUpdate.doUpdate(info);
+                                        }
+                                    }},
+                                {text: '否', onPress:()=>{
+                                        LocalStorage.save(Tools.app_config.versionkey,
+                                            {
+                                                version:Tools.app_config.version,
+                                                rnUpdate:false
                                             });
-                                    }
-                                    else
-                                    {
-                                        HotUpdate.doUpdate(info,false);
+                                        HotUpdateCus.updateDelay();
+                                        HotUpdateCus.update.hasVersion = info.build;
                                         cd&&cd();
+
                                     }
-                                }
-                            },
-                        ]);
+                                },
+                                {text: '下次启动时更新', onPress: ()=>{
+                                        HotUpdate.setPreferData("rnUpdate","false");
+                                        HotUpdateCus.update.version = info.version;
+                                        HotUpdateCus.update.hasVersion = info.build;
+                                        HotUpdateCus.update.execute = true;
+                                        if(!Tools.isCurStruct){
+                                            LocalStorage.save(packageVersion,
+                                                packageVersion)
+                                                .then((dataSave)=>{
+                                                    HotUpdate.doUpdate(info,false);
+                                                    cd&&cd();
+                                                });
+                                        }
+                                        else
+                                        {
+                                            HotUpdate.doUpdate(info,false);
+                                            cd&&cd();
+                                        }
+                                    }
+                                },
+                            ]);
+                        }
+
                         break;
                     }
                     case HotUpdateCus.update.reboot2:{
@@ -378,6 +397,7 @@ export class HotUpdateCus{
                             Alert.alert("更新完成",info.metaInfo.finishInfo+"");
                         }
                         HotUpdateCus.update.version = info.version;
+                        HotUpdateCus.update.hasVersion = info.build;
                         HotUpdateCus.update.execute = true;
                         if(!Tools.isCurStruct){
                             LocalStorage.save(packageVersion,

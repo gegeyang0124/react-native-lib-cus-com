@@ -187,9 +187,6 @@ export class ImageViewWatermark extends Component {
                         // console.info("IamgeWaterMark",result);
                         this.resolve&&this.resolve(obj);
                     });
-               /* setTimeout(()=>{
-                    alert(path)
-                },0);*/
             });
     }
 
@@ -197,7 +194,10 @@ export class ImageViewWatermark extends Component {
         Tools.captureViewScreen(this.refBg,undefined,undefined,false,true)
             .then((path)=>{
                 // console.info("path","dsada")
-                const {locationInfo} = this.state;
+
+                this.onCallback(path);
+
+              /*  const {locationInfo} = this.state;
                 DbMgr.insertTableMedia([
                     path,
                     locationInfo.lat,
@@ -214,7 +214,7 @@ export class ImageViewWatermark extends Component {
                     })
                     .catch(()=>{
                         this.onCallback(path);
-                    });
+                    });*/
 
             }).catch(()=>{
         },0);

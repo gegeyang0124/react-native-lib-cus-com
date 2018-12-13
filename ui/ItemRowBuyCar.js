@@ -66,6 +66,7 @@ export class ItemRowBuyCar extends Component {
             PropTypes.string
             //React.PropTypes.instanceOf(Message)
         ]),//图标
+        isIcon:PropTypes.bool,//显示的icon图标是视频，还是图片；默认false，图片。require获取的文件时，此属性有
         text1_1:PropTypes.string,//文本 第1行第1个
         text1_2:PropTypes.string,//文本 第1行第2个
         text2_1:PropTypes.oneOfType([
@@ -145,6 +146,7 @@ export class ItemRowBuyCar extends Component {
 
     getImage(){
         const {icon} = this.props;
+        console.info("icon",icon)
         let image = null;
         if(icon){
             if(typeof(icon) == 'number'){
@@ -154,33 +156,46 @@ export class ItemRowBuyCar extends Component {
                 image = {
                     uri:icon
                 };
+            }
+            else
+            {
+                image = icon;
             }
         }
         return image;
     }
 
     renderFile(){
-        const {icon,onPressLeft,disabledPress,onPress} = this.props;
+        const {icon,isIcon,onPressLeft,disabledPress,onPress} = this.props;
         let image = null;
         let isVideo = false;
         if(icon){
             if(typeof(icon) == 'number'){
+                isVideo = isIcon;
                 image = icon
             }
             else if(typeof(icon) == 'string' && icon.indexOf('http') == 0){
                 image = {
                     uri:icon
                 };
-                if(!(icon.indexOf(".j") > -1 || icon.indexOf(".pn") > - 1)){
+                if(!(icon.toLowerCase().indexOf(".j") > -1 || icon.toLowerCase().indexOf(".pn") > - 1)){
                     isVideo = true;
                 }
+            }
+            else
+            {
+                if(!(icon.uri.toLowerCase().indexOf(".j") > -1 || icon.uri.toLowerCase().indexOf(".pn") > - 1)){
+                    isVideo = true;
+                }
+
+                image = icon;
             }
         }
 
         return(
-            isVideo&&<VideoView frameStyle={styles.itemRowLeftIcon}/>
+            isVideo&&<VideoView frameStyle={styles.itemRowLeftIcon}
+                                source={image}/>
             ||<TouchableOpacity onPress={onPressLeft||onPress}
-                                source={image}
                                 disabled={disabledPress}>
                 <Image source={image}
                        style={styles.itemRowLeftIcon}/>

@@ -851,6 +851,8 @@ import {Charts} from "react-native-lib-cus-com";
 ```
 
 ##### ImageViewWatermark  固定图片水印模版UI 水印在左下角
+<img src="./showImg/ImageViewWatermark.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ImageViewWatermark} from "react-native-lib-cus-com";
 ImageViewWatermark.show();//显示图片，有参数
@@ -860,66 +862,86 @@ this.waterMark.show();//显示图片，有参数
 ```
 
 ##### GuideImageHint 任务头部水平提示导航栏
+<img src="./showImg/GuideImageHint.jpg"  height="auto" width="400" />
+
 ```javascript
 import {GuideImageHint} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowBuyCar 购物车行元素UI,右，有勾选框、图片、文本、数量输入UI；
+<img src="./showImg/ItemRowBuyCar1.jpg"  height="auto" width="400" />
+<img src="./showImg/ItemRowBuyCar2.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ItemRowBuyCar} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowGoods 商品行组件 水平行，从左到右内容分别是，左边一张图片，中间有可支持5行竖直的文本行，其次是商品价格 最右边一个按钮（如加入购物车）
-```javascript
-import {ItemRowGoods} from "react-native-lib-cus-com";
-```
+<img src="./showImg/ItemRowGoods.jpg"  height="auto" width="400" />
 
-##### ItemRowGoods 商品行组件 水平行，从左到右内容分别是，左边一张图片，中间有可支持5行竖直的文本行，其次是商品价格 最右边一个按钮（如加入购物车）
 ```javascript
 import {ItemRowGoods} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowGoodsPromotion 促销活动Item；一张图片，图片左下角和右下角分别有一个按钮
+<img src="./showImg/ItemRowGoodsPromotion.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ItemRowGoodsPromotion} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowGuideApplyType 行选择组件，分成两部分，左边支持文本和选择框，右边是文本
+<img src="./showImg/ItemRowGuideApplyType.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ItemRowGuideApplyType} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowTripApply 出差样式UI，左边文本提示文字，右边可以是：下拉框，输入框，文本
+<img src="./showImg/ItemRowTripApply.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ItemRowTripApply} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowGuideTripApply 行单元格，一行内可支持1到7个单元格，可组合成表格。
+<img src="./showImg/ItemRowGuideTripApply.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ItemRowGuideTripApply} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowTripTask 行组件，上部是左边是title，右边是状态；像QQ一样单行可以侧滑，侧滑显示按钮
+<img src="./showImg/ItemRowTripTask.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ItemRowTripTask} from "react-native-lib-cus-com";
 ```
 
 ##### ItemRowReciew 多个ui平分一行 水平
+<img src="./showImg/ItemRowReciew.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ItemRowReciew} from "react-native-lib-cus-com";
 ```
 
 ##### BarHorizontalTitleSection 条形进度块，上部有对比条提示，左边有对比的title，主体是对比条若干
+<img src="./showImg/ResultProgressBlock.jpg"  height="auto" width="400" />
+
 ```javascript
 import {BarHorizontalTitleSection} from "react-native-lib-cus-com";
 ```
 
 ##### ChartCircleProgress 4圆进度显示Chart 中间提示进度数据 最外层时间进度，跨度1月最小单位；天 (主页业绩进度例子，左边圆圈进度)
+<img src="./showImg/ResultProgressBlock.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ChartCircleProgress} from "react-native-lib-cus-com";
 ```
 
 ##### ChartCircleProgressList  是ChartCircleProgress列表 有title （基于 ChartCircleProgress）
+<img src="./showImg/ChartCircleProgressList.jpg"  height="auto" width="400" />
+
 ```javascript
 import {ChartCircleProgressList} from "react-native-lib-cus-com";
 ```
@@ -932,26 +954,36 @@ import {ResultProgressBlock} from "react-native-lib-cus-com";
 ```
 
 ##### SearchDDDIpt  搜索组件 四个下拉框 一个输入框 一个搜索按钮
+<img src="./showImg/SearchDDDIpt.jpg"  height="auto" width="400" />
+
 ```javascript
 import {SearchDDDIpt} from "react-native-lib-cus-com";
 ```
 
 ##### SearchDropIpt  搜索组件 四个下拉框 一个输入框 一个搜索按钮
+<img src="./showImg/SearchDropIpt.jpg"  height="auto" width="400" />
+
 ```javascript
 import {SearchDropIpt} from "react-native-lib-cus-com";
 ```
 
 ##### SearchIpt  具有 输入框(或下拉框)--按钮 的搜索条件的UI
+<img src="./showImg/SearchIpt.jpg"  height="auto" width="400" />
+
 ```javascript
 import {SearchIpt} from "react-native-lib-cus-com";
 ```
 
 ##### TitleBlockTarget 目标幕模块 上部有header文本 中间有TitleBlockList 下边有TitleBlock文本提示(下左)和BarHorizontalTitleSection（对比进程 下右）
+<img src="./showImg/TitleBlockTarget.jpg"  height="auto" width="400" />
+
 ```javascript
 import {TitleBlockTarget} from "react-native-lib-cus-com";
 ```
 
 ##### TitleBlockTargetArea 区域模块 上部有header文本 中间有ResultProgressBlock（业绩进度模块） 下边有TitleBlock文本提示(下左)和BarHorizontalTitleSection（对比进程 下右）
+<img src="./showImg/TitleBlockTargetArea.jpg"  height="auto" width="400" />
+
 ```javascript
 import {TitleBlockTargetArea} from "react-native-lib-cus-com";
 ```

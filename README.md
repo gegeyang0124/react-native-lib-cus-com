@@ -66,7 +66,7 @@ react_native_fs:require("react-native-fs")
 ```javascript
 StyleSheetAdapt.create();//创建样式表单
 StyleSheetAdapt.getStyle();//得到样式属性的json对象
-StyleSheetAdapt.designSize = null;// 设置页面设计大小 可不设置 默认设计大小12寸平板电脑（{width:768,height:1024}）
+StyleSheetAdapt.designSize = {width:768,height:1024};// 设置页面设计大小 可不设置 默认设计大小12寸平板电脑（{width:768,height:1024}）
 
 //数字后面可加以下字符 若加字符，加数字后面
 //'s':随屏幕调整布局 取屏幕高或宽(主要适用于横竖屏切换)

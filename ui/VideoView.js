@@ -17,8 +17,8 @@ import {
     Tools,
 } from "../api/api";
 
-import imagePlay from 'lib-images-zy/play.png';
-import imageScreenFull from 'lib-images-zy/screenFull.png';
+import imagePlay from './../res/play.png';
+import imageScreenFull from './../res/screenFull.png';
 
 /**
  * 视频播放组件 ui控件

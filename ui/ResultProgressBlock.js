@@ -19,9 +19,9 @@ import {TextDoubleIcon} from './TextDoubleIcon';
 import {ChartCircleProgress} from './ChartCircleProgress';
 import {BarHorizontalTitleSection} from './BarHorizontalTitleSection';
 
-import laughImg from 'lib-images-zy/laughImg.png';
-import cryImg from 'lib-images-zy/cryImg.png';
-import striveImg from 'lib-images-zy/striveImg.png';
+import laughImg from './../res/laughImg.png';
+import cryImg from './../res/cryImg.png';
+import striveImg from './../res/striveImg.png';
 
 
 /**

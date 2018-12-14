@@ -10,7 +10,7 @@ import {
     Tools,
 } from "./../api/api";
 import {ButtonImage} from "./ButtonImage";
-import TriangleDown from 'lib-images-zy/triangleDown.png';
+import TriangleDown from './../res/triangleDown.png';
 
 /**
  * 下拉框 有下拉图表等，更加符合应用场景（基于DropdownBox）

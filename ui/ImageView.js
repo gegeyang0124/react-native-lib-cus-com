@@ -10,8 +10,8 @@ import {
 import ImageViewer from 'react-native-image-zoom-viewer';
 import {StyleSheetAdapt} from "../api/api";
 
-import img from 'lib-images-zy/error.png';
-import imageLeft from 'lib-images-zy/leftWhite.png';
+import img from './../res/error.png';
+import imageLeft from './../res/leftWhite.png';
 
 /**
  * 查看大图

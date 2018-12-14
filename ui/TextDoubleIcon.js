@@ -11,7 +11,7 @@ import {
     StyleSheetAdapt,
     Theme,
 } from "../api/api";
-import ImageLeft from 'lib-images-zy/rightBlack.png';
+import ImageLeft from './../res/rightBlack.png';
 
 /**
  * 双文本并且右边有个图标 控件

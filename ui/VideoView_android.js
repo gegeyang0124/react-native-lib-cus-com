@@ -15,8 +15,8 @@ import {
     Tools,
 } from "../api/api";
 
-import imagePlay from './../../res/images/play.png';
-import imageScreenFull from './../../res/images/screenFull.png';
+import imagePlay from './../res/play.png';
+import imageScreenFull from './../res/screenFull.png';
 
 export class VideoView extends PureComponent {
 

@@ -18,8 +18,8 @@ import {
     Circle,
 } from 'react-native-progress-cus';
 
-import ImageRightBlack from 'lib-images-zy/rightBlack.png';
-import ImageToSwipeRight from 'lib-images-zy/toSwipeRight.png';
+import ImageRightBlack from './../res/rightBlack.png';
+import ImageToSwipeRight from './../res/toSwipeRight.png';
 
 
 /**

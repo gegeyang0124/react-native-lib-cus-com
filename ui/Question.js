@@ -13,7 +13,7 @@ import {ImageBg} from "./ImageBg";
 
 import CheckBox from 'react-native-checkbox-cus';
 
-import ImageIconQuesNum from 'lib-images-zy/iconQuesNum.png';
+import ImageIconQuesNum from './../res/iconQuesNum.png';
 
 /**
  * 答题ui，支持单选、多选、问答；主要应用场景是调查问卷累等等

@@ -13,11 +13,11 @@ import {
 import {ButtonImage} from './ButtonImage';
 import {ImageBg} from './ImageBg';
 
-import ImageRightBlack from 'lib-images-zy/rightBlack.png';
-import ImageSatusNormal from 'lib-images-zy/statusNormal.png';
-import ImageStatusContract from 'lib-images-zy/statusContract.png';
-import ImageStatusFight from 'lib-images-zy/statusFight.png';
-import ImageCustomerLevel from "lib-images-zy/customerLevel.png";
+import ImageRightBlack from './../res/rightBlack.png';
+import ImageSatusNormal from './../res/statusNormal.png';
+import ImageStatusContract from './../res/statusContract.png';
+import ImageStatusFight from './../res/statusFight.png';
+import ImageCustomerLevel from "./../res/customerLevel.png";
 
 type Props = {};
 /**

@@ -17,15 +17,15 @@ import {
 } from "./../api/api";
 import {ImageBg} from './ImageBg';
 
-import ImageIconTaskGuide from "lib-images-zy/iconTaskGuide.png";
-import ImageIconTaskGuidePast from "lib-images-zy/iconTaskGuidePast.png";
-import ImageIconTaskGuideActive from "lib-images-zy/iconTaskGuideActive.png";
-import ImageIconTaskGuideFinish from "lib-images-zy/iconTaskGuideFinish.png";
-import ImageIconTaskGuideFinishActive from "lib-images-zy/iconTaskGuideFinishActive.png";
+import ImageIconTaskGuide from "./../res/iconTaskGuide.png";
+import ImageIconTaskGuidePast from "./../res/iconTaskGuidePast.png";
+import ImageIconTaskGuideActive from "./../res/iconTaskGuideActive.png";
+import ImageIconTaskGuideFinish from "./../res/iconTaskGuideFinish.png";
+import ImageIconTaskGuideFinishActive from "./../res/iconTaskGuideFinishActive.png";
 
-import ImageIconTaskGuideSquare from "lib-images-zy/iconTaskGuideSquare.png";
-import ImageIconTaskGuideSquarePast from "lib-images-zy/iconTaskGuideSquarePast.png";
-import ImageIconTaskGuideSquareActive from "lib-images-zy/iconTaskGuideSquareActive.png";
+import ImageIconTaskGuideSquare from "./../res/iconTaskGuideSquare.png";
+import ImageIconTaskGuideSquarePast from "./../res/iconTaskGuideSquarePast.png";
+import ImageIconTaskGuideSquareActive from "./../res/iconTaskGuideSquareActive.png";
 
 /**
  * 任务头部水平提示导航栏

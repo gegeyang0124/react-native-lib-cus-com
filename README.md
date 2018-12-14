@@ -114,7 +114,6 @@ const styles = StyleSheetAdapt.create({
 });//创建样式表单
 //StyleSheetAdapt.styleJsonAdaptConvert();//样式属性json中的值适配
 
-
 export default class Test extends BaseComponent<Props> {
 
     constructor(props) {

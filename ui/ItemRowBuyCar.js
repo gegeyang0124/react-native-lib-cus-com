@@ -18,9 +18,9 @@ import {
 } from "./../api/api";
 import {ButtonImage} from './ButtonImage';
 
-import ImageAdd from 'lib-images-zy/add.png';
-import ImageSub from 'lib-images-zy/sub.png';
-import IamgeBelowIcon from 'lib-images-zy/belowIcon.png';
+import ImageAdd from './../res/add.png';
+import ImageSub from './../res/sub.png';
+import IamgeBelowIcon from './../res/belowIcon.png';
 
 /**
  * 需要修改js封装层 leftText rightText 样式中flex去掉 ，

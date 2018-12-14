@@ -6,8 +6,8 @@ import {
     Tools,
 } from "./../api/api";
 import {ButtonImage} from "./ButtonImage";
-import LeftWhite from 'lib-images-zy/leftWhite.png';
-import add from 'lib-images-zy/add.png';
+import LeftWhite from './../res/leftWhite.png';
+import add from './../res/add.png';
 
 /**
  * 修改react-navigation@1.5.11底层
@@ -347,7 +347,8 @@ export default class BaseComponent extends PureComponent {
         else if(isStack){
             // this.pageStack.push(this.navigationer.state);
             if(StackPages){
-                BaseComponent.pageStack.push(StackPages.curPageState);
+                // this.pageStack.push(this.navigationer.state);
+                BaseComponent.pageStack.push(StackPages.curPageStateStack);
             }
             else
             {
@@ -406,7 +407,10 @@ export default class BaseComponent extends PureComponent {
         else if(isStack){
             // BaseComponent.backPage = backPage;
             if(StackPages){
-                BaseComponent.pageStack.push(StackPages.curPageState);
+                // BaseComponent.backPage = backPage;
+                // BaseComponent.pageStack.push(this.props.navigation.state);
+                // BaseComponent.pageStack.push(StackPages.curPageState);
+                BaseComponent.pageStack.push(StackPages.curPageStateStack);
             }
             else
             {
@@ -419,9 +423,13 @@ export default class BaseComponent extends PureComponent {
                 BaseComponent.pageStack.push(navState);
             }
         }
-        // console.info("BaseComponent.pageStack",BaseComponent.pageStack);
-        // console.info("StackPages.stackPagesHistory",StackPages.stackPagesHistory);
-        // console.info("StackPages.curPageState",StackPages.curPageState);
+        /*console.info("BaseComponent.pageStack",BaseComponent.pageStack);
+        console.info("StackPages.stackPagesHistory",StackPages.stackPagesHistory);
+        console.info("StackPages.curPageState",StackPages.curPageState);
+        console.info("StackPages.curPageStateStack",StackPages.curPageStateStack);
+        console.info("this.props.navigation.state",this.props.navigation.state);
+        console.info("BaseComponent.navigationer.state",BaseComponent.navigationer.state);
+*/
 
         /**
          * 修改react-navigation底层

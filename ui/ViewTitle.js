@@ -23,7 +23,7 @@ import {SlideMenuDrawer} from "./SlideMenuDrawer";
 import {ImageBrower} from "./ImageBrower";
 import {ImageViewWatermark} from "./ImageViewWatermark";
 
-import leftWhite from "lib-images-zy/leftWhite.png";
+import leftWhite from "./../res/leftWhite.png";
 
 /**
  * 导航框控件 头部有导航栏（可设置有无） 左边带返回按钮（可设置有无） 中间有title文本（可设置有无） 右边带菜单按钮（可设置有无）

@@ -22,7 +22,7 @@ import {Tools} from "../api/Tools";
 import {WebViewCus} from "./WebViewCus";
 import {TextDoubleIcon} from "./TextDoubleIcon";
 
-import IamgeBelowIcon from 'lib-images-zy/belowIcon.png';
+import IamgeBelowIcon from './../res/belowIcon.png';
 
 /**
  * 具有ItemRowTitle提示的下拉展示控件框 直接封装有打开文件

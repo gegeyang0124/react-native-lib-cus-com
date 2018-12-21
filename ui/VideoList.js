@@ -6,10 +6,8 @@ import PropTypes  from 'prop-types';
 import {
     View,
 } from 'react-native';
-import {
-    StyleSheetAdapt,
-    Theme,
-} from "./../api/api";
+import {StyleSheetAdapt} from "../api/StyleSheetAdapt";
+import {Theme} from "../api/Theme";
 import {TextChange} from "./TextChange";
 import {VideoView} from "./VideoView";
 

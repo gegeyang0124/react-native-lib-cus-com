@@ -6,16 +6,16 @@ import {
     Image,
     TouchableOpacity,
     Slider,
+    ActivityIndicator,
 } from 'react-native';
 
 // import Video from 'react-native-video';
 import {Components} from "./../StackComponent";
 const Video = Components.react_native_video;
 
-import {
-    StyleSheetAdapt,
-    Tools,
-} from "../api/api";
+
+import {StyleSheetAdapt} from "../api/StyleSheetAdapt";
+import {Tools} from "../api/Tools";
 
 import imagePlay from './../res/play.png';
 import imageScreenFull from './../res/screenFull.png';
@@ -46,7 +46,7 @@ export class VideoView extends Component {
     static defaultProps = {
         style:{
             width:StyleSheetAdapt.getWidth(200),
-            height:StyleSheetAdapt.getHeight(200),
+            height:StyleSheetAdapt.getHeight(200 * 0.75),
         },
     }
 
@@ -68,6 +68,8 @@ export class VideoView extends Component {
              imageIndex:0,//图片数据地址，第几张*/
 
             sliderWidth:{width:100},//经度指示条宽度
+
+            inditor:true,//是否开启指示器；默认true开启，false：关闭
         };
 
     }
@@ -114,9 +116,15 @@ export class VideoView extends Component {
 
                                       }}>
                         {
-                            !this.state.play ? <Image source={imagePlay}
-                                                      style={styles.iconPlay} />
+                            !inditor&&!this.state.play ? <Image source={imagePlay}
+                                                                style={styles.iconPlay} />
                                 :null
+                        }
+
+                        {
+                            inditor&&<ActivityIndicator size="large"
+                                                        color="#0000ff"
+                                                        style={styles.inditor}/>
                         }
 
                         <Video {...this.props}
@@ -138,7 +146,10 @@ export class VideoView extends Component {
                                resizeMode={'stretch'}       // 拉伸图片且不维持宽高比，直到宽高都刚好填满容器。，
                                onLoad={(data) => {
                                    //alert(JSON.stringify(data))
-                                   this.setState({ duration: data.duration });
+                                   this.setState({
+                                       duration: data.duration,
+                                       inditor:false,
+                                   });
                                }}                       // 当视频加载完毕时的回调函数
                             //onLoadStart={this.loadStart}            // 当视频开始加载时的回调函数
                                onProgress={(data) =>{
@@ -217,6 +228,11 @@ export class VideoView extends Component {
 
 
 const styles = StyleSheetAdapt.create({
+    inditor:{
+        position: "absolute",
+        zIndex: 10, //z轴方向的层级，越大越在顶部
+    },
+
     container: {
         //flex: 1,
         justifyContent: 'center',

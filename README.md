@@ -387,6 +387,14 @@ ProgressPerApi.show();//显示进度条
 ProgressPerApi.hide();//隐藏进度条
 ```
 
+##### ProgressBarApi 显示条形进度的进度条 [react-native-progress](https://github.com/oblador/react-native-progress)
+
+```javascript
+import {ProgressBarApi} from "react-native-lib-cus-com";
+ProgressBarApi.show();//显示进度条
+ProgressBarApi.hide();//隐藏进度条
+```
+
 ##### TalkingData 使用talkingdata app统计分析 可看TalkingData源文件注释 [react-native-talkingdata](https://github.com/reactnativecn/react-native-talkingdata)
 ```javascript
 本库未直接导出，若想使用，使用自行导出；

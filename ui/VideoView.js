@@ -35,6 +35,7 @@ export class VideoView extends Component {
 
         onPress:PropTypes.func,//视频点击事件
 
+        autoPlay:PropTypes.bool,//是否自动播放，默认false;true:是，false：否
     }
 
     video;//video，实例
@@ -48,6 +49,7 @@ export class VideoView extends Component {
             width:StyleSheetAdapt.getWidth(200),
             height:StyleSheetAdapt.getHeight(200 * 0.75),
         },
+        autoPlay:false,
     }
 
     // 构造
@@ -61,7 +63,8 @@ export class VideoView extends Component {
 
         // 初始状态
         this.state = {
-            play:false,//是否播放;true:是，false：否
+            play:this.props.autoPlay,//是否播放;true:是，false：否
+
             duration:0,//视频长度
             process:0,//视频进度
             /*imageUrls:[],//显示图片数组路径

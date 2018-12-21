@@ -184,7 +184,7 @@ Tools.captureViewScreen();//截屏 截取UI的图片
 Tools.toSpecifiedPageInPush = (result)=>{};//打开推送回调函数（如：跳转入指定页面）;直接赋值方法
 ```
 
-##### Alert对话框 支持图片，gif,视频（MP4）
+##### Alert对话框 支持显示图片，gif,视频（MP4）
 ![](./showImg/alr.png)
 ```javascript
 import {Alert} from "react-native-lib-cus-com";

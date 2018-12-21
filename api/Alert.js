@@ -31,6 +31,7 @@ export class Alert extends Component{
      * @param opts object,//按钮配置，与框架Alert用法一致
      * @param imgUri number/string,//可以是静态图片资源，也可是网络图片资源
      * @param isImg bool,//是否是视频，默认true：图片;false：视频；
+     * @param Alert bool,//视频是否自动播放，默认true：图片;false：视频；
      * @returns {SiblingsManager}
      */
     static alert(title,msg,btns,opts={},imgUri,isImg=true){
@@ -191,8 +192,6 @@ class AlertUI extends Component {
 
         return img;
     }
-
-
 
     render() {
         const {btnList,cancelable,msg,title,imgUri} = this.props;

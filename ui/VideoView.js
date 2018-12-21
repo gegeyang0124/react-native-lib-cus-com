@@ -145,8 +145,8 @@ export class VideoView extends Component {
                                volume={1}                   // 声音的放大倍数，0 代表没有声音，就是静音muted, 1 代表正常音量 normal，更大的数字表示放大的倍数
                                muted={false}                  // true代表静音，默认为false.
                             // resizeMode='cover'       // 视频的自适应伸缩铺放行为，
-                            //resizeMode='contain'       // 视频的自适应窗口大小，
-                               resizeMode={'stretch'}       // 拉伸图片且不维持宽高比，直到宽高都刚好填满容器。，
+                               resizeMode='contain'       // 视频的自适应窗口大小，
+                               // resizeMode={'stretch'}       // 拉伸图片且不维持宽高比，直到宽高都刚好填满容器。，
                                onLoad={(data) => {
                                    //alert(JSON.stringify(data))
                                    this.setState({

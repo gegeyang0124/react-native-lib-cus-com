@@ -5,13 +5,15 @@ import {
     Modal,
     Image,
     TouchableOpacity,
+    ActivityIndicator,
 } from 'react-native';
 
 import ImageViewer from 'react-native-image-zoom-viewer';
-import {StyleSheetAdapt} from "../api/api";
+import {StyleSheetAdapt} from "../api/StyleSheetAdapt";
 
 import img from './../res/error.png';
 import imageLeft from './../res/leftWhite.png';
+import {Theme} from "../api/Theme";
 
 /**
  * 查看大图
@@ -35,9 +37,8 @@ export class ImageView extends Component {
             visible:false,//是否显示
             imageUrls:[],//显示图片数组路径
             imageIndex:0,//图片数据地址，第几张
-
+            indicator:true,//指示器
         };
-
     }
 
     /**
@@ -63,8 +64,17 @@ export class ImageView extends Component {
           imageList.push({
               url: val,
               // Pass props to <Image />.
+              isLoad:index == i ? false : true,//是否加载 true:未加载；false：未加载
               props: {
                   // headers: ...
+                  onLoadStart:()=>{
+                      // console.info("onLoadStart","onLoadStart")
+                      //  ImageView.base.setState({indicator:true});
+                  },
+                  onLoadEnd:()=>{
+                      // console.info("onLoadEnd","onLoadEnd")
+                      ImageView.base.setState({indicator:false});
+                  }
               }
           });
        });
@@ -100,8 +110,17 @@ export class ImageView extends Component {
             imageList.push({
                 url: val,
                 // Pass props to <Image />.
+                isLoad:index == i ? false : true,//是否加载 true:未加载；false：未加载
                 props: {
                     // headers: ...
+                    onLoadStart:()=>{
+                        // console.info("onLoadStart","onLoadStart")
+                        // this.setState({indicator:true});
+                    },
+                    onLoadEnd:()=>{
+                        // console.info("onLoadEnd","onLoadEnd")
+                        this.setState({indicator:false});
+                    }
                 }
             });
         });
@@ -119,6 +138,9 @@ export class ImageView extends Component {
 
     render(){
         ImageView.base = this;
+
+        let { indicator,imageUrls,imageIndex,visible } = this.state;
+
         const renderHeader = <TouchableOpacity style={styles.iconLeft}
                                                delayPressIn={0}
                                                delayPressOut={0}
@@ -131,24 +153,34 @@ export class ImageView extends Component {
         </TouchableOpacity>;
 
         return(
-
             <Modal {...this.props}
                    animationType={"none"}
                 //ref={(component) => this.imageView = component}
                    ref="imageView"
-                   visible={this.state.visible}
+                   visible={visible}
                    onRequestClose={()=> this.onRequestClose()}>
-                <ImageViewer imageUrls={this.state.imageUrls} // 照片路径
+
+                <ImageViewer imageUrls={imageUrls} // 照片路径
                              enableImageZoom={true} // 是否开启手势缩放
-                             index={this.state.imageIndex} // 初始显示第几张
+                             index={imageIndex} // 初始显示第几张
                              failImageSource={img} // 加载失败图片
-                             onChange={(index) => {}} // 图片切换时触发
-                             renderHeader={() =>renderHeader}
-                             /*footerContainerStyle={
+                             onChange={(index) => {
+                                 if(imageUrls[index].isLoad)
                                  {
-                                     bottom: 200, //position: "absolute", zIndex: 9999
+                                     imageUrls[index].isLoad = false;
+                                     this.setState({
+                                         imageUrls:imageUrls,
+                                         imageIndex:index,
+                                         indicator:true
+                                     });
                                  }
-                             }*/
+                             }} // 图片切换时触发
+                             renderHeader={() =>renderHeader}
+                    /*footerContainerStyle={
+                        {
+                            bottom: 200, //position: "absolute", zIndex: 9999
+                        }
+                    }*/
                              onClick={() => { // 图片单击事件,我在这里设置退出
                                  /*this.setNativeProps({
                                      visible:false
@@ -161,10 +193,13 @@ export class ImageView extends Component {
                                       visible:false
                                   });*/
                                  //this.setState({visible:false});
+                             }}/>
 
-                             }}
-
-                />
+                {
+                    indicator
+                    &&<ActivityIndicator size="large"
+                                         color={Theme.Colors.themeColor}/>
+                }
             </Modal>
         );
 

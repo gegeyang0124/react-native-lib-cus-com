@@ -17,12 +17,16 @@ import {JPush} from "./JPush";
 import {TalkingData} from "./TalkingData";
 import {FileDirMgr} from "./FileDirMgr";
 import {HotUpdateCus} from "./HotUpdateCus";
+import {ImageViewApi} from "./ImageViewApi";
 
 /**
  *工具类API引入集合
  **/
 const api = {
 
+    get ImageViewApi() {
+        return ImageViewApi;
+    },
     get HotUpdateCus() {
         return HotUpdateCus;
     },

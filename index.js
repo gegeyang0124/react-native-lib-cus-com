@@ -18,7 +18,8 @@ import {
     TalkingData,
     FileDirMgr,
     HotUpdateCus,
-} from "com-api";
+    ImageViewApi,
+} from "./api/api";
 import {
     ButtonChange,
     TextInputIcon,
@@ -99,7 +100,10 @@ const compoent = {
     /**
      * API
      * **/
-    get HotUpdateCus() {
+    get ImageViewApi() {
+        return ImageViewApi;
+    },
+     get HotUpdateCus() {
         return HotUpdateCus;
     },
     get FileDirMgr() {

@@ -184,7 +184,7 @@ Tools.captureViewScreen();//截屏 截取UI的图片
 Tools.toSpecifiedPageInPush = (result)=>{};//打开推送回调函数（如：跳转入指定页面）;直接赋值方法
 ```
 
-##### Alert对话框
+##### Alert对话框 支持图片，gif,视频（MP4）
 ![](./showImg/alr.png)
 ```javascript
 import {Alert} from "react-native-lib-cus-com";
@@ -312,6 +312,16 @@ FileDirMgr.deleteDirOrFile();//删除目录或文件
 ```javascript
 import {IamgeWaterMark} from "react-native-lib-cus-com";
 IamgeWaterMark.markText();//设置水印文本
+```
+
+##### ImageViewApi 查看大图 基于[react-native-image-zoom-viewer](https://github.com/ascoders/react-native-image-viewer)
+<img src="./showImg/imgView.png"  height="auto" width="400" />
+
+```javascript
+import {ImageViewApi} from "react-native-lib-cus-com";
+
+ImageViewApi.show();//显示大图
+ImageViewApi.hide();//隐藏大图
 ```
 
 ##### JPush 极光推送类，提供极光推送的各种方法 可看JPush文件源码注释 [jpush-react-native](https://github.com/jpush/jpush-react-native)

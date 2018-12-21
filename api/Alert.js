@@ -8,15 +8,19 @@ import {
     View,
     TouchableOpacity,
     Text,
+    Image,
+    ActivityIndicator,
 } from 'react-native';
 import RootSiblings from 'react-native-root-siblings';
 
 import {StyleSheetAdapt} from "./StyleSheetAdapt";
 import {Theme} from "./Theme";
 import {TextChange} from "../ui/TextChange";
+import {ImageViewApi} from "./ImageViewApi";
+import {VideoView} from "../ui/VideoView";
 let showingDialog = null;
 
-export default class Alert extends Component{
+export class Alert extends Component{
 
 
     /**
@@ -25,66 +29,43 @@ export default class Alert extends Component{
      * @param msg msg,//信息
      * @param btns array,//按钮，与框架Alert用法一致
      * @param opts object,//按钮配置，与框架Alert用法一致
+     * @param imgUri number/string,//可以是静态图片资源，也可是网络图片资源
+     * @param isImg bool,//是否是视频，默认true：图片;false：视频；
      * @returns {SiblingsManager}
      */
-    static alert(title,msg,btns,opts={}){
+    static alert(title,msg,btns,opts={},imgUri,isImg=true){
+        opts = opts == undefined ? {} : opts;
+        btns = btns == null ? undefined : btns;
 
-        if(showingDialog != null){
-            return showingDialog;
+        let alr = <AlertUI title={title}
+                           msg={msg}
+                           imgUri={imgUri}
+                           btnList={btns}
+                           isImg={isImg}
+                           onDismiss={opts.onDismiss}
+                           cancelable={opts.cancelable}/>;
+
+        if(showingDialog == null){
+            showingDialog = new RootSiblings(alr);
         }
-
-        showingDialog = new RootSiblings(<AlertUI title={title}
-                                                  msg={msg}
-                                                  btnList={btns}
-                                                  onDismiss={opts.onDismiss}
-                                                  cancelable={opts.cancelable}/>);
-
-        /*showingDialog = new RootSiblings(<ActivityIndicatorContent
-            animated={KActivityIndicator.animated}
-            message={KActivityIndicator.message}
-        />)*/
+        else
+        {
+            showingDialog.update(alr);
+        }
 
 
         return showingDialog;
     }
 
     /**
-     * 关闭对话框
+     * 隐藏对话框
      */
     static hide(){
         if (showingDialog != null && showingDialog instanceof RootSiblings) {
-            // showingDialog.update(<ActivityIndicatorContent
-            //     animated={KActivityIndicator.animated}
-            //     message={KActivityIndicator.message}
-            //     isHide={true}
-            //
-            // />)
-            //
-            // showingDialog = null;
             showingDialog.destroy();
             showingDialog = null;
         }
 
-        // if (AIV instanceof RootSiblings) {
-        //
-        //     AIV.update(<ActivityIndicatorContent
-        //         animated={KActivityIndicator.animated}
-        //         message={KActivityIndicator.message}
-        //         isHide={true}
-        //     />)
-        // }
-    }
-
-    /**
-     * 更新对话框
-     * @param AIV 需要更新文字的菊花
-     * @param message 文字内容
-     */
-    static  updateMessage(AIV,message){
-        /* AIV.update(<ActivityIndicatorContent
-             animated={KActivityIndicator.animated}
-             message={message}
-         />)*/
     }
 
 };
@@ -96,14 +77,20 @@ class AlertUI extends Component {
         title:PropTypes.oneOfType([
             PropTypes.string,
             PropTypes.number,
-        ]),
+        ]),//提示头
         msg:PropTypes.oneOfType([
             PropTypes.string,
             PropTypes.number,
-        ]),
+        ]),//提示信息
+        imgUri:PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.number,
+        ]),//图片
         btnList:PropTypes.array,
         cancelable:PropTypes.bool,
         onDismiss:PropTypes.func,
+
+        isImg:PropTypes.bool,//是否是视频，默认true：图片;false：视频；
     }
 
     static defaultProps={
@@ -115,11 +102,19 @@ class AlertUI extends Component {
         ],
         cancelable:false,
         onDismiss:()=>{},
+        isImg:false,
     }
 
     // 构造
     constructor(props) {
-        super(props)
+        super(props);
+
+        this.state = {
+            imgUri:null,
+            imgW:300,
+            imgH:0,
+            indicator:true,
+        };
     }
 
     renderItem = (item,i)=>{
@@ -144,8 +139,66 @@ class AlertUI extends Component {
         onDismiss&&onDismiss();
     }
 
+    _getIsImage(){
+
+        const {imgUri,isImg} = this.props;
+
+        let img = true;
+
+        if(imgUri)
+        {
+            if(imgUri.constructor == String)
+            {
+                if(imgUri.toLowerCase().lastIndexOf(".mp4") > -1)
+                {
+                    img = false;
+                }
+            }
+            else
+            {
+                img = isImg;
+            }
+        }
+
+        if(img){
+            const {imgW} = this.state;
+
+            if(imgUri && !this.state.imgUri)
+            {
+                if(imgUri.constructor == String)
+                {
+                    Image.getSize(imgUri, (w,h)=>{
+                        // console.info("h",h)
+                        this.setState({
+                            imgUri:{uri:imgUri},
+                            imgH:h / w * imgW
+                        });
+                    });
+
+                }
+                else
+                {
+                    const img = Image.resolveAssetSource(imgUri);
+
+                    this.setState({
+                        imgUri:imgUri,
+                        imgH:img.height / img.width * imgW
+                    });
+
+                }
+            }
+        }
+
+        return img;
+    }
+
+
+
     render() {
-        const {btnList,cancelable,msg,title} = this.props;
+        const {btnList,cancelable,msg,title,imgUri} = this.props;
+        const {indicator,imgW,imgH} = this.state;
+
+        let isImg = this._getIsImage();
 
         return(
             <TouchableOpacity activeOpacity={0}
@@ -160,6 +213,50 @@ class AlertUI extends Component {
                             {title}
                         </Text>
                     </View>
+
+                    {
+                        !isImg&&<VideoView source={typeof imgUri == 'string'
+                            ? {uri:imgUri}
+                            : imgUri}
+                                           style={styles.video}
+                                           autoPlay={true}/>
+                    }
+
+
+                    {
+                        isImg&&imgUri&&indicator
+                        &&<ActivityIndicator size="large"
+                                             color="#0000ff"
+                                             style={styles.img}/>
+                    }
+
+                    {
+                        isImg&&imgUri
+                            ? <TouchableOpacity onPress={()=>{
+                                typeof imgUri == 'string'
+                                    ? ImageViewApi.show([imgUri])
+                                    : null;
+                            }}>
+                                <Image source={
+                                    typeof imgUri == 'string'
+                                        ? {uri:imgUri}
+                                        : imgUri}
+                                       onLoadEnd={()=>{
+                                           // console.info("dd","vv");
+                                           this.setState({indicator:false})
+                                       }}
+                                       style={[
+                                           styles.img,
+                                           StyleSheetAdapt.styleJsonAdaptConvert({
+                                               width:imgW,
+                                               // height:200,
+                                               height:indicator ? 1 : imgH,
+                                               resizeMode:"contain",
+                                           })
+                                       ]}/>
+                            </TouchableOpacity>
+                            : null
+                    }
 
                     <View style={styles.container_2}>
                         <Text style={styles.text2}>
@@ -182,15 +279,29 @@ class AlertUI extends Component {
 
 }
 
+
 const styles = StyleSheetAdapt.create({
+    video:{
+        width:300,
+        height:300 * 0.75,
+    },
+
+    img:{
+        marginTop:20,
+        // height:400,
+        // backgroundColor:"red",
+    },
+
     btn2:{
         // marginTop:20,
         width:230,
+        // width:180,
         height:40,
         // backgroundColor:Theme.Colors.backgroundColor1,
     },
     btn:{
-        flex:1,
+        // flex:1,
+        width:150,
         height:50,
         // marginTop:20,
         // backgroundColor:Theme.Colors.backgroundColor1,
@@ -230,7 +341,7 @@ const styles = StyleSheetAdapt.create({
         borderColor:Theme.Colors.appRedColor,
         borderWidth:Theme.Border.borderWidth,
         borderRadius:10,
-        width:230,
+        // width:230,
     },
 
     frame:{
@@ -245,4 +356,6 @@ const styles = StyleSheetAdapt.create({
         top:0
     },
 });
+
+
 

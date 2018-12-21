@@ -155,6 +155,7 @@ export class ImageView extends Component {
         return(
             <Modal {...this.props}
                    animationType={"none"}
+                   style={styles.container}
                 //ref={(component) => this.imageView = component}
                    ref="imageView"
                    visible={visible}
@@ -198,6 +199,7 @@ export class ImageView extends Component {
                 {
                     indicator
                     &&<ActivityIndicator size="large"
+                                         style={styles.inditor}
                                          color={Theme.Colors.themeColor}/>
                 }
             </Modal>
@@ -208,6 +210,11 @@ export class ImageView extends Component {
 }
 
 const styles = StyleSheetAdapt.create({
+    inditor:{
+        position: "absolute",
+        zIndex: 10, //z轴方向的层级，越大越在顶部
+    },
+
     container: {
         flex: 1,
         justifyContent: 'center',

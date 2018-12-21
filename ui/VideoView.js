@@ -101,7 +101,7 @@ export class VideoView extends Component {
             return null;
         }
         const {onPress} = this.props;
-        const {sliderWidth} = this.state;
+        const {sliderWidth,inditor} = this.state;
         // console.info("this.state",this.state);
 
         return(

@@ -31,10 +31,10 @@ export class Alert extends Component{
      * @param opts object,//按钮配置，与框架Alert用法一致
      * @param imgUri number/string,//可以是静态图片资源，也可是网络图片资源
      * @param isImg bool,//是否是视频，默认true：图片;false：视频；
-     * @param Alert bool,//视频是否自动播放，默认true：图片;false：视频；
+     * @param autoPlay bool,//视频是否自动播放，默认true：自动播放;false：不自动播放；
      * @returns {SiblingsManager}
      */
-    static alert(title,msg,btns,opts={},imgUri,isImg=true){
+    static alert(title,msg,btns,opts={},imgUri,isImg=true,autoPlay=true){
         opts = opts == undefined ? {} : opts;
         btns = btns == null ? undefined : btns;
 
@@ -43,6 +43,7 @@ export class Alert extends Component{
                            imgUri={imgUri}
                            btnList={btns}
                            isImg={isImg}
+                           autoPlay={autoPlay}
                            onDismiss={opts.onDismiss}
                            cancelable={opts.cancelable}/>;
 
@@ -92,6 +93,7 @@ class AlertUI extends Component {
         onDismiss:PropTypes.func,
 
         isImg:PropTypes.bool,//是否是视频，默认true：图片;false：视频；
+        autoPlay:PropTypes.bool,//是否自动播放，默认false;true:是，false：否
     }
 
     static defaultProps={
@@ -104,6 +106,7 @@ class AlertUI extends Component {
         cancelable:false,
         onDismiss:()=>{},
         isImg:false,
+        autoPlay:true,
     }
 
     // 构造
@@ -194,7 +197,7 @@ class AlertUI extends Component {
     }
 
     render() {
-        const {btnList,cancelable,msg,title,imgUri} = this.props;
+        const {btnList,cancelable,msg,title,imgUri,autoPlay} = this.props;
         const {indicator,imgW,imgH} = this.state;
 
         let isImg = this._getIsImage();
@@ -218,7 +221,7 @@ class AlertUI extends Component {
                             ? {uri:imgUri}
                             : imgUri}
                                            style={styles.video}
-                                           autoPlay={true}/>
+                                           autoPlay={autoPlay}/>
                     }
 
 
@@ -355,6 +358,4 @@ const styles = StyleSheetAdapt.create({
         top:0
     },
 });
-
-
 

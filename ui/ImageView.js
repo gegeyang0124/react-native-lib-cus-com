@@ -39,6 +39,7 @@ export class ImageView extends Component {
             imageIndex:0,//图片数据地址，第几张
             indicator:true,//指示器
         };
+
     }
 
     /**
@@ -52,32 +53,32 @@ export class ImageView extends Component {
         bool = bool == undefined ? false : bool;
         imageUrls = imageUrls == undefined ? [] : imageUrls;
         index = index == undefined ? 0 : index;
-       /* [{
-            url: 'https://avatars2.githubusercontent.com/u/7970947?v=3&s=460',
-            // Pass props to <Image />.
-            props: {
-                // headers: ...
-            }
-        }]*/
-       let imageList = [];
-       imageUrls.forEach((val,i,arr)=>{
-          imageList.push({
-              url: val,
-              // Pass props to <Image />.
-              isLoad:index == i ? false : true,//是否加载 true:未加载；false：未加载
-              props: {
-                  // headers: ...
-                  onLoadStart:()=>{
-                      // console.info("onLoadStart","onLoadStart")
-                      //  ImageView.base.setState({indicator:true});
-                  },
-                  onLoadEnd:()=>{
-                      // console.info("onLoadEnd","onLoadEnd")
-                      ImageView.base.setState({indicator:false});
-                  }
-              }
-          });
-       });
+        /* [{
+             url: 'https://avatars2.githubusercontent.com/u/7970947?v=3&s=460',
+             // Pass props to <Image />.
+             props: {
+                 // headers: ...
+             }
+         }]*/
+        let imageList = [];
+        imageUrls.forEach((val,i,arr)=>{
+            imageList.push({
+                url: val,
+                // Pass props to <Image />.
+                isLoad:index == i ? false : true,//是否加载 true:未加载；false：未加载
+                props: {
+                    // headers: ...
+                    onLoadStart:()=>{
+                        // console.info("onLoadStart","onLoadStart")
+                        //  ImageView.base.setState({indicator:true});
+                    },
+                    onLoadEnd:()=>{
+                        // console.info("onLoadEnd","onLoadEnd")
+                        ImageView.base.setState({indicator:false});
+                    }
+                }
+            });
+        });
         ImageView.base.setState({
             visible: bool,//是否显示
             imageUrls:imageList,
@@ -109,8 +110,8 @@ export class ImageView extends Component {
         imageUrls.forEach((val,i,arr)=>{
             imageList.push({
                 url: val,
-                // Pass props to <Image />.
                 isLoad:index == i ? false : true,//是否加载 true:未加载；false：未加载
+                // Pass props to <Image />.
                 props: {
                     // headers: ...
                     onLoadStart:()=>{
@@ -133,7 +134,6 @@ export class ImageView extends Component {
     }
 
     onRequestClose(){
-
     }
 
     render(){
@@ -153,10 +153,9 @@ export class ImageView extends Component {
         </TouchableOpacity>;
 
         return(
+
             <Modal {...this.props}
                    animationType={"none"}
-                   style={styles.container}
-                //ref={(component) => this.imageView = component}
                    ref="imageView"
                    visible={visible}
                    onRequestClose={()=> this.onRequestClose()}>
@@ -213,13 +212,15 @@ const styles = StyleSheetAdapt.create({
     inditor:{
         position: "absolute",
         zIndex: 10, //z轴方向的层级，越大越在顶部
+        marginTop:'0.5h',
+        marginLeft:'0.5w'
     },
 
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        //backgroundColor: '#d35400',
+        backgroundColor: 'black',
     },
     spinner: {
         marginBottom: 50

@@ -184,8 +184,8 @@ Tools.captureViewScreen();//截屏 截取UI的图片
 Tools.toSpecifiedPageInPush = (result)=>{};//打开推送回调函数（如：跳转入指定页面）;直接赋值方法
 ```
 
-##### Alert对话框 支持显示图片，gif,视频（MP4）
-![](./showImg/alr.png)
+##### Alert对话框 可支持显示图片，gif,视频（MP4）
+![](./showImg/alr.png) <img src="./showImg/alr2.jpg" width="280" height="auto">
 ```javascript
 import {Alert} from "react-native-lib-cus-com";
 Alert.alert();//显示对话框
@@ -388,6 +388,7 @@ ProgressPerApi.hide();//隐藏进度条
 ```
 
 ##### ProgressBarApi 显示条形进度的进度条 [react-native-progress](https://github.com/oblador/react-native-progress)
+<img src="./showImg/ProgressBarApi.jpg"  height="auto" width="400" />
 
 ```javascript
 import {ProgressBarApi} from "react-native-lib-cus-com";

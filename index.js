@@ -19,6 +19,7 @@ import {
     FileDirMgr,
     HotUpdateCus,
     ImageViewApi,
+    ProgressBarApi,
 } from "./api/api";
 import {
     ButtonChange,
@@ -100,10 +101,13 @@ const compoent = {
     /**
      * API
      * **/
+    get ProgressBarApi() {
+        return ProgressBarApi;
+    },
     get ImageViewApi() {
         return ImageViewApi;
     },
-     get HotUpdateCus() {
+    get HotUpdateCus() {
         return HotUpdateCus;
     },
     get FileDirMgr() {

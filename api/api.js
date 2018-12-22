@@ -18,12 +18,16 @@ import {TalkingData} from "./TalkingData";
 import {FileDirMgr} from "./FileDirMgr";
 import {HotUpdateCus} from "./HotUpdateCus";
 import {ImageViewApi} from "./ImageViewApi";
+import {ProgressBarApi} from "./ProgressBarApi";
 
 /**
  *工具类API引入集合
  **/
 const api = {
 
+    get ProgressBarApi() {
+        return ProgressBarApi;
+    },
     get ImageViewApi() {
         return ImageViewApi;
     },

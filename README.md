@@ -69,13 +69,11 @@ StyleSheetAdapt.getStyle();//得到样式属性的json对象
 StyleSheetAdapt.designSize = {width:768,height:1024};// 设置页面设计大小 可不设置 默认设计大小12寸平板电脑（{width:768,height:1024}）
 
 //数字后面可加以下字符 若加字符，加数字后面
-//'s':随屏幕调整布局 取屏幕高或宽(主要适用于横竖屏切换)
 //'dw' 获取相对当前屏幕的设计宽比的宽
 //'w' 获取相对当前屏幕宽的宽
 //'n' 不进行屏幕比缩放
 //'dh' 获取相对当前屏幕的设计高比的宽
 //'h' 获取相对当前屏幕高比的宽
-//以上字符后面加's'后会随屏幕调整布局
 //如：
 const styles = StyleSheetAdapt.create({
     testStyle2:{

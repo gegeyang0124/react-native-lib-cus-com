@@ -45,7 +45,7 @@
     "图表"
   ],
   "dependencies": {
-    "react-native-navigation-cus": "^1.0.3",
+    "react-native-navigation-cus": "^1.0.4",
     "react-native-echarts-cus": "^1.0.0",
     "react-native-img-browser": "^1.0.0",
     "react-native-storage": "^0.2.2",

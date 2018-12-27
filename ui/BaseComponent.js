@@ -26,19 +26,10 @@ export default class BaseComponent extends RN_Navigation.BaseComponent {
      };
      // 配置页面导航选项
      static navigationOptions = ({navigation}) => (BaseComponent.navOptConfigs);*/
-
-    static backData = null;//返回参数的存储字段；
-    static backRefresh = false;//返回刷新；//默认是false
-    static tmpData = null;//临时存储数据
-    static tabIndex = null;//Tab跳转tag
-
-    static pageStack = [];//成员： {key:'',routeName:'页面名',params:{传递参数}}
     static screen;
     static navigationer;
 
     static isLockScreen = false;//是否锁定屏幕 默认false 未锁定
-    static execfunc:PropTypes.func;//跳转时候执行
-    static backPage = null;//指定返回页
 
     /// 页面组件初始化时获取当前页面的实例
     constructor(props) {
@@ -175,21 +166,6 @@ export default class BaseComponent extends RN_Navigation.BaseComponent {
              Orientation.addOrientationListener(this._orientationDidChange);
              * **/
         }
-    }
-
-    /**
-     * 跳转立即执行函数
-     * **/
-    immediately = ()=>{
-        // console.log("immediately");
-        this.setScreenOrientations(0);
-        BaseComponent.execfunc&&BaseComponent.execfunc();
-    }
-    static immediately = ()=>{
-        // console.log("static immediately");
-        BaseComponent.setScreenOrientations(0);
-        BaseComponent.execfunc&&BaseComponent.execfunc()&&(BaseComponent.execfunc=null);
-
     }
 
     /**

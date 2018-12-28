@@ -10,7 +10,7 @@ react-native 自定义辅助组件库，完美适配各种机型和屏幕大小�
 杜绝了传统的记住历史页面进行的返回;
 避免从一个Tab页面组跳入到另一个Tab页面组，返回时返回到跳入之前的Tab页面组；<BR/>
 </b><BR/>
-具体使用请看下边的组件BaseComponent
+具体使用请看下边的组件BaseComponent <BR/>
 <img src="./showImg/nav.gif" width="300" height="auto">
 
 ###  安装组件：

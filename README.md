@@ -3,6 +3,15 @@ react-native 自定义辅助组件库，完美适配各种机型和屏幕大小�
 完美的网路请求，带加载条，可上传、下载文件,支持视频播放，二维码条形码扫描，
 图片选择、剪辑、查看大图，本地存储，数据库操作，页面导航，截屏和截UI图，
 水印图片，打开office类文件;等等多种ui,可自定义删除;可节省应用级软件的开发时间
+<BR/>
+<b>
+完美的页面导航跳转返回；
+每一个Tab页面组都有自己的返回逻辑，互不影响；
+杜绝了传统的记住历史页面进行的返回;
+避免从一个Tab页面组跳入到另一个Tab页面组，返回时返回到跳入之前的Tab页面组；<BR/>
+</b><BR/>
+具体使用请看下边的组件BaseComponent
+<img src="./showImg/nav.gif" width="300" height="auto">
 
 ###  安装组件：
 npm i --save react-native-lib-cus-com
@@ -409,6 +418,8 @@ import {Theme} from "react-native-lib-cus-com";
 
 ### 使用UI (ui属性，可调用方法参数，进入源文件自行查看，里面详细注解)：
 ##### BaseComponent(来自[react-native-navigation-cus](https://github.com/gegeyang0124/react-native-navigation-cus)) 用于继承导航属性;这个组件中的方法都是"静态和动态"两种调用方式
+<img src="./showImg/nav.gif" width="300" height="auto">
+
 ```javascript
 this.goPage();//跳转页面
 BaseComponent.goPage();//跳转页面

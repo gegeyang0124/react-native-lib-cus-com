@@ -12,14 +12,12 @@ import {
     TouchableOpacity,
     Image
 } from 'react-native';
-import {
-    StyleSheetAdapt,
-    Theme,
-} from "./../api/api";
+import {StyleSheetAdapt} from "./../api/StyleSheetAdapt";
+import {Theme} from "./../api/Theme";
 
 
 /**
- * 左边具有竖杠 中间上部具有大文本紧挨着右边具有较小本 大文本下边有小文本
+ * 左边具有竖杠 中间上部具有大文本(支持UI)，紧挨着右边具有较小本(支持UI)， 大文本下边有小文本(支持UI)
  * **/
 export class TitleBlock extends Component {
 
@@ -49,8 +47,9 @@ export class TitleBlock extends Component {
 
         textTop:PropTypes.oneOfType([
             PropTypes.number,
-            PropTypes.string
-        ]),//文本 上边
+            PropTypes.string,
+            PropTypes.element
+        ]),//文本或UI 上边
         textTopStyle:PropTypes.oneOfType([
             PropTypes.number,
             PropTypes.object,
@@ -58,8 +57,9 @@ export class TitleBlock extends Component {
         ]),//上边文本样式
         textDown:PropTypes.oneOfType([
             PropTypes.number,
-            PropTypes.string
-        ]),//文本 下边
+            PropTypes.string,
+            PropTypes.element
+        ]),//文本或UI 下边
         textDownStyle:PropTypes.oneOfType([
             PropTypes.number,
             PropTypes.object,
@@ -67,8 +67,9 @@ export class TitleBlock extends Component {
         ]),//下边文本样式
         textCenter:PropTypes.oneOfType([
             PropTypes.number,
-            PropTypes.string
-        ]),//文本 中间
+            PropTypes.string,
+            PropTypes.element
+        ]),//文本或ui 中间
         textCenterStyle:PropTypes.oneOfType([
             PropTypes.number,
             PropTypes.object,
@@ -125,29 +126,43 @@ export class TitleBlock extends Component {
                     isShowIconLeft&&{}||{borderLeftWidth:0},
                     textFrame]}>
                     {
-                        textTop&&<Text style={[styles.scpre_params_1_1_text,textStyle,textTopStyle]}>
-                            {textTop}
-                        </Text>
+                        textTop != undefined
+                            ? typeof textTop == 'object'
+                            ? textTop
+                            : <Text style={[styles.scpre_params_1_1_text,textStyle,textTopStyle]}>
+                                {textTop}
+                            </Text>
+                            : null
                     }
-                    <Text style={[styles.scpre_params_1_1_text,textStyle]}>
-                        <Text style={[styles.scpre_params_1_1_text_number,textCenterStyle,color&&{
-                            color:color
-                        }]}>
-                            {textCenter}
-                        </Text>
-                        {textRight}
-                    </Text>
-                    <Text style={[styles.scpre_params_1_1_text,textStyle,textDownStyle]}>
-                        {textDown}
-                    </Text>
-
+                    {
+                        textCenter == undefined
+                            ? null
+                            : typeof textCenter == 'object'
+                            ? textCenter
+                            : <Text style={[styles.scpre_params_1_1_text,textStyle]}>
+                                <Text style={[styles.scpre_params_1_1_text_number,textCenterStyle,color&&{
+                                    color:color
+                                }]}>
+                                    {textCenter}
+                                </Text>
+                                {textRight}
+                            </Text>
+                    }
+                    {
+                        textDown != undefined
+                            ? typeof textDown == 'object'
+                            ? textDown
+                            : <Text style={[styles.scpre_params_1_1_text,textStyle,textDownStyle]}>
+                                {textDown}
+                            </Text>
+                            : null
+                    }
                 </View>
                 {icon&&<Image source={icon} style={styles.image}/>}
             </TouchableOpacity>
         );
 
 
-    }
 }
 
 const styles = StyleSheetAdapt.create({

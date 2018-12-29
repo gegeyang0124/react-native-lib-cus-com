@@ -786,7 +786,7 @@ import {TextIconBg} from "react-native-lib-cus-com";
 import {TitleRow} from "react-native-lib-cus-com";
 ```
 
-##### TitleBlock 左边具有竖杠 中间上部具有大文本紧挨着右边具有较小本 大文本下边有小文本
+##### TitleBlock 左边具有竖杠 中间上部具有大文本(支持UI)，紧挨着右边具有较小本(支持UI)， 大文本下边有小文本(支持UI)
 ```javascript
 import {TitleBlock} from "react-native-lib-cus-com";
 ```

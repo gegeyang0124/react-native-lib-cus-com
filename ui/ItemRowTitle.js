@@ -98,21 +98,24 @@ export class ItemRowTitle extends Component {
 
                 </View>
 
-                <View style={[styles.frameStyle_2]}>
-                    {
-                        // typeof(viewRight) == 'string' || viewRight == undefined
-                        (typeof(text2) == 'string' || typeof(text2) == 'number') && viewRight == undefined
-                            ? <ButtonChange text={text2}
-                                            style={styles.btnStyle}
-                                            onPress={onPressRight}
-                                            frameStyle={[styles.frameStyleBtn,btnStyle]}
-                                            textStyle={text2Style}/>
-                            : typeof(viewRight) == 'object'
-                            ? viewRight
-                            : null
-                    }
+                {
+                    (text2 != undefined || viewRight != undefined) &&
+                    <View style={[styles.frameStyle_2]}>
+                        {
+                            // typeof(viewRight) == 'string' || viewRight == undefined
+                            (typeof(text2) == 'string' || typeof(text2) == 'number') && viewRight == undefined
+                                ? <ButtonChange text={text2}
+                                                style={styles.btnStyle}
+                                                onPress={onPressRight}
+                                                frameStyle={[styles.frameStyleBtn,btnStyle]}
+                                                textStyle={text2Style}/>
+                                : typeof(viewRight) == 'object'
+                                ? viewRight
+                                : null
+                        }
 
-                </View>
+                    </View>
+                }
 
                 {
                     isShowIcon

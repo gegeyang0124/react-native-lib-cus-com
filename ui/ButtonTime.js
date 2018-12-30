@@ -46,7 +46,7 @@ export class ButtonTime extends Component {
             PropTypes.object,
             PropTypes.array
         ]),//文本样式
-        type:PropTypes.string,//按扭类型
+        type:PropTypes.string,//按扭类型，"opacity"：显示隐藏；'light'：高亮
         onPress:PropTypes.func,//点击事件
         /**
          * 回传数据：{
@@ -57,7 +57,7 @@ export class ButtonTime extends Component {
         onChange:PropTypes.func,//时间选择回传事件
         format:PropTypes.string,//时间显示格式 默认"YYYY-MM-DD HH:mm:ss"
 
-        mode:PropTypes.string,//日期模式
+        mode:PropTypes.string,//日期模式 'date': 'YYYY-MM-DD','datetime': 'YYYY-MM-DD HH:mm','time': 'HH:mm'
 
         isReset:PropTypes.bool,//是否重置 默认false不重置；true重置（以只显示defaultText）
         disabled:PropTypes.bool,//是否无效 默认false 有效

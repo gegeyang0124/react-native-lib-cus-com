@@ -38,7 +38,7 @@ export class ButtonChange extends Component {
             PropTypes.object,
             PropTypes.array
         ]),//文本样式
-        type:PropTypes.string,//按扭类型
+        type:PropTypes.string,//按扭类型，"opacity"：显示隐藏；'light'：高亮
         style:PropTypes.oneOfType([
             PropTypes.number,
             PropTypes.object,
@@ -49,7 +49,7 @@ export class ButtonChange extends Component {
 
     TYPE = {
         opacity:"opacity",//显示隐藏
-        light:'light'
+        light:'light'//高亮
     }
 
     /**

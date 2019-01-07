@@ -90,7 +90,7 @@ const styles = StyleSheetAdapt.create({
         height:'0.1h',//屏幕高的10分之1
     },
     testStyle3:{
-            width:'100dws',//按设计大小宽比适配 会随屏幕调整布局
+            width:'100dw',//按设计大小宽比适配 会随屏幕调整布局
             height:'100dw',//按设计大小宽比适配
         },
     testStyle:{
@@ -106,7 +106,11 @@ import {StyleSheetAdapt} from "react-native-lib-cus-com";
 import React, {Component} from 'react';
 import {View} from 'react-native';
 
-StyleSheetAdapt.designSize = {width:768,height:1024};//页面设计大小
+/**
+设置页面设计大小（只需设置一次） 可不设置
+默认设计大小12寸平板电脑（{width:768,height:1024}）
+**/
+StyleSheetAdapt.designSize = {width:768,height:1024};
 const styles = StyleSheetAdapt.create({
 
     testStyle2:{

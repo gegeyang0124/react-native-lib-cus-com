@@ -22,10 +22,16 @@ export class ImageBrower extends Component {
 
     static propTypes = {
         /**
-         *  thumb: '', // thumbnail version of the photo to be displayed in grid view. actual photo is used if thumb is not provided
-         photo: '', // a remote photo or local media url
-         caption: '', // photo caption to be displayed
-         selected: true, // set the photo selected initially(default is false)
+         *  dataList = [
+         {
+            thumb: '', // thumbnail version of the photo to be displayed in grid view. actual photo is used if thumb is not provided
+            photo: '', // a remote photo or local media url
+            caption: '', // photo caption to be displayed
+            selected: true, // set the photo selected initially(default is false)
+            ...//可自定义字段传入，选中时回传
+         }
+         ....
+         ]
          * **/
         dataList:PropTypes.array,//图片路径数组
     }
@@ -49,6 +55,17 @@ export class ImageBrower extends Component {
      * @param bool bool,//是否显示，true:显示，false：隐藏，默认是true
      * @param imageUrls array,//图片数组
      * @param resolve resolve,//Promise的回调函数
+     *
+     * imageUrls = [
+     {
+        thumb: '', // thumbnail version of the photo to be displayed in grid view. actual photo is used if thumb is not provided
+        photo: '', // a remote photo or local media url
+        caption: '', // photo caption to be displayed
+        selected: true, // set the photo selected initially(default is false)
+        ...//可自定义字段传入，选中时回传
+     }
+     ....
+     ]
      * **/
     static show(imageUrls,bool = true,resolve){
         if(resolve || !bool){
@@ -105,10 +122,20 @@ export class ImageBrower extends Component {
      * @param bool bool,//是否显示，true:显示，false：隐藏，默认是true
      * @param imageUrls array,//图片数组
      * @param resolve resolve,//Promise的回调函数
+     *
+     * imageUrls = [
+     {
+        thumb: '', // thumbnail version of the photo to be displayed in grid view. actual photo is used if thumb is not provided
+        photo: '', // a remote photo or local media url
+        caption: '', // photo caption to be displayed
+        selected: true, // set the photo selected initially(default is false)
+        ...//可自定义字段传入，选中时回传
+     }
+     ....
+     ]
      * **/
     show(imageUrls,bool = true,resolve){
-
-
+        
         if(resolve || !bool){
             if(imageUrls || !bool){
                 this.resolve = resolve;

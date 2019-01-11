@@ -369,35 +369,27 @@ export class Tools {
      * @param msg string,//显示消息
      * **/
     static toast(msg) {
-        if(Toast.show){
-            Toast.show(msg, {
-                duration: Toast.durations.SHORT,
-                // duration: Toast.durations.LONG,
-                position: Toast.positions.CENTER,
-                shadow: true,
-                animation: true,
-                hideOnPress: true,
-                delay: 0,
-                /*onShow: () => {
-                 // calls on toast\`s appear animation start
-                 },
-                 onShown: () => {
-                 // calls on toast\`s appear animation end.
-                 },
-                 onHide: () => {
-                 // calls on toast\`s hide animation start.
-                 },
-                 onHidden: () => {
-                 // calls on toast\`s hide animation end.
-                 }*/
-            });
-        }
-        else
-        {
-            console.info("请安装toast提示组件","react-native-root-toast");
-        }
-
-        //Toast.showShortCenter.bind(null, msg);
+        Toast.show(msg, {
+            duration: Toast.durations.SHORT,
+            // duration: Toast.durations.LONG,
+            position: Toast.positions.CENTER,
+            shadow: true,
+            animation: true,
+            hideOnPress: true,
+            delay: 0,
+            /*onShow: () => {
+             // calls on toast\`s appear animation start
+             },
+             onShown: () => {
+             // calls on toast\`s appear animation end.
+             },
+             onHide: () => {
+             // calls on toast\`s hide animation start.
+             },
+             onHidden: () => {
+             // calls on toast\`s hide animation end.
+             }*/
+        });
     }
 
     /**

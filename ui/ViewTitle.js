@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {
     View,
-    Image,
     Text,
-    TouchableOpacity,
     ScrollView,
 } from 'react-native';
 
@@ -166,7 +164,8 @@ export class ViewTitle extends Component {
                             <ButtonImage onPressIn={() =>this.goBack()}
                                          onPressOut={onPressLeft}
                                          icon={icon == undefined ? leftWhite : icon}
-                                         style={styles.iconStyleLeft}/>
+                                         style={styles.iconStyleLeft}
+                                         iconStyle={styles.imgLeft}/>
 
                         </View>
                         <View style={styles.titleCenter}>
@@ -180,7 +179,8 @@ export class ViewTitle extends Component {
                                 typeof (viewRight) == "number"
                                     ? <ButtonImage onPress={onPressRight}
                                                    icon={viewRight}
-                                                   style={styles.iconStyleRight}/>
+                                                   style={styles.iconStyleLeft}
+                                                   iconStyle={styles.imgLeft}/>
                                     : typeof (viewRight) == "string"
                                     ? <ButtonChange onPress={this.props.onPressRight}
                                                     text={viewRight}
@@ -191,7 +191,6 @@ export class ViewTitle extends Component {
                             }
 
                         </View>
-
 
                     </View> : null
                 }
@@ -298,13 +297,12 @@ const styles = StyleSheetAdapt.create({
         backgroundColor: '#FF6B01',
         justifyContent: 'center',
         alignItems: 'center',
-
     },
     titleLeft: {
         flex: 1,
         flexDirection: "column",
         height: 70,
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
         alignItems: 'flex-start',
     },
     titleCenter: {
@@ -318,19 +316,28 @@ const styles = StyleSheetAdapt.create({
         flex: 1,
         flexDirection: "column",
         height: 70,
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
         alignItems: 'flex-end',
     },
     /**
-     * 图标样式
+     * 导航左边图标样式
+     */
+    imgLeft:{
+        height: 30,
+        width: 30,
+    },
+    /**
+     * 导航左边图标框样式
      */
     iconStyleLeft: {
-        height: 25,
-        width: 25,
-        left: 25,
-        bottom: -8,
+        height: 50,
+        width: 60,
+        // left: 25,
+        // bottom: -8,
         //resizeMode: Image.resizeMode.contain,
         // resizeMode:"contain",
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     textStyle: {
         color: 'white',

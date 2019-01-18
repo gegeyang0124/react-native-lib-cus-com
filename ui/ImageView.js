@@ -149,7 +149,7 @@ export class ImageView extends Component {
                                                    this.setState({visible:false});
                                                }}>
             <Image source={imageLeft}
-                   style={{resizeMode:"contain"}}/>
+                   style={styles.imgLeft}/>
         </TouchableOpacity>;
 
         return(
@@ -209,6 +209,12 @@ export class ImageView extends Component {
 }
 
 const styles = StyleSheetAdapt.create({
+    imgLeft:{
+        resizeMode:"contain",
+        width:30,
+        height:30,
+    },
+
     inditor:{
         position: "absolute",
         zIndex: 10, //z轴方向的层级，越大越在顶部
@@ -226,10 +232,13 @@ const styles = StyleSheetAdapt.create({
         marginBottom: 50
     },
     iconLeft:{
-        left:20,
-        top:40,
+        width:60,
+        height:50,
+        top:20,
         //backgroundColor: '#d35400',
         position: "absolute",
-        zIndex: 9999 //z轴方向的层级，越大越在顶部
+        zIndex: 9999, //z轴方向的层级，越大越在顶部
+        justifyContent:'center',
+        alignItems:'center',
     }
 });

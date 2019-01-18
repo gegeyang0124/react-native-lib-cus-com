@@ -135,7 +135,7 @@ export class ImageBrower extends Component {
      ]
      * **/
     show(imageUrls,bool = true,resolve){
-        
+
         if(resolve || !bool){
             if(imageUrls || !bool){
                 this.resolve = resolve;

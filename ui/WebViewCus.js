@@ -8,9 +8,7 @@ import {
     WebView,
 } from 'react-native'
 
-import {
-    StyleSheetAdapt,
-}from './../api/api';
+import {StyleSheetAdapt}from './../api/StyleSheetAdapt';
 import {ViewTitle} from "./ViewTitle";
 
 /**
@@ -19,7 +17,7 @@ import {ViewTitle} from "./ViewTitle";
 export class WebViewCus extends Component{
 
     static base;
-    webView;//
+
     //属性注释及类型,所有的属性对象都是句柄模式（类型时number），类似C语言中的指针
     static propTypes = {
         isModal:PropTypes.bool,//是否使用弹出框，true: 是，false:否；// 默认是：true；
@@ -52,9 +50,23 @@ export class WebViewCus extends Component{
      * @param urlHtml string;//网页地址或html代码
      * **/
     static show(bool?:boolean,urlHtml){
+        WebViewCus.base.show(bool,urlHtml);
+    }
+
+    /**
+     * 显示WebView
+     * @param bool boolean;//是否显示WebView；显示：true,隐藏：false;默认false
+     * @param urlHtml string;//网页地址或html代码
+     * **/
+    show(bool?:boolean,urlHtml){
         bool == undefined ? false : true;
+
+        if(urlHtml.indexOf("html") == -1){
+            urlHtml = WebViewCus.getHtml(urlHtml);
+        }
+
         if(urlHtml == undefined || urlHtml == ''){
-            WebViewCus.base.setState({
+            this.setState({
                 visible: bool,//是否显示
             });
         }
@@ -62,7 +74,7 @@ export class WebViewCus extends Component{
         {
             if(urlHtml.indexOf("http") == 0)
             {
-                WebViewCus.base.setState({
+                this.setState({
                     visible: bool,//是否显示
                     urlHtml:{
                         uri:urlHtml,
@@ -72,7 +84,7 @@ export class WebViewCus extends Component{
             }
             else
             {
-                WebViewCus.base.setState({
+                this.setState({
                     visible: bool,//是否显示
                     urlHtml:{
                         html:urlHtml,
@@ -82,7 +94,6 @@ export class WebViewCus extends Component{
             }
 
         }
-
     }
 
     /**
@@ -167,6 +178,7 @@ $replace
     }
 
     render() {
+        WebViewCus.base = this;
 
         if(this.props.isModal) {
             return (

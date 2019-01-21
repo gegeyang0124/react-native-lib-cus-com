@@ -5,7 +5,7 @@ import {
 import {Tools} from "./Tools";
 import {Alert} from "./Alert";
 import {LocalStorage} from "./LocalStorage";
-import {ProgressPerApi} from "./ProgressPerApi";
+import {ProgressBarApi} from "./ProgressBarApi";
 const HUpdate = require("./HotUpdate").HotUpdate;
 
 /*import {
@@ -19,7 +19,7 @@ import DeviceInfo from "react-native-device-info";*/
 import {Components} from "./../StackComponent";
 const RNFS = Components.react_native_fs;
 import {Components} from "./../StackComponent";
-const {
+let {
     packageVersion,
     currentVersion,
     mainBundleFilePath,
@@ -36,7 +36,7 @@ export class HotUpdateCus{
     static appID = null;//当前给app指定（分配）的id,可以是任何数据，必须传入，用于判断是否需要更新
     static tag = "";//热更新的标志 与后台配置一致
     static host = null;//热更新配置文件地址或接口，//get请求
-    static updateFirst = true;//app第一次启动是否强制更新，默认true更新
+    static updateFirst = false;//app第一次启动是否强制更新，默认false，不更新
 
     static update = {
         code1:777,//777、立刻更新；888、立刻强制更新；999、立刻静默更新
@@ -51,6 +51,7 @@ export class HotUpdateCus{
         hasVersion:null,//已经更新或拒绝的更新版本的
     }
     static timer = null;
+    static timerUpdateLoop = null;//循环检测更新
 
     /**
      * 设置标识 热更新的标志 与后台配置一致
@@ -64,7 +65,7 @@ export class HotUpdateCus{
      * 持续检测是否有更新
      * **/
     static checkUpdateLoop(){
-        setInterval(()=>{
+        this.timerUpdateLoop = setInterval(()=>{
             if(HotUpdateCus.update.execute){
                 // console.info("HotUpdate","HotUpdate");
                 HotUpdateCus.checkUpdate();
@@ -287,16 +288,16 @@ export class HotUpdateCus{
      * @parma toast bool,//是否提示信息
      * **/
     static updateDelay(toast=true){
-        HotUpdateCus.update.execute = true;
-        return;
+        // HotUpdateCus.update.execute = true;
+        clearInterval(this.timerUpdateLoop);
 
-        if(!HotUpdateCus.timer){
+      /*  if(!HotUpdateCus.timer){
             toast?Tools.toast("更新询问延迟1分钟！"):null;
             HotUpdateCus.timer = setTimeout(()=>{
                 HotUpdateCus.update.execute = true;
                 HotUpdateCus.timer = null;
             },60000);
-        }
+        }*/
     }
 
     /**
@@ -304,12 +305,16 @@ export class HotUpdateCus{
      * @Param cd func,//回调函数
      * **/
     static doUpdate = (info,cd,reboot) =>{
-
+        let isToast = info.metaInfo.code != HotUpdateCus.update.code3;
         HotUpdate.downloadUpdate(info,(per)=>{
-            ProgressPerApi.show(per);
-        })
+            if(isToast){
+                ProgressBarApi.show(per);
+            }
+        },isToast)
             .then(info => {
-                ProgressPerApi.hide();
+                if(isToast){
+                    ProgressBarApi.hide();
+                }
                 LocalStorage.save(Tools.app_config.versionkey,
                     {
                         version:info.version,
@@ -351,7 +356,8 @@ export class HotUpdateCus{
                                 },
                                 {text: '下次启动时更新', onPress: ()=>{
                                         HotUpdate.setPreferData("rnUpdate","false");
-                                        HotUpdateCus.update.version = info.version;
+                                        // HotUpdateCus.update.version = info.version;
+                                        build = info.build;
                                         HotUpdateCus.update.hasVersion = info.build;
                                         HotUpdateCus.update.execute = true;
                                         if(!Tools.isCurStruct){
@@ -396,7 +402,8 @@ export class HotUpdateCus{
                         if(info.metaInfo.finishInfo){
                             Alert.alert("更新完成",info.metaInfo.finishInfo+"");
                         }
-                        HotUpdateCus.update.version = info.version;
+                        // HotUpdateCus.update.version = info.version;
+                        build = info.build;
                         HotUpdateCus.update.hasVersion = info.build;
                         HotUpdateCus.update.execute = true;
                         if(!Tools.isCurStruct){

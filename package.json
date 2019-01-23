@@ -61,6 +61,7 @@
     "react-native-toast-loadding": "^1.0.0",
     "react-native-datepicker": "^1.7.2",
     "react-native-checkbox-cus": "^1.0.0",
-    "react-native-swipe-cus": "^1.0.0"
+    "react-native-swipe-cus": "^1.0.0",
+    "react-native-dropdown-select": "^1.0.4"
   }
 }
